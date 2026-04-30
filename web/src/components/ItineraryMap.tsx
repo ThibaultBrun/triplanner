@@ -68,15 +68,20 @@ export function ItineraryMap({ itinerary, onSwap }: Props) {
   }
 
   // Sync visual selection state on every selectedId change.
+  // IMPORTANT: never touch `transform` on the root element — MapLibre uses it
+  // to translate the marker to its lat/lng on every pan/zoom. We mutate the
+  // inner child instead.
   useEffect(() => {
     for (const [id, el] of markerElsRef.current) {
+      const inner = el.firstElementChild as HTMLElement | null;
+      if (!inner) continue;
       const isSel = id === selectedId;
-      el.style.outline = isSel ? "3px solid #fff" : "";
-      el.style.outlineOffset = isSel ? "3px" : "";
-      el.style.boxShadow = isSel
+      inner.style.outline = isSel ? "3px solid #fff" : "";
+      inner.style.outlineOffset = isSel ? "3px" : "";
+      inner.style.boxShadow = isSel
         ? "0 0 0 6px rgba(56,189,248,0.6), 0 4px 10px rgba(0,0,0,0.4)"
         : "0 2px 6px rgba(0,0,0,0.3)";
-      el.style.transform = isSel ? "scale(1.18)" : "";
+      inner.style.transform = isSel ? "scale(1.18)" : "";
       el.style.zIndex = isSel ? "10" : "";
     }
   }, [selectedId]);
@@ -258,8 +263,15 @@ function drawItinerary(
 }
 
 function buildMarkerElement(label: number, color: string): HTMLDivElement {
-  const el = document.createElement("div");
-  el.style.cssText = `
+  // Wrapper: MapLibre will apply `transform: translate(...)` here to follow
+  // the map's pan/zoom — never override it.
+  const wrapper = document.createElement("div");
+  wrapper.style.cursor = "pointer";
+  wrapper.style.userSelect = "none";
+
+  // Inner: holds all visual styles (and any scale we want to apply on select).
+  const inner = document.createElement("div");
+  inner.style.cssText = `
     width: 32px;
     height: 32px;
     border-radius: 50%;
@@ -271,12 +283,11 @@ function buildMarkerElement(label: number, color: string): HTMLDivElement {
     justify-content: center;
     border: 3px solid #fff;
     box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-    cursor: pointer;
-    user-select: none;
-    transition: transform 120ms ease, box-shadow 120ms ease;
+    transition: transform 120ms ease, box-shadow 120ms ease, outline 120ms ease;
   `;
-  el.textContent = String(label);
-  return el;
+  inner.textContent = String(label);
+  wrapper.appendChild(inner);
+  return wrapper;
 }
 
 function escapeHtml(s: string): string {

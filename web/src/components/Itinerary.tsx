@@ -9,6 +9,7 @@ import {
   buildItinerary,
   dayLabel,
   DEFAULT_DAY_START_MIN,
+  DEFAULT_MEAL_CONFIG,
   DURATION_OPTIONS_MIN,
   formatDuration,
   formatTime,
@@ -16,6 +17,8 @@ import {
   PACE_LABELS,
   type DayItem,
   type Itinerary as ItineraryType,
+  type MealConfig,
+  type MealEntry,
   type Pace,
 } from "@/lib/itinerary";
 import { ItineraryMap } from "./ItineraryMap";
@@ -66,6 +69,7 @@ export function Itinerary({ pois }: { pois: Poi[] }) {
   const [pace, setPace] = useState<Pace>("standard");
   const [view, setView] = useState<View>("list");
   const [startMinutes, setStartMinutes] = useState(DEFAULT_DAY_START_MIN);
+  const [mealConfig, setMealConfig] = useState<MealConfig>(DEFAULT_MEAL_CONFIG);
   // null = use auto-assignment; otherwise use this exact per-day mapping.
   const [customDays, setCustomDays] = useState<Record<number, string[]> | null>(null);
   // poi id → custom visit duration (in minutes), overrides pace-based.
@@ -101,8 +105,9 @@ export function Itinerary({ pois }: { pois: Poi[] }) {
         customDays: customDays ?? undefined,
         customDurations,
         dayStartMinutes: startMinutes,
+        meals: mealConfig,
       }),
-    [likedPois, numDays, pace, customDays, customDurations, startMinutes],
+    [likedPois, numDays, pace, customDays, customDurations, startMinutes, mealConfig],
   );
 
   // Helper that snapshots the current itinerary if customDays isn't already set,
@@ -210,6 +215,7 @@ export function Itinerary({ pois }: { pois: Poi[] }) {
         <div className="mx-auto mt-3 flex max-w-3xl flex-wrap items-center gap-2">
           <PacePicker value={pace} onChange={handlePaceChange} />
           <StartTimeInput value={startMinutes} onChange={setStartMinutes} />
+          <MealPicker config={mealConfig} onChange={setMealConfig} />
           <ViewToggle value={view} onChange={setView} />
         </div>
       </header>
@@ -230,6 +236,7 @@ export function Itinerary({ pois }: { pois: Poi[] }) {
                   index={day.index}
                   numDays={numDays}
                   items={day.items}
+                  meals={day.meals}
                   customDurations={customDurations}
                   onReorder={(ids) => handleReorderDay(day.index, ids)}
                   onMoveToDay={(poiId, toDay) => handleMoveToDay(poiId, day.index, toDay)}
@@ -293,6 +300,85 @@ function PacePicker({
           {PACE_LABELS[p]}
         </button>
       ))}
+    </div>
+  );
+}
+
+const MEAL_DURATION_OPTIONS = [30, 45, 60, 75, 90, 105, 120];
+
+function MealPicker({
+  config,
+  onChange,
+}: {
+  config: MealConfig;
+  onChange: (cfg: MealConfig) => void;
+}) {
+  function update(patch: Partial<MealConfig>) {
+    onChange({ ...config, ...patch });
+  }
+
+  function timeToMinutes(s: string): number | null {
+    const [h, m] = s.split(":").map(Number);
+    if (Number.isFinite(h) && Number.isFinite(m)) return h * 60 + m;
+    return null;
+  }
+
+  function minutesToTime(min: number): string {
+    return `${String(Math.floor(min / 60)).padStart(2, "0")}:${String(min % 60).padStart(2, "0")}`;
+  }
+
+  return (
+    <div className="flex flex-wrap items-center gap-1.5 rounded-full bg-white px-3 py-1.5 text-xs shadow dark:bg-slate-800">
+      <span className="text-slate-500 dark:text-slate-400">🍽</span>
+      <input
+        type="time"
+        step={900}
+        value={minutesToTime(config.lunchStartMinutes)}
+        onChange={(e) => {
+          const v = timeToMinutes(e.target.value);
+          if (v !== null) update({ lunchStartMinutes: v });
+        }}
+        className="bg-transparent font-mono text-slate-900 focus:outline-none dark:text-slate-100"
+        aria-label="Heure de début du déjeuner"
+      />
+      <select
+        value={config.lunchDurationMinutes}
+        onChange={(e) => update({ lunchDurationMinutes: Number(e.target.value) })}
+        className="bg-transparent text-slate-600 focus:outline-none dark:text-slate-400"
+        aria-label="Durée du déjeuner"
+      >
+        {MEAL_DURATION_OPTIONS.map((d) => (
+          <option key={d} value={d}>
+            {formatDuration(d)}
+          </option>
+        ))}
+      </select>
+
+      <span className="ml-1 text-slate-300 dark:text-slate-600">·</span>
+      <span className="text-slate-500 dark:text-slate-400">🍷</span>
+      <input
+        type="time"
+        step={900}
+        value={minutesToTime(config.dinnerStartMinutes)}
+        onChange={(e) => {
+          const v = timeToMinutes(e.target.value);
+          if (v !== null) update({ dinnerStartMinutes: v });
+        }}
+        className="bg-transparent font-mono text-slate-900 focus:outline-none dark:text-slate-100"
+        aria-label="Heure de début du dîner"
+      />
+      <select
+        value={config.dinnerDurationMinutes}
+        onChange={(e) => update({ dinnerDurationMinutes: Number(e.target.value) })}
+        className="bg-transparent text-slate-600 focus:outline-none dark:text-slate-400"
+        aria-label="Durée du dîner"
+      >
+        {MEAL_DURATION_OPTIONS.map((d) => (
+          <option key={d} value={d}>
+            {formatDuration(d)}
+          </option>
+        ))}
+      </select>
     </div>
   );
 }
@@ -363,6 +449,7 @@ function DaySection({
   index,
   numDays,
   items,
+  meals,
   customDurations,
   onReorder,
   onMoveToDay,
@@ -372,6 +459,7 @@ function DaySection({
   index: number;
   numDays: number;
   items: DayItem[];
+  meals: MealEntry[];
   customDurations: Record<string, number>;
   onReorder: (newIds: string[]) => void;
   onMoveToDay: (poiId: string, toDay: number) => void;
@@ -396,12 +484,25 @@ function DaySection({
   const totalTravelMin = items.reduce((s, it) => s + it.travelToNextMinutes, 0);
   const ids = items.map((it) => it.poi.id);
 
+  // Group meals by the position they should appear at (between items[pos-1] and items[pos]).
+  const mealsByPos = new Map<number, MealEntry[]>();
+  for (const m of meals) {
+    const list = mealsByPos.get(m.position) ?? [];
+    list.push(m);
+    mealsByPos.set(m.position, list);
+  }
+
   return (
     <section>
       <DayHeader index={index} count={items.length} />
       <div className="mt-1 text-xs text-slate-500 dark:text-slate-500">
         {formatDuration(totalVisitMin)} de visites · {formatDuration(totalTravelMin)} de trajet
       </div>
+
+      {/* Meals before the first POI (rare, but possible if dayStart > meal start) */}
+      {(mealsByPos.get(0) ?? []).map((m, k) => (
+        <MealSlot key={`pre-${k}`} meal={m} />
+      ))}
 
       <Reorder.Group
         as="ol"
@@ -410,13 +511,14 @@ function DaySection({
         onReorder={onReorder}
         className="mt-4 space-y-2"
       >
-        {items.map((item) => (
+        {items.map((item, i) => (
           <DraggableItem
             key={item.poi.id}
             item={item}
             currentDayIndex={index}
             numDays={numDays}
             isCustomDuration={item.poi.id in customDurations}
+            mealsAfter={mealsByPos.get(i + 1) ?? []}
             onMoveToDay={onMoveToDay}
             onChangeDuration={onChangeDuration}
             onRemove={onRemove}
@@ -427,11 +529,33 @@ function DaySection({
   );
 }
 
+function MealSlot({ meal }: { meal: MealEntry }) {
+  const isLunch = meal.kind === "lunch";
+  return (
+    <div
+      className={`my-2 flex items-center gap-3 rounded-xl border-2 border-dashed px-4 py-2.5 text-sm ${
+        isLunch
+          ? "border-amber-300 bg-amber-50/70 text-amber-900 dark:border-amber-700 dark:bg-amber-950/40 dark:text-amber-200"
+          : "border-purple-300 bg-purple-50/70 text-purple-900 dark:border-purple-700 dark:bg-purple-950/40 dark:text-purple-200"
+      }`}
+    >
+      <span className="text-lg">{isLunch ? "🍽" : "🍷"}</span>
+      <span className="font-semibold">
+        {isLunch ? "Déjeuner" : "Dîner"}
+      </span>
+      <span className="ml-auto font-mono text-xs">
+        {formatTime(meal.startMinutes)} – {formatTime(meal.endMinutes)}
+      </span>
+    </div>
+  );
+}
+
 function DraggableItem({
   item,
   currentDayIndex,
   numDays,
   isCustomDuration,
+  mealsAfter,
   onMoveToDay,
   onChangeDuration,
   onRemove,
@@ -440,6 +564,7 @@ function DraggableItem({
   currentDayIndex: number;
   numDays: number;
   isCustomDuration: boolean;
+  mealsAfter: MealEntry[];
   onMoveToDay: (poiId: string, toDay: number) => void;
   onChangeDuration: (poiId: string, minutes: number) => void;
   onRemove: (poiId: string) => void;
@@ -466,6 +591,9 @@ function DraggableItem({
       {item.travelToNextMinutes > 0 && (
         <TravelHint km={item.travelToNextKm} minutes={item.travelToNextMinutes} />
       )}
+      {mealsAfter.map((m, k) => (
+        <MealSlot key={`m-${item.poi.id}-${k}`} meal={m} />
+      ))}
     </Reorder.Item>
   );
 }

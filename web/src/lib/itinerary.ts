@@ -8,9 +8,34 @@ export type DayItem = {
   travelToNextKm: number;
 };
 
+export type MealKind = "lunch" | "dinner";
+
+export type MealEntry = {
+  kind: MealKind;
+  startMinutes: number;
+  endMinutes: number;
+  /** Position in the day's timeline (0-based slot index between items). */
+  position: number;
+};
+
 export type DayPlan = {
   index: number; // 0-based
   items: DayItem[];
+  meals: MealEntry[];
+};
+
+export type MealConfig = {
+  lunchStartMinutes: number;
+  lunchDurationMinutes: number;
+  dinnerStartMinutes: number;
+  dinnerDurationMinutes: number;
+};
+
+export const DEFAULT_MEAL_CONFIG: MealConfig = {
+  lunchStartMinutes: 12 * 60 + 30, // 12:30
+  lunchDurationMinutes: 60,
+  dinnerStartMinutes: 19 * 60 + 30, // 19:30
+  dinnerDurationMinutes: 90,
 };
 
 export type Itinerary = {
@@ -22,6 +47,7 @@ export type ItineraryOptions = {
   customDays?: Record<number, string[]>;
   customDurations?: Record<string, number>;
   dayStartMinutes?: number;
+  meals?: MealConfig;
 };
 
 export const DEFAULT_DAY_START_MIN = 9 * 60; // 9:00
@@ -191,13 +217,36 @@ function buildDayPlan(
   pace: Pace,
   dayStartMin: number,
   customDurations: Record<string, number>,
+  meals: MealConfig,
 ): DayPlan {
-  if (dayPois.length === 0) return { index: dayIndex, items: [] };
+  if (dayPois.length === 0) return { index: dayIndex, items: [], meals: [] };
 
   const items: DayItem[] = [];
+  const mealEntries: MealEntry[] = [];
   let cursor = dayStartMin;
+  let lunchDone = false;
+  let dinnerDone = false;
+
+  function maybeInsertMeal(kind: MealKind) {
+    if (kind === "lunch" && (lunchDone || cursor < meals.lunchStartMinutes)) return;
+    if (kind === "dinner" && (dinnerDone || cursor < meals.dinnerStartMinutes)) return;
+    const dur = kind === "lunch" ? meals.lunchDurationMinutes : meals.dinnerDurationMinutes;
+    mealEntries.push({
+      kind,
+      startMinutes: cursor,
+      endMinutes: cursor + dur,
+      position: items.length, // appears after items[position - 1] in the timeline
+    });
+    cursor += dur;
+    if (kind === "lunch") lunchDone = true;
+    else dinnerDone = true;
+  }
 
   for (let i = 0; i < dayPois.length; i++) {
+    // Check meal slots before this POI's start.
+    maybeInsertMeal("lunch");
+    maybeInsertMeal("dinner");
+
     const poi = dayPois[i];
     const visit = customDurations[poi.id] ?? visitMinutes(poi, pace);
     const startMinutes = cursor;
@@ -214,7 +263,11 @@ function buildDayPlan(
     cursor = endMinutes + travelToNextMinutes;
   }
 
-  return { index: dayIndex, items };
+  // After the last POI, still try to slot dinner if we ran into it.
+  maybeInsertMeal("lunch");
+  maybeInsertMeal("dinner");
+
+  return { index: dayIndex, items, meals: mealEntries };
 }
 
 export function buildItinerary(
@@ -227,6 +280,7 @@ export function buildItinerary(
     customDays,
     customDurations = {},
     dayStartMinutes = DEFAULT_DAY_START_MIN,
+    meals = DEFAULT_MEAL_CONFIG,
   } = options;
 
   let dayPoisLists: Poi[][];
@@ -252,7 +306,7 @@ export function buildItinerary(
   }
 
   const days = dayPoisLists.map((dayPois, i) =>
-    buildDayPlan(dayPois, i, pace, dayStartMinutes, customDurations),
+    buildDayPlan(dayPois, i, pace, dayStartMinutes, customDurations, meals),
   );
   return { days, totalPois: pois.length };
 }
