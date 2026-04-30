@@ -97,9 +97,15 @@ export const PACE_LABELS: Record<Pace, string> = {
   tranquille: "🌴 Tranquille",
 };
 
+// Round to the nearest multiple of `step`, with a floor.
+function roundToStep(minutes: number, step: number, min: number): number {
+  return Math.max(min, Math.round(minutes / step) * step);
+}
+
 export function visitMinutes(poi: Poi, pace: Pace = "standard"): number {
   const base = VISIT_MIN_BY_SUBCAT[poi.subcategory] ?? DEFAULT_VISIT_MIN;
-  return Math.max(15, Math.round(base * PACE_MULTIPLIER[pace]));
+  // Quantize to 15-minute slots (15, 30, 45, 60, 75, 90, ...).
+  return roundToStep(base * PACE_MULTIPLIER[pace], 15, 15);
 }
 
 // Haversine distance in km
@@ -118,7 +124,9 @@ export function distanceKm(a: Poi, b: Poi): number {
 
 function travelMinutes(km: number): number {
   const raw = (km / TRAVEL_SPEED_KMH) * 60;
-  return Math.round(Math.max(MIN_TRAVEL_MIN, Math.min(MAX_TRAVEL_MIN, raw)));
+  const clamped = Math.max(MIN_TRAVEL_MIN, Math.min(MAX_TRAVEL_MIN, raw));
+  // Quantize travel to 5-minute slots.
+  return roundToStep(clamped, 5, 5);
 }
 
 // Greedy nearest-neighbor TSP starting from the westernmost POI.
