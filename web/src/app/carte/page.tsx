@@ -26,7 +26,7 @@ export default function CartePage() {
   const presentCats = new Set(pois.map((p) => p.category));
 
   return (
-    <div className="relative flex-1">
+    <div className="fixed inset-0">
       <Map pois={pois} />
 
       <Link

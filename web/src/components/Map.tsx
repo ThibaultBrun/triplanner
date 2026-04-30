@@ -30,19 +30,9 @@ export function Map({ pois }: { pois: Poi[] }) {
 
     const map = new maplibregl.Map({
       container: containerRef.current,
-      style: {
-        version: 8,
-        sources: {
-          osm: {
-            type: "raster",
-            tiles: ["https://tile.openstreetmap.org/{z}/{x}/{y}.png"],
-            tileSize: 256,
-            attribution: "© OpenStreetMap contributors",
-            maxzoom: 19,
-          },
-        },
-        layers: [{ id: "osm", type: "raster", source: "osm" }],
-      },
+      // OpenFreeMap: vector style, free, no API key.
+      // Other options: "positron" (clean light), "bright", "dark"
+      style: "https://tiles.openfreemap.org/styles/liberty",
       center: INITIAL_CENTER,
       zoom: INITIAL_ZOOM,
     });

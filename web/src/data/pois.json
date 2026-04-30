@@ -466,6 +466,23 @@
     "score": 0.46799999999999997
   },
   {
+    "id": "way/72683650",
+    "osm": {
+      "type": "way",
+      "id": 72683650
+    },
+    "wikidata": "Q12257267",
+    "name": "Église Saint-Esprit",
+    "lat": 43.4959206,
+    "lon": -1.4702286,
+    "category": "patrimoine",
+    "subcategory": "Édifices religieux",
+    "description": "église située dans les Pyrénées-Atlantiques, en France",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Eglise_Saint-Esprit_(Bayonne).jpg?width=800",
+    "wikipediaLangs": 3,
+    "score": 0.46799999999999997
+  },
+  {
     "id": "node/7566607867",
     "osm": {
       "type": "node",
@@ -497,23 +514,6 @@
     "description": "montagne du Pays basque français",
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Baigura_Paragliding.jpg?width=800",
     "wikipediaLangs": 8,
-    "score": 0.46799999999999997
-  },
-  {
-    "id": "way/72683650",
-    "osm": {
-      "type": "way",
-      "id": 72683650
-    },
-    "wikidata": "Q12257267",
-    "name": "Église Saint-Esprit",
-    "lat": 43.4959206,
-    "lon": -1.4702286,
-    "category": "patrimoine",
-    "subcategory": "Édifices religieux",
-    "description": "église située dans les Pyrénées-Atlantiques, en France",
-    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Eglise_Saint-Esprit_(Bayonne).jpg?width=800",
-    "wikipediaLangs": 3,
     "score": 0.46799999999999997
   },
   {
@@ -964,23 +964,6 @@
     "score": 0.44057142857142856
   },
   {
-    "id": "node/948493623",
-    "osm": {
-      "type": "node",
-      "id": 948493623
-    },
-    "wikidata": "Q3128667",
-    "name": "Hautza",
-    "lat": 43.1513319,
-    "lon": -1.4202765,
-    "category": "nature",
-    "subcategory": "Points de vue & panoramas",
-    "description": "montagne espagnole",
-    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Auzamendia.jpg?width=800",
-    "wikipediaLangs": 7,
-    "score": 0.43199999999999994
-  },
-  {
     "id": "node/4789924525",
     "osm": {
       "type": "node",
@@ -1185,6 +1168,23 @@
     "description": "église à Cambo-les-Bains (Pyrénées-Atlantiques)",
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Cambo_les_Bains-%C3%89glise_saint_Laurent-20120716.jpg?width=800",
     "wikipediaLangs": 2,
+    "score": 0.43199999999999994
+  },
+  {
+    "id": "node/948493623",
+    "osm": {
+      "type": "node",
+      "id": 948493623
+    },
+    "wikidata": "Q3128667",
+    "name": "Hautza",
+    "lat": 43.1513319,
+    "lon": -1.4202765,
+    "category": "nature",
+    "subcategory": "Points de vue & panoramas",
+    "description": "montagne espagnole",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Auzamendia.jpg?width=800",
+    "wikipediaLangs": 7,
     "score": 0.43199999999999994
   },
   {
@@ -2009,6 +2009,23 @@
     "score": 0.37428571428571433
   },
   {
+    "id": "way/660617057",
+    "osm": {
+      "type": "way",
+      "id": 660617057
+    },
+    "wikidata": "Q22968690",
+    "name": "Maison de Ravel",
+    "lat": 43.3856393,
+    "lon": -1.6678125,
+    "category": "patrimoine",
+    "subcategory": "Architecture remarquable",
+    "description": "maison à Ciboure (Pyrénées-Atlantiques)",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ciboure-Maison_de_Maurice_Ravel.jpg?width=800",
+    "wikipediaLangs": 2,
+    "score": 0.37428571428571433
+  },
+  {
     "id": "way/184226041",
     "osm": {
       "type": "way",
@@ -2027,23 +2044,6 @@
     "tags": {
       "cost": "paid"
     }
-  },
-  {
-    "id": "way/660617057",
-    "osm": {
-      "type": "way",
-      "id": 660617057
-    },
-    "wikidata": "Q22968690",
-    "name": "Maison de Ravel",
-    "lat": 43.3856393,
-    "lon": -1.6678125,
-    "category": "patrimoine",
-    "subcategory": "Architecture remarquable",
-    "description": "maison à Ciboure (Pyrénées-Atlantiques)",
-    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ciboure-Maison_de_Maurice_Ravel.jpg?width=800",
-    "wikipediaLangs": 2,
-    "score": 0.37428571428571433
   },
   {
     "id": "node/939637829",
@@ -2428,38 +2428,6 @@
     }
   },
   {
-    "id": "node/1043932732",
-    "osm": {
-      "type": "node",
-      "id": 1043932732
-    },
-    "wikidata": "Q22920754",
-    "name": "Dolmen Xuberaxain Harri",
-    "lat": 43.1056417,
-    "lon": -1.1080244,
-    "category": "patrimoine",
-    "subcategory": "Sites archéologiques & préhistoriques",
-    "description": "dolmen à Mendive (Pyrénées-Atlantiques)",
-    "wikipediaLangs": 1,
-    "score": 0.336
-  },
-  {
-    "id": "way/76103396",
-    "osm": {
-      "type": "way",
-      "id": 76103396
-    },
-    "wikidata": "Q22997589",
-    "name": "Domaine de la villa Berriotz",
-    "lat": 43.4354464,
-    "lon": -1.4828517,
-    "category": "patrimoine",
-    "subcategory": "Châteaux & forteresses",
-    "description": "villa à Arcangues (Pyrénées-Atlantiques)",
-    "wikipediaLangs": 1,
-    "score": 0.336
-  },
-  {
     "id": "node/948495281",
     "osm": {
       "type": "node",
@@ -2492,111 +2460,6 @@
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mendaur_Ermitage_001.jpg?width=800",
     "wikipediaLangs": 4,
     "score": 0.3325714285714286
-  },
-  {
-    "id": "way/71993873",
-    "osm": {
-      "type": "way",
-      "id": 71993873
-    },
-    "wikidata": "Q3585022",
-    "name": "Église Sainte-Eugénie",
-    "lat": 43.4828322,
-    "lon": -1.5645463,
-    "category": "patrimoine",
-    "subcategory": "Édifices religieux",
-    "description": "église située dans les Pyrénées-Atlantiques, en France",
-    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Biarritz_Sainte_Eugenie_Church_002.jpg?width=800",
-    "wikipediaLangs": 4,
-    "score": 0.3325714285714286,
-    "tags": {
-      "wheelchair": "yes"
-    }
-  },
-  {
-    "id": "node/2430049865",
-    "osm": {
-      "type": "node",
-      "id": 2430049865
-    },
-    "wikidata": "Q12252887",
-    "name": "Croix de cimetière",
-    "lat": 43.1502245,
-    "lon": -1.1641757,
-    "category": "patrimoine",
-    "subcategory": "Monuments & mémoriaux",
-    "description": "croix de cimetière située dans les Pyrénées-Atlantiques, en France",
-    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ahaxe_Croix.jpg?width=800",
-    "wikipediaLangs": 1,
-    "score": 0.33
-  },
-  {
-    "id": "node/4484350345",
-    "osm": {
-      "type": "node",
-      "id": 4484350345
-    },
-    "wikidata": "Q22920620",
-    "name": "Croix blanche",
-    "lat": 43.3799669,
-    "lon": -1.6711836,
-    "category": "patrimoine",
-    "subcategory": "Monuments & mémoriaux",
-    "description": "croix monumentale à Ciboure (Pyrénées-Atlantiques)",
-    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ziburuko_gurutze_zuria.jpg?width=800",
-    "wikipediaLangs": 1,
-    "score": 0.33
-  },
-  {
-    "id": "way/72679540",
-    "osm": {
-      "type": "way",
-      "id": 72679540
-    },
-    "wikidata": "Q22920578",
-    "name": "Hôtel de Belzunce",
-    "lat": 43.4902333,
-    "lon": -1.4755321,
-    "category": "patrimoine",
-    "subcategory": "Architecture remarquable",
-    "description": "maison à Bayonne (Pyrénées-Atlantiques)",
-    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Belzunce%2C_cour_int%C3%A9rieure.JPG?width=800",
-    "wikipediaLangs": 1,
-    "score": 0.33
-  },
-  {
-    "id": "way/72685344",
-    "osm": {
-      "type": "way",
-      "id": 72685344
-    },
-    "wikidata": "Q22997661",
-    "name": "Maison Lapeyre",
-    "lat": 43.4906249,
-    "lon": -1.4734461,
-    "category": "patrimoine",
-    "subcategory": "Architecture remarquable",
-    "description": "maison à Bayonne (Pyrénées-Atlantiques)",
-    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/7_rue_coursic1_DSC_8789.JPG?width=800",
-    "wikipediaLangs": 1,
-    "score": 0.33
-  },
-  {
-    "id": "way/72700163",
-    "osm": {
-      "type": "way",
-      "id": 72700163
-    },
-    "wikidata": "Q22920870",
-    "name": "Maison Dagourette",
-    "lat": 43.491174,
-    "lon": -1.4735354,
-    "category": "patrimoine",
-    "subcategory": "Architecture remarquable",
-    "description": "édifice hébergeant le musée Basque de Bayonne (Pyrénées-Atlantiques)",
-    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Bayonne_Mus%C3%A9e_Basque.JPG?width=800",
-    "wikipediaLangs": 1,
-    "score": 0.33
   },
   {
     "id": "way/270212628",
@@ -2673,5 +2536,6326 @@
     "tags": {
       "website": "https://www.pointsdevue.eus/c215-fr/"
     }
+  },
+  {
+    "id": "node/13234290972",
+    "osm": {
+      "type": "node",
+      "id": 13234290972
+    },
+    "wikidata": "Q921718",
+    "name": "Léon Bonnat d'après Léon Bonnat",
+    "lat": 43.4918635,
+    "lon": -1.472578,
+    "category": "musees",
+    "subcategory": "Street art & art urbain",
+    "description": "artiste français",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/C215_-_Grenoble%2C_Juin_2016_(cropped).jpg?width=800",
+    "wikipediaLangs": 5,
+    "score": 0.3214285714285714,
+    "tags": {
+      "website": "https://www.pointsdevue.eus/c215-fr/"
+    }
+  },
+  {
+    "id": "node/13234290973",
+    "osm": {
+      "type": "node",
+      "id": 13234290973
+    },
+    "wikidata": "Q921718",
+    "name": "Mme Albert Cahen d’Anvers d'après Léon Bonnat",
+    "lat": 43.4911557,
+    "lon": -1.4729017,
+    "category": "musees",
+    "subcategory": "Street art & art urbain",
+    "description": "artiste français",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/C215_-_Grenoble%2C_Juin_2016_(cropped).jpg?width=800",
+    "wikipediaLangs": 5,
+    "score": 0.3214285714285714,
+    "tags": {
+      "website": "https://www.pointsdevue.eus/c215-fr/"
+    }
+  },
+  {
+    "id": "node/13251978745",
+    "osm": {
+      "type": "node",
+      "id": 13251978745
+    },
+    "wikidata": "Q921718",
+    "name": "Cardinal Lavigerie d'après Léon Bonnat",
+    "lat": 43.4920299,
+    "lon": -1.4725327,
+    "category": "musees",
+    "subcategory": "Street art & art urbain",
+    "description": "artiste français",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/C215_-_Grenoble%2C_Juin_2016_(cropped).jpg?width=800",
+    "wikipediaLangs": 5,
+    "score": 0.3214285714285714,
+    "tags": {
+      "website": "https://www.pointsdevue.eus/c215-fr/"
+    }
+  },
+  {
+    "id": "node/13272364170",
+    "osm": {
+      "type": "node",
+      "id": 13272364170
+    },
+    "wikidata": "Q921718",
+    "name": "La comtesse Potocka d'après Léon Bonnat",
+    "lat": 43.4918132,
+    "lon": -1.4731828,
+    "category": "musees",
+    "subcategory": "Street art & art urbain",
+    "description": "artiste français",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/C215_-_Grenoble%2C_Juin_2016_(cropped).jpg?width=800",
+    "wikipediaLangs": 5,
+    "score": 0.3214285714285714,
+    "tags": {
+      "website": "https://www.pointsdevue.eus/c215-fr/"
+    }
+  },
+  {
+    "id": "node/13284663692",
+    "osm": {
+      "type": "node",
+      "id": 13284663692
+    },
+    "wikidata": "Q921718",
+    "name": "Marguerite Franchetti d'après Léon Bonnat",
+    "lat": 43.4923287,
+    "lon": -1.4724697,
+    "category": "musees",
+    "subcategory": "Street art & art urbain",
+    "description": "artiste français",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/C215_-_Grenoble%2C_Juin_2016_(cropped).jpg?width=800",
+    "wikipediaLangs": 5,
+    "score": 0.3214285714285714,
+    "tags": {
+      "website": "https://www.pointsdevue.eus/c215-fr/"
+    }
+  },
+  {
+    "id": "node/493597568",
+    "osm": {
+      "type": "node",
+      "id": 493597568
+    },
+    "wikidata": "Q10955341",
+    "name": "Grotte des sorcières de Zugarramurdi",
+    "lat": 43.2684065,
+    "lon": -1.5480592,
+    "category": "nature",
+    "subcategory": "Grottes & formations rocheuses",
+    "description": "grottes à Zugarramurdi, Espagne",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Zugarramurdi_cueva.jpg?width=800",
+    "wikipediaLangs": 5,
+    "score": 0.30714285714285716,
+    "tags": {
+      "cost": "paid",
+      "website": "http://www.turismozugarramurdi.com/seccion/turismo_las_cuevas/"
+    }
+  },
+  {
+    "id": "node/4301924529",
+    "osm": {
+      "type": "node",
+      "id": 4301924529
+    },
+    "wikidata": "Q914013",
+    "name": "Rocher de la Vierge",
+    "lat": 43.4842074,
+    "lon": -1.57058,
+    "category": "loisirs",
+    "subcategory": "Attractions",
+    "description": "curiosité naturelle touristique en forme de longue coque de navire",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Rocher_de_la_Vierge_2022.jpg?width=800",
+    "wikipediaLangs": 5,
+    "score": 0.30714285714285716,
+    "tags": {
+      "wheelchair": "yes"
+    }
+  },
+  {
+    "id": "node/955295161",
+    "osm": {
+      "type": "node",
+      "id": 955295161
+    },
+    "wikidata": "Q3117280",
+    "name": "Grottes de Sare",
+    "lat": 43.2681458,
+    "lon": -1.5715479,
+    "category": "nature",
+    "subcategory": "Grottes & formations rocheuses",
+    "description": "cavité touristique dans les Pyrénées-Atlantiques, France",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Grottes_de_Sare.jpg?width=800",
+    "wikipediaLangs": 5,
+    "score": 0.3
+  },
+  {
+    "id": "node/773208356",
+    "osm": {
+      "type": "node",
+      "id": 773208356
+    },
+    "wikidata": "Q2820189",
+    "name": "Abarratia",
+    "lat": 43.3579859,
+    "lon": -1.2330783,
+    "category": "nature",
+    "subcategory": "Points de vue & panoramas",
+    "description": "montagne des Pyrénées françaises",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Abarratia.jpg?width=800",
+    "wikipediaLangs": 3,
+    "score": 0.288
+  },
+  {
+    "id": "node/932148872",
+    "osm": {
+      "type": "node",
+      "id": 932148872
+    },
+    "wikidata": "Q3541831",
+    "name": "Bizkarraga",
+    "lat": 43.4829441,
+    "lon": -1.315292,
+    "category": "nature",
+    "subcategory": "Points de vue & panoramas",
+    "description": "montagne des Pyrénées françaises",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Tuc_de_Biscarrague_Urt.JPG?width=800",
+    "wikipediaLangs": 3,
+    "score": 0.288
+  },
+  {
+    "id": "node/12512539611",
+    "osm": {
+      "type": "node",
+      "id": 12512539611
+    },
+    "wikidata": "Q8247449",
+    "name": "Bianditz",
+    "lat": 43.2468043,
+    "lon": -1.7906675,
+    "category": "nature",
+    "subcategory": "Points de vue & panoramas",
+    "description": "montagne des Pyrénées espagnoles",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Bianditz%2C_Euskal_Herria.jpg?width=800",
+    "wikipediaLangs": 3,
+    "score": 0.288
+  },
+  {
+    "id": "way/71974678",
+    "osm": {
+      "type": "way",
+      "id": 71974678
+    },
+    "wikidata": "Q3329060",
+    "name": "Musée Asiatica",
+    "lat": 43.4781173,
+    "lon": -1.5553425,
+    "category": "musees",
+    "subcategory": "Musée",
+    "description": "musée français",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Vue_ext%C3%A9rieure_du_Mus%C3%A9e_Asiatica.JPG?width=800",
+    "wikipediaLangs": 3,
+    "score": 0.28428571428571425,
+    "tags": {
+      "cost": "paid",
+      "wheelchair": "yes",
+      "openingHours": "Tu-Fr 10:00-17:00+"
+    }
+  },
+  {
+    "id": "way/169458221",
+    "osm": {
+      "type": "way",
+      "id": 169458221
+    },
+    "wikidata": "Q3065485",
+    "name": "Jardin botanique",
+    "lat": 43.4922499,
+    "lon": -1.4794272,
+    "category": "loisirs",
+    "subcategory": "Parcs & jardins",
+    "description": "jardin botanique français",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Jardin_botanique_Bayonne_20210429_172746_pont_japonais.jpg?width=800",
+    "wikipediaLangs": 4,
+    "score": 0.27
+  },
+  {
+    "id": "node/1236228237",
+    "osm": {
+      "type": "node",
+      "id": 1236228237
+    },
+    "wikidata": "Q12254685",
+    "name": "Théâtre Michel Portal",
+    "lat": 43.493252,
+    "lon": -1.4749442,
+    "category": "vie-nocturne",
+    "subcategory": "Théâtres",
+    "description": "hôtel de ville et salle de spectacle de Bayonne, Pyrénées-Atlantiques, France",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/MAIRIEBAYONNE.JPG?width=800",
+    "wikipediaLangs": 4,
+    "score": 0.27
+  },
+  {
+    "id": "node/10943758105",
+    "osm": {
+      "type": "node",
+      "id": 10943758105
+    },
+    "wikidata": "Q12259074",
+    "name": "Soinuenea",
+    "lat": 43.2882646,
+    "lon": -1.8382863,
+    "category": "musees",
+    "subcategory": "Musée",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Soinuenea_logo.png?width=800",
+    "wikipediaLangs": 2,
+    "score": 0.26857142857142857,
+    "tags": {
+      "openingHours": "Tu-We 10:00-14:00; Th-Sa 10:00-14:00, 15:00-18:00",
+      "website": "http://www.Soinuenea.eus"
+    }
+  },
+  {
+    "id": "node/437301259",
+    "osm": {
+      "type": "node",
+      "id": 437301259
+    },
+    "wikidata": "Q2824120",
+    "name": "Adartza",
+    "lat": 43.113216,
+    "lon": -1.3365085,
+    "category": "nature",
+    "subcategory": "Points de vue & panoramas",
+    "description": "montagne des Pyrénées françaises",
+    "wikipediaLangs": 4,
+    "score": 0.264
+  },
+  {
+    "id": "way/178597357",
+    "osm": {
+      "type": "way",
+      "id": 178597357
+    },
+    "wikidata": "Q25475845",
+    "name": "Musée des sorcières",
+    "lat": 43.269431,
+    "lon": -1.5438955,
+    "category": "musees",
+    "subcategory": "Musée",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mus%C3%A9e_des_sorci%C3%A8res_de_Zugarramurdi.jpg?width=800",
+    "wikipediaLangs": 2,
+    "score": 0.2614285714285714,
+    "tags": {
+      "cost": "paid",
+      "openingHours": "Mo off",
+      "website": "http://www.turismozugarramurdi.com/seccion/turismo_museo_de_las_brujas/"
+    }
+  },
+  {
+    "id": "node/948495516",
+    "osm": {
+      "type": "node",
+      "id": 948495516
+    },
+    "wikidata": "Q12259707",
+    "name": "Irakurri",
+    "lat": 43.100626,
+    "lon": -1.8396357,
+    "category": "nature",
+    "subcategory": "Points de vue & panoramas",
+    "description": "montagne des Pyrénées espagnoles",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/2017_irakurri_02.jpg?width=800",
+    "wikipediaLangs": 2,
+    "score": 0.252
+  },
+  {
+    "id": "node/1164156978",
+    "osm": {
+      "type": "node",
+      "id": 1164156978
+    },
+    "wikidata": "Q12263403",
+    "name": "Mendieder",
+    "lat": 43.1620372,
+    "lon": -1.7266889,
+    "category": "nature",
+    "subcategory": "Points de vue & panoramas",
+    "description": "montagne des Pyrénées espagnoles",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Bustitza_mendieder_01.jpg?width=800",
+    "wikipediaLangs": 2,
+    "score": 0.252
+  },
+  {
+    "id": "node/11646993933",
+    "osm": {
+      "type": "node",
+      "id": 11646993933
+    },
+    "wikidata": "Q12254059",
+    "name": "Pic d'Arradoy",
+    "lat": 43.1870982,
+    "lon": -1.2346896,
+    "category": "nature",
+    "subcategory": "Points de vue & panoramas",
+    "description": "sommet en France",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pic_d'Arradoi_%40_Erramondegiborda_03.jpg?width=800",
+    "wikipediaLangs": 2,
+    "score": 0.252
+  },
+  {
+    "id": "way/156866444",
+    "osm": {
+      "type": "way",
+      "id": 156866444
+    },
+    "wikidata": "Q49388123",
+    "name": "Plage du Port Vieux",
+    "lat": 43.4825239,
+    "lon": -1.5679242,
+    "category": "nature",
+    "subcategory": "Plages & littoral",
+    "description": "plage de Biarritz",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Plage_du_Port_Vieux_de_Biarritz.jpg?width=800",
+    "wikipediaLangs": 2,
+    "score": 0.252
+  },
+  {
+    "id": "way/250242717",
+    "osm": {
+      "type": "way",
+      "id": 250242717
+    },
+    "wikidata": "Q5122415",
+    "name": "La Cité de l'Océan",
+    "lat": 43.4621033,
+    "lon": -1.5723167,
+    "category": "musees",
+    "subcategory": "Musée",
+    "description": "musée à Biarritz",
+    "wikipediaLangs": 3,
+    "score": 0.24857142857142858,
+    "tags": {
+      "cost": "paid",
+      "wheelchair": "yes",
+      "openingHours": "10:00-19:00",
+      "website": "https://www.citedelocean.com"
+    }
+  },
+  {
+    "id": "way/427720797",
+    "osm": {
+      "type": "way",
+      "id": 427720797
+    },
+    "wikidata": "Q334150",
+    "name": "Abbaye Saint-Jean de Sorde",
+    "lat": 43.5284452,
+    "lon": -1.054527,
+    "category": "nature",
+    "subcategory": "Réserves naturelles & faune",
+    "description": "abbaye située dans les Landes, en France",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Sorde_1_new.jpg?width=800",
+    "wikipediaLangs": 3,
+    "score": 0.24714285714285716
+  },
+  {
+    "id": "way/248123269",
+    "osm": {
+      "type": "way",
+      "id": 248123269
+    },
+    "wikidata": "Q25476528",
+    "name": "Station thermale d'Elgorriaga",
+    "lat": 43.1346475,
+    "lon": -1.689906,
+    "category": "nature",
+    "subcategory": "Plages & littoral",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Balneario_de_Elgorriaga.jpg?width=800",
+    "wikipediaLangs": 1,
+    "score": 0.24171428571428571,
+    "tags": {
+      "cost": "paid",
+      "website": "https://www.balnearioelgorriaga.com/"
+    }
+  },
+  {
+    "id": "node/3091560254",
+    "osm": {
+      "type": "node",
+      "id": 3091560254
+    },
+    "wikidata": "Q12269094",
+    "name": "Xorroxin ur-jauzia",
+    "lat": 43.1583008,
+    "lon": -1.4537988,
+    "category": "loisirs",
+    "subcategory": "Attractions",
+    "description": "waterfall in Baztan (Navarre)",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Xorroxin.jpg?width=800",
+    "wikipediaLangs": 3,
+    "score": 0.24
+  },
+  {
+    "id": "way/156152686",
+    "osm": {
+      "type": "way",
+      "id": 156152686
+    },
+    "wikidata": "Q9046925",
+    "name": "Oiasso Museoa",
+    "lat": 43.3399706,
+    "lon": -1.787765,
+    "category": "musees",
+    "subcategory": "Musée",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Irun_-_Museo_Romano_Oiasso.jpg?width=800",
+    "wikipediaLangs": 2,
+    "score": 0.23142857142857143,
+    "tags": {
+      "cost": "paid",
+      "website": "https://oiasso.com"
+    }
+  },
+  {
+    "id": "node/790484281",
+    "osm": {
+      "type": "node",
+      "id": 790484281
+    },
+    "wikidata": "Q3128666",
+    "name": "Hauzkoa",
+    "lat": 43.1169728,
+    "lon": -1.068609,
+    "category": "nature",
+    "subcategory": "Points de vue & panoramas",
+    "description": "sommet du Pays Basque français",
+    "wikipediaLangs": 3,
+    "score": 0.228
+  },
+  {
+    "id": "node/850900643",
+    "osm": {
+      "type": "node",
+      "id": 850900643
+    },
+    "wikidata": "Q2827423",
+    "name": "Aintziaga",
+    "lat": 43.1896866,
+    "lon": -1.3814154,
+    "category": "nature",
+    "subcategory": "Points de vue & panoramas",
+    "description": "sommet frontalier du Pays basque",
+    "wikipediaLangs": 3,
+    "score": 0.228
+  },
+  {
+    "id": "node/920686014",
+    "osm": {
+      "type": "node",
+      "id": 920686014
+    },
+    "wikidata": "Q3147675",
+    "name": "Ixtauz",
+    "lat": 43.136775,
+    "lon": -1.4088428,
+    "category": "nature",
+    "subcategory": "Points de vue & panoramas",
+    "description": "mont du Pays Basque français",
+    "wikipediaLangs": 3,
+    "score": 0.228
+  },
+  {
+    "id": "node/2245319054",
+    "osm": {
+      "type": "node",
+      "id": 2245319054
+    },
+    "wikidata": "Q2827405",
+    "name": "Ahantziga",
+    "lat": 43.1846044,
+    "lon": -0.8693668,
+    "category": "nature",
+    "subcategory": "Points de vue & panoramas",
+    "description": "montagne des Pyrénées françaises",
+    "wikipediaLangs": 3,
+    "score": 0.228
+  },
+  {
+    "id": "node/11646993952",
+    "osm": {
+      "type": "node",
+      "id": 11646993952
+    },
+    "wikidata": "Q2852644",
+    "name": "Antzola",
+    "lat": 43.1426486,
+    "lon": -1.4095594,
+    "category": "nature",
+    "subcategory": "Points de vue & panoramas",
+    "description": "montagne sur la frontière entre l'Espagne et la France",
+    "wikipediaLangs": 3,
+    "score": 0.228
+  },
+  {
+    "id": "node/670506083",
+    "osm": {
+      "type": "node",
+      "id": 670506083
+    },
+    "wikidata": "Q20492382",
+    "name": "Manttale",
+    "lat": 43.3091484,
+    "lon": -1.7033542,
+    "category": "nature",
+    "subcategory": "Points de vue & panoramas",
+    "description": "montagne sur la frontière entre l'Espagne et la France",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mandale-Borne8.JPG?width=800",
+    "wikipediaLangs": 1,
+    "score": 0.2245714285714286
+  },
+  {
+    "id": "node/948493248",
+    "osm": {
+      "type": "node",
+      "id": 948493248
+    },
+    "wikidata": "Q112789477",
+    "name": "Apaola",
+    "lat": 43.1963258,
+    "lon": -1.6905151,
+    "category": "nature",
+    "subcategory": "Points de vue & panoramas",
+    "description": "montagne des Pyrénées espagnoles",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Apaola_Mendaur_Nabazetik.jpeg?width=800",
+    "wikipediaLangs": 1,
+    "score": 0.2245714285714286
+  },
+  {
+    "id": "node/948495037",
+    "osm": {
+      "type": "node",
+      "id": 948495037
+    },
+    "wikidata": "Q108322212",
+    "name": "Frain",
+    "lat": 43.2382233,
+    "lon": -1.6902026,
+    "category": "nature",
+    "subcategory": "Points de vue & panoramas",
+    "description": "montagne des Pyrénées espagnoles",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Frain_mendia.jpeg?width=800",
+    "wikipediaLangs": 1,
+    "score": 0.2245714285714286
+  },
+  {
+    "id": "node/3909699867",
+    "osm": {
+      "type": "node",
+      "id": 3909699867
+    },
+    "wikidata": "Q113383233",
+    "name": "Mairubaratzeta",
+    "lat": 43.170466,
+    "lon": -1.721268,
+    "category": "nature",
+    "subcategory": "Points de vue & panoramas",
+    "description": "montagne des Pyrénées espagnoles",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mairubaratzeta_mendia.jpg?width=800",
+    "wikipediaLangs": 1,
+    "score": 0.2245714285714286
+  },
+  {
+    "id": "node/3927463775",
+    "osm": {
+      "type": "node",
+      "id": 3927463775
+    },
+    "wikidata": "Q20492297",
+    "name": "Agiña",
+    "lat": 43.2691752,
+    "lon": -1.762148,
+    "category": "nature",
+    "subcategory": "Points de vue & panoramas",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Aita_donostia_agina_lesaka_001.jpg?width=800",
+    "wikipediaLangs": 1,
+    "score": 0.2245714285714286
+  },
+  {
+    "id": "node/5040035294",
+    "osm": {
+      "type": "node",
+      "id": 5040035294
+    },
+    "wikidata": "Q3314929",
+    "name": "Haut-fourneau métallurgique Mines de Banca",
+    "lat": 43.128628,
+    "lon": -1.3739368,
+    "category": "loisirs",
+    "subcategory": "Attractions",
+    "description": "mine à Banca (Pyrénées-Atlantiques)",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Haut_fourneau_de_Banca.JPG?width=800",
+    "wikipediaLangs": 2,
+    "score": 0.22428571428571428,
+    "tags": {
+      "website": "http://www.jpdugene.com/tourisme/pays_basque/banca.htm"
+    }
+  },
+  {
+    "id": "node/984903461",
+    "osm": {
+      "type": "node",
+      "id": 984903461
+    },
+    "wikidata": "Q3127688",
+    "name": "Harpeko Saindua",
+    "lat": 43.2650069,
+    "lon": -1.3892347,
+    "category": "nature",
+    "subcategory": "Grottes & formations rocheuses",
+    "description": "grotte dans les Pyrénées-Atlantiques, France",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Harpeko_Saindua_3.JPG?width=800",
+    "wikipediaLangs": 2,
+    "score": 0.21714285714285717
+  },
+  {
+    "id": "node/2300764337",
+    "osm": {
+      "type": "node",
+      "id": 2300764337
+    },
+    "wikidata": "Q2948420",
+    "name": "Grotte de la Chambre d'Amour",
+    "lat": 43.4933862,
+    "lon": -1.5483719,
+    "category": "nature",
+    "subcategory": "Grottes & formations rocheuses",
+    "description": "littoral en France",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Panorama_ANGLET.JPG?width=800",
+    "wikipediaLangs": 2,
+    "score": 0.21714285714285717
+  },
+  {
+    "id": "node/4418028874",
+    "osm": {
+      "type": "node",
+      "id": 4418028874
+    },
+    "wikidata": "Q63244100",
+    "name": "Putzubeltz ur-jauzia",
+    "lat": 43.1717342,
+    "lon": -1.744182,
+    "category": "loisirs",
+    "subcategory": "Attractions",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Putzubeltz_urjauzia1.jpg?width=800",
+    "wikipediaLangs": 2,
+    "score": 0.21714285714285717
+  },
+  {
+    "id": "way/248121183",
+    "osm": {
+      "type": "way",
+      "id": 248121183
+    },
+    "wikidata": "Q12260218",
+    "name": "Donamariako Jauregia doretxea",
+    "lat": 43.1122552,
+    "lon": -1.6750966,
+    "category": "loisirs",
+    "subcategory": "Attractions",
+    "description": "tower house and cultural property in Donamaria, Navarre",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Jauregia_Donamaria.JPG?width=800",
+    "wikipediaLangs": 2,
+    "score": 0.21714285714285717
+  },
+  {
+    "id": "node/948495205",
+    "osm": {
+      "type": "node",
+      "id": 948495205
+    },
+    "wikidata": "Q12262061",
+    "name": "Legate",
+    "lat": 43.1739331,
+    "lon": -1.5674596,
+    "category": "nature",
+    "subcategory": "Points de vue & panoramas",
+    "description": "montagne des Pyrénées espagnoles",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Bertiz_Legatetik.jpeg?width=800",
+    "wikipediaLangs": 1,
+    "score": 0.21599999999999997
+  },
+  {
+    "id": "node/948496190",
+    "osm": {
+      "type": "node",
+      "id": 948496190
+    },
+    "wikidata": "Q66738452",
+    "name": "Aizkolegi",
+    "lat": 43.1907546,
+    "lon": -1.589737,
+    "category": "nature",
+    "subcategory": "Points de vue & panoramas",
+    "description": "montagne des Pyrénées espagnoles",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Aizkolegi_mendiko_gailurra_01.jpg?width=800",
+    "wikipediaLangs": 1,
+    "score": 0.21599999999999997
+  },
+  {
+    "id": "node/2180411805",
+    "osm": {
+      "type": "node",
+      "id": 2180411805
+    },
+    "wikidata": "Q110589757",
+    "name": "Galbario /Mont Du Calvaire",
+    "lat": 43.3377646,
+    "lon": -1.7185126,
+    "category": "nature",
+    "subcategory": "Points de vue & panoramas",
+    "description": "montagne des Pyrénées françaises",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Kalbariomendi_(Urru%C3%B1a).jpg?width=800",
+    "wikipediaLangs": 1,
+    "score": 0.21599999999999997
+  },
+  {
+    "id": "way/156866423",
+    "osm": {
+      "type": "way",
+      "id": 156866423
+    },
+    "wikidata": "Q49320843",
+    "name": "Grande Plage",
+    "lat": 43.4853231,
+    "lon": -1.5591981,
+    "category": "nature",
+    "subcategory": "Plages & littoral",
+    "description": "plage de Biarritz (Pyrénées-Atlantiques, France)",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Grande_Plage_de_Biarritz.jpg?width=800",
+    "wikipediaLangs": 1,
+    "score": 0.21599999999999997
+  },
+  {
+    "id": "way/158922435",
+    "osm": {
+      "type": "way",
+      "id": 158922435
+    },
+    "wikidata": "Q25475899",
+    "name": "Amaiurko errota",
+    "lat": 43.1999016,
+    "lon": -1.4812408,
+    "category": "loisirs",
+    "subcategory": "Attractions",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Amaiurko_errota.jpg?width=800",
+    "wikipediaLangs": 1,
+    "score": 0.20857142857142857,
+    "tags": {
+      "website": "https://www.amaiurkoerrota.com/"
+    }
+  },
+  {
+    "id": "node/8977069470",
+    "osm": {
+      "type": "node",
+      "id": 8977069470
+    },
+    "wikidata": "Q102257148",
+    "name": "Amaiur arkeologia-zentroa",
+    "lat": 43.20211,
+    "lon": -1.478573,
+    "category": "musees",
+    "subcategory": "Histoire & civilisations",
+    "description": "Archeological museum in Amaiur, Navarre",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Amaiur_-_Arkeologia_Zentroa_(Nafarroa)_2.jpg?width=800",
+    "wikipediaLangs": 0,
+    "score": 0.20142857142857143,
+    "tags": {
+      "cost": "paid",
+      "openingHours": "Tu-Su 11:00-14:00,16:30-19:30",
+      "website": "https://www.amaiur.eus/informazio-osagarria/"
+    }
+  },
+  {
+    "id": "node/10099386210",
+    "osm": {
+      "type": "node",
+      "id": 10099386210
+    },
+    "wikidata": "Q18631869",
+    "name": "ТРИЗУБ",
+    "lat": 43.4977546,
+    "lon": -1.4903064,
+    "category": "musees",
+    "subcategory": "Street art & art urbain",
+    "description": "artiste américaine",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/2021-10-09_BLT_Maya_Hayuk-7786_-_51906649353.jpg?width=800",
+    "wikipediaLangs": 1,
+    "score": 0.20142857142857143
+  },
+  {
+    "id": "node/910540213",
+    "osm": {
+      "type": "node",
+      "id": 910540213
+    },
+    "wikidata": "Q12265034",
+    "name": "Oilarandoi",
+    "lat": 43.1531047,
+    "lon": -1.3344137,
+    "category": "nature",
+    "subcategory": "Points de vue & panoramas",
+    "description": "montagne des Pyrénées espagnoles",
+    "wikipediaLangs": 2,
+    "score": 0.192
+  },
+  {
+    "id": "node/3790838307",
+    "osm": {
+      "type": "node",
+      "id": 3790838307
+    },
+    "wikidata": "Q46285447",
+    "name": "Arainburu",
+    "lat": 43.160428,
+    "lon": -1.770704,
+    "category": "nature",
+    "subcategory": "Points de vue & panoramas",
+    "description": "mountain in the Pyrenees, Spain",
+    "wikipediaLangs": 2,
+    "score": 0.192
+  },
+  {
+    "id": "way/489848096",
+    "osm": {
+      "type": "way",
+      "id": 489848096
+    },
+    "wikidata": "Q12267060",
+    "name": "Parc-Musée Santxotena",
+    "lat": 43.1816032,
+    "lon": -1.4724731,
+    "category": "musees",
+    "subcategory": "Musée",
+    "wikipediaLangs": 2,
+    "score": 0.18857142857142858,
+    "tags": {
+      "website": "https://santxotena.org/"
+    }
+  },
+  {
+    "id": "node/4359995290",
+    "osm": {
+      "type": "node",
+      "id": 4359995290
+    },
+    "wikidata": "Q109584255",
+    "name": "Legarrea",
+    "lat": 43.1157565,
+    "lon": -1.6389935,
+    "category": "nature",
+    "subcategory": "Grottes & formations rocheuses",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Legarreako_leizea.jpg?width=800",
+    "wikipediaLangs": 1,
+    "score": 0.18714285714285717
+  },
+  {
+    "id": "way/948413774",
+    "osm": {
+      "type": "way",
+      "id": 948413774
+    },
+    "wikidata": "Q16516350",
+    "name": "Pas de Roland",
+    "lat": 43.314143,
+    "lon": -1.4003937,
+    "category": "nature",
+    "subcategory": "Grottes & formations rocheuses",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Itxassou_Pas_de_Roland.jpg?width=800",
+    "wikipediaLangs": 1,
+    "score": 0.18714285714285717
+  },
+  {
+    "id": "node/9890859698",
+    "osm": {
+      "type": "node",
+      "id": 9890859698
+    },
+    "wikidata": "Q98519948",
+    "name": "Infernuko errota",
+    "lat": 43.2079919,
+    "lon": -1.5712723,
+    "category": "loisirs",
+    "subcategory": "Attractions",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Infernuko_errota_(2).jpg?width=800",
+    "wikipediaLangs": 1,
+    "score": 0.18714285714285717
+  },
+  {
+    "id": "way/234086722",
+    "osm": {
+      "type": "way",
+      "id": 234086722
+    },
+    "wikidata": "Q98519948",
+    "name": "Infernuko errota",
+    "lat": 43.2079739,
+    "lon": -1.571401,
+    "category": "loisirs",
+    "subcategory": "Attractions",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Infernuko_errota_(2).jpg?width=800",
+    "wikipediaLangs": 1,
+    "score": 0.18714285714285717
+  },
+  {
+    "id": "node/565353522",
+    "osm": {
+      "type": "node",
+      "id": 565353522
+    },
+    "wikidata": "Q109330794",
+    "name": "Aita Donostiari oroitarria",
+    "lat": 43.2608696,
+    "lon": -1.7611144,
+    "category": "musees",
+    "subcategory": "Street art & art urbain",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Aita_Donostiaren_oroitarria_02.jpg?width=800",
+    "wikipediaLangs": 1,
+    "score": 0.18714285714285717
+  },
+  {
+    "id": "node/893324688",
+    "osm": {
+      "type": "node",
+      "id": 893324688
+    },
+    "wikidata": "Q129567633",
+    "name": "Arhantzeta",
+    "lat": 43.2137652,
+    "lon": -1.2107846,
+    "category": "nature",
+    "subcategory": "Points de vue & panoramas",
+    "description": "sommet en France",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Arhantzeta_%40_Xiloagako_Lepoa.jpg?width=800",
+    "wikipediaLangs": 0,
+    "score": 0.18
+  },
+  {
+    "id": "node/948493739",
+    "osm": {
+      "type": "node",
+      "id": 948493739
+    },
+    "wikidata": "Q115504298",
+    "name": "Izu",
+    "lat": 43.2053425,
+    "lon": -1.7653063,
+    "category": "nature",
+    "subcategory": "Points de vue & panoramas",
+    "description": "triangulation station in Goizueta, Spain",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Izu.jpg?width=800",
+    "wikipediaLangs": 0,
+    "score": 0.18
+  },
+  {
+    "id": "node/1152813102",
+    "osm": {
+      "type": "node",
+      "id": 1152813102
+    },
+    "wikidata": "Q129566115",
+    "name": "Mendibile",
+    "lat": 43.259159,
+    "lon": -1.1532842,
+    "category": "nature",
+    "subcategory": "Points de vue & panoramas",
+    "description": "sommet en France",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mendibile_%40_Pagaburu_01.jpg?width=800",
+    "wikipediaLangs": 0,
+    "score": 0.18
+  },
+  {
+    "id": "node/11646993924",
+    "osm": {
+      "type": "node",
+      "id": 11646993924
+    },
+    "wikidata": "Q129566120",
+    "name": "Burdinziri",
+    "lat": 43.2582756,
+    "lon": -1.145145,
+    "category": "nature",
+    "subcategory": "Points de vue & panoramas",
+    "description": "sommet en France",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Burdintziri_%40_Pagaburu_03.jpg?width=800",
+    "wikipediaLangs": 0,
+    "score": 0.18
+  },
+  {
+    "id": "node/11646993929",
+    "osm": {
+      "type": "node",
+      "id": 11646993929
+    },
+    "wikidata": "Q129567242",
+    "name": "Sen-Julian",
+    "lat": 43.2146463,
+    "lon": -1.1973344,
+    "category": "nature",
+    "subcategory": "Points de vue & panoramas",
+    "description": "sommet en France",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Sen_Julian_01.jpg?width=800",
+    "wikipediaLangs": 0,
+    "score": 0.18
+  },
+  {
+    "id": "way/38692122",
+    "osm": {
+      "type": "way",
+      "id": 38692122
+    },
+    "wikidata": "Q20492832",
+    "name": "Mairie d'Irun",
+    "lat": 43.3377113,
+    "lon": -1.7888066,
+    "category": "loisirs",
+    "subcategory": "Attractions",
+    "description": "municipal building in Irun, Spain",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Irun_Ayto..JPG?width=800",
+    "wikipediaLangs": 1,
+    "score": 0.18
+  },
+  {
+    "id": "node/2239829903",
+    "osm": {
+      "type": "node",
+      "id": 2239829903
+    },
+    "wikidata": "Q33209729",
+    "name": "Plenitud y vacío: centro",
+    "lat": 43.2824295,
+    "lon": -1.8085629,
+    "category": "musees",
+    "subcategory": "Street art & art urbain",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Erabatekoa_eta_ezdeusa_Sorburua1.jpg?width=800",
+    "wikipediaLangs": 1,
+    "score": 0.18
+  },
+  {
+    "id": "way/517323073",
+    "osm": {
+      "type": "way",
+      "id": 517323073
+    },
+    "wikidata": "Q25478658",
+    "name": "Ilbarritz",
+    "lat": 43.4591974,
+    "lon": -1.5795408,
+    "category": "nature",
+    "subcategory": "Plages & littoral",
+    "wikipediaLangs": 1,
+    "score": 0.17314285714285713,
+    "tags": {
+      "wheelchair": "no"
+    }
+  },
+  {
+    "id": "node/773937244",
+    "osm": {
+      "type": "node",
+      "id": 773937244
+    },
+    "name": "Grottes d'Isturitz et d'Oxocelhaya",
+    "lat": 43.3531318,
+    "lon": -1.2060313,
+    "category": "nature",
+    "subcategory": "Grottes & formations rocheuses",
+    "wikipediaLangs": 0,
+    "score": 0.17142857142857143,
+    "tags": {
+      "cost": "paid",
+      "website": "https://www.grottes-isturitz.com/"
+    }
+  },
+  {
+    "id": "node/656564390",
+    "osm": {
+      "type": "node",
+      "id": 656564390
+    },
+    "wikidata": "Q112782298",
+    "name": "Munagirre",
+    "lat": 43.2441594,
+    "lon": -1.8226889,
+    "category": "nature",
+    "subcategory": "Points de vue & panoramas",
+    "description": "Mountain of the Basque Country",
+    "wikipediaLangs": 1,
+    "score": 0.16457142857142856
+  },
+  {
+    "id": "node/948493929",
+    "osm": {
+      "type": "node",
+      "id": 948493929
+    },
+    "wikidata": "Q112781639",
+    "name": "Azkua",
+    "lat": 43.2101564,
+    "lon": -1.6265938,
+    "category": "nature",
+    "subcategory": "Points de vue & panoramas",
+    "description": "montagne des Pyrénées espagnoles",
+    "wikipediaLangs": 1,
+    "score": 0.16457142857142856
+  },
+  {
+    "id": "node/948495676",
+    "osm": {
+      "type": "node",
+      "id": 948495676
+    },
+    "wikidata": "Q112784381",
+    "name": "Oteitzoiana",
+    "lat": 43.1498573,
+    "lon": -1.6438547,
+    "category": "nature",
+    "subcategory": "Points de vue & panoramas",
+    "description": "Mountain of the Basque Country",
+    "wikipediaLangs": 1,
+    "score": 0.16457142857142856
+  },
+  {
+    "id": "node/1176712149",
+    "osm": {
+      "type": "node",
+      "id": 1176712149
+    },
+    "wikidata": "Q112787774",
+    "name": "Larro",
+    "lat": 43.200234,
+    "lon": -1.5098222,
+    "category": "nature",
+    "subcategory": "Points de vue & panoramas",
+    "description": "montagne des Pyrénées espagnoles",
+    "wikipediaLangs": 1,
+    "score": 0.16457142857142856
+  },
+  {
+    "id": "node/1304113206",
+    "osm": {
+      "type": "node",
+      "id": 1304113206
+    },
+    "wikidata": "Q109331760",
+    "name": "Bagamendi",
+    "lat": 43.2645311,
+    "lon": -1.4025638,
+    "category": "nature",
+    "subcategory": "Points de vue & panoramas",
+    "wikipediaLangs": 1,
+    "score": 0.16457142857142856
+  },
+  {
+    "id": "node/1304113512",
+    "osm": {
+      "type": "node",
+      "id": 1304113512
+    },
+    "wikidata": "Q112785690",
+    "name": "Kopako Harria",
+    "lat": 43.2778835,
+    "lon": -1.7617095,
+    "category": "nature",
+    "subcategory": "Points de vue & panoramas",
+    "description": "Mountain of the Basque Country",
+    "wikipediaLangs": 1,
+    "score": 0.16457142857142856
+  },
+  {
+    "id": "node/1657301430",
+    "osm": {
+      "type": "node",
+      "id": 1657301430
+    },
+    "wikidata": "Q112789536",
+    "name": "Urkizta",
+    "lat": 43.1122025,
+    "lon": -1.5064974,
+    "category": "nature",
+    "subcategory": "Points de vue & panoramas",
+    "description": "montagne des Pyrénées espagnoles",
+    "wikipediaLangs": 1,
+    "score": 0.16457142857142856
+  },
+  {
+    "id": "node/2153628977",
+    "osm": {
+      "type": "node",
+      "id": 2153628977
+    },
+    "wikidata": "Q28120318",
+    "name": "Cala de los frailes",
+    "lat": 43.3909395,
+    "lon": -1.790782,
+    "category": "nature",
+    "subcategory": "Plages & littoral",
+    "description": "plage en Espagne",
+    "wikipediaLangs": 1,
+    "score": 0.16457142857142856
+  },
+  {
+    "id": "node/2836654897",
+    "osm": {
+      "type": "node",
+      "id": 2836654897
+    },
+    "wikidata": "Q112787247",
+    "name": "Zentinela",
+    "lat": 43.2421905,
+    "lon": -1.5863583,
+    "category": "nature",
+    "subcategory": "Points de vue & panoramas",
+    "description": "montagne des Pyrénées espagnoles",
+    "wikipediaLangs": 1,
+    "score": 0.16457142857142856
+  },
+  {
+    "id": "node/3888491104",
+    "osm": {
+      "type": "node",
+      "id": 3888491104
+    },
+    "wikidata": "Q112787915",
+    "name": "Olhate",
+    "lat": 43.163822,
+    "lon": -1.406694,
+    "category": "nature",
+    "subcategory": "Points de vue & panoramas",
+    "description": "Mountain of the Basque Country",
+    "wikipediaLangs": 1,
+    "score": 0.16457142857142856
+  },
+  {
+    "id": "node/3909681709",
+    "osm": {
+      "type": "node",
+      "id": 3909681709
+    },
+    "wikidata": "Q112789895",
+    "name": "Axkin",
+    "lat": 43.149622,
+    "lon": -1.680983,
+    "category": "nature",
+    "subcategory": "Points de vue & panoramas",
+    "description": "montagne des Pyrénées espagnoles",
+    "wikipediaLangs": 1,
+    "score": 0.16457142857142856
+  },
+  {
+    "id": "node/3909712922",
+    "osm": {
+      "type": "node",
+      "id": 3909712922
+    },
+    "wikidata": "Q112785219",
+    "name": "Unbotoko Kaskoa",
+    "lat": 43.179615,
+    "lon": -1.540794,
+    "category": "nature",
+    "subcategory": "Points de vue & panoramas",
+    "description": "montagne des Pyrénées espagnoles",
+    "wikipediaLangs": 1,
+    "score": 0.16457142857142856
+  },
+  {
+    "id": "node/3909714100",
+    "osm": {
+      "type": "node",
+      "id": 3909714100
+    },
+    "wikidata": "Q112787108",
+    "name": "Atxuela",
+    "lat": 43.2022006,
+    "lon": -1.5338838,
+    "category": "nature",
+    "subcategory": "Points de vue & panoramas",
+    "description": "montagne des Pyrénées espagnoles",
+    "wikipediaLangs": 1,
+    "score": 0.16457142857142856
+  },
+  {
+    "id": "node/3927527380",
+    "osm": {
+      "type": "node",
+      "id": 3927527380
+    },
+    "wikidata": "Q112789325",
+    "name": "Lexarburu",
+    "lat": 43.1130768,
+    "lon": -1.781536,
+    "category": "nature",
+    "subcategory": "Points de vue & panoramas",
+    "description": "montagne des Pyrénées espagnoles",
+    "wikipediaLangs": 1,
+    "score": 0.16457142857142856
+  },
+  {
+    "id": "node/4178223928",
+    "osm": {
+      "type": "node",
+      "id": 4178223928
+    },
+    "wikidata": "Q112782406",
+    "name": "Burga",
+    "lat": 43.135045,
+    "lon": -1.4614449,
+    "category": "nature",
+    "subcategory": "Points de vue & panoramas",
+    "description": "montagne des Pyrénées espagnoles",
+    "wikipediaLangs": 1,
+    "score": 0.16457142857142856
+  },
+  {
+    "id": "node/4600773412",
+    "osm": {
+      "type": "node",
+      "id": 4600773412
+    },
+    "wikidata": "Q112789587",
+    "name": "Meatzetako Bizkarra",
+    "lat": 43.24018,
+    "lon": -1.4702699,
+    "category": "nature",
+    "subcategory": "Points de vue & panoramas",
+    "description": "montagne des Pyrénées espagnoles",
+    "wikipediaLangs": 1,
+    "score": 0.16457142857142856
+  },
+  {
+    "id": "node/4644559948",
+    "osm": {
+      "type": "node",
+      "id": 4644559948
+    },
+    "wikidata": "Q12253192",
+    "name": "Alkaxuri",
+    "lat": 43.2393102,
+    "lon": -1.4099198,
+    "category": "nature",
+    "subcategory": "Points de vue & panoramas",
+    "description": "montagne des Pyrénées espagnoles",
+    "wikipediaLangs": 1,
+    "score": 0.16457142857142856
+  },
+  {
+    "id": "node/4886215324",
+    "osm": {
+      "type": "node",
+      "id": 4886215324
+    },
+    "wikidata": "Q112787836",
+    "name": "Azkar",
+    "lat": 43.2626552,
+    "lon": -1.5127377,
+    "category": "nature",
+    "subcategory": "Points de vue & panoramas",
+    "description": "montagne des Pyrénées espagnoles",
+    "wikipediaLangs": 1,
+    "score": 0.16457142857142856
+  },
+  {
+    "id": "node/6375865940",
+    "osm": {
+      "type": "node",
+      "id": 6375865940
+    },
+    "wikidata": "Q112787355",
+    "name": "Otolo",
+    "lat": 43.1034295,
+    "lon": -1.6381532,
+    "category": "nature",
+    "subcategory": "Points de vue & panoramas",
+    "description": "montagne des Pyrénées espagnoles",
+    "wikipediaLangs": 1,
+    "score": 0.16457142857142856
+  },
+  {
+    "id": "node/6766168809",
+    "osm": {
+      "type": "node",
+      "id": 6766168809
+    },
+    "wikidata": "Q112783947",
+    "name": "Lizartzu",
+    "lat": 43.2592207,
+    "lon": -1.4542372,
+    "category": "nature",
+    "subcategory": "Points de vue & panoramas",
+    "description": "montagne des Pyrénées espagnoles",
+    "wikipediaLangs": 1,
+    "score": 0.16457142857142856
+  },
+  {
+    "id": "node/10155007333",
+    "osm": {
+      "type": "node",
+      "id": 10155007333
+    },
+    "wikidata": "Q93445901",
+    "name": "Musée du Sel et des Traditions Béarnaises",
+    "lat": 43.4728742,
+    "lon": -0.9331692,
+    "category": "musees",
+    "subcategory": "Musée",
+    "description": "musée à Salies-de-Béarn",
+    "wikipediaLangs": 0,
+    "score": 0.15857142857142859,
+    "tags": {
+      "wheelchair": "yes",
+      "openingHours": "Mo-Sa 13:30-19:00",
+      "website": "https://www.museedusel64.fr"
+    }
+  },
+  {
+    "id": "node/436231355",
+    "osm": {
+      "type": "node",
+      "id": 436231355
+    },
+    "wikidata": "Q12254157",
+    "name": "Arrolako Harria",
+    "lat": 43.1209632,
+    "lon": -1.3324512,
+    "category": "nature",
+    "subcategory": "Points de vue & panoramas",
+    "description": "montagne des Pyrénées espagnoles",
+    "wikipediaLangs": 1,
+    "score": 0.156
+  },
+  {
+    "id": "node/948492932",
+    "osm": {
+      "type": "node",
+      "id": 948492932
+    },
+    "wikidata": "Q12256603",
+    "name": "Ekaitza",
+    "lat": 43.1560376,
+    "lon": -1.753824,
+    "category": "nature",
+    "subcategory": "Points de vue & panoramas",
+    "description": "montagne des Pyrénées espagnoles",
+    "wikipediaLangs": 1,
+    "score": 0.156
+  },
+  {
+    "id": "node/1159000349",
+    "osm": {
+      "type": "node",
+      "id": 1159000349
+    },
+    "wikidata": "Q12263414",
+    "name": "Mendimotza",
+    "lat": 43.1078224,
+    "lon": -1.332359,
+    "category": "nature",
+    "subcategory": "Points de vue & panoramas",
+    "description": "montagne des Pyrénées espagnoles",
+    "wikipediaLangs": 1,
+    "score": 0.156
+  },
+  {
+    "id": "node/1159300994",
+    "osm": {
+      "type": "node",
+      "id": 1159300994
+    },
+    "wikidata": "Q12268631",
+    "name": "Urdiako Harria",
+    "lat": 43.1291852,
+    "lon": -1.3308365,
+    "category": "nature",
+    "subcategory": "Points de vue & panoramas",
+    "description": "montagne des Pyrénées espagnoles",
+    "wikipediaLangs": 1,
+    "score": 0.156
+  },
+  {
+    "id": "node/1164321344",
+    "osm": {
+      "type": "node",
+      "id": 1164321344
+    },
+    "wikidata": "Q12262557",
+    "name": "Loitzate",
+    "lat": 43.1565265,
+    "lon": -1.7834411,
+    "category": "nature",
+    "subcategory": "Points de vue & panoramas",
+    "description": "montagne des Pyrénées espagnoles",
+    "wikipediaLangs": 1,
+    "score": 0.156
+  },
+  {
+    "id": "node/1191574408",
+    "osm": {
+      "type": "node",
+      "id": 1191574408
+    },
+    "wikidata": "Q66750212",
+    "name": "Beltzuntza",
+    "lat": 43.184913,
+    "lon": -1.7791824,
+    "category": "nature",
+    "subcategory": "Points de vue & panoramas",
+    "description": "montagne des Pyrénées espagnoles",
+    "wikipediaLangs": 1,
+    "score": 0.156
+  },
+  {
+    "id": "node/1367674495",
+    "osm": {
+      "type": "node",
+      "id": 1367674495
+    },
+    "wikidata": "Q24021178",
+    "name": "Zaria",
+    "lat": 43.2442677,
+    "lon": -1.84918,
+    "category": "nature",
+    "subcategory": "Points de vue & panoramas",
+    "description": "mountain in Spain",
+    "wikipediaLangs": 1,
+    "score": 0.156
+  },
+  {
+    "id": "node/2601403876",
+    "osm": {
+      "type": "node",
+      "id": 2601403876
+    },
+    "wikidata": "Q12257122",
+    "name": "Errenga",
+    "lat": 43.2563684,
+    "lon": -1.7929885,
+    "category": "nature",
+    "subcategory": "Points de vue & panoramas",
+    "description": "montagne des Pyrénées espagnoles",
+    "wikipediaLangs": 1,
+    "score": 0.156
+  },
+  {
+    "id": "node/3909677798",
+    "osm": {
+      "type": "node",
+      "id": 3909677798
+    },
+    "wikidata": "Q56643846",
+    "name": "Auzkue",
+    "lat": 43.137313,
+    "lon": -1.585426,
+    "category": "nature",
+    "subcategory": "Points de vue & panoramas",
+    "description": "montagne des Pyrénées espagnoles",
+    "wikipediaLangs": 1,
+    "score": 0.156
+  },
+  {
+    "id": "node/3909714247",
+    "osm": {
+      "type": "node",
+      "id": 3909714247
+    },
+    "wikidata": "Q56754237",
+    "name": "Arburu",
+    "lat": 43.1977892,
+    "lon": -1.5258978,
+    "category": "nature",
+    "subcategory": "Points de vue & panoramas",
+    "description": "montagne des Pyrénées espagnoles",
+    "wikipediaLangs": 1,
+    "score": 0.156
+  },
+  {
+    "id": "node/4207517016",
+    "osm": {
+      "type": "node",
+      "id": 4207517016
+    },
+    "wikidata": "Q56643823",
+    "name": "Ezkorlako Kaskoa",
+    "lat": 43.1088821,
+    "lon": -1.5598915,
+    "category": "nature",
+    "subcategory": "Points de vue & panoramas",
+    "description": "montagne des Pyrénées espagnoles",
+    "wikipediaLangs": 1,
+    "score": 0.156
+  },
+  {
+    "id": "node/4254105464",
+    "osm": {
+      "type": "node",
+      "id": 4254105464
+    },
+    "wikidata": "Q12258144",
+    "name": "Galtzarrieta",
+    "lat": 43.2441493,
+    "lon": -1.7868608,
+    "category": "nature",
+    "subcategory": "Points de vue & panoramas",
+    "description": "montagne des Pyrénées espagnoles",
+    "wikipediaLangs": 1,
+    "score": 0.156
+  },
+  {
+    "id": "node/2626987628",
+    "osm": {
+      "type": "node",
+      "id": 2626987628
+    },
+    "name": "San Juan Arri",
+    "lat": 43.3382657,
+    "lon": -1.7887482,
+    "category": "musees",
+    "subcategory": "Street art & art urbain",
+    "wikipediaLangs": 0,
+    "score": 0.15
+  },
+  {
+    "id": "way/244075200",
+    "osm": {
+      "type": "way",
+      "id": 244075200
+    },
+    "wikidata": "Q32707175",
+    "name": "Moulin de Zubieta",
+    "lat": 43.1261362,
+    "lon": -1.7397096,
+    "category": "musees",
+    "subcategory": "Musée",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Zubietako_errota_3.jpg?width=800",
+    "wikipediaLangs": 0,
+    "score": 0.15
+  },
+  {
+    "id": "node/5675668331",
+    "osm": {
+      "type": "node",
+      "id": 5675668331
+    },
+    "wikidata": "Q120219736",
+    "name": "Centre équestre - poney club",
+    "lat": 43.3302979,
+    "lon": -1.0281447,
+    "category": "sport",
+    "subcategory": "Sports équestres",
+    "wikipediaLangs": 0,
+    "score": 0.11428571428571428,
+    "tags": {
+      "website": "https://cestpalais.jimdo.com/"
+    }
+  },
+  {
+    "id": "node/7750328649",
+    "osm": {
+      "type": "node",
+      "id": 7750328649
+    },
+    "wikidata": "Q120220726",
+    "name": "Les Écuries de Soule",
+    "lat": 43.1730366,
+    "lon": -0.9150375,
+    "category": "sport",
+    "subcategory": "Sports équestres",
+    "wikipediaLangs": 0,
+    "score": 0.11428571428571428,
+    "tags": {
+      "website": "https://soule-equitation.equia.fr/"
+    }
+  },
+  {
+    "id": "way/464130366",
+    "osm": {
+      "type": "way",
+      "id": 464130366
+    },
+    "wikidata": "Q138966043",
+    "name": "Place Manuel Castiella",
+    "lat": 43.4962263,
+    "lon": -1.4878356,
+    "category": "loisirs",
+    "subcategory": "Parcs & jardins",
+    "description": "place de Bayonne, France",
+    "wikipediaLangs": 0,
+    "score": 0.1
+  },
+  {
+    "id": "node/4271475951",
+    "osm": {
+      "type": "node",
+      "id": 4271475951
+    },
+    "wikidata": "Q57830499",
+    "name": "Jeanne d'Arc",
+    "lat": 43.4919491,
+    "lon": -1.4708434,
+    "category": "musees",
+    "subcategory": "Street art & art urbain",
+    "description": "statue de Maxime Real del Sarte située à Bayonne",
+    "wikipediaLangs": 0,
+    "score": 0.1
+  },
+  {
+    "id": "node/7222771440",
+    "osm": {
+      "type": "node",
+      "id": 7222771440
+    },
+    "wikidata": "Q97932909",
+    "name": "Getari Enea",
+    "lat": 43.4201295,
+    "lon": -1.6060401,
+    "category": "vie-nocturne",
+    "subcategory": "Cinémas",
+    "description": "cinéma à Guéthary, France",
+    "wikipediaLangs": 0,
+    "score": 0.08,
+    "tags": {
+      "website": "https://getarienea.com"
+    }
+  },
+  {
+    "id": "way/72694578",
+    "osm": {
+      "type": "way",
+      "id": 72694578
+    },
+    "name": "DIDAM",
+    "lat": 43.4959278,
+    "lon": -1.4718951,
+    "category": "musees",
+    "subcategory": "Beaux-arts & art classique",
+    "wikipediaLangs": 0,
+    "score": 0.07885714285714285,
+    "tags": {
+      "cost": "free",
+      "openingHours": "Oct-Jun Tu-Su 13:00-18:30; Jul-Sep 14:00-19:30",
+      "website": "https://didam.bayonne.fr/"
+    }
+  },
+  {
+    "id": "node/5691621649",
+    "osm": {
+      "type": "node",
+      "id": 5691621649
+    },
+    "name": "Darthayette",
+    "lat": 43.5217249,
+    "lon": -1.4311773,
+    "category": "gastronomie",
+    "subcategory": "Producteurs & fermes",
+    "wikipediaLangs": 0,
+    "score": 0.06571428571428571,
+    "tags": {
+      "openingHours": "Tu 09:00-12:00,14:00-18:30; We 09:00-12:00,14:00-18:30; Fr 09:00-12:00,14:00-18:30; Sa 09:00-12:00",
+      "website": "https://www.bienvenue-a-la-ferme.com/nouvelle-aquitaine/landes/tarnos/ferme/dartayette-jean-leon/560651"
+    }
+  },
+  {
+    "id": "node/7354564251",
+    "osm": {
+      "type": "node",
+      "id": 7354564251
+    },
+    "name": "Ferme de Moun",
+    "lat": 43.5209122,
+    "lon": -1.4321721,
+    "category": "gastronomie",
+    "subcategory": "Producteurs & fermes",
+    "wikipediaLangs": 0,
+    "score": 0.06571428571428571,
+    "tags": {
+      "openingHours": "Tu,Th 14:00-19:00",
+      "website": "http://peyolemaraicher.blogspot.com"
+    }
+  },
+  {
+    "id": "way/157229978",
+    "osm": {
+      "type": "way",
+      "id": 157229978
+    },
+    "name": "Villa Beatrix Enea Centre d'art contemporain",
+    "lat": 43.482245,
+    "lon": -1.513414,
+    "category": "musees",
+    "subcategory": "Art contemporain & galeries",
+    "wikipediaLangs": 0,
+    "score": 0.06571428571428571,
+    "tags": {
+      "cost": "free",
+      "wheelchair": "yes",
+      "openingHours": "Tu-Sa 10:00-13:00, 14:00-18:00",
+      "website": "https://www.anglet.fr/fiches-pratiques/detail-fiche/actualites/la-villa-beatrix-enea-de-sa-construction-a-nos-jours/"
+    }
+  },
+  {
+    "id": "node/8738489004",
+    "osm": {
+      "type": "node",
+      "id": 8738489004
+    },
+    "name": "Saveurs des saisons",
+    "lat": 43.5449915,
+    "lon": -1.1035546,
+    "category": "gastronomie",
+    "subcategory": "Producteurs & fermes",
+    "wikipediaLangs": 0,
+    "score": 0.0642857142857143
+  },
+  {
+    "id": "node/4933380150",
+    "osm": {
+      "type": "node",
+      "id": 4933380150
+    },
+    "name": "Hemengo",
+    "lat": 43.3991971,
+    "lon": -1.4558978,
+    "category": "gastronomie",
+    "subcategory": "Producteurs & fermes",
+    "wikipediaLangs": 0,
+    "score": 0.058571428571428566,
+    "tags": {
+      "openingHours": "Tu-Fr 09:00-13:00,15:30-19:00; Sa 09:00-13:00,15:30-19:00",
+      "website": "https://produit-fermier-hemengo.com/"
+    }
+  },
+  {
+    "id": "node/5773901568",
+    "osm": {
+      "type": "node",
+      "id": 5773901568
+    },
+    "name": "Lait Gourmand",
+    "lat": 43.5497601,
+    "lon": -1.1497229,
+    "category": "gastronomie",
+    "subcategory": "Producteurs & fermes",
+    "wikipediaLangs": 0,
+    "score": 0.058571428571428566,
+    "tags": {
+      "openingHours": "We 09:00-12:30; Fr 16:00-19:30",
+      "website": "https://www.laitgourmand.fr/"
+    }
+  },
+  {
+    "id": "node/6473169816",
+    "osm": {
+      "type": "node",
+      "id": 6473169816
+    },
+    "name": "Gaec Laporte \"Passion fruits rouges\"",
+    "lat": 43.5154641,
+    "lon": -1.4595742,
+    "category": "gastronomie",
+    "subcategory": "Producteurs & fermes",
+    "wikipediaLangs": 0,
+    "score": 0.058571428571428566,
+    "tags": {
+      "openingHours": "Apr 02-Sep 10: Tu,Fr 15:30-19:00",
+      "website": "http://gaec-laporte.fr/index.php"
+    }
+  },
+  {
+    "id": "node/7393458164",
+    "osm": {
+      "type": "node",
+      "id": 7393458164
+    },
+    "name": "Marché de Saint-Martin-de-Seignanx",
+    "lat": 43.541491,
+    "lon": -1.3868864,
+    "category": "gastronomie",
+    "subcategory": "Marchés & halles",
+    "wikipediaLangs": 0,
+    "score": 0.058571428571428566,
+    "tags": {
+      "wheelchair": "yes",
+      "openingHours": "Sa 08:00-13:00"
+    }
+  },
+  {
+    "id": "node/7393458165",
+    "osm": {
+      "type": "node",
+      "id": 7393458165
+    },
+    "name": "Marché de Tarnos",
+    "lat": 43.5408795,
+    "lon": -1.4611174,
+    "category": "gastronomie",
+    "subcategory": "Marchés & halles",
+    "wikipediaLangs": 0,
+    "score": 0.058571428571428566,
+    "tags": {
+      "wheelchair": "yes",
+      "openingHours": "Tu 08:00-13:00"
+    }
+  },
+  {
+    "id": "node/7562317170",
+    "osm": {
+      "type": "node",
+      "id": 7562317170
+    },
+    "name": "La cave le sang des vignes",
+    "lat": 43.4485791,
+    "lon": -1.5710474,
+    "category": "gastronomie",
+    "subcategory": "Caves & dégustation de vins",
+    "wikipediaLangs": 0,
+    "score": 0.058571428571428566,
+    "tags": {
+      "openingHours": "Tu-Sa 09:30-13:00 , 15:00-19:30",
+      "website": "https://www.lacave-bidart.fr/"
+    }
+  },
+  {
+    "id": "node/8006989578",
+    "osm": {
+      "type": "node",
+      "id": 8006989578
+    },
+    "name": "L'Atelier du piment",
+    "lat": 43.345852,
+    "lon": -1.440689,
+    "category": "gastronomie",
+    "subcategory": "Producteurs & fermes",
+    "wikipediaLangs": 0,
+    "score": 0.058571428571428566,
+    "tags": {
+      "wheelchair": "yes",
+      "openingHours": "Mo-Su 09:00-19:00",
+      "website": "http://www.atelierdupiment.com/"
+    }
+  },
+  {
+    "id": "node/8010064208",
+    "osm": {
+      "type": "node",
+      "id": 8010064208
+    },
+    "name": "Gohetxea",
+    "lat": 43.1349826,
+    "lon": -0.8752113,
+    "category": "gastronomie",
+    "subcategory": "Producteurs & fermes",
+    "wikipediaLangs": 0,
+    "score": 0.058571428571428566,
+    "tags": {
+      "openingHours": "Sa 9:00- 12:30",
+      "website": "https://www.producteurs-fermiers-pays-basque.fr/fr/ou-trouver-nos-produits/les-points-de-vente-collectifs-des-producteurs-fermiers/gohetxea/"
+    }
+  },
+  {
+    "id": "node/8237162326",
+    "osm": {
+      "type": "node",
+      "id": 8237162326
+    },
+    "name": "Xixtroak",
+    "lat": 43.4943509,
+    "lon": -1.4781915,
+    "category": "gastronomie",
+    "subcategory": "Producteurs & fermes",
+    "wikipediaLangs": 0,
+    "score": 0.058571428571428566,
+    "tags": {
+      "openingHours": "We 17:00-19:00",
+      "website": "https://xixtroak.com/"
+    }
+  },
+  {
+    "id": "node/9166935185",
+    "osm": {
+      "type": "node",
+      "id": 9166935185
+    },
+    "name": "Distillerie Brana Showroom",
+    "lat": 43.2326017,
+    "lon": -1.2982269,
+    "category": "gastronomie",
+    "subcategory": "Spécialités régionales",
+    "wikipediaLangs": 0,
+    "score": 0.058571428571428566,
+    "tags": {
+      "openingHours": "Mo-Sa 10:00-13:00,14:30-18:30",
+      "website": "https://www.brana.fr/"
+    }
+  },
+  {
+    "id": "node/10233066578",
+    "osm": {
+      "type": "node",
+      "id": 10233066578
+    },
+    "name": "Ferme solidaire Lacoste",
+    "lat": 43.5322641,
+    "lon": -1.4574179,
+    "category": "gastronomie",
+    "subcategory": "Producteurs & fermes",
+    "wikipediaLangs": 0,
+    "score": 0.058571428571428566,
+    "tags": {
+      "wheelchair": "yes",
+      "openingHours": "Th 12:00-18:00"
+    }
+  },
+  {
+    "id": "node/11044055268",
+    "osm": {
+      "type": "node",
+      "id": 11044055268
+    },
+    "name": "Ferme des Laminak",
+    "lat": 43.5454586,
+    "lon": -1.3347627,
+    "category": "gastronomie",
+    "subcategory": "Producteurs & fermes",
+    "wikipediaLangs": 0,
+    "score": 0.058571428571428566,
+    "tags": {
+      "openingHours": "We 16:00-19:00",
+      "website": "https://www.facebook.com/lafermedeslaminak"
+    }
+  },
+  {
+    "id": "node/11233615758",
+    "osm": {
+      "type": "node",
+      "id": 11233615758
+    },
+    "name": "La Prairie d'Artemis",
+    "lat": 43.5185414,
+    "lon": -1.4072564,
+    "category": "gastronomie",
+    "subcategory": "Producteurs & fermes",
+    "wikipediaLangs": 0,
+    "score": 0.058571428571428566,
+    "tags": {
+      "openingHours": "Mo-Fr 09:00-17:00"
+    }
+  },
+  {
+    "id": "node/7780458125",
+    "osm": {
+      "type": "node",
+      "id": 7780458125
+    },
+    "name": "Espace sur la mythologie basque Herauskorritxe",
+    "lat": 43.1165868,
+    "lon": -0.862623,
+    "category": "loisirs",
+    "subcategory": "Attractions",
+    "wikipediaLangs": 0,
+    "score": 0.058571428571428566,
+    "tags": {
+      "cost": "free",
+      "wheelchair": "yes",
+      "openingHours": "Mo-Fr 09:00-12:30,14:00-19:00; Sa 09:30-12:30,14:00-18:00; Su 10:00-13:00",
+      "website": "http://www.soule-paysbasque.com/A-voir-a-faire/Patrimoine-et-artisanat/Patrimoine-culturel/espace-sur-la-mythologie-basque-herauskorritxe/872"
+    }
+  },
+  {
+    "id": "node/7016796322",
+    "osm": {
+      "type": "node",
+      "id": 7016796322
+    },
+    "name": "Maison du Patrimoine",
+    "lat": 43.3064731,
+    "lon": -1.4984605,
+    "category": "musees",
+    "subcategory": "Musée",
+    "wikipediaLangs": 0,
+    "score": 0.058571428571428566,
+    "tags": {
+      "cost": "paid",
+      "wheelchair": "yes",
+      "openingHours": "Mo-Fr 09:00-11:30,14:00-16:30",
+      "website": "https://www.terreetcotebasques.com/fr/votre-sejour/patrimoine-et-culture/maison-du-patrimoine-ainhoa/"
+    }
+  },
+  {
+    "id": "node/8775779590",
+    "osm": {
+      "type": "node",
+      "id": 8775779590
+    },
+    "name": "Centre d'interprétation de l'AOP Ossau Iraty",
+    "lat": 43.3407246,
+    "lon": -1.4487448,
+    "category": "musees",
+    "subcategory": "Musée",
+    "wikipediaLangs": 0,
+    "score": 0.058571428571428566,
+    "tags": {
+      "cost": "free",
+      "openingHours": "Jul-Oct: Tu-Fr 10:00-13:00,14:00-18:00",
+      "website": "https://www.ossau-iraty.fr/"
+    }
+  },
+  {
+    "id": "way/79561880",
+    "osm": {
+      "type": "way",
+      "id": 79561880
+    },
+    "name": "Centre d'évoquation du village Ateka",
+    "lat": 43.3325108,
+    "lon": -1.4118804,
+    "category": "musees",
+    "subcategory": "Musée",
+    "wikipediaLangs": 0,
+    "score": 0.058571428571428566,
+    "tags": {
+      "cost": "free",
+      "openingHours": "Feb-Dec: 07:30-13:00,15:30-19:30; Feb-Dec: We off",
+      "website": "https://www.espelette.fr/A-VOIR-A-FAIRE2/Visites-culturelles/centre-evocation-du-village-ateka/1593"
+    }
+  },
+  {
+    "id": "way/674713605",
+    "osm": {
+      "type": "way",
+      "id": 674713605
+    },
+    "name": "Olhaberri Centre D'interprétation du Patrimoine Minier et Métallurgique",
+    "lat": 43.126244,
+    "lon": -1.3744811,
+    "category": "musees",
+    "subcategory": "Musée",
+    "wikipediaLangs": 0,
+    "score": 0.058571428571428566,
+    "tags": {
+      "cost": "free",
+      "wheelchair": "yes",
+      "openingHours": "Mo-We 09:00-18:00; Fr,Sa 09:00-19:00; Su 09:00-13:00",
+      "website": "https://olhaberri.fr/"
+    }
+  },
+  {
+    "id": "node/4947440828",
+    "osm": {
+      "type": "node",
+      "id": 4947440828
+    },
+    "name": "La Maison du Piment",
+    "lat": 43.3925722,
+    "lon": -1.4518419,
+    "category": "gastronomie",
+    "subcategory": "Producteurs & fermes",
+    "wikipediaLangs": 0,
+    "score": 0.05142857142857142,
+    "tags": {
+      "openingHours": "Mo-Fr 09:00-12:00,14:00-17:30",
+      "website": "https://www.lamaisondupiment.com/"
+    }
+  },
+  {
+    "id": "node/6698467766",
+    "osm": {
+      "type": "node",
+      "id": 6698467766
+    },
+    "name": "Cave Larquier",
+    "lat": 43.4706202,
+    "lon": -0.9252324,
+    "category": "gastronomie",
+    "subcategory": "Caves & dégustation de vins",
+    "wikipediaLangs": 0,
+    "score": 0.05142857142857142,
+    "tags": {
+      "openingHours": "Tu-Sa 09:30-12:00,15:00-18:30",
+      "website": "https://e-mercat.com/boutique/cave-larquier/"
+    }
+  },
+  {
+    "id": "node/8127139183",
+    "osm": {
+      "type": "node",
+      "id": 8127139183
+    },
+    "name": "Marché de Peyrehorade",
+    "lat": 43.5452672,
+    "lon": -1.102971,
+    "category": "gastronomie",
+    "subcategory": "Marchés & halles",
+    "wikipediaLangs": 0,
+    "score": 0.05142857142857142,
+    "tags": {
+      "openingHours": "We 07:00-13:00"
+    }
+  },
+  {
+    "id": "node/8411323597",
+    "osm": {
+      "type": "node",
+      "id": 8411323597
+    },
+    "name": "Cave le Vin au Vert",
+    "lat": 43.5438548,
+    "lon": -1.1040403,
+    "category": "gastronomie",
+    "subcategory": "Caves & dégustation de vins",
+    "wikipediaLangs": 0,
+    "score": 0.05142857142857142,
+    "tags": {
+      "openingHours": "Mo-Sa 09:30-12:30,15:00-19:00"
+    }
+  },
+  {
+    "id": "node/8693171024",
+    "osm": {
+      "type": "node",
+      "id": 8693171024
+    },
+    "name": "Les délices de la fermière",
+    "lat": 43.340826,
+    "lon": -1.4492189,
+    "category": "gastronomie",
+    "subcategory": "Producteurs & fermes",
+    "wikipediaLangs": 0,
+    "score": 0.05142857142857142,
+    "tags": {
+      "openingHours": "Mo-Sa 10:00-18:30",
+      "website": "https://www.delicesdelafermiere.fr/"
+    }
+  },
+  {
+    "id": "node/10965559526",
+    "osm": {
+      "type": "node",
+      "id": 10965559526
+    },
+    "name": "Ferme Baudonne",
+    "lat": 43.5205185,
+    "lon": -1.4188256,
+    "category": "gastronomie",
+    "subcategory": "Producteurs & fermes",
+    "wikipediaLangs": 0,
+    "score": 0.05142857142857142,
+    "tags": {
+      "openingHours": "Th 16:00-18:00",
+      "website": "https://www.fermeemmausbaudonne.fr/"
+    }
+  },
+  {
+    "id": "node/11410599409",
+    "osm": {
+      "type": "node",
+      "id": 11410599409
+    },
+    "name": "Arnabar",
+    "lat": 43.387285,
+    "lon": -1.6613777,
+    "category": "gastronomie",
+    "subcategory": "Producteurs & fermes",
+    "wikipediaLangs": 0,
+    "score": 0.05142857142857142,
+    "tags": {
+      "wheelchair": "yes",
+      "openingHours": "Mo-Sa 08:30-19:00",
+      "website": "https://arnabar-foie-gras.com/"
+    }
+  },
+  {
+    "id": "node/11491938147",
+    "osm": {
+      "type": "node",
+      "id": 11491938147
+    },
+    "name": "Coeur de Frais",
+    "lat": 43.4024209,
+    "lon": -1.6267992,
+    "category": "gastronomie",
+    "subcategory": "Producteurs & fermes",
+    "wikipediaLangs": 0,
+    "score": 0.05142857142857142,
+    "tags": {
+      "wheelchair": "yes",
+      "openingHours": "Mo-Su 08:30-19:30",
+      "website": "https://www.coeurdefrais.fr/"
+    }
+  },
+  {
+    "id": "node/11491938153",
+    "osm": {
+      "type": "node",
+      "id": 11491938153
+    },
+    "name": "Conserverie Jean de Luz - Batteleku",
+    "lat": 43.4035297,
+    "lon": -1.6278528,
+    "category": "gastronomie",
+    "subcategory": "Producteurs & fermes",
+    "wikipediaLangs": 0,
+    "score": 0.05142857142857142,
+    "tags": {
+      "wheelchair": "yes",
+      "openingHours": "Mo-Fr 08:00-16:30",
+      "website": "https://www.jeandeluz.com"
+    }
+  },
+  {
+    "id": "node/11559897412",
+    "osm": {
+      "type": "node",
+      "id": 11559897412
+    },
+    "name": "Jean de Luz",
+    "lat": 43.3887676,
+    "lon": -1.6624323,
+    "category": "gastronomie",
+    "subcategory": "Producteurs & fermes",
+    "wikipediaLangs": 0,
+    "score": 0.05142857142857142,
+    "tags": {
+      "openingHours": "Mo-Su 10:30-19:00",
+      "website": "https://www.jeandeluz.com/"
+    }
+  },
+  {
+    "id": "node/11559897418",
+    "osm": {
+      "type": "node",
+      "id": 11559897418
+    },
+    "name": "Ahona",
+    "lat": 43.3892214,
+    "lon": -1.6627742,
+    "category": "gastronomie",
+    "subcategory": "Caves & dégustation de vins",
+    "wikipediaLangs": 0,
+    "score": 0.05142857142857142,
+    "tags": {
+      "wheelchair": "yes",
+      "openingHours": "Mo-Su 10:30-21:30",
+      "website": "http://ahona.net/"
+    }
+  },
+  {
+    "id": "node/7649526185",
+    "osm": {
+      "type": "node",
+      "id": 7649526185
+    },
+    "name": "Escape game & Café",
+    "lat": 43.3889109,
+    "lon": -1.6611923,
+    "category": "loisirs",
+    "subcategory": "Activités enfants",
+    "wikipediaLangs": 0,
+    "score": 0.05142857142857142,
+    "tags": {
+      "openingHours": "We-Su 11:00-19:00",
+      "website": "http://escapegame-saintjeandeluz.fr/"
+    }
+  },
+  {
+    "id": "node/11380846090",
+    "osm": {
+      "type": "node",
+      "id": 11380846090
+    },
+    "name": "Schtroumpfland",
+    "lat": 43.4806442,
+    "lon": -1.4439446,
+    "category": "loisirs",
+    "subcategory": "Parcs d'attractions",
+    "wikipediaLangs": 0,
+    "score": 0.05142857142857142,
+    "tags": {
+      "wheelchair": "yes",
+      "openingHours": "Mo-Su 09:30-19:30",
+      "website": "https://schtroumpfland.com/"
+    }
+  },
+  {
+    "id": "node/11380846129",
+    "osm": {
+      "type": "node",
+      "id": 11380846129
+    },
+    "name": "AirFly64",
+    "lat": 43.4830841,
+    "lon": -1.4457777,
+    "category": "loisirs",
+    "subcategory": "Parcs d'attractions",
+    "wikipediaLangs": 0,
+    "score": 0.05142857142857142,
+    "tags": {
+      "wheelchair": "yes",
+      "openingHours": "Sa-Su 09:30-16:30",
+      "website": "https://www.airfly64.fr/"
+    }
+  },
+  {
+    "id": "node/12001148586",
+    "osm": {
+      "type": "node",
+      "id": 12001148586
+    },
+    "name": "EVA",
+    "lat": 43.4907392,
+    "lon": -1.4531274,
+    "category": "loisirs",
+    "subcategory": "Mini-golf & jeux",
+    "wikipediaLangs": 0,
+    "score": 0.05142857142857142,
+    "tags": {
+      "openingHours": "Tu-Su 10:00-00:00",
+      "website": "https://www.eva.gg/fr-FR"
+    }
+  },
+  {
+    "id": "way/647336045",
+    "osm": {
+      "type": "way",
+      "id": 647336045
+    },
+    "name": "Parc du Maharin",
+    "lat": 43.5003337,
+    "lon": -1.5130717,
+    "category": "loisirs",
+    "subcategory": "Parcs & jardins",
+    "wikipediaLangs": 0,
+    "score": 0.05142857142857142,
+    "tags": {
+      "openingHours": "24/7"
+    }
+  },
+  {
+    "id": "way/72772045",
+    "osm": {
+      "type": "way",
+      "id": 72772045
+    },
+    "name": "Théâtre Beheria",
+    "lat": 43.4374402,
+    "lon": -1.5882785,
+    "category": "vie-nocturne",
+    "subcategory": "Théâtres",
+    "wikipediaLangs": 0,
+    "score": 0.05142857142857142,
+    "tags": {
+      "openingHours": "\"fermé pour travaux\"",
+      "website": "https://www.bidart.fr/bouger-sortir/culture/theatre-beheria"
+    }
+  },
+  {
+    "id": "node/5444812648",
+    "osm": {
+      "type": "node",
+      "id": 5444812648
+    },
+    "name": "Arte Bideak",
+    "lat": 43.3853072,
+    "lon": -1.6678096,
+    "category": "musees",
+    "subcategory": "Art contemporain & galeries",
+    "wikipediaLangs": 0,
+    "score": 0.05142857142857142,
+    "tags": {
+      "openingHours": "Th-Sa 11:00-13:00, Th-Sa 16:00-19:00, Su 10:00-13:00",
+      "website": "https://www.artebideak.com/"
+    }
+  },
+  {
+    "id": "node/5825928972",
+    "osm": {
+      "type": "node",
+      "id": 5825928972
+    },
+    "name": "Ecomusée de la Pelote et du Xistera Pilotari",
+    "lat": 43.3550124,
+    "lon": -1.5496194,
+    "category": "musees",
+    "subcategory": "Musée",
+    "wikipediaLangs": 0,
+    "score": 0.05142857142857142,
+    "tags": {
+      "cost": "paid",
+      "wheelchair": "yes",
+      "openingHours": "Mo-Sa 09:30-12:30,14:00-18:00; PH,Su 09:30-12:30",
+      "website": "https://www.en-pays-basque.fr/visite/ecomusee-de-la-pelote-et-du-xistera-pilotari/"
+    }
+  },
+  {
+    "id": "node/5825958095",
+    "osm": {
+      "type": "node",
+      "id": 5825958095
+    },
+    "name": "L'Art de l'Espadrille",
+    "lat": 43.4740181,
+    "lon": -1.4521493,
+    "category": "musees",
+    "subcategory": "Musée",
+    "wikipediaLangs": 0,
+    "score": 0.05142857142857142,
+    "tags": {
+      "cost": "free",
+      "openingHours": "Th 14:00-18:30; Tu-We, Fr 10:30-12:30, 14:00-18:30; Sa 09:00-12:30, 14:00-18:30",
+      "website": "https://lartdelespadrille.book.fr/"
+    }
+  },
+  {
+    "id": "node/7646255846",
+    "osm": {
+      "type": "node",
+      "id": 7646255846
+    },
+    "name": "Cadrimages",
+    "lat": 43.3885885,
+    "lon": -1.6623253,
+    "category": "musees",
+    "subcategory": "Art contemporain & galeries",
+    "wikipediaLangs": 0,
+    "score": 0.05142857142857142,
+    "tags": {
+      "cost": "free",
+      "wheelchair": "yes",
+      "openingHours": "Mo-Su 10:00-19:00",
+      "website": "https://www.cadrimages.com/"
+    }
+  },
+  {
+    "id": "node/8344819972",
+    "osm": {
+      "type": "node",
+      "id": 8344819972
+    },
+    "name": "Ttok",
+    "lat": 43.3932845,
+    "lon": -1.4512141,
+    "category": "musees",
+    "subcategory": "Art contemporain & galeries",
+    "wikipediaLangs": 0,
+    "score": 0.05142857142857142,
+    "tags": {
+      "cost": "free",
+      "openingHours": "Tu-Th 14:00-19:00; Fr 09:00-16:00"
+    }
+  },
+  {
+    "id": "node/8764827529",
+    "osm": {
+      "type": "node",
+      "id": 8764827529
+    },
+    "name": "Galerie Catherine et Frédéric Portal",
+    "lat": 43.3881352,
+    "lon": -1.6634831,
+    "category": "musees",
+    "subcategory": "Art contemporain & galeries",
+    "wikipediaLangs": 0,
+    "score": 0.05142857142857142,
+    "tags": {
+      "openingHours": "Mo-Su 11:00-19:30",
+      "website": "https://www.galerie-catherinefredericportal.com/"
+    }
+  },
+  {
+    "id": "node/8960280743",
+    "osm": {
+      "type": "node",
+      "id": 8960280743
+    },
+    "name": "CIAP Lapurdum",
+    "lat": 43.4912964,
+    "lon": -1.4771781,
+    "category": "musees",
+    "subcategory": "Musée",
+    "wikipediaLangs": 0,
+    "score": 0.05142857142857142,
+    "tags": {
+      "cost": "free",
+      "openingHours": "Tu-Fr 14:00-18:00; Sa 10:00-12:30,14:00-18:00",
+      "website": "https://www.bayonne.fr/cest-a-bayonne/culture/histoire-et-patrimoines/les-etablissements-culturels-et-patrimoniaux/le-ciap-centre-dinterpretation-de-larchitecture-et-du-patrimoine"
+    }
+  },
+  {
+    "id": "node/11384457461",
+    "osm": {
+      "type": "node",
+      "id": 11384457461
+    },
+    "name": "Galerie Misei",
+    "lat": 43.3886846,
+    "lon": -1.6580185,
+    "category": "musees",
+    "subcategory": "Art contemporain & galeries",
+    "wikipediaLangs": 0,
+    "score": 0.05142857142857142,
+    "tags": {
+      "openingHours": "Tu-Su 10:00-19:00",
+      "website": "https://galerie-misei.business.site/?utm_source=gmb&utm_medium=referral"
+    }
+  },
+  {
+    "id": "node/11425819546",
+    "osm": {
+      "type": "node",
+      "id": 11425819546
+    },
+    "name": "Galerie Luz 26",
+    "lat": 43.3912337,
+    "lon": -1.6591498,
+    "category": "musees",
+    "subcategory": "Art contemporain & galeries",
+    "wikipediaLangs": 0,
+    "score": 0.05142857142857142,
+    "tags": {
+      "openingHours": "Mo-Sa 10:30-19:00",
+      "website": "https://www.luz26.fr/contact/"
+    }
+  },
+  {
+    "id": "node/11559897400",
+    "osm": {
+      "type": "node",
+      "id": 11559897400
+    },
+    "name": "L'Ilot Galerie",
+    "lat": 43.3876929,
+    "lon": -1.6626339,
+    "category": "musees",
+    "subcategory": "Art contemporain & galeries",
+    "wikipediaLangs": 0,
+    "score": 0.05142857142857142,
+    "tags": {
+      "openingHours": "Fr-Sa 11:00-19:00",
+      "website": "https://www.laurencegallien.com/"
+    }
+  },
+  {
+    "id": "node/11559897416",
+    "osm": {
+      "type": "node",
+      "id": 11559897416
+    },
+    "name": "Galerie E. Chapelain",
+    "lat": 43.3891535,
+    "lon": -1.6627534,
+    "category": "musees",
+    "subcategory": "Art contemporain & galeries",
+    "wikipediaLangs": 0,
+    "score": 0.05142857142857142,
+    "tags": {
+      "cost": "free",
+      "openingHours": "10:00-13:00,15:00-19:00; We off",
+      "website": "https://www.galeriechapelain.com"
+    }
+  },
+  {
+    "id": "node/11559897420",
+    "osm": {
+      "type": "node",
+      "id": 11559897420
+    },
+    "name": "Galerie E. Chapelain",
+    "lat": 43.3893953,
+    "lon": -1.6627146,
+    "category": "musees",
+    "subcategory": "Art contemporain & galeries",
+    "wikipediaLangs": 0,
+    "score": 0.05142857142857142,
+    "tags": {
+      "openingHours": "10:00-13:00,15:00-19:00; We off",
+      "website": "https://www.galeriechapelain.com"
+    }
+  },
+  {
+    "id": "node/13127673011",
+    "osm": {
+      "type": "node",
+      "id": 13127673011
+    },
+    "name": "Atelier Galerie PHILAGUS",
+    "lat": 43.4713185,
+    "lon": -0.9265383,
+    "category": "musees",
+    "subcategory": "Art contemporain & galeries",
+    "wikipediaLangs": 0,
+    "score": 0.05142857142857142,
+    "tags": {
+      "cost": "free",
+      "wheelchair": "yes",
+      "openingHours": "Mo-Su 10:00-18:00"
+    }
+  },
+  {
+    "id": "node/5103498379",
+    "osm": {
+      "type": "node",
+      "id": 5103498379
+    },
+    "name": "The roof",
+    "lat": 43.4915041,
+    "lon": -1.4936413,
+    "category": "sport",
+    "subcategory": "Escalade & via ferrata",
+    "wikipediaLangs": 0,
+    "score": 0.05142857142857142,
+    "tags": {
+      "cost": "paid",
+      "openingHours": "Mo-Fr 08:00-23:00; Sa-Su 08:00-21:00",
+      "website": "https://bayonne.theroof.fr/"
+    }
+  },
+  {
+    "id": "node/7649459746",
+    "osm": {
+      "type": "node",
+      "id": 7649459746
+    },
+    "name": "Quiksilver",
+    "lat": 43.3893499,
+    "lon": -1.6599997,
+    "category": "sport",
+    "subcategory": "Surf & sports de glisse",
+    "wikipediaLangs": 0,
+    "score": 0.05142857142857142,
+    "tags": {
+      "wheelchair": "yes",
+      "openingHours": "09:30-13:00,14:00-18:00",
+      "website": "https://www.quiksilver.fr/"
+    }
+  },
+  {
+    "id": "node/7655202041",
+    "osm": {
+      "type": "node",
+      "id": 7655202041
+    },
+    "name": "Billabong",
+    "lat": 43.3879858,
+    "lon": -1.6627045,
+    "category": "sport",
+    "subcategory": "Surf & sports de glisse",
+    "wikipediaLangs": 0,
+    "score": 0.05142857142857142,
+    "tags": {
+      "wheelchair": "yes",
+      "openingHours": "10:00-12:30,14:30-19:00; Sa 10:00-19:00",
+      "website": "http://www.newschoolsurf.fr/"
+    }
+  },
+  {
+    "id": "node/4741244723",
+    "osm": {
+      "type": "node",
+      "id": 4741244723
+    },
+    "name": "Yogang",
+    "lat": 43.386673,
+    "lon": -1.6613535,
+    "category": "bien-etre",
+    "subcategory": "Yoga & retraites",
+    "wikipediaLangs": 0,
+    "score": 0.05142857142857142,
+    "tags": {
+      "wheelchair": "yes",
+      "openingHours": "Mo-Su 09:00-21:00",
+      "website": "https://yogang.fr/yogang-saint-jean-de-luz/"
+    }
+  },
+  {
+    "id": "node/11440000008",
+    "osm": {
+      "type": "node",
+      "id": 11440000008
+    },
+    "name": "Uhaina Spa",
+    "lat": 43.374489,
+    "lon": -1.6795924,
+    "category": "bien-etre",
+    "subcategory": "Spas & instituts",
+    "wikipediaLangs": 0,
+    "score": 0.05142857142857142,
+    "tags": {
+      "wheelchair": "yes",
+      "openingHours": "Mo-Sa 09:30-18:30",
+      "website": "http://uhainaspa.fr/"
+    }
+  },
+  {
+    "id": "node/12022663510",
+    "osm": {
+      "type": "node",
+      "id": 12022663510
+    },
+    "name": "L'Etre - Betty Saint Jours",
+    "lat": 43.3880793,
+    "lon": -1.6847842,
+    "category": "bien-etre",
+    "subcategory": "Spas & instituts",
+    "wikipediaLangs": 0,
+    "score": 0.05142857142857142,
+    "tags": {
+      "wheelchair": "yes",
+      "openingHours": "Mo-Sa 09:00-18:00",
+      "website": "https://www.leschampsalchimiques.com/"
+    }
+  },
+  {
+    "id": "node/5768732278",
+    "osm": {
+      "type": "node",
+      "id": 5768732278
+    },
+    "name": "Tonton Pizza",
+    "lat": 43.483507,
+    "lon": -1.500947,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.046,
+    "tags": {
+      "cuisine": [
+        "pizza"
+      ],
+      "openingHours": "Mo-Su 18:00-22:00",
+      "website": "https://www.tonton-pizza-bayonne.com/"
+    }
+  },
+  {
+    "id": "node/7998021387",
+    "osm": {
+      "type": "node",
+      "id": 7998021387
+    },
+    "name": "Restaurant inter-entreprises Andrée Dupeyron",
+    "lat": 43.5466606,
+    "lon": -1.4922019,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.046,
+    "tags": {
+      "openingHours": "Mo-Fr 11:15-13:30",
+      "website": "https://www.eole-restaurant.fr/"
+    }
+  },
+  {
+    "id": "node/8182505021",
+    "osm": {
+      "type": "node",
+      "id": 8182505021
+    },
+    "name": "Les jardins du Refuge",
+    "lat": 43.5038186,
+    "lon": -1.5234679,
+    "category": "gastronomie",
+    "subcategory": "Producteurs & fermes",
+    "wikipediaLangs": 0,
+    "score": 0.04428571428571429,
+    "tags": {
+      "openingHours": "Tu-Sa 09:30-12:15"
+    }
+  },
+  {
+    "id": "node/10011813428",
+    "osm": {
+      "type": "node",
+      "id": 10011813428
+    },
+    "name": "Ferme Ttukulua",
+    "lat": 43.3731375,
+    "lon": -1.2731226,
+    "category": "gastronomie",
+    "subcategory": "Producteurs & fermes",
+    "wikipediaLangs": 0,
+    "score": 0.04428571428571429,
+    "tags": {
+      "openingHours": "Mo-Sa 09:00-12:00,15:00-19:00"
+    }
+  },
+  {
+    "id": "node/10965358523",
+    "osm": {
+      "type": "node",
+      "id": 10965358523
+    },
+    "name": "Bons vivants",
+    "lat": 43.5341279,
+    "lon": -1.4605542,
+    "category": "gastronomie",
+    "subcategory": "Caves & dégustation de vins",
+    "wikipediaLangs": 0,
+    "score": 0.04428571428571429,
+    "tags": {
+      "openingHours": "Tu-Th 10:30-13:00,16:00-19:30; Fr 10:30-13:00,16:00-21:30; Sa 09:30-13:00,16:00-21:30"
+    }
+  },
+  {
+    "id": "node/10965548793",
+    "osm": {
+      "type": "node",
+      "id": 10965548793
+    },
+    "name": "Girault Fleurs",
+    "lat": 43.5481977,
+    "lon": -1.429108,
+    "category": "gastronomie",
+    "subcategory": "Producteurs & fermes",
+    "wikipediaLangs": 0,
+    "score": 0.04428571428571429,
+    "tags": {
+      "openingHours": "Fr 15:30-19:30"
+    }
+  },
+  {
+    "id": "node/12179881644",
+    "osm": {
+      "type": "node",
+      "id": 12179881644
+    },
+    "name": "Marché République",
+    "lat": 43.3585599,
+    "lon": -1.7746649,
+    "category": "gastronomie",
+    "subcategory": "Marchés & halles",
+    "wikipediaLangs": 0,
+    "score": 0.04428571428571429,
+    "tags": {
+      "openingHours": "We 08:30-12:30",
+      "website": "https://www.hendaye-tourisme.fr/marches/"
+    }
+  },
+  {
+    "id": "node/12425224498",
+    "osm": {
+      "type": "node",
+      "id": 12425224498
+    },
+    "name": "Xüxenka",
+    "lat": 43.2198161,
+    "lon": -0.8894456,
+    "category": "gastronomie",
+    "subcategory": "Producteurs & fermes",
+    "wikipediaLangs": 0,
+    "score": 0.04428571428571429,
+    "tags": {
+      "openingHours": "Tu-Fr 10:00-12:30,16:00-19:00; Sa 09:00-12:30"
+    }
+  },
+  {
+    "id": "node/12437046355",
+    "osm": {
+      "type": "node",
+      "id": 12437046355
+    },
+    "name": "Cave des Pyrénées",
+    "lat": 43.4890143,
+    "lon": -1.4774357,
+    "category": "gastronomie",
+    "subcategory": "Caves & dégustation de vins",
+    "wikipediaLangs": 0,
+    "score": 0.04428571428571429,
+    "tags": {
+      "openingHours": "Mo-Sa 10:00-19:00"
+    }
+  },
+  {
+    "id": "way/72480747",
+    "osm": {
+      "type": "way",
+      "id": 72480747
+    },
+    "name": "Les Halles",
+    "lat": 43.3874567,
+    "lon": -1.6608349,
+    "category": "gastronomie",
+    "subcategory": "Marchés & halles",
+    "wikipediaLangs": 0,
+    "score": 0.04428571428571429,
+    "tags": {
+      "openingHours": "Mo-Su 07:00-13:00"
+    }
+  },
+  {
+    "id": "way/369891531",
+    "osm": {
+      "type": "way",
+      "id": 369891531
+    },
+    "name": "Marché Sokoburu",
+    "lat": 43.3708581,
+    "lon": -1.7843616,
+    "category": "gastronomie",
+    "subcategory": "Marchés & halles",
+    "wikipediaLangs": 0,
+    "score": 0.04428571428571429,
+    "tags": {
+      "openingHours": "Sa 08:30-12:30",
+      "website": "https://www.hendaye-tourisme.fr/marches/"
+    }
+  },
+  {
+    "id": "node/12009336739",
+    "osm": {
+      "type": "node",
+      "id": 12009336739
+    },
+    "name": "La maison de l’évasion",
+    "lat": 43.5394221,
+    "lon": -1.4607064,
+    "category": "loisirs",
+    "subcategory": "Activités enfants",
+    "wikipediaLangs": 0,
+    "score": 0.04428571428571429,
+    "tags": {
+      "cost": "paid",
+      "openingHours": "\"Sur rendez-vous\"",
+      "website": "https://lamaisondelevasion.fr/"
+    }
+  },
+  {
+    "id": "way/65446514",
+    "osm": {
+      "type": "way",
+      "id": 65446514
+    },
+    "name": "Jardin Cherbero",
+    "lat": 43.2227896,
+    "lon": -0.8869543,
+    "category": "loisirs",
+    "subcategory": "Parcs & jardins",
+    "wikipediaLangs": 0,
+    "score": 0.04428571428571429,
+    "tags": {
+      "openingHours": "24/7"
+    }
+  },
+  {
+    "id": "way/72069030",
+    "osm": {
+      "type": "way",
+      "id": 72069030
+    },
+    "name": "Jardins des héros et des martyrs de la déportation",
+    "lat": 43.3590586,
+    "lon": -1.7757543,
+    "category": "loisirs",
+    "subcategory": "Parcs & jardins",
+    "wikipediaLangs": 0,
+    "score": 0.04428571428571429,
+    "tags": {
+      "openingHours": "24/7"
+    }
+  },
+  {
+    "id": "way/379625273",
+    "osm": {
+      "type": "way",
+      "id": 379625273
+    },
+    "name": "Parc Belay",
+    "lat": 43.4765244,
+    "lon": -1.5178436,
+    "category": "loisirs",
+    "subcategory": "Parcs & jardins",
+    "wikipediaLangs": 0,
+    "score": 0.04428571428571429,
+    "tags": {
+      "openingHours": "24/7"
+    }
+  },
+  {
+    "id": "way/476738591",
+    "osm": {
+      "type": "way",
+      "id": 476738591
+    },
+    "name": "Jardin d'Ansbach",
+    "lat": 43.4814847,
+    "lon": -1.5162469,
+    "category": "loisirs",
+    "subcategory": "Parcs & jardins",
+    "wikipediaLangs": 0,
+    "score": 0.04428571428571429,
+    "tags": {
+      "openingHours": "24/7"
+    }
+  },
+  {
+    "id": "way/480824651",
+    "osm": {
+      "type": "way",
+      "id": 480824651
+    },
+    "name": "Urdazubi Errota",
+    "lat": 43.267099,
+    "lon": -1.5035737,
+    "category": "loisirs",
+    "subcategory": "Attractions",
+    "wikipediaLangs": 0,
+    "score": 0.04428571428571429,
+    "tags": {
+      "openingHours": "Tu-Fr 11:30-18:15; Sa-Su 10:30-18:15"
+    }
+  },
+  {
+    "id": "way/503453306",
+    "osm": {
+      "type": "way",
+      "id": 503453306
+    },
+    "name": "Parc de la Nature",
+    "lat": 43.5503425,
+    "lon": -1.4891855,
+    "category": "loisirs",
+    "subcategory": "Parcs & jardins",
+    "wikipediaLangs": 0,
+    "score": 0.04428571428571429,
+    "tags": {
+      "openingHours": "24/7"
+    }
+  },
+  {
+    "id": "way/631349118",
+    "osm": {
+      "type": "way",
+      "id": 631349118
+    },
+    "name": "Parc Beatrix Enea",
+    "lat": 43.4819792,
+    "lon": -1.5130166,
+    "category": "loisirs",
+    "subcategory": "Parcs & jardins",
+    "wikipediaLangs": 0,
+    "score": 0.04428571428571429,
+    "tags": {
+      "openingHours": "24/7"
+    }
+  },
+  {
+    "id": "way/826539829",
+    "osm": {
+      "type": "way",
+      "id": 826539829
+    },
+    "name": "Espaces verts des Cavaliers",
+    "lat": 43.5201656,
+    "lon": -1.5255875,
+    "category": "loisirs",
+    "subcategory": "Parcs & jardins",
+    "wikipediaLangs": 0,
+    "score": 0.04428571428571429,
+    "tags": {
+      "openingHours": "24/7"
+    }
+  },
+  {
+    "id": "way/1149673839",
+    "osm": {
+      "type": "way",
+      "id": 1149673839
+    },
+    "name": "Jardin de la Grotte",
+    "lat": 43.4986365,
+    "lon": -1.5426745,
+    "category": "loisirs",
+    "subcategory": "Parcs & jardins",
+    "wikipediaLangs": 0,
+    "score": 0.04428571428571429,
+    "tags": {
+      "openingHours": "24/7"
+    }
+  },
+  {
+    "id": "way/1168270637",
+    "osm": {
+      "type": "way",
+      "id": 1168270637
+    },
+    "name": "Square des Fauvettes",
+    "lat": 43.5004278,
+    "lon": -1.5387327,
+    "category": "loisirs",
+    "subcategory": "Parcs & jardins",
+    "wikipediaLangs": 0,
+    "score": 0.04428571428571429,
+    "tags": {
+      "openingHours": "24/7"
+    }
+  },
+  {
+    "id": "way/1168272110",
+    "osm": {
+      "type": "way",
+      "id": 1168272110
+    },
+    "name": "Vallon Latchague",
+    "lat": 43.4964383,
+    "lon": -1.5189596,
+    "category": "loisirs",
+    "subcategory": "Parcs & jardins",
+    "wikipediaLangs": 0,
+    "score": 0.04428571428571429,
+    "tags": {
+      "openingHours": "24/7"
+    }
+  },
+  {
+    "id": "way/1168297878",
+    "osm": {
+      "type": "way",
+      "id": 1168297878
+    },
+    "name": "Aire de biodiversité de Lamouly",
+    "lat": 43.4956433,
+    "lon": -1.4994962,
+    "category": "loisirs",
+    "subcategory": "Parcs & jardins",
+    "wikipediaLangs": 0,
+    "score": 0.04428571428571429,
+    "tags": {
+      "openingHours": "24/7"
+    }
+  },
+  {
+    "id": "way/1168461151",
+    "osm": {
+      "type": "way",
+      "id": 1168461151
+    },
+    "name": "Jardin Arnold Bleitrach",
+    "lat": 43.4878577,
+    "lon": -1.5326053,
+    "category": "loisirs",
+    "subcategory": "Parcs & jardins",
+    "wikipediaLangs": 0,
+    "score": 0.04428571428571429,
+    "tags": {
+      "openingHours": "24/7"
+    }
+  },
+  {
+    "id": "way/1170879015",
+    "osm": {
+      "type": "way",
+      "id": 1170879015
+    },
+    "name": "Jardin Henri Lasseougue",
+    "lat": 43.4906784,
+    "lon": -1.512939,
+    "category": "loisirs",
+    "subcategory": "Parcs & jardins",
+    "wikipediaLangs": 0,
+    "score": 0.04428571428571429,
+    "tags": {
+      "openingHours": "24/7"
+    }
+  },
+  {
+    "id": "way/1173611167",
+    "osm": {
+      "type": "way",
+      "id": 1173611167
+    },
+    "name": "Aire André Hippolyte",
+    "lat": 43.4719405,
+    "lon": -1.5268787,
+    "category": "loisirs",
+    "subcategory": "Parcs & jardins",
+    "wikipediaLangs": 0,
+    "score": 0.04428571428571429,
+    "tags": {
+      "openingHours": "24/7"
+    }
+  },
+  {
+    "id": "way/1430475276",
+    "osm": {
+      "type": "way",
+      "id": 1430475276
+    },
+    "name": "Jardin des Capucines",
+    "lat": 43.4860741,
+    "lon": -1.5249887,
+    "category": "loisirs",
+    "subcategory": "Parcs & jardins",
+    "wikipediaLangs": 0,
+    "score": 0.04428571428571429,
+    "tags": {
+      "openingHours": "24/7"
+    }
+  },
+  {
+    "id": "way/1459598958",
+    "osm": {
+      "type": "way",
+      "id": 1459598958
+    },
+    "name": "Jardin du Docteur François Lacroix",
+    "lat": 43.478054,
+    "lon": -1.523474,
+    "category": "loisirs",
+    "subcategory": "Parcs & jardins",
+    "wikipediaLangs": 0,
+    "score": 0.04428571428571429,
+    "tags": {
+      "openingHours": "24/7"
+    }
+  },
+  {
+    "id": "way/1466689478",
+    "osm": {
+      "type": "way",
+      "id": 1466689478
+    },
+    "name": "Jardin de Fermo",
+    "lat": 43.4774095,
+    "lon": -1.51705,
+    "category": "loisirs",
+    "subcategory": "Parcs & jardins",
+    "wikipediaLangs": 0,
+    "score": 0.04428571428571429,
+    "tags": {
+      "openingHours": "24/7"
+    }
+  },
+  {
+    "id": "node/5478506700",
+    "osm": {
+      "type": "node",
+      "id": 5478506700
+    },
+    "name": "Kaxu Galerie",
+    "lat": 43.4951025,
+    "lon": -1.4680225,
+    "category": "musees",
+    "subcategory": "Art contemporain & galeries",
+    "wikipediaLangs": 0,
+    "score": 0.04428571428571429,
+    "tags": {
+      "cost": "free",
+      "openingHours": "We-Sa 13:00-18:00"
+    }
+  },
+  {
+    "id": "node/8785740234",
+    "osm": {
+      "type": "node",
+      "id": 8785740234
+    },
+    "name": "Création Margo",
+    "lat": 43.4850193,
+    "lon": -1.4836344,
+    "category": "musees",
+    "subcategory": "Art contemporain & galeries",
+    "wikipediaLangs": 0,
+    "score": 0.04428571428571429,
+    "tags": {
+      "openingHours": "\"by appointment\"",
+      "website": "https://www.margocreation.com/"
+    }
+  },
+  {
+    "id": "node/9428502770",
+    "osm": {
+      "type": "node",
+      "id": 9428502770
+    },
+    "name": "BLEU, la galerie",
+    "lat": 43.387878,
+    "lon": -1.6654804,
+    "category": "musees",
+    "subcategory": "Art contemporain & galeries",
+    "wikipediaLangs": 0,
+    "score": 0.04428571428571429,
+    "tags": {
+      "wheelchair": "yes",
+      "openingHours": "Tu-Su 10:00-19:00",
+      "website": "https://www.bleu-lagalerie.fr/"
+    }
+  },
+  {
+    "id": "node/8854956635",
+    "osm": {
+      "type": "node",
+      "id": 8854956635
+    },
+    "name": "Kobido",
+    "lat": 43.3884366,
+    "lon": -1.6593434,
+    "category": "bien-etre",
+    "subcategory": "Spas & instituts",
+    "wikipediaLangs": 0,
+    "score": 0.04428571428571429,
+    "tags": {
+      "wheelchair": "yes",
+      "openingHours": "Mo-Sa 09:00-19:00"
+    }
+  },
+  {
+    "id": "node/1071028848",
+    "osm": {
+      "type": "node",
+      "id": 1071028848
+    },
+    "name": "Pizza Bella Family",
+    "lat": 43.2292631,
+    "lon": -0.8735172,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.040999999999999995,
+    "tags": {
+      "cuisine": [
+        "pizza"
+      ],
+      "openingHours": "Mo-Su 10:00-14:30,16:30-22:00",
+      "website": "https://pizzabella64.com/pizza-bella-cheraute/"
+    }
+  },
+  {
+    "id": "node/1691951703",
+    "osm": {
+      "type": "node",
+      "id": 1691951703
+    },
+    "name": "Café Snack Bista Eder",
+    "lat": 43.1998353,
+    "lon": -1.0057885,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.040999999999999995,
+    "tags": {
+      "cuisine": [
+        "sandwich",
+        "international"
+      ],
+      "openingHours": "Mo-Th 09:00-18:00",
+      "website": "https://www.facebook.com/lesateliersduchaudron/"
+    }
+  },
+  {
+    "id": "node/3351832510",
+    "osm": {
+      "type": "node",
+      "id": 3351832510
+    },
+    "name": "Café Ttipia",
+    "lat": 43.1622966,
+    "lon": -1.2386387,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.040999999999999995,
+    "tags": {
+      "cuisine": [
+        "regional"
+      ],
+      "openingHours": "Mo-Su 11:30-23:00; Tu 11:30-16:00; We off",
+      "website": "https://www.cafettipia.com/"
+    }
+  },
+  {
+    "id": "node/3520039779",
+    "osm": {
+      "type": "node",
+      "id": 3520039779
+    },
+    "name": "Le komptoir des amis",
+    "lat": 43.38647,
+    "lon": -1.6603584,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.040999999999999995,
+    "tags": {
+      "wheelchair": "yes",
+      "cuisine": [
+        "bistro",
+        "regional"
+      ],
+      "openingHours": "Mo 12:15-14:00; Tu,Fr 12:15-14:00,20:00-22:00; We,Th,Sa 12:15-14:00,19:30-21:30",
+      "website": "https://www.lekomptoirdesamis.com"
+    }
+  },
+  {
+    "id": "node/3871575580",
+    "osm": {
+      "type": "node",
+      "id": 3871575580
+    },
+    "name": "Fratelli Ristorante",
+    "lat": 43.5340707,
+    "lon": -1.4604091,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.040999999999999995,
+    "tags": {
+      "cuisine": [
+        "pizza",
+        "italian"
+      ],
+      "openingHours": "Tu-Sa 12:00-13:30,19:00-21:30",
+      "website": "https://www.facebook.com/restaurantfratelli"
+    }
+  },
+  {
+    "id": "node/4036384989",
+    "osm": {
+      "type": "node",
+      "id": 4036384989
+    },
+    "name": "McDonald's",
+    "lat": 43.4946359,
+    "lon": -1.5193093,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.040999999999999995,
+    "tags": {
+      "cuisine": [
+        "burger"
+      ],
+      "openingHours": "Mo-Su 09:00-24:00",
+      "website": "https://www.mcdonalds.fr/restaurants/mcdonalds-anglet-bab/1289"
+    }
+  },
+  {
+    "id": "node/4132579297",
+    "osm": {
+      "type": "node",
+      "id": 4132579297
+    },
+    "name": "McDonald's",
+    "lat": 43.5273843,
+    "lon": -1.4633535,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.040999999999999995,
+    "tags": {
+      "cuisine": [
+        "burger"
+      ],
+      "openingHours": "Mo-Su 10:00-22:30",
+      "website": "https://www.restaurants.mcdonalds.fr/mcdonalds-tarnos"
+    }
+  },
+  {
+    "id": "node/4423989489",
+    "osm": {
+      "type": "node",
+      "id": 4423989489
+    },
+    "name": "Pizzas Pat",
+    "lat": 43.3836513,
+    "lon": -1.3048363,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.040999999999999995,
+    "tags": {
+      "cuisine": [
+        "pizza"
+      ],
+      "openingHours": "Mo-Su 10:30-14:30,17:00-22:00",
+      "website": "https://www.pizzas-pat.fr/"
+    }
+  },
+  {
+    "id": "node/4485488193",
+    "osm": {
+      "type": "node",
+      "id": 4485488193
+    },
+    "name": "Tantina de la Playa",
+    "lat": 43.4365228,
+    "lon": -1.5963078,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.040999999999999995,
+    "tags": {
+      "wheelchair": "yes",
+      "cuisine": [
+        "french"
+      ],
+      "openingHours": "Dec 23-Nov 21",
+      "website": "https://tantinadelaplaya.com/"
+    }
+  },
+  {
+    "id": "node/4499277681",
+    "osm": {
+      "type": "node",
+      "id": 4499277681
+    },
+    "name": "Jarapea",
+    "lat": 43.177055,
+    "lon": -1.299682,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.040999999999999995,
+    "tags": {
+      "cuisine": [
+        "regional"
+      ],
+      "openingHours": "We-Su 12:00-14:00; Fr,Sa 19:30-21:30",
+      "website": "https://jarapea-restaurant.eatbu.com"
+    }
+  },
+  {
+    "id": "node/4579749897",
+    "osm": {
+      "type": "node",
+      "id": 4579749897
+    },
+    "name": "Xaya La cave à manger",
+    "lat": 43.3875369,
+    "lon": -1.6627169,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.040999999999999995,
+    "tags": {
+      "wheelchair": "yes",
+      "openingHours": "Th-Tu 10:00-22:00",
+      "website": "https://xaya.fr/"
+    }
+  },
+  {
+    "id": "node/5378244283",
+    "osm": {
+      "type": "node",
+      "id": 5378244283
+    },
+    "name": "L'écailler et sa plancha",
+    "lat": 43.5416329,
+    "lon": -1.3868203,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.040999999999999995,
+    "tags": {
+      "cuisine": [
+        "spanish",
+        "tapas"
+      ],
+      "openingHours": "Mo-Su 11:00-15:00,18:00-22:00",
+      "website": "https://www.lecailleretsaplancha.fr/"
+    }
+  },
+  {
+    "id": "node/5660809036",
+    "osm": {
+      "type": "node",
+      "id": 5660809036
+    },
+    "name": "Sushis & Bowls",
+    "lat": 43.5368622,
+    "lon": -1.4606535,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.040999999999999995,
+    "tags": {
+      "cuisine": [
+        "sushi"
+      ],
+      "openingHours": "Mo-Sa 18:30-21:45; We,Fr 11:45-14:00,18:30-21:45; Th off",
+      "website": "https://sushi-san-landes.fr/"
+    }
+  },
+  {
+    "id": "node/5660841137",
+    "osm": {
+      "type": "node",
+      "id": 5660841137
+    },
+    "name": "Egun On",
+    "lat": 43.3789037,
+    "lon": -1.6700027,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.040999999999999995,
+    "tags": {
+      "cuisine": [
+        "snack"
+      ],
+      "openingHours": "Fr-We 09:00-21:30",
+      "website": "https://www.egunon-snack.fr/"
+    }
+  },
+  {
+    "id": "node/5675620729",
+    "osm": {
+      "type": "node",
+      "id": 5675620729
+    },
+    "name": "Espelletenia",
+    "lat": 43.2328269,
+    "lon": -1.0962707,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.040999999999999995,
+    "tags": {
+      "cuisine": [
+        "regional",
+        "french"
+      ],
+      "openingHours": "Mo-Th 08:00-19:00; Fr,Sa 08:00-00:00",
+      "website": "https://www.espelletenia.eus/restaurant"
+    }
+  },
+  {
+    "id": "node/6987171602",
+    "osm": {
+      "type": "node",
+      "id": 6987171602
+    },
+    "name": "Le Kiosque à Pizza",
+    "lat": 43.5268943,
+    "lon": -1.4632337,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.040999999999999995,
+    "tags": {
+      "cuisine": [
+        "pizza"
+      ],
+      "openingHours": "Mo-Sa 11:00-14:00,18:00-21:30; Su 18:00-21:30",
+      "website": "https://www.le-kiosque-a-pizzas.com/commander-pizza-tarnos--609"
+    }
+  },
+  {
+    "id": "node/7035469710",
+    "osm": {
+      "type": "node",
+      "id": 7035469710
+    },
+    "name": "Hasparren Kebab Burger Tacos",
+    "lat": 43.3831615,
+    "lon": -1.3052139,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.040999999999999995,
+    "tags": {
+      "cuisine": [
+        "burger",
+        "kebab"
+      ],
+      "openingHours": "Mo-Su 10:30-14:30, 17:30-22:30",
+      "website": "https://reseau.site/sarl_nilay/"
+    }
+  },
+  {
+    "id": "node/7344540058",
+    "osm": {
+      "type": "node",
+      "id": 7344540058
+    },
+    "name": "SB Artisans Burger",
+    "lat": 43.5437973,
+    "lon": -1.4611173,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.040999999999999995,
+    "tags": {
+      "cuisine": [
+        "burger"
+      ],
+      "openingHours": "12:00-14:00,19:00-21:30",
+      "website": "https://www.sbburger.fr/"
+    }
+  },
+  {
+    "id": "node/7595302585",
+    "osm": {
+      "type": "node",
+      "id": 7595302585
+    },
+    "name": "Le Byron",
+    "lat": 43.4819185,
+    "lon": -1.5052296,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.040999999999999995,
+    "tags": {
+      "openingHours": "Mo-Sa 10:00-15:00",
+      "website": "https://lebyron.fr/"
+    }
+  },
+  {
+    "id": "node/7698588577",
+    "osm": {
+      "type": "node",
+      "id": 7698588577
+    },
+    "name": "Alaïa",
+    "lat": 43.3900109,
+    "lon": -1.6841883,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.040999999999999995,
+    "tags": {
+      "cuisine": [
+        "regional"
+      ],
+      "openingHours": "12:00-14:30,19:30-22:30, Dec-Jun Mo-Tu closed",
+      "website": "https://www.restaurantalaia.com/"
+    }
+  },
+  {
+    "id": "node/8032776057",
+    "osm": {
+      "type": "node",
+      "id": 8032776057
+    },
+    "name": "Basa",
+    "lat": 43.4901652,
+    "lon": -1.4763036,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.040999999999999995,
+    "tags": {
+      "cuisine": [
+        "regional"
+      ],
+      "openingHours": "Mo-Su 12:00-22:00",
+      "website": "https://www.brasserie-basa.com/"
+    }
+  },
+  {
+    "id": "node/8252910595",
+    "osm": {
+      "type": "node",
+      "id": 8252910595
+    },
+    "name": "Chez Dalida",
+    "lat": 43.533723,
+    "lon": -1.4606452,
+    "category": "gastronomie",
+    "subcategory": "Cafés & salons de thé",
+    "wikipediaLangs": 0,
+    "score": 0.040999999999999995,
+    "tags": {
+      "cuisine": [
+        "coffee_shop"
+      ],
+      "openingHours": "Mo-Fr 09:00-14:30,18:00-21:00",
+      "website": "https://www.facebook.com/chezdalida/"
+    }
+  },
+  {
+    "id": "node/8611335206",
+    "osm": {
+      "type": "node",
+      "id": 8611335206
+    },
+    "name": "Mékong Express",
+    "lat": 43.5476021,
+    "lon": -1.4876394,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.040999999999999995,
+    "tags": {
+      "wheelchair": "yes",
+      "cuisine": [
+        "thai",
+        "vietnamese"
+      ],
+      "openingHours": "Tu-Sa 11:00-13:30",
+      "website": "https://mekong-express.fr/"
+    }
+  },
+  {
+    "id": "node/10657195357",
+    "osm": {
+      "type": "node",
+      "id": 10657195357
+    },
+    "name": "Mimi Ostatua - pizza",
+    "lat": 43.3847925,
+    "lon": -1.3040418,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.040999999999999995,
+    "tags": {
+      "cuisine": [
+        "regional"
+      ],
+      "openingHours": "Tu-We 11:30-13:30, 18:00-21:00; Th-Fr 11:30-13:30, 18:00-21:00; Sa 18:00-22:00",
+      "website": "https://clicks.tastycloud.fr/6cf83cb88f8b52a8145e0822657ddcf8e438853f233431a763d26a6194be9153/"
+    }
+  },
+  {
+    "id": "node/10922013233",
+    "osm": {
+      "type": "node",
+      "id": 10922013233
+    },
+    "name": "Hordago",
+    "lat": 43.3864136,
+    "lon": -1.3028322,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.040999999999999995,
+    "tags": {
+      "cuisine": [
+        "regional"
+      ],
+      "openingHours": "Mo-Su 07:00-22:00",
+      "website": "https://www.restaurant-hordago-hasparren.com"
+    }
+  },
+  {
+    "id": "node/11415500911",
+    "osm": {
+      "type": "node",
+      "id": 11415500911
+    },
+    "name": "Alma",
+    "lat": 43.3875264,
+    "lon": -1.66229,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.040999999999999995,
+    "tags": {
+      "wheelchair": "yes",
+      "cuisine": [
+        "bistro",
+        "regional",
+        "french"
+      ],
+      "openingHours": "Tu-Sa 12:15-14:00,19:15-21:45",
+      "website": "https://www.restaurantalma.fr/"
+    }
+  },
+  {
+    "id": "node/11425819551",
+    "osm": {
+      "type": "node",
+      "id": 11425819551
+    },
+    "name": "Maison Ama",
+    "lat": 43.3917881,
+    "lon": -1.6592458,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.040999999999999995,
+    "tags": {
+      "wheelchair": "yes",
+      "cuisine": [
+        "tapas",
+        "regional"
+      ],
+      "openingHours": "Th-Mo 10:00-23:30",
+      "website": "https://maisonama.eatbu.com/?lang=fr"
+    }
+  },
+  {
+    "id": "node/11983068614",
+    "osm": {
+      "type": "node",
+      "id": 11983068614
+    },
+    "name": "Kinka Restaurant Bar",
+    "lat": 43.3608874,
+    "lon": -1.5805285,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.040999999999999995,
+    "tags": {
+      "wheelchair": "yes",
+      "cuisine": [
+        "regional"
+      ],
+      "openingHours": "Tu-Su 08:30-22:00",
+      "website": "https://www.kinka.eus/fr/restaurant/restaurant-st-pee-sur-nivelle"
+    }
+  },
+  {
+    "id": "node/12946377801",
+    "osm": {
+      "type": "node",
+      "id": 12946377801
+    },
+    "name": "Bouli'pizz",
+    "lat": 43.5447487,
+    "lon": -1.1065322,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.040999999999999995,
+    "tags": {
+      "cuisine": [
+        "pizza"
+      ],
+      "openingHours": "Mo-Tu 11:30-14:00,18:30-22:00; Fr 11:30-14:00,18:30-22:00; Sa-Su 18:30-22:00; We-Th off",
+      "website": "https://boulipizz40.com/"
+    }
+  },
+  {
+    "id": "node/12949723986",
+    "osm": {
+      "type": "node",
+      "id": 12949723986
+    },
+    "name": "La Méridienne",
+    "lat": 43.5425907,
+    "lon": -1.4600126,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.040999999999999995,
+    "tags": {
+      "wheelchair": "yes",
+      "cuisine": [
+        "regional"
+      ],
+      "openingHours": "Apr 01-Oct 31 06:00-23:00",
+      "website": "https://www.grandola-lesnouveauxmondes.fr/"
+    }
+  },
+  {
+    "id": "node/13136477029",
+    "osm": {
+      "type": "node",
+      "id": 13136477029
+    },
+    "name": "La Mutinerie",
+    "lat": 43.5423148,
+    "lon": -1.4606645,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.040999999999999995,
+    "tags": {
+      "wheelchair": "yes",
+      "cuisine": [
+        "regional"
+      ],
+      "openingHours": "Mo-Sa 08:30-22:30; We 08:30-17:00; Th off; Su 08:30-15:00",
+      "website": "https://www.grandola-lesnouveauxmondes.fr/la-mutinerie/"
+    }
+  },
+  {
+    "id": "node/554255624",
+    "osm": {
+      "type": "node",
+      "id": 554255624
+    },
+    "name": "L'Atalante",
+    "lat": 43.4955453,
+    "lon": -1.4713303,
+    "category": "vie-nocturne",
+    "subcategory": "Cinémas",
+    "wikipediaLangs": 0,
+    "score": 0.040999999999999995,
+    "tags": {
+      "wheelchair": "yes",
+      "openingHours": "Mo-Su 13:00-22:30",
+      "website": "https://atalante-cinema.org/"
+    }
+  },
+  {
+    "id": "node/13287277382",
+    "osm": {
+      "type": "node",
+      "id": 13287277382
+    },
+    "name": "O'bistrot",
+    "lat": 43.5447112,
+    "lon": -1.1030106,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.04
+  },
+  {
+    "id": "node/13287288775",
+    "osm": {
+      "type": "node",
+      "id": 13287288775
+    },
+    "name": "Bar du marché",
+    "lat": 43.5451065,
+    "lon": -1.1030166,
+    "category": "vie-nocturne",
+    "subcategory": "Bars & pubs",
+    "wikipediaLangs": 0,
+    "score": 0.04
+  },
+  {
+    "id": "node/3732103046",
+    "osm": {
+      "type": "node",
+      "id": 3732103046
+    },
+    "name": "Marché de Quintaou",
+    "lat": 43.4837557,
+    "lon": -1.5123151,
+    "category": "gastronomie",
+    "subcategory": "Marchés & halles",
+    "wikipediaLangs": 0,
+    "score": 0.037142857142857144,
+    "tags": {
+      "openingHours": "Su 08:00+"
+    }
+  },
+  {
+    "id": "node/5240665522",
+    "osm": {
+      "type": "node",
+      "id": 5240665522
+    },
+    "name": "Halles 5 cantons",
+    "lat": 43.4944588,
+    "lon": -1.5291625,
+    "category": "gastronomie",
+    "subcategory": "Marchés & halles",
+    "wikipediaLangs": 0,
+    "score": 0.037142857142857144,
+    "tags": {
+      "openingHours": "Tu-Su 08:00-14:00; Fr 08:00-14:00,16:00-20:00"
+    }
+  },
+  {
+    "id": "node/5464348582",
+    "osm": {
+      "type": "node",
+      "id": 5464348582
+    },
+    "name": "Marché producteurs locaux du Boucau",
+    "lat": 43.5232506,
+    "lon": -1.4896575,
+    "category": "gastronomie",
+    "subcategory": "Marchés & halles",
+    "wikipediaLangs": 0,
+    "score": 0.037142857142857144,
+    "tags": {
+      "openingHours": "Sa 07:00-14:30"
+    }
+  },
+  {
+    "id": "node/5660840927",
+    "osm": {
+      "type": "node",
+      "id": 5660840927
+    },
+    "name": "En Cave et Débouche",
+    "lat": 43.5089235,
+    "lon": -1.4675655,
+    "category": "gastronomie",
+    "subcategory": "Caves & dégustation de vins",
+    "wikipediaLangs": 0,
+    "score": 0.037142857142857144,
+    "tags": {
+      "wheelchair": "yes",
+      "openingHours": "Mo,Th-Sa 09:00-13:00, Mo,We-Sa 14:30-19:30+, Su 09:30-13:30+"
+    }
+  },
+  {
+    "id": "node/7335134932",
+    "osm": {
+      "type": "node",
+      "id": 7335134932
+    },
+    "name": "Pêcherie des Allées Marines",
+    "lat": 43.4987397,
+    "lon": -1.4877476,
+    "category": "gastronomie",
+    "subcategory": "Marchés & halles",
+    "wikipediaLangs": 0,
+    "score": 0.037142857142857144,
+    "tags": {
+      "wheelchair": "yes",
+      "openingHours": "\"Tous les matins sauf le dimanche, en fonction des horaires des marées et au plus tard jusqu’à 13h00\""
+    }
+  },
+  {
+    "id": "node/7375886997",
+    "osm": {
+      "type": "node",
+      "id": 7375886997
+    },
+    "name": "Ferme Gastamendia",
+    "lat": 43.4487923,
+    "lon": -1.4430464,
+    "category": "gastronomie",
+    "subcategory": "Producteurs & fermes",
+    "wikipediaLangs": 0,
+    "score": 0.037142857142857144,
+    "tags": {
+      "openingHours": "Mo 17:00-19:00; We 17:00-19:00; Fr 17:00-19:00"
+    }
+  },
+  {
+    "id": "node/7740603132",
+    "osm": {
+      "type": "node",
+      "id": 7740603132
+    },
+    "name": "Fruits d'Antan",
+    "lat": 43.5473932,
+    "lon": -0.926091,
+    "category": "gastronomie",
+    "subcategory": "Producteurs & fermes",
+    "wikipediaLangs": 0,
+    "score": 0.037142857142857144,
+    "tags": {
+      "openingHours": "Th 16:00-19:00"
+    }
+  },
+  {
+    "id": "node/9189943774",
+    "osm": {
+      "type": "node",
+      "id": 9189943774
+    },
+    "name": "Caves \"Etxea\"",
+    "lat": 43.1617701,
+    "lon": -1.237457,
+    "category": "gastronomie",
+    "subcategory": "Caves & dégustation de vins",
+    "wikipediaLangs": 0,
+    "score": 0.037142857142857144,
+    "tags": {
+      "openingHours": "Mo-Su 10:00-12:30,14:00-18:00"
+    }
+  },
+  {
+    "id": "node/9259991978",
+    "osm": {
+      "type": "node",
+      "id": 9259991978
+    },
+    "name": "Marché de Ciboure",
+    "lat": 43.3845111,
+    "lon": -1.6674997,
+    "category": "gastronomie",
+    "subcategory": "Marchés & halles",
+    "wikipediaLangs": 0,
+    "score": 0.037142857142857144,
+    "tags": {
+      "openingHours": "Su 08:00-12:00"
+    }
+  },
+  {
+    "id": "node/9881196684",
+    "osm": {
+      "type": "node",
+      "id": 9881196684
+    },
+    "name": "Marché de Socoa",
+    "lat": 43.3888975,
+    "lon": -1.6860315,
+    "category": "gastronomie",
+    "subcategory": "Marchés & halles",
+    "wikipediaLangs": 0,
+    "score": 0.037142857142857144,
+    "tags": {
+      "wheelchair": "yes",
+      "openingHours": "Mo 08:00-13:00"
+    }
+  },
+  {
+    "id": "node/10053931959",
+    "osm": {
+      "type": "node",
+      "id": 10053931959
+    },
+    "name": "Marché place du Marquisat",
+    "lat": 43.495254,
+    "lon": -1.4672528,
+    "category": "gastronomie",
+    "subcategory": "Marchés & halles",
+    "wikipediaLangs": 0,
+    "score": 0.037142857142857144,
+    "tags": {
+      "openingHours": "Fr 08:00-13:00"
+    }
+  },
+  {
+    "id": "node/10053931960",
+    "osm": {
+      "type": "node",
+      "id": 10053931960
+    },
+    "name": "Marché du Polo Beyris",
+    "lat": 43.4793054,
+    "lon": -1.4989069,
+    "category": "gastronomie",
+    "subcategory": "Marchés & halles",
+    "wikipediaLangs": 0,
+    "score": 0.037142857142857144,
+    "tags": {
+      "openingHours": "Fr 08:00-13:00"
+    }
+  },
+  {
+    "id": "node/10053931961",
+    "osm": {
+      "type": "node",
+      "id": 10053931961
+    },
+    "name": "Marché place des Gascons",
+    "lat": 43.4990675,
+    "lon": -1.4563054,
+    "category": "gastronomie",
+    "subcategory": "Marchés & halles",
+    "wikipediaLangs": 0,
+    "score": 0.037142857142857144,
+    "tags": {
+      "openingHours": "We 08:00-13:00"
+    }
+  },
+  {
+    "id": "node/10742067230",
+    "osm": {
+      "type": "node",
+      "id": 10742067230
+    },
+    "name": "Brana",
+    "lat": 43.1617576,
+    "lon": -1.2386578,
+    "category": "gastronomie",
+    "subcategory": "Caves & dégustation de vins",
+    "wikipediaLangs": 0,
+    "score": 0.037142857142857144,
+    "tags": {
+      "openingHours": "Mo-Sa 10:00-13:00,14:30-18:30"
+    }
+  },
+  {
+    "id": "node/11373342163",
+    "osm": {
+      "type": "node",
+      "id": 11373342163
+    },
+    "name": "La cave à Nico",
+    "lat": 43.5289557,
+    "lon": -1.3900866,
+    "category": "gastronomie",
+    "subcategory": "Caves & dégustation de vins",
+    "wikipediaLangs": 0,
+    "score": 0.037142857142857144,
+    "tags": {
+      "openingHours": "Mo 16:00-19:30; Tu,We 10:00-12:30,16:00-19:30; Th-Sa 10:00-12:30,16:00-21:00"
+    }
+  },
+  {
+    "id": "node/11440000001",
+    "osm": {
+      "type": "node",
+      "id": 11440000001
+    },
+    "name": "Bienvenue à la Ferme",
+    "lat": 43.3744887,
+    "lon": -1.6794662,
+    "category": "gastronomie",
+    "subcategory": "Producteurs & fermes",
+    "wikipediaLangs": 0,
+    "score": 0.037142857142857144,
+    "tags": {
+      "wheelchair": "yes",
+      "openingHours": "Mo-Su 09:00-19:30"
+    }
+  },
+  {
+    "id": "node/12169977855",
+    "osm": {
+      "type": "node",
+      "id": 12169977855
+    },
+    "name": "Marché Saint-Charles",
+    "lat": 43.48642,
+    "lon": -1.5503045,
+    "category": "gastronomie",
+    "subcategory": "Marchés & halles",
+    "wikipediaLangs": 0,
+    "score": 0.037142857142857144,
+    "tags": {
+      "openingHours": "Fr 09:00-13:00"
+    }
+  },
+  {
+    "id": "node/12169993469",
+    "osm": {
+      "type": "node",
+      "id": 12169993469
+    },
+    "name": "Marché de producteurs des Halles",
+    "lat": 43.4809067,
+    "lon": -1.5616653,
+    "category": "gastronomie",
+    "subcategory": "Marchés & halles",
+    "wikipediaLangs": 0,
+    "score": 0.037142857142857144,
+    "tags": {
+      "openingHours": "Sa 07:30-13:00"
+    }
+  },
+  {
+    "id": "node/12170007638",
+    "osm": {
+      "type": "node",
+      "id": 12170007638
+    },
+    "name": "Marché de Saint-Martin",
+    "lat": 43.4723034,
+    "lon": -1.5559351,
+    "category": "gastronomie",
+    "subcategory": "Marchés & halles",
+    "wikipediaLangs": 0,
+    "score": 0.037142857142857144,
+    "tags": {
+      "openingHours": "We 09:00-13:00"
+    }
+  },
+  {
+    "id": "node/12170019116",
+    "osm": {
+      "type": "node",
+      "id": 12170019116
+    },
+    "name": "Marché des « 4 saisons »",
+    "lat": 43.4391419,
+    "lon": -1.5899089,
+    "category": "gastronomie",
+    "subcategory": "Marchés & halles",
+    "wikipediaLangs": 0,
+    "score": 0.037142857142857144,
+    "tags": {
+      "openingHours": "Sa 09:00-13:00"
+    }
+  },
+  {
+    "id": "node/12628770601",
+    "osm": {
+      "type": "node",
+      "id": 12628770601
+    },
+    "name": "Earl Salaberry",
+    "lat": 43.4517968,
+    "lon": -1.4388802,
+    "category": "gastronomie",
+    "subcategory": "Producteurs & fermes",
+    "wikipediaLangs": 0,
+    "score": 0.037142857142857144,
+    "tags": {
+      "openingHours": "Tu-Fr 16:00-19:00"
+    }
+  },
+  {
+    "id": "way/64592658",
+    "osm": {
+      "type": "way",
+      "id": 64592658
+    },
+    "name": "Marché couvert",
+    "lat": 43.1615454,
+    "lon": -1.2396974,
+    "category": "gastronomie",
+    "subcategory": "Marchés & halles",
+    "wikipediaLangs": 0,
+    "score": 0.037142857142857144,
+    "tags": {
+      "openingHours": "Mo 08:00-13:00"
+    }
+  },
+  {
+    "id": "way/71974988",
+    "osm": {
+      "type": "way",
+      "id": 71974988
+    },
+    "name": "Halle de Biarritz",
+    "lat": 43.481011,
+    "lon": -1.5621929,
+    "category": "gastronomie",
+    "subcategory": "Marchés & halles",
+    "wikipediaLangs": 0,
+    "score": 0.037142857142857144,
+    "tags": {
+      "wheelchair": "yes",
+      "openingHours": "Mo-Su 07:30-14:00"
+    }
+  },
+  {
+    "id": "way/71976840",
+    "osm": {
+      "type": "way",
+      "id": 71976840
+    },
+    "name": "Halle aux Poissons",
+    "lat": 43.4811452,
+    "lon": -1.562787,
+    "category": "gastronomie",
+    "subcategory": "Marchés & halles",
+    "wikipediaLangs": 0,
+    "score": 0.037142857142857144,
+    "tags": {
+      "openingHours": "Mo-Su 07:30-14:00"
+    }
+  },
+  {
+    "id": "way/72697325",
+    "osm": {
+      "type": "way",
+      "id": 72697325
+    },
+    "name": "Halles de Bayonne",
+    "lat": 43.4900016,
+    "lon": -1.4751068,
+    "category": "gastronomie",
+    "subcategory": "Marchés & halles",
+    "wikipediaLangs": 0,
+    "score": 0.037142857142857144,
+    "tags": {
+      "openingHours": "Mo-Th 07:00-13:30; Fr 07:00-14:30; Sa 06:00-14:30; Su 08:00-14:30"
+    }
+  },
+  {
+    "id": "way/236296273",
+    "osm": {
+      "type": "way",
+      "id": 236296273
+    },
+    "name": "Jardin Public Natacha",
+    "lat": 43.4735347,
+    "lon": -1.558583,
+    "category": "loisirs",
+    "subcategory": "Parcs & jardins",
+    "wikipediaLangs": 0,
+    "score": 0.037142857142857144,
+    "tags": {
+      "openingHours": "Mo-Su 08:45-18:00"
+    }
+  },
+  {
+    "id": "way/816800001",
+    "osm": {
+      "type": "way",
+      "id": 816800001
+    },
+    "name": "Jardin public Léon Bonnat",
+    "lat": 43.49459,
+    "lon": -1.4766386,
+    "category": "loisirs",
+    "subcategory": "Parcs & jardins",
+    "wikipediaLangs": 0,
+    "score": 0.037142857142857144,
+    "tags": {
+      "openingHours": "Jan 01-Apr 30 Mo-Sa 08:30-18:00; Jan 01-Apr 30 PH Su 09:00-18:00; May 01-Sep 30 Mo-Sa 08:30-20:30; May 01-Sep 30 PH Su 09:00-20:30; Oct 01-Dec 31 Mo-Sa 08:30-18:00; Oct 01-Dec 31 PH Su 09:00-18:00"
+    }
+  },
+  {
+    "id": "way/818075347",
+    "osm": {
+      "type": "way",
+      "id": 818075347
+    },
+    "name": "Parc de Castillon",
+    "lat": 43.5290014,
+    "lon": -1.4533121,
+    "category": "loisirs",
+    "subcategory": "Parcs & jardins",
+    "wikipediaLangs": 0,
+    "score": 0.037142857142857144,
+    "tags": {
+      "openingHours": "Apr-Sep: Mo-Su 07:30-21:30; Oct-Mar: Mo-Su 08:00-18:00"
+    }
+  },
+  {
+    "id": "node/9951918830",
+    "osm": {
+      "type": "node",
+      "id": 9951918830
+    },
+    "name": "École de surf H2O",
+    "lat": 43.43077,
+    "lon": -1.6000738,
+    "category": "sport",
+    "subcategory": "Surf & sports de glisse",
+    "wikipediaLangs": 0,
+    "score": 0.037142857142857144,
+    "tags": {
+      "openingHours": "Mar-Oct PH,Mo-Su 07:00-19:00"
+    }
+  },
+  {
+    "id": "node/9344184503",
+    "osm": {
+      "type": "node",
+      "id": 9344184503
+    },
+    "name": "Cénote Plaisir",
+    "lat": 43.4926922,
+    "lon": -1.4753219,
+    "category": "bien-etre",
+    "subcategory": "Spas & instituts",
+    "wikipediaLangs": 0,
+    "score": 0.037142857142857144,
+    "tags": {
+      "openingHours": "Mo-Sa 09:30-12:30,14:00-19:00"
+    }
+  },
+  {
+    "id": "node/597620979",
+    "osm": {
+      "type": "node",
+      "id": 597620979
+    },
+    "name": "La pizza de Nico",
+    "lat": 43.4898328,
+    "lon": -1.473812,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "cuisine": [
+        "pizza"
+      ],
+      "openingHours": "Su-We 11:30-14:30,18:00-22:00; Th-Sa 11:30-14:30,18:00-23:00; Dec 24 11:30-14:30; Apr 08,Dec 25,31 off",
+      "website": "https://lapizzadenico.com/restaurant/la-pizza-de-nico-bayonne/"
+    }
+  },
+  {
+    "id": "node/656416253",
+    "osm": {
+      "type": "node",
+      "id": 656416253
+    },
+    "name": "Pikoketa",
+    "lat": 43.296822,
+    "lon": -1.8052587,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "cuisine": [
+        "breakfast",
+        "regional",
+        "tapas"
+      ],
+      "openingHours": "Mo-Su 09:30-22:00",
+      "website": "https://restaurantepikoketa.com/"
+    }
+  },
+  {
+    "id": "node/1361467443",
+    "osm": {
+      "type": "node",
+      "id": 1361467443
+    },
+    "name": "Pépé Joe",
+    "lat": 43.4817393,
+    "lon": -1.557472,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "wheelchair": "no",
+      "cuisine": [
+        "burger",
+        "pizza"
+      ],
+      "openingHours": "Mo-Su 11:00-14:00,18:00-23:00+",
+      "website": "https://www.pepejoe.fr/"
+    }
+  },
+  {
+    "id": "node/1675774648",
+    "osm": {
+      "type": "node",
+      "id": 1675774648
+    },
+    "name": "Santxotena",
+    "lat": 43.1469657,
+    "lon": -1.5177132,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "cuisine": [
+        "regional"
+      ],
+      "openingHours": "Tu-Su 13:00-15:30; Sa 20:30-22:00",
+      "website": "Http://santxotena.es"
+    }
+  },
+  {
+    "id": "node/1837356897",
+    "osm": {
+      "type": "node",
+      "id": 1837356897
+    },
+    "name": "La Diva",
+    "lat": 43.3882183,
+    "lon": -1.6642909,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "wheelchair": "yes",
+      "openingHours": "12:00-14:15,19:00-22:00; We,Th off",
+      "website": "http://www.restaurantladiva.com/"
+    }
+  },
+  {
+    "id": "node/1676304365",
+    "osm": {
+      "type": "node",
+      "id": 1676304365
+    },
+    "name": "Monciné",
+    "lat": 43.4835226,
+    "lon": -1.5065619,
+    "category": "vie-nocturne",
+    "subcategory": "Cinémas",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "cost": "paid",
+      "openingHours": "Mo-Su 13:45-22:15",
+      "website": "https://www.moncine-anglet.com/"
+    }
+  },
+  {
+    "id": "node/1974848713",
+    "osm": {
+      "type": "node",
+      "id": 1974848713
+    },
+    "name": "Cervecería Boulevard",
+    "lat": 43.3439065,
+    "lon": -1.7977415,
+    "category": "vie-nocturne",
+    "subcategory": "Bars & pubs",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "openingHours": "Tu-Th 17:00-23:00; Fr 17:00-00:00; Sa 12:00-00:00; Su 12:00-22:00",
+      "website": "https://elboule.es/"
+    }
+  },
+  {
+    "id": "node/7015112230",
+    "osm": {
+      "type": "node",
+      "id": 7015112230
+    },
+    "name": "L'Entourloupe",
+    "lat": 43.4301079,
+    "lon": -1.5983077,
+    "category": "vie-nocturne",
+    "subcategory": "Bars & pubs",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "wheelchair": "yes",
+      "openingHours": "We-Su 11:00-23:00",
+      "website": "https://www.instagram.com/entourloupebidart/"
+    }
+  },
+  {
+    "id": "node/7701788644",
+    "osm": {
+      "type": "node",
+      "id": 7701788644
+    },
+    "name": "Kechiloa",
+    "lat": 43.3782677,
+    "lon": -1.6708606,
+    "category": "vie-nocturne",
+    "subcategory": "Bars & pubs",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "openingHours": "Mo-Fr 05:30-19:00; Sa 05:30-13:00",
+      "website": "https://bar-tabac-presse-kechiloa.business.site/"
+    }
+  },
+  {
+    "id": "node/8010064192",
+    "osm": {
+      "type": "node",
+      "id": 8010064192
+    },
+    "name": "Prefosta Elkartea",
+    "lat": 43.1145897,
+    "lon": -0.8618573,
+    "category": "vie-nocturne",
+    "subcategory": "Bars & pubs",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "openingHours": "Fr 19:00-04:00",
+      "website": "http://radio-oiseau.com/prefosta/category/accueil/"
+    }
+  },
+  {
+    "id": "node/9166883188",
+    "osm": {
+      "type": "node",
+      "id": 9166883188
+    },
+    "name": "Asteburua",
+    "lat": 43.2326454,
+    "lon": -1.2997143,
+    "category": "vie-nocturne",
+    "subcategory": "Bars & pubs",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "cuisine": [
+        "Traditionnelle Restauration rapide"
+      ],
+      "openingHours": "Th 15:00-23:00; Fr-Sa 15:00-02:00; Su 11:00-22:00",
+      "website": "https://lupulubar.wixsite.com/osses"
+    }
+  },
+  {
+    "id": "node/9669879061",
+    "osm": {
+      "type": "node",
+      "id": 9669879061
+    },
+    "name": "Le Métro",
+    "lat": 43.5474344,
+    "lon": -1.4890895,
+    "category": "vie-nocturne",
+    "subcategory": "Bars & pubs",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "openingHours": "Mo-Sa 06:30-19:30"
+    }
+  },
+  {
+    "id": "node/9887303144",
+    "osm": {
+      "type": "node",
+      "id": 9887303144
+    },
+    "name": "Pasarela Guinguette",
+    "lat": 43.4333051,
+    "lon": -1.4568291,
+    "category": "vie-nocturne",
+    "subcategory": "Bars & pubs",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "cuisine": [
+        "tapas"
+      ],
+      "openingHours": "We-Su 10:00-22:00",
+      "website": "https://pasarela-guinguette-villefranque.eatbu.com"
+    }
+  },
+  {
+    "id": "node/11425819540",
+    "osm": {
+      "type": "node",
+      "id": 11425819540
+    },
+    "name": "Le Bar Basque",
+    "lat": 43.3910729,
+    "lon": -1.6591049,
+    "category": "vie-nocturne",
+    "subcategory": "Bars & pubs",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "cuisine": [
+        "regional"
+      ],
+      "openingHours": "08:30-22:00"
+    }
+  },
+  {
+    "id": "node/11704474169",
+    "osm": {
+      "type": "node",
+      "id": 11704474169
+    },
+    "name": "Tatapas Gastroteka",
+    "lat": 43.3620417,
+    "lon": -1.791345,
+    "category": "vie-nocturne",
+    "subcategory": "Bars & pubs",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "cuisine": [
+        "tapas"
+      ],
+      "openingHours": "Mo 11:30-23:00; Th-Fr 11:30-23:30; Sa 11:30-00:30; Su 12:00-23:30",
+      "website": "https://www.tatapasgastroteka.com/"
+    }
+  },
+  {
+    "id": "node/12407263352",
+    "osm": {
+      "type": "node",
+      "id": 12407263352
+    },
+    "name": "Bière Truck Landes",
+    "lat": 43.5499438,
+    "lon": -1.3037127,
+    "category": "vie-nocturne",
+    "subcategory": "Bars & pubs",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "openingHours": "Su 09:00-13:00",
+      "website": "https://biere-truck.fr/biere-trucks/biere-truck-landes/"
+    }
+  },
+  {
+    "id": "node/706153437",
+    "osm": {
+      "type": "node",
+      "id": 706153437
+    },
+    "name": "Udako etxea",
+    "lat": 43.3082064,
+    "lon": -1.6339264,
+    "category": "vie-nocturne",
+    "subcategory": "Bars & pubs",
+    "wikipediaLangs": 0,
+    "score": 0.031,
+    "tags": {
+      "wheelchair": "yes",
+      "openingHours": "Mo-Su 10:00-18:00"
+    }
+  },
+  {
+    "id": "node/706153466",
+    "osm": {
+      "type": "node",
+      "id": 706153466
+    },
+    "name": "Larrun gain",
+    "lat": 43.3088546,
+    "lon": -1.6353674,
+    "category": "vie-nocturne",
+    "subcategory": "Bars & pubs",
+    "wikipediaLangs": 0,
+    "score": 0.031,
+    "tags": {
+      "wheelchair": "yes",
+      "openingHours": "Mo-Su 10:30-18:00",
+      "website": "http://www.larungain.com/"
+    }
+  },
+  {
+    "id": "node/1635643580",
+    "osm": {
+      "type": "node",
+      "id": 1635643580
+    },
+    "name": "Etxeko",
+    "lat": 43.4820355,
+    "lon": -1.5641008,
+    "category": "vie-nocturne",
+    "subcategory": "Bars & pubs",
+    "wikipediaLangs": 0,
+    "score": 0.031,
+    "tags": {
+      "wheelchair": "limited",
+      "cuisine": [
+        "regional"
+      ],
+      "openingHours": "Mo-Su 12:00-14:30, 19:00-23:00"
+    }
+  },
+  {
+    "id": "node/3054048534",
+    "osm": {
+      "type": "node",
+      "id": 3054048534
+    },
+    "name": "Sportgreen cerveceria",
+    "lat": 43.3410286,
+    "lon": -1.7869201,
+    "category": "vie-nocturne",
+    "subcategory": "Bars & pubs",
+    "wikipediaLangs": 0,
+    "score": 0.031,
+    "tags": {
+      "cuisine": [
+        "spanish",
+        "diner",
+        "italian_pizza",
+        "coffee_shop"
+      ],
+      "openingHours": "Mo-Su 10:00-02:00"
+    }
+  },
+  {
+    "id": "node/3273766077",
+    "osm": {
+      "type": "node",
+      "id": 3273766077
+    },
+    "name": "Don Jabugo",
+    "lat": 43.3406888,
+    "lon": -1.7937282,
+    "category": "vie-nocturne",
+    "subcategory": "Bars & pubs",
+    "wikipediaLangs": 0,
+    "score": 0.031,
+    "tags": {
+      "openingHours": "Mo-Th 06:30-23:00; Fr 06:30-00:00; Sa, Su 09:00-00:00"
+    }
+  },
+  {
+    "id": "node/3520080416",
+    "osm": {
+      "type": "node",
+      "id": 3520080416
+    },
+    "name": "Sidreria Hernani",
+    "lat": 43.4769471,
+    "lon": -1.5622883,
+    "category": "vie-nocturne",
+    "subcategory": "Bars & pubs",
+    "wikipediaLangs": 0,
+    "score": 0.031,
+    "tags": {
+      "cuisine": [
+        "local"
+      ],
+      "openingHours": "Mo-Su 20:00-00:00",
+      "website": "http://www.cidrerie-hernani.com"
+    }
+  },
+  {
+    "id": "node/4485480136",
+    "osm": {
+      "type": "node",
+      "id": 4485480136
+    },
+    "name": "O'Chat Noir",
+    "lat": 43.3905175,
+    "lon": -1.6861116,
+    "category": "vie-nocturne",
+    "subcategory": "Bars & pubs",
+    "wikipediaLangs": 0,
+    "score": 0.031,
+    "tags": {
+      "wheelchair": "no",
+      "openingHours": "Th-Tu 08:00-20:30"
+    }
+  },
+  {
+    "id": "node/4579686697",
+    "osm": {
+      "type": "node",
+      "id": 4579686697
+    },
+    "name": "La marine",
+    "lat": 43.3879221,
+    "lon": -1.6644592,
+    "category": "vie-nocturne",
+    "subcategory": "Bars & pubs",
+    "wikipediaLangs": 0,
+    "score": 0.031,
+    "tags": {
+      "wheelchair": "yes",
+      "openingHours": "Mo-Su 08:00-00:00"
+    }
+  },
+  {
+    "id": "node/4579686698",
+    "osm": {
+      "type": "node",
+      "id": 4579686698
+    },
+    "name": "Le Majestic",
+    "lat": 43.3880269,
+    "lon": -1.6642053,
+    "category": "vie-nocturne",
+    "subcategory": "Bars & pubs",
+    "wikipediaLangs": 0,
+    "score": 0.031,
+    "tags": {
+      "wheelchair": "yes",
+      "openingHours": "Tu-Su 07:00-23:00"
+    }
+  },
+  {
+    "id": "node/4579749899",
+    "osm": {
+      "type": "node",
+      "id": 4579749899
+    },
+    "name": "Le p'tit suisse",
+    "lat": 43.3875488,
+    "lon": -1.6640188,
+    "category": "vie-nocturne",
+    "subcategory": "Bars & pubs",
+    "wikipediaLangs": 0,
+    "score": 0.031,
+    "tags": {
+      "wheelchair": "yes",
+      "openingHours": "Mo-Su 08:00-00:00"
+    }
+  },
+  {
+    "id": "node/4726455591",
+    "osm": {
+      "type": "node",
+      "id": 4726455591
+    },
+    "name": "L'Artnoa Maison des Vins à Biarritz",
+    "lat": 43.4797579,
+    "lon": -1.5641427,
+    "category": "vie-nocturne",
+    "subcategory": "Bars & pubs",
+    "wikipediaLangs": 0,
+    "score": 0.031,
+    "tags": {
+      "openingHours": "Tu-Sa 10:00-13:00, 16:30-23:00"
+    }
+  },
+  {
+    "id": "node/4889191449",
+    "osm": {
+      "type": "node",
+      "id": 4889191449
+    },
+    "name": "Capella Café",
+    "lat": 43.490042,
+    "lon": -1.4768552,
+    "category": "vie-nocturne",
+    "subcategory": "Bars & pubs",
+    "wikipediaLangs": 0,
+    "score": 0.031,
+    "tags": {
+      "openingHours": "Tu-Sa 09:00-19:00"
+    }
+  },
+  {
+    "id": "node/5003912310",
+    "osm": {
+      "type": "node",
+      "id": 5003912310
+    },
+    "name": "Bar Chez Camy",
+    "lat": 43.4825887,
+    "lon": -0.9984188,
+    "category": "vie-nocturne",
+    "subcategory": "Bars & pubs",
+    "wikipediaLangs": 0,
+    "score": 0.031,
+    "tags": {
+      "openingHours": "We-Sa 16:00-00:00; Su 10:00-00:00"
+    }
+  },
+  {
+    "id": "node/5706151227",
+    "osm": {
+      "type": "node",
+      "id": 5706151227
+    },
+    "name": "Kalostrape",
+    "lat": 43.4907852,
+    "lon": -1.4726737,
+    "category": "vie-nocturne",
+    "subcategory": "Bars & pubs",
+    "wikipediaLangs": 0,
+    "score": 0.031,
+    "tags": {
+      "wheelchair": "yes",
+      "openingHours": "Tu,We 10:00-15:30,18:00-23:00; Th 10:00-24:00; Fr 00:00-02:00,10:00-24:00; Sa 00:00-02:00,11:00-24:00; Su 00:00-02:00"
+    }
+  },
+  {
+    "id": "node/861393457",
+    "osm": {
+      "type": "node",
+      "id": 861393457
+    },
+    "name": "Archerie Tag",
+    "lat": 43.3560497,
+    "lon": -1.7405739,
+    "category": "loisirs",
+    "subcategory": "Attractions",
+    "wikipediaLangs": 0,
+    "score": 0.02142857142857143,
+    "tags": {
+      "website": "https://archerietag.com/"
+    }
+  },
+  {
+    "id": "node/8702070094",
+    "osm": {
+      "type": "node",
+      "id": 8702070094
+    },
+    "name": "EXO64 - téleski nautique",
+    "lat": 43.529666,
+    "lon": -1.1707002,
+    "category": "loisirs",
+    "subcategory": "Parcs aquatiques",
+    "wikipediaLangs": 0,
+    "score": 0.02142857142857143,
+    "tags": {
+      "website": "https://www.exoloisirs.com/fr/content/exo-64-tnsames"
+    }
+  },
+  {
+    "id": "node/8739674544",
+    "osm": {
+      "type": "node",
+      "id": 8739674544
+    },
+    "name": "Chasse au trésor",
+    "lat": 43.3621413,
+    "lon": -1.6995423,
+    "category": "loisirs",
+    "subcategory": "Attractions",
+    "wikipediaLangs": 0,
+    "score": 0.02142857142857143,
+    "tags": {
+      "website": "http://urrugne-tourisme.com"
+    }
+  },
+  {
+    "id": "node/8741856185",
+    "osm": {
+      "type": "node",
+      "id": 8741856185
+    },
+    "name": "Quizz familial",
+    "lat": 43.306535,
+    "lon": -1.4985113,
+    "category": "loisirs",
+    "subcategory": "Attractions",
+    "wikipediaLangs": 0,
+    "score": 0.02142857142857143,
+    "tags": {
+      "website": "https://www.en-pays-basque.fr"
+    }
+  },
+  {
+    "id": "way/1428327144",
+    "osm": {
+      "type": "way",
+      "id": 1428327144
+    },
+    "name": "Grottes de Sare",
+    "lat": 43.2685619,
+    "lon": -1.5715124,
+    "category": "loisirs",
+    "subcategory": "Attractions",
+    "wikipediaLangs": 0,
+    "score": 0.02142857142857143,
+    "tags": {
+      "website": "https://www.grottesdesare.fr/"
+    }
+  },
+  {
+    "id": "node/6882376971",
+    "osm": {
+      "type": "node",
+      "id": 6882376971
+    },
+    "name": "Evasion 64",
+    "lat": 43.3290966,
+    "lon": -1.3932582,
+    "category": "sport",
+    "subcategory": "Sports nautiques",
+    "wikipediaLangs": 0,
+    "score": 0.02142857142857143,
+    "tags": {
+      "website": "https://evasion64.fr/"
+    }
+  },
+  {
+    "id": "node/7112479119",
+    "osm": {
+      "type": "node",
+      "id": 7112479119
+    },
+    "name": "École de surf Christophe Reinhardt",
+    "lat": 43.4251495,
+    "lon": -1.6103145,
+    "category": "sport",
+    "subcategory": "Surf & sports de glisse",
+    "wikipediaLangs": 0,
+    "score": 0.02142857142857143,
+    "tags": {
+      "website": "https://www.ecole-de-surf-bidart.com/"
+    }
+  },
+  {
+    "id": "node/7653010317",
+    "osm": {
+      "type": "node",
+      "id": 7653010317
+    },
+    "name": "Aventure 64",
+    "lat": 43.4072707,
+    "lon": -1.6207022,
+    "category": "sport",
+    "subcategory": "Surf & sports de glisse",
+    "wikipediaLangs": 0,
+    "score": 0.02142857142857143,
+    "tags": {
+      "website": "https://aventure64.fr/"
+    }
+  },
+  {
+    "id": "node/7653033351",
+    "osm": {
+      "type": "node",
+      "id": 7653033351
+    },
+    "name": "Chica Beach",
+    "lat": 43.3878708,
+    "lon": -1.663254,
+    "category": "sport",
+    "subcategory": "Surf & sports de glisse",
+    "wikipediaLangs": 0,
+    "score": 0.02142857142857143,
+    "tags": {
+      "website": "http://www.ecoledesurfhendaye.com/"
+    }
+  },
+  {
+    "id": "node/7655159920",
+    "osm": {
+      "type": "node",
+      "id": 7655159920
+    },
+    "name": "Profdesurf.com",
+    "lat": 43.3877695,
+    "lon": -1.6633482,
+    "category": "sport",
+    "subcategory": "Surf & sports de glisse",
+    "wikipediaLangs": 0,
+    "score": 0.02142857142857143,
+    "tags": {
+      "website": "http://profdesurf.com"
+    }
+  },
+  {
+    "id": "node/7655463582",
+    "osm": {
+      "type": "node",
+      "id": 7655463582
+    },
+    "name": "Tech Océan",
+    "lat": 43.3946085,
+    "lon": -1.6846509,
+    "category": "sport",
+    "subcategory": "Sports nautiques",
+    "wikipediaLangs": 0,
+    "score": 0.02142857142857143,
+    "tags": {
+      "website": "https://www.tech-ocean.fr/"
+    }
+  },
+  {
+    "id": "way/408370460",
+    "osm": {
+      "type": "way",
+      "id": 408370460
+    },
+    "name": "Port de Plaisance du Brise-Lames",
+    "lat": 43.5254565,
+    "lon": -1.5067115,
+    "category": "sport",
+    "subcategory": "Sports nautiques",
+    "wikipediaLangs": 0,
+    "score": 0.02142857142857143,
+    "tags": {
+      "website": "https://www.communaute-paysbasque.fr/"
+    }
+  },
+  {
+    "id": "way/414499744",
+    "osm": {
+      "type": "way",
+      "id": 414499744
+    },
+    "name": "Port Bayonne Anglet",
+    "lat": 43.5223134,
+    "lon": -1.4963836,
+    "category": "sport",
+    "subcategory": "Sports nautiques",
+    "wikipediaLangs": 0,
+    "score": 0.02142857142857143,
+    "tags": {
+      "website": "https://www.port-adhoc.com/les-ports/port-a-sec-bayonne/"
+    }
+  },
+  {
+    "id": "node/5487949721",
+    "osm": {
+      "type": "node",
+      "id": 5487949721
+    },
+    "name": "Adventure Côte-Basque-Paramoteur",
+    "lat": 43.3397096,
+    "lon": -1.5309949,
+    "category": "loisirs",
+    "subcategory": "Attractions",
+    "wikipediaLangs": 0,
+    "score": 0.014285714285714284,
+    "tags": {
+      "website": "http://www.cotebasqueparamiteur.fr"
+    }
+  },
+  {
+    "id": "node/7655502159",
+    "osm": {
+      "type": "node",
+      "id": 7655502159
+    },
+    "name": "Gurekin Plongée",
+    "lat": 43.3819778,
+    "lon": -1.6550341,
+    "category": "loisirs",
+    "subcategory": "Attractions",
+    "wikipediaLangs": 0,
+    "score": 0.014285714285714284,
+    "tags": {
+      "website": "https://www.gurekin-plongee.com/"
+    }
+  },
+  {
+    "id": "node/5407635547",
+    "osm": {
+      "type": "node",
+      "id": 5407635547
+    },
+    "name": "2X Aventures",
+    "lat": 43.5276532,
+    "lon": -1.0527697,
+    "category": "sport",
+    "subcategory": "Sports nautiques",
+    "wikipediaLangs": 0,
+    "score": 0.014285714285714284,
+    "tags": {
+      "website": "https://2xaventures.com/fr"
+    }
+  },
+  {
+    "id": "node/5846604977",
+    "osm": {
+      "type": "node",
+      "id": 5846604977
+    },
+    "name": "Club Hippique de la Côte Basque",
+    "lat": 43.5059708,
+    "lon": -1.5234009,
+    "category": "sport",
+    "subcategory": "Sports équestres",
+    "wikipediaLangs": 0,
+    "score": 0.014285714285714284,
+    "tags": {
+      "website": "https://www.clubhippiquecotebasque.com/"
+    }
+  },
+  {
+    "id": "node/7562930002",
+    "osm": {
+      "type": "node",
+      "id": 7562930002
+    },
+    "name": "ProSurf Shop",
+    "lat": 43.4270931,
+    "lon": -1.6042681,
+    "category": "sport",
+    "subcategory": "Surf & sports de glisse",
+    "wikipediaLangs": 0,
+    "score": 0.014285714285714284,
+    "tags": {
+      "website": "https://surf-shop-guethary-bidart.com/"
+    }
+  },
+  {
+    "id": "node/7562985175",
+    "osm": {
+      "type": "node",
+      "id": 7562985175
+    },
+    "name": "PADD",
+    "lat": 43.450673,
+    "lon": -1.5662021,
+    "category": "sport",
+    "subcategory": "Sports équestres",
+    "wikipediaLangs": 0,
+    "score": 0.014285714285714284
+  },
+  {
+    "id": "node/7653001257",
+    "osm": {
+      "type": "node",
+      "id": 7653001257
+    },
+    "name": "École de surf Français Hendaia",
+    "lat": 43.3899846,
+    "lon": -1.6598039,
+    "category": "sport",
+    "subcategory": "Surf & sports de glisse",
+    "wikipediaLangs": 0,
+    "score": 0.014285714285714284,
+    "tags": {
+      "website": "https://www.ecoledesurf-hendaye.com/"
+    }
+  },
+  {
+    "id": "node/7655236613",
+    "osm": {
+      "type": "node",
+      "id": 7655236613
+    },
+    "name": "Boutique 21 - Bakun école de surf",
+    "lat": 43.3887332,
+    "lon": -1.6645489,
+    "category": "sport",
+    "subcategory": "Surf & sports de glisse",
+    "wikipediaLangs": 0,
+    "score": 0.014285714285714284,
+    "tags": {
+      "website": "https://www.bakunsurf.com/"
+    }
+  },
+  {
+    "id": "node/7673212898",
+    "osm": {
+      "type": "node",
+      "id": 7673212898
+    },
+    "name": "Atlantic Pirogue",
+    "lat": 43.3945647,
+    "lon": -1.6846866,
+    "category": "sport",
+    "subcategory": "Sports nautiques",
+    "wikipediaLangs": 0,
+    "score": 0.014285714285714284,
+    "tags": {
+      "website": "http://www.atlantic-pirogue.com/"
+    }
+  },
+  {
+    "id": "node/7770195481",
+    "osm": {
+      "type": "node",
+      "id": 7770195481
+    },
+    "name": "Parcours de Cross",
+    "lat": 43.5082678,
+    "lon": -1.5206393,
+    "category": "sport",
+    "subcategory": "Sports équestres",
+    "wikipediaLangs": 0,
+    "score": 0.014285714285714284,
+    "tags": {
+      "website": "https://www.clubhippiquecotebasque.com/"
+    }
+  },
+  {
+    "id": "node/8164138994",
+    "osm": {
+      "type": "node",
+      "id": 8164138994
+    },
+    "name": "Ibayak Rafting",
+    "lat": 43.3317854,
+    "lon": -1.3955513,
+    "category": "sport",
+    "subcategory": "Sports nautiques",
+    "wikipediaLangs": 0,
+    "score": 0.014285714285714284,
+    "tags": {
+      "website": "https://www.ibayakrafting.fr/"
+    }
+  },
+  {
+    "id": "node/8701512192",
+    "osm": {
+      "type": "node",
+      "id": 8701512192
+    },
+    "name": "Ferme équestre Urkodea",
+    "lat": 43.3758122,
+    "lon": -1.3106288,
+    "category": "sport",
+    "subcategory": "Sports équestres",
+    "wikipediaLangs": 0,
+    "score": 0.014285714285714284,
+    "tags": {
+      "website": "https://urkodea.ffe.com/"
+    }
+  },
+  {
+    "id": "node/8771868063",
+    "osm": {
+      "type": "node",
+      "id": 8771868063
+    },
+    "name": "Centre de Tourisme Équestre Olhaldea Zalditokia",
+    "lat": 43.3161801,
+    "lon": -1.5603256,
+    "category": "sport",
+    "subcategory": "Sports équestres",
+    "wikipediaLangs": 0,
+    "score": 0.014285714285714284,
+    "tags": {
+      "website": "http://www.olhaldea.com"
+    }
+  },
+  {
+    "id": "node/10973923405",
+    "osm": {
+      "type": "node",
+      "id": 10973923405
+    },
+    "name": "La Vague Basque",
+    "lat": 43.4774157,
+    "lon": -1.5668472,
+    "category": "sport",
+    "subcategory": "Surf & sports de glisse",
+    "wikipediaLangs": 0,
+    "score": 0.014285714285714284,
+    "tags": {
+      "website": "https://www.vaguebasque.fr/"
+    }
+  },
+  {
+    "id": "node/8731019261",
+    "osm": {
+      "type": "node",
+      "id": 8731019261
+    },
+    "name": "Cours Yoga Eva Durisova",
+    "lat": 43.3857339,
+    "lon": -1.6956771,
+    "category": "bien-etre",
+    "subcategory": "Yoga & retraites",
+    "wikipediaLangs": 0,
+    "score": 0.014285714285714284
+  },
+  {
+    "id": "node/8767423904",
+    "osm": {
+      "type": "node",
+      "id": 8767423904
+    },
+    "name": "Loreamar Thalasso Spa",
+    "lat": 43.3924736,
+    "lon": -1.6598285,
+    "category": "bien-etre",
+    "subcategory": "Spas & instituts",
+    "wikipediaLangs": 0,
+    "score": 0.014285714285714284,
+    "tags": {
+      "website": "https://luzgrandhotel.fr/"
+    }
+  },
+  {
+    "id": "node/8772416067",
+    "osm": {
+      "type": "node",
+      "id": 8772416067
+    },
+    "name": "S Kale 64 : Escales Yoga & Soins de Soi",
+    "lat": 43.4108039,
+    "lon": -1.6231169,
+    "category": "bien-etre",
+    "subcategory": "Spas & instituts",
+    "wikipediaLangs": 0,
+    "score": 0.014285714285714284,
+    "tags": {
+      "website": "https://www.escale64.com/"
+    }
+  },
+  {
+    "id": "node/9658464388",
+    "osm": {
+      "type": "node",
+      "id": 9658464388
+    },
+    "name": "Lā kāśa",
+    "lat": 43.4467151,
+    "lon": -1.5807811,
+    "category": "bien-etre",
+    "subcategory": "Yoga & retraites",
+    "wikipediaLangs": 0,
+    "score": 0.014285714285714284,
+    "tags": {
+      "website": "https://la-kasa.fr/"
+    }
+  },
+  {
+    "id": "node/11667044813",
+    "osm": {
+      "type": "node",
+      "id": 11667044813
+    },
+    "name": "Bliss studio",
+    "lat": 43.4618069,
+    "lon": -1.5407097,
+    "category": "bien-etre",
+    "subcategory": "Spas & instituts",
+    "wikipediaLangs": 0,
+    "score": 0.014285714285714284,
+    "tags": {
+      "website": "https://bliss-studiobiarritz.com/"
+    }
+  },
+  {
+    "id": "node/11928528357",
+    "osm": {
+      "type": "node",
+      "id": 11928528357
+    },
+    "name": "Alexia S. Espace mieux-être",
+    "lat": 43.5290381,
+    "lon": -1.3899854,
+    "category": "bien-etre",
+    "subcategory": "Spas & instituts",
+    "wikipediaLangs": 0,
+    "score": 0.014285714285714284,
+    "tags": {
+      "website": "https://www.facebook.com/profile.php?id=100076435206611"
+    }
+  },
+  {
+    "id": "node/12921423212",
+    "osm": {
+      "type": "node",
+      "id": 12921423212
+    },
+    "name": "SPA Cénote plaisir",
+    "lat": 43.4936701,
+    "lon": -1.5248694,
+    "category": "bien-etre",
+    "subcategory": "Spas & instituts",
+    "wikipediaLangs": 0,
+    "score": 0.014285714285714284,
+    "tags": {
+      "website": "https://cenoteplaisir.com/"
+    }
+  },
+  {
+    "id": "node/1503447920",
+    "osm": {
+      "type": "node",
+      "id": 1503447920
+    },
+    "name": "Ecurie Fantagaro",
+    "lat": 43.4071016,
+    "lon": -1.5861399,
+    "category": "sport",
+    "subcategory": "Sports équestres",
+    "wikipediaLangs": 0,
+    "score": 0.007142857142857142,
+    "tags": {
+      "website": "https://ecurie-fantagaro.fr/"
+    }
+  },
+  {
+    "id": "node/6161729477",
+    "osm": {
+      "type": "node",
+      "id": 6161729477
+    },
+    "name": "Centre Équestre Sainte-Hélène",
+    "lat": 43.3625517,
+    "lon": -1.6356325,
+    "category": "sport",
+    "subcategory": "Sports équestres",
+    "wikipediaLangs": 0,
+    "score": 0.007142857142857142,
+    "tags": {
+      "website": "http://equitationpourtous.wix.com/ce-st-helene#http://www.centre-equestre-sainte-helene-ascain.com"
+    }
+  },
+  {
+    "id": "node/6262328376",
+    "osm": {
+      "type": "node",
+      "id": 6262328376
+    },
+    "name": "Le Cheval de 3",
+    "lat": 43.34116,
+    "lon": -1.4649152,
+    "category": "sport",
+    "subcategory": "Sports équestres",
+    "wikipediaLangs": 0,
+    "score": 0.007142857142857142,
+    "tags": {
+      "website": "https://chevalde3.fr/"
+    }
+  },
+  {
+    "id": "node/6577392285",
+    "osm": {
+      "type": "node",
+      "id": 6577392285
+    },
+    "name": "Jo Moraiz Surf School",
+    "lat": 43.4773685,
+    "lon": -1.5668638,
+    "category": "sport",
+    "subcategory": "Surf & sports de glisse",
+    "wikipediaLangs": 0,
+    "score": 0.007142857142857142,
+    "tags": {
+      "website": "https://jomoraiz.com/"
+    }
+  },
+  {
+    "id": "node/7780858283",
+    "osm": {
+      "type": "node",
+      "id": 7780858283
+    },
+    "name": "Uhina Rafting",
+    "lat": 43.2661623,
+    "lon": -1.332837,
+    "category": "sport",
+    "subcategory": "Sports nautiques",
+    "wikipediaLangs": 0,
+    "score": 0.007142857142857142
+  },
+  {
+    "id": "node/8682375774",
+    "osm": {
+      "type": "node",
+      "id": 8682375774
+    },
+    "name": "Balades à poney Ttikientzat",
+    "lat": 43.3444859,
+    "lon": -1.1905882,
+    "category": "sport",
+    "subcategory": "Sports équestres",
+    "wikipediaLangs": 0,
+    "score": 0.007142857142857142
+  },
+  {
+    "id": "node/8684482850",
+    "osm": {
+      "type": "node",
+      "id": 8684482850
+    },
+    "name": "Jungle Canoë",
+    "lat": 43.4325622,
+    "lon": -1.256316,
+    "category": "sport",
+    "subcategory": "Sports nautiques",
+    "wikipediaLangs": 0,
+    "score": 0.007142857142857142
+  },
+  {
+    "id": "node/8930535836",
+    "osm": {
+      "type": "node",
+      "id": 8930535836
+    },
+    "name": "Les Écuries des gaves",
+    "lat": 43.4282321,
+    "lon": -0.9039903,
+    "category": "sport",
+    "subcategory": "Sports équestres",
+    "wikipediaLangs": 0,
+    "score": 0.007142857142857142,
+    "tags": {
+      "website": "http://www.ecuriedesgaves.com"
+    }
+  },
+  {
+    "id": "node/10860546529",
+    "osm": {
+      "type": "node",
+      "id": 10860546529
+    },
+    "name": "Les Écuries de Lortenia",
+    "lat": 43.4539002,
+    "lon": -1.5247124,
+    "category": "sport",
+    "subcategory": "Sports équestres",
+    "wikipediaLangs": 0,
+    "score": 0.007142857142857142,
+    "tags": {
+      "website": "https://www.lortenia.com/"
+    }
+  },
+  {
+    "id": "way/478950990",
+    "osm": {
+      "type": "way",
+      "id": 478950990
+    },
+    "name": "Ciboure - Larraldenia",
+    "lat": 43.3854683,
+    "lon": -1.6667734,
+    "category": "sport",
+    "subcategory": "Sports nautiques",
+    "wikipediaLangs": 0,
+    "score": 0.007142857142857142,
+    "tags": {
+      "cost": "paid"
+    }
+  },
+  {
+    "id": "way/808790803",
+    "osm": {
+      "type": "way",
+      "id": 808790803
+    },
+    "name": "La Nivelle - Port",
+    "lat": 43.3826972,
+    "lon": -1.6573514,
+    "category": "sport",
+    "subcategory": "Sports nautiques",
+    "wikipediaLangs": 0,
+    "score": 0.007142857142857142
+  },
+  {
+    "id": "way/967839148",
+    "osm": {
+      "type": "way",
+      "id": 967839148
+    },
+    "name": "Belharra-Perdun",
+    "lat": 43.4111795,
+    "lon": -1.7188364,
+    "category": "sport",
+    "subcategory": "Sports nautiques",
+    "wikipediaLangs": 0,
+    "score": 0.007142857142857142
+  },
+  {
+    "id": "node/10873162752",
+    "osm": {
+      "type": "node",
+      "id": 10873162752
+    },
+    "name": "Yogang",
+    "lat": 43.4813198,
+    "lon": -1.5471384,
+    "category": "bien-etre",
+    "subcategory": "Yoga & retraites",
+    "wikipediaLangs": 0,
+    "score": 0.007142857142857142,
+    "tags": {
+      "website": "https://yogang-biarritz.fr/"
+    }
+  },
+  {
+    "id": "node/12671213867",
+    "osm": {
+      "type": "node",
+      "id": 12671213867
+    },
+    "name": "Thalassothérapie Thalazur Saint-Jean-de-Luz",
+    "lat": 43.3913284,
+    "lon": -1.6612447,
+    "category": "bien-etre",
+    "subcategory": "Spas & instituts",
+    "wikipediaLangs": 0,
+    "score": 0.007142857142857142
+  },
+  {
+    "id": "node/13643552556",
+    "osm": {
+      "type": "node",
+      "id": 13643552556
+    },
+    "name": "Yoga Baiona Studio",
+    "lat": 43.4901909,
+    "lon": -1.4763878,
+    "category": "bien-etre",
+    "subcategory": "Yoga & retraites",
+    "wikipediaLangs": 0,
+    "score": 0.007142857142857142
+  },
+  {
+    "id": "node/777000911",
+    "osm": {
+      "type": "node",
+      "id": 777000911
+    },
+    "name": "Ur Bizia Rafting",
+    "lat": 43.2663446,
+    "lon": -1.3381886,
+    "category": "sport",
+    "subcategory": "Sports nautiques",
+    "wikipediaLangs": 0,
+    "score": 0
+  },
+  {
+    "id": "node/913120839",
+    "osm": {
+      "type": "node",
+      "id": 913120839
+    },
+    "name": "Onaka",
+    "lat": 43.3723576,
+    "lon": -1.7743576,
+    "category": "sport",
+    "subcategory": "Surf & sports de glisse",
+    "wikipediaLangs": 0,
+    "score": 0
+  },
+  {
+    "id": "node/2312157376",
+    "osm": {
+      "type": "node",
+      "id": 2312157376
+    },
+    "name": "Ohiana",
+    "lat": 43.3576994,
+    "lon": -1.7433626,
+    "category": "sport",
+    "subcategory": "Escalade & via ferrata",
+    "wikipediaLangs": 0,
+    "score": 0
+  },
+  {
+    "id": "node/2937587818",
+    "osm": {
+      "type": "node",
+      "id": 2937587818
+    },
+    "name": "Site de plongée de Guéthary",
+    "lat": 43.43373,
+    "lon": -1.6168,
+    "category": "sport",
+    "subcategory": "Sports nautiques",
+    "wikipediaLangs": 0,
+    "score": 0
+  },
+  {
+    "id": "node/2937587819",
+    "osm": {
+      "type": "node",
+      "id": 2937587819
+    },
+    "name": "Sites de plongée de Chicharvel",
+    "lat": 43.3937,
+    "lon": -1.76956,
+    "category": "sport",
+    "subcategory": "Sports nautiques",
+    "wikipediaLangs": 0,
+    "score": 0
+  },
+  {
+    "id": "node/2937587820",
+    "osm": {
+      "type": "node",
+      "id": 2937587820
+    },
+    "name": "Sites de plongée de la Basse des Esclaves",
+    "lat": 43.48337,
+    "lon": -1.61416,
+    "category": "sport",
+    "subcategory": "Sports nautiques",
+    "wikipediaLangs": 0,
+    "score": 0
+  },
+  {
+    "id": "node/2937587821",
+    "osm": {
+      "type": "node",
+      "id": 2937587821
+    },
+    "name": "Sites de plongée des Briquets",
+    "lat": 43.3953,
+    "lon": -1.74876,
+    "category": "sport",
+    "subcategory": "Sports nautiques",
+    "wikipediaLangs": 0,
+    "score": 0
+  },
+  {
+    "id": "node/3819048659",
+    "osm": {
+      "type": "node",
+      "id": 3819048659
+    },
+    "name": "Port de Caneta",
+    "lat": 43.3589109,
+    "lon": -1.7789996,
+    "category": "sport",
+    "subcategory": "Sports nautiques",
+    "wikipediaLangs": 0,
+    "score": 0
+  },
+  {
+    "id": "node/3820463185",
+    "osm": {
+      "type": "node",
+      "id": 3820463185
+    },
+    "name": "Hondarribia - Aeropuerto",
+    "lat": 43.3594738,
+    "lon": -1.78959,
+    "category": "sport",
+    "subcategory": "Sports nautiques",
+    "wikipediaLangs": 0,
+    "score": 0
+  },
+  {
+    "id": "node/3830362059",
+    "osm": {
+      "type": "node",
+      "id": 3830362059
+    },
+    "name": "Socoa",
+    "lat": 43.3949351,
+    "lon": -1.6838447,
+    "category": "sport",
+    "subcategory": "Sports nautiques",
+    "wikipediaLangs": 0,
+    "score": 0
+  },
+  {
+    "id": "node/5464348580",
+    "osm": {
+      "type": "node",
+      "id": 5464348580
+    },
+    "name": "Port de la Cale",
+    "lat": 43.5225374,
+    "lon": -1.4904678,
+    "category": "sport",
+    "subcategory": "Sports nautiques",
+    "wikipediaLangs": 0,
+    "score": 0
+  },
+  {
+    "id": "node/5981430541",
+    "osm": {
+      "type": "node",
+      "id": 5981430541
+    },
+    "name": "Equi Belardia",
+    "lat": 43.4533189,
+    "lon": -1.1578499,
+    "category": "sport",
+    "subcategory": "Sports équestres",
+    "wikipediaLangs": 0,
+    "score": 0
+  },
+  {
+    "id": "node/2626987567",
+    "osm": {
+      "type": "node",
+      "id": 2626987567
+    },
+    "name": "Askatze",
+    "lat": 43.336632,
+    "lon": -1.7871497,
+    "category": "bien-etre",
+    "subcategory": "Spas & instituts",
+    "wikipediaLangs": 0,
+    "score": 0
+  },
+  {
+    "id": "node/2626987631",
+    "osm": {
+      "type": "node",
+      "id": 2626987631
+    },
+    "name": "Santos",
+    "lat": 43.3374444,
+    "lon": -1.7857963,
+    "category": "bien-etre",
+    "subcategory": "Spas & instituts",
+    "wikipediaLangs": 0,
+    "score": 0
+  },
+  {
+    "id": "node/3113154170",
+    "osm": {
+      "type": "node",
+      "id": 3113154170
+    },
+    "name": "Padma Shala",
+    "lat": 43.3393216,
+    "lon": -1.791225,
+    "category": "bien-etre",
+    "subcategory": "Yoga & retraites",
+    "wikipediaLangs": 0,
+    "score": 0
+  },
+  {
+    "id": "node/3308252195",
+    "osm": {
+      "type": "node",
+      "id": 3308252195
+    },
+    "name": "Carmen Gilabert",
+    "lat": 43.3380994,
+    "lon": -1.7892943,
+    "category": "bien-etre",
+    "subcategory": "Spas & instituts",
+    "wikipediaLangs": 0,
+    "score": 0
+  },
+  {
+    "id": "node/3394229302",
+    "osm": {
+      "type": "node",
+      "id": 3394229302
+    },
+    "name": "Centro de Masaje",
+    "lat": 43.3389785,
+    "lon": -1.795788,
+    "category": "bien-etre",
+    "subcategory": "Spas & instituts",
+    "wikipediaLangs": 0,
+    "score": 0
   }
 ]

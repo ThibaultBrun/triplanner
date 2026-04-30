@@ -2,7 +2,7 @@ import { writeFile, mkdir } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
-import type { Poi } from "../src/lib/poi";
+import type { Category, Poi } from "../src/lib/poi";
 import { categorize, isCandidateTag } from "./lib/taxonomy";
 import { fetchOverpass, getCoords, type OverpassElement } from "./lib/overpass";
 import { fetchWikidata } from "./lib/wikidata";
@@ -10,7 +10,19 @@ import { computeScore } from "./lib/score";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUTPUT_PATH = resolve(__dirname, "../src/data/pois.json");
-const TOP_N = 150;
+
+// Quotas per main category. If a category has fewer candidates than its quota,
+// we take everything available. Total target: ~500 POIs, well distributed.
+const QUOTAS: Record<Category, number> = {
+  patrimoine: 120,
+  musees: 50,
+  nature: 80,
+  sport: 50,
+  gastronomie: 100,
+  loisirs: 50,
+  "bien-etre": 20,
+  "vie-nocturne": 30,
+};
 
 function pickName(tags: Record<string, string>): string | null {
   return tags["name:fr"] ?? tags.name ?? tags["name:en"] ?? null;
@@ -100,19 +112,31 @@ async function main() {
     return poi;
   });
 
-  // Top N by score
-  pois.sort((a, b) => b.score - a.score);
-  const top = pois.slice(0, TOP_N);
+  // Group by category, take top N per category according to quotas
+  const byCat = new Map<Category, Poi[]>();
+  for (const p of pois) {
+    const list = byCat.get(p.category) ?? [];
+    list.push(p);
+    byCat.set(p.category, list);
+  }
 
-  console.log(`[4/4] Writing ${top.length} POIs (top ${TOP_N} by score) to ${OUTPUT_PATH}`);
+  const top: Poi[] = [];
+  for (const [cat, list] of byCat) {
+    list.sort((a, b) => b.score - a.score);
+    const quota = QUOTAS[cat];
+    top.push(...list.slice(0, quota));
+  }
+  top.sort((a, b) => b.score - a.score);
+
+  console.log(`[4/4] Writing ${top.length} POIs (per-category quotas) to ${OUTPUT_PATH}`);
   await mkdir(dirname(OUTPUT_PATH), { recursive: true });
   await writeFile(OUTPUT_PATH, JSON.stringify(top, null, 2) + "\n");
 
   // Summary
-  const byCat: Record<string, number> = {};
-  for (const p of top) byCat[p.category] = (byCat[p.category] ?? 0) + 1;
+  const counts: Record<string, number> = {};
+  for (const p of top) counts[p.category] = (counts[p.category] ?? 0) + 1;
   console.log(`\nBreakdown by category:`);
-  for (const [cat, n] of Object.entries(byCat).sort((a, b) => b[1] - a[1])) {
+  for (const [cat, n] of Object.entries(counts).sort((a, b) => b[1] - a[1])) {
     console.log(`  ${cat.padEnd(15)} ${n}`);
   }
   const withWd = top.filter((p) => p.wikidata).length;
