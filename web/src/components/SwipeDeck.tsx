@@ -1,13 +1,15 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 
-import type { Poi } from "@/lib/poi";
+import { type Category, type Poi } from "@/lib/poi";
+import { CategoryPicker } from "./CategoryPicker";
 import { SwipeCard } from "./SwipeCard";
 
 const LIKES_KEY = "triplanner.likes";
 const PASSES_KEY = "triplanner.passes";
+const CATEGORIES_KEY = "triplanner.categories";
 
 // Weighted shuffle (Efraimidis-Spirakis): items with higher score tend to come
 // first, but the order is still randomized — popular spots appear early without
@@ -22,7 +24,7 @@ function weightedShuffle(pois: Poi[]): Poi[] {
     .map((x) => x.poi);
 }
 
-function readSet(key: string): Set<string> {
+function readStringSet(key: string): Set<string> {
   if (typeof window === "undefined") return new Set();
   try {
     const raw = localStorage.getItem(key);
@@ -39,24 +41,52 @@ function writeSet(key: string, set: Set<string>) {
 }
 
 export function SwipeDeck({ pois }: { pois: Poi[] }) {
+  const [hydrated, setHydrated] = useState(false);
+  const [picking, setPicking] = useState(false);
+  const [categories, setCategories] = useState<Set<Category>>(new Set());
   const [deck, setDeck] = useState<Poi[]>([]);
   const [index, setIndex] = useState(0);
   const [likes, setLikes] = useState<Set<string>>(new Set());
   const [passes, setPasses] = useState<Set<string>>(new Set());
-  const [hydrated, setHydrated] = useState(false);
 
+  // Counts per category, computed once on the input list (drives the picker).
+  const countByCategory = useMemo(() => {
+    const out = {} as Record<Category, number>;
+    for (const p of pois) out[p.category] = (out[p.category] ?? 0) + 1;
+    return out;
+  }, [pois]);
+
+  // Initial hydration from localStorage.
   useEffect(() => {
-    const savedLikes = readSet(LIKES_KEY);
-    const savedPasses = readSet(PASSES_KEY);
+    const savedLikes = readStringSet(LIKES_KEY);
+    const savedPasses = readStringSet(PASSES_KEY);
+    const savedCats = readStringSet(CATEGORIES_KEY) as Set<Category>;
+
     setLikes(savedLikes);
     setPasses(savedPasses);
+    setCategories(savedCats);
 
-    const seen = new Set([...savedLikes, ...savedPasses]);
-    const remaining = pois.filter((p) => !seen.has(p.id));
-    setDeck(weightedShuffle(remaining));
-    setIndex(0);
+    if (savedCats.size === 0) {
+      setPicking(true);
+    } else {
+      const seen = new Set([...savedLikes, ...savedPasses]);
+      const remaining = pois.filter((p) => savedCats.has(p.category) && !seen.has(p.id));
+      setDeck(weightedShuffle(remaining));
+      setIndex(0);
+    }
+
     setHydrated(true);
   }, [pois]);
+
+  function handleConfirmCategories(selected: Set<Category>) {
+    setCategories(selected);
+    writeSet(CATEGORIES_KEY, selected);
+    setPicking(false);
+    const seen = new Set([...likes, ...passes]);
+    const remaining = pois.filter((p) => selected.has(p.category) && !seen.has(p.id));
+    setDeck(weightedShuffle(remaining));
+    setIndex(0);
+  }
 
   function handleSwipe(direction: "like" | "pass") {
     const current = deck[index];
@@ -82,12 +112,23 @@ export function SwipeDeck({ pois }: { pois: Poi[] }) {
     localStorage.removeItem(PASSES_KEY);
     setLikes(new Set());
     setPasses(new Set());
-    setDeck(weightedShuffle(pois));
+    const remaining = pois.filter((p) => categories.has(p.category));
+    setDeck(weightedShuffle(remaining));
     setIndex(0);
   }
 
   if (!hydrated) {
     return <DeckSkeleton />;
+  }
+
+  if (picking) {
+    return (
+      <CategoryPicker
+        initial={categories}
+        countByCategory={countByCategory}
+        onConfirm={handleConfirmCategories}
+      />
+    );
   }
 
   const remaining = deck.length - index;
@@ -96,21 +137,32 @@ export function SwipeDeck({ pois }: { pois: Poi[] }) {
 
   return (
     <div className="flex h-full w-full flex-col bg-gradient-to-br from-sky-50 via-white to-amber-50 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950">
-      <header className="flex items-center justify-between px-4 py-3">
+      <header className="flex items-center justify-between gap-2 px-4 py-3">
         <Link
           href="/"
           className="rounded-full bg-white px-4 py-2 text-sm font-medium text-slate-700 shadow hover:bg-slate-100 dark:bg-slate-800 dark:text-slate-200 dark:hover:bg-slate-700"
         >
           ← Retour
         </Link>
+
         <div className="text-sm font-medium text-slate-600 dark:text-slate-400">
           {likes.size} aimés · {remaining} restants
         </div>
+
+        <button
+          type="button"
+          onClick={() => setPicking(true)}
+          className="rounded-full bg-white px-3 py-2 text-sm font-medium text-slate-700 shadow hover:bg-slate-100 dark:bg-slate-800 dark:text-slate-200 dark:hover:bg-slate-700"
+          aria-label="Modifier les catégories"
+          title="Modifier les catégories"
+        >
+          ⚙
+        </button>
       </header>
 
       <div className="flex flex-1 items-center justify-center px-4 pb-4">
         {current ? (
-          <div className="relative h-[min(70vh,640px)] w-full max-w-md">
+          <div className="relative h-[min(75vh,680px)] w-full max-w-md">
             {next && <SwipeCard key={`next-${next.id}`} poi={next} isTop={false} />}
             <SwipeCard
               key={`top-${current.id}`}
@@ -120,7 +172,12 @@ export function SwipeDeck({ pois }: { pois: Poi[] }) {
             />
           </div>
         ) : (
-          <EmptyState likeCount={likes.size} totalCount={pois.length} onReset={handleReset} />
+          <EmptyState
+            likeCount={likes.size}
+            totalCount={deck.length}
+            onReset={handleReset}
+            onChangeCategories={() => setPicking(true)}
+          />
         )}
       </div>
 
@@ -160,27 +217,38 @@ function EmptyState({
   likeCount,
   totalCount,
   onReset,
+  onChangeCategories,
 }: {
   likeCount: number;
   totalCount: number;
   onReset: () => void;
+  onChangeCategories: () => void;
 }) {
   return (
     <div className="max-w-md rounded-2xl bg-white p-8 text-center shadow-xl dark:bg-slate-800">
       <div className="text-5xl">🎉</div>
       <h2 className="mt-4 text-xl font-semibold text-slate-900 dark:text-slate-50">
-        Tu as tout vu !
+        Tu as tout vu&nbsp;!
       </h2>
       <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">
         {likeCount} lieu{likeCount > 1 ? "x" : ""} aimé{likeCount > 1 ? "s" : ""} sur {totalCount}.
       </p>
-      <button
-        type="button"
-        onClick={onReset}
-        className="mt-6 rounded-full bg-sky-600 px-6 py-2 text-sm font-medium text-white hover:bg-sky-700"
-      >
-        Recommencer
-      </button>
+      <div className="mt-6 flex flex-col gap-2">
+        <button
+          type="button"
+          onClick={onReset}
+          className="rounded-full bg-sky-600 px-6 py-2 text-sm font-medium text-white hover:bg-sky-700"
+        >
+          Recommencer
+        </button>
+        <button
+          type="button"
+          onClick={onChangeCategories}
+          className="rounded-full bg-slate-100 px-6 py-2 text-sm font-medium text-slate-700 hover:bg-slate-200 dark:bg-slate-700 dark:text-slate-200 dark:hover:bg-slate-600"
+        >
+          Changer de catégories
+        </button>
+      </div>
     </div>
   );
 }
