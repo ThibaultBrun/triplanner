@@ -17,11 +17,11 @@ const QUOTAS: Record<Category, number> = {
   patrimoine: 120,
   musees: 50,
   nature: 80,
-  sport: 50,
+  sport: 100,
   gastronomie: 100,
   loisirs: 50,
   "bien-etre": 20,
-  "vie-nocturne": 30,
+  "vie-nocturne": 60,
 };
 
 function pickName(tags: Record<string, string>): string | null {

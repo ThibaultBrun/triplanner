@@ -974,6 +974,26 @@
     "score": 0.44057142857142856
   },
   {
+    "id": "way/366437988",
+    "osm": {
+      "type": "way",
+      "id": 366437988
+    },
+    "wikidata": "Q2941116",
+    "name": "Casino Barrière de Biarritz",
+    "lat": 43.4838499,
+    "lon": -1.5592664,
+    "category": "vie-nocturne",
+    "subcategory": "Casinos & jeux",
+    "description": "casino à Biarritz (Pyrénées-Atlantiques)",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Casino_Barri%C3%A8re.jpg?width=800",
+    "wikipediaLangs": 4,
+    "score": 0.43428571428571433,
+    "tags": {
+      "wheelchair": "yes"
+    }
+  },
+  {
     "id": "node/4789924525",
     "osm": {
       "type": "node",
@@ -1917,6 +1937,23 @@
     }
   },
   {
+    "id": "way/504192989",
+    "osm": {
+      "type": "way",
+      "id": 504192989
+    },
+    "wikidata": "Q1460236",
+    "name": "Stade Jean Dauger",
+    "lat": 43.4854246,
+    "lon": -1.4795772,
+    "category": "sport",
+    "subcategory": "Centres sportifs & stades",
+    "description": "stade français",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Bayonne-Tribune_d'honneur-20130813.jpg?width=800",
+    "wikipediaLangs": 8,
+    "score": 0.39
+  },
+  {
     "id": "node/8954151852",
     "osm": {
       "type": "node",
@@ -2362,6 +2399,28 @@
     }
   },
   {
+    "id": "way/802328718",
+    "osm": {
+      "type": "way",
+      "id": 802328718
+    },
+    "wikidata": "Q1165840",
+    "name": "Stade d'Aguiléra",
+    "city": "Biarritz",
+    "lat": 43.4818138,
+    "lon": -1.5377767,
+    "category": "sport",
+    "subcategory": "Centres sportifs & stades",
+    "description": "stade situé à Biarritz",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Aguilera_Kampf.jpg?width=800",
+    "wikipediaLangs": 6,
+    "score": 0.35142857142857137,
+    "tags": {
+      "wheelchair": "yes",
+      "website": "https://www.bo-pb.com/"
+    }
+  },
+  {
     "id": "node/988214406",
     "osm": {
       "type": "node",
@@ -2709,6 +2768,23 @@
     }
   },
   {
+    "id": "node/1668734540",
+    "osm": {
+      "type": "node",
+      "id": 1668734540
+    },
+    "wikidata": "Q22975873",
+    "name": "Casino",
+    "lat": 43.4734437,
+    "lon": -0.9280339,
+    "category": "vie-nocturne",
+    "subcategory": "Casinos & jeux",
+    "description": "casino à Salies-de-Béarn (Pyrénées-Atlantiques)",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hotel-casino_du_Parc_(Salies-de-B%C3%A9arn%2C_Pyr%C3%A9n%C3%A9es-Atlantiques%2C_France).JPG?width=800",
+    "wikipediaLangs": 0,
+    "score": 0.30714285714285716
+  },
+  {
     "id": "node/955295161",
     "osm": {
       "type": "node",
@@ -2890,6 +2966,27 @@
     }
   },
   {
+    "id": "way/157056661",
+    "osm": {
+      "type": "way",
+      "id": 157056661
+    },
+    "wikidata": "Q1975585",
+    "name": "Golf de Biarritz le Phare",
+    "city": "Biarritz",
+    "lat": 43.4921588,
+    "lon": -1.5439312,
+    "category": "sport",
+    "subcategory": "Sports collectifs & raquette",
+    "description": "terrain de golf à Biarritz, France",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Golf_de_Biarritz.JPG?width=800",
+    "wikipediaLangs": 3,
+    "score": 0.2614285714285714,
+    "tags": {
+      "website": "https://golfbiarritz.com"
+    }
+  },
+  {
     "id": "node/948495516",
     "osm": {
       "type": "node",
@@ -2994,6 +3091,43 @@
     "subcategory": "Réserves naturelles & faune",
     "description": "abbaye située dans les Landes, en France",
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Sorde_1_new.jpg?width=800",
+    "wikipediaLangs": 3,
+    "score": 0.24714285714285716
+  },
+  {
+    "id": "way/240229811",
+    "osm": {
+      "type": "way",
+      "id": 240229811
+    },
+    "wikidata": "Q787878",
+    "name": "Hippodrome des Fleurs",
+    "lat": 43.471591,
+    "lon": -1.5528043,
+    "category": "sport",
+    "subcategory": "Centres sportifs & stades",
+    "description": "hippodrome situé dans les Pyrénées-Atlantiques, en France",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Biarritz_-_Hippodrome_des_Fleurs_-_Virage_sud.jpg?width=800",
+    "wikipediaLangs": 3,
+    "score": 0.24714285714285716,
+    "tags": {
+      "website": "https://www.hippodrome-biarritz.com/"
+    }
+  },
+  {
+    "id": "way/930360125",
+    "osm": {
+      "type": "way",
+      "id": 930360125
+    },
+    "wikidata": "Q2866138",
+    "name": "Arènes de Bayonne",
+    "lat": 43.4949091,
+    "lon": -1.4887275,
+    "category": "sport",
+    "subcategory": "Centres sportifs & stades",
+    "description": "édifice tauromachique en France",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Arenes_bayonne_exterieur.jpg?width=800",
     "wikipediaLangs": 3,
     "score": 0.24714285714285716
   },
@@ -3466,6 +3600,22 @@
     "score": 0.192
   },
   {
+    "id": "way/39980754",
+    "osm": {
+      "type": "way",
+      "id": 39980754
+    },
+    "wikidata": "Q7121535",
+    "name": "Artaleku kiroldegia",
+    "lat": 43.3388078,
+    "lon": -1.7932821,
+    "category": "sport",
+    "subcategory": "Centres sportifs & stades",
+    "description": "gymnase à Irun",
+    "wikipediaLangs": 3,
+    "score": 0.19
+  },
+  {
     "id": "way/489848096",
     "osm": {
       "type": "way",
@@ -3718,6 +3868,26 @@
     "tags": {
       "cost": "paid",
       "website": "https://www.grottes-isturitz.com/"
+    }
+  },
+  {
+    "id": "way/176306926",
+    "osm": {
+      "type": "way",
+      "id": 176306926
+    },
+    "wikidata": "Q120215458",
+    "name": "Golf d'Ilbarritz",
+    "city": "Bidart",
+    "lat": 43.4581307,
+    "lon": -1.5761741,
+    "category": "sport",
+    "subcategory": "Sports collectifs & raquette",
+    "wikipediaLangs": 0,
+    "score": 0.1657142857142857,
+    "tags": {
+      "openingHours": "Mo-Su 07:30-20:00",
+      "website": "https://golfilbarritz.com/"
     }
   },
   {
@@ -4040,6 +4210,22 @@
     "score": 0.16457142857142856
   },
   {
+    "id": "way/132301545",
+    "osm": {
+      "type": "way",
+      "id": 132301545
+    },
+    "wikidata": "Q1421912",
+    "name": "Stade Didier Deschamps",
+    "lat": 43.4950758,
+    "lon": -1.4557273,
+    "category": "sport",
+    "subcategory": "Centres sportifs & stades",
+    "description": "stade de football",
+    "wikipediaLangs": 2,
+    "score": 0.16
+  },
+  {
     "id": "node/10155007333",
     "osm": {
       "type": "node",
@@ -4058,6 +4244,25 @@
       "wheelchair": "yes",
       "openingHours": "Mo-Sa 13:30-19:00",
       "website": "https://www.museedusel64.fr"
+    }
+  },
+  {
+    "id": "way/155267350",
+    "osm": {
+      "type": "way",
+      "id": 155267350
+    },
+    "wikidata": "Q120215970",
+    "name": "Golf de Chiberta",
+    "lat": 43.5128806,
+    "lon": -1.5262206,
+    "category": "sport",
+    "subcategory": "Sports collectifs & raquette",
+    "wikipediaLangs": 0,
+    "score": 0.15857142857142859,
+    "tags": {
+      "openingHours": "Mo-Su 08:00-19:00; Th off",
+      "website": "https://www.golfchiberta.com/"
     }
   },
   {
@@ -4253,6 +4458,20 @@
     "score": 0.156
   },
   {
+    "id": "way/78745504",
+    "osm": {
+      "type": "way",
+      "id": 78745504
+    },
+    "name": "Benoîterie",
+    "lat": 43.432114,
+    "lon": -1.5511593,
+    "category": "vie-nocturne",
+    "subcategory": "Centres culturels & arts",
+    "wikipediaLangs": 0,
+    "score": 0.15
+  },
+  {
     "id": "node/2626987628",
     "osm": {
       "type": "node",
@@ -4281,6 +4500,46 @@
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Zubietako_errota_3.jpg?width=800",
     "wikipediaLangs": 0,
     "score": 0.15
+  },
+  {
+    "id": "way/72880901",
+    "osm": {
+      "type": "way",
+      "id": 72880901
+    },
+    "wikidata": "Q2423605",
+    "name": "Golf de la Nivelle",
+    "city": "Ciboure",
+    "lat": 43.37747,
+    "lon": -1.6543125,
+    "category": "sport",
+    "subcategory": "Sports collectifs & raquette",
+    "description": "terrain de golf à Ciboure, France",
+    "wikipediaLangs": 1,
+    "score": 0.1442857142857143,
+    "tags": {
+      "website": "http://www.golfnivelle.com"
+    }
+  },
+  {
+    "id": "way/427287610",
+    "osm": {
+      "type": "way",
+      "id": 427287610
+    },
+    "wikidata": "Q2656180",
+    "name": "Golf de Chantaco",
+    "city": "Saint-Jean-de-Luz",
+    "lat": 43.3782731,
+    "lon": -1.6339869,
+    "category": "sport",
+    "subcategory": "Sports collectifs & raquette",
+    "description": "terrain de golf à Saint-Jean-de-Luz, France",
+    "wikipediaLangs": 1,
+    "score": 0.1442857142857143,
+    "tags": {
+      "website": "https://www.chantaco.com/"
+    }
   },
   {
     "id": "node/5675668331",
@@ -4321,6 +4580,107 @@
     }
   },
   {
+    "id": "way/172760874",
+    "osm": {
+      "type": "way",
+      "id": 172760874
+    },
+    "wikidata": "Q120216306",
+    "name": "Golf Epherra - Trous 1 à 9",
+    "lat": 43.3667937,
+    "lon": -1.4828406,
+    "category": "sport",
+    "subcategory": "Sports collectifs & raquette",
+    "wikipediaLangs": 0,
+    "score": 0.11428571428571428,
+    "tags": {
+      "website": "https://www.golf-basque.com/"
+    }
+  },
+  {
+    "id": "way/249397208",
+    "osm": {
+      "type": "way",
+      "id": 249397208
+    },
+    "wikidata": "Q120217605",
+    "name": "Salle polyvalente de Biaudos",
+    "city": "Biaudos",
+    "lat": 43.5500612,
+    "lon": -1.3034718,
+    "category": "sport",
+    "subcategory": "Centres sportifs & stades",
+    "wikipediaLangs": 0,
+    "score": 0.11428571428571428
+  },
+  {
+    "id": "way/1195205206",
+    "osm": {
+      "type": "way",
+      "id": 1195205206
+    },
+    "wikidata": "Q120216306",
+    "name": "Golf Epherra - Trous 10 à 18",
+    "lat": 43.3474437,
+    "lon": -1.4767999,
+    "category": "sport",
+    "subcategory": "Sports collectifs & raquette",
+    "wikipediaLangs": 0,
+    "score": 0.11428571428571428,
+    "tags": {
+      "website": "https://www.golf-basque.com/"
+    }
+  },
+  {
+    "id": "node/5396554795",
+    "osm": {
+      "type": "node",
+      "id": 5396554795
+    },
+    "wikidata": "Q120216228",
+    "name": "Skate Park de La Baye",
+    "lat": 43.5369449,
+    "lon": -1.4906577,
+    "category": "sport",
+    "subcategory": "Surf & sports de glisse",
+    "wikipediaLangs": 0,
+    "score": 0.10714285714285714
+  },
+  {
+    "id": "node/5428332667",
+    "osm": {
+      "type": "node",
+      "id": 5428332667
+    },
+    "wikidata": "Q120191382",
+    "name": "Tennis Club Lapalibe",
+    "city": "Tarnos",
+    "lat": 43.5412301,
+    "lon": -1.4543774,
+    "category": "sport",
+    "subcategory": "Sports collectifs & raquette",
+    "wikipediaLangs": 0,
+    "score": 0.10714285714285714
+  },
+  {
+    "id": "way/1316168032",
+    "osm": {
+      "type": "way",
+      "id": 1316168032
+    },
+    "wikidata": "Q120220732",
+    "name": "Golf de Salies-de-Béarn",
+    "lat": 43.4715577,
+    "lon": -0.9145726,
+    "category": "sport",
+    "subcategory": "Sports collectifs & raquette",
+    "wikipediaLangs": 0,
+    "score": 0.10714285714285714,
+    "tags": {
+      "website": "https://www.golfsalies.com/"
+    }
+  },
+  {
     "id": "way/464130366",
     "osm": {
       "type": "way",
@@ -4349,6 +4709,139 @@
     "category": "musees",
     "subcategory": "Street art & art urbain",
     "description": "statue de Maxime Real del Sarte située à Bayonne",
+    "wikipediaLangs": 0,
+    "score": 0.1
+  },
+  {
+    "id": "way/72689842",
+    "osm": {
+      "type": "way",
+      "id": 72689842
+    },
+    "wikidata": "Q120163177",
+    "name": "Gymnase Lauga",
+    "lat": 43.4843301,
+    "lon": -1.4756389,
+    "category": "sport",
+    "subcategory": "Centres sportifs & stades",
+    "description": "équipement sportif à Bayonne, France",
+    "wikipediaLangs": 0,
+    "score": 0.1,
+    "tags": {
+      "wheelchair": "yes"
+    }
+  },
+  {
+    "id": "way/74939869",
+    "osm": {
+      "type": "way",
+      "id": 74939869
+    },
+    "wikidata": "Q120181417",
+    "name": "Kiroleta",
+    "lat": 43.3975027,
+    "lon": -1.4598144,
+    "category": "sport",
+    "subcategory": "Centres sportifs & stades",
+    "wikipediaLangs": 0,
+    "score": 0.1,
+    "tags": {
+      "wheelchair": "no"
+    }
+  },
+  {
+    "id": "way/81945143",
+    "osm": {
+      "type": "way",
+      "id": 81945143
+    },
+    "wikidata": "Q120218103",
+    "name": "Trinquet Gure Doïa",
+    "lat": 43.2588536,
+    "lon": -1.224454,
+    "category": "sport",
+    "subcategory": "Sports collectifs & raquette",
+    "wikipediaLangs": 0,
+    "score": 0.1
+  },
+  {
+    "id": "way/82465852",
+    "osm": {
+      "type": "way",
+      "id": 82465852
+    },
+    "wikidata": "Q120217992",
+    "name": "Trinquet Erregelu",
+    "lat": 43.3075541,
+    "lon": -1.2438425,
+    "category": "sport",
+    "subcategory": "Sports collectifs & raquette",
+    "wikipediaLangs": 0,
+    "score": 0.1,
+    "tags": {
+      "wheelchair": "yes"
+    }
+  },
+  {
+    "id": "way/82987994",
+    "osm": {
+      "type": "way",
+      "id": 82987994
+    },
+    "wikidata": "Q120217815",
+    "name": "Xala",
+    "lat": 43.3682322,
+    "lon": -1.2682442,
+    "category": "sport",
+    "subcategory": "Sports collectifs & raquette",
+    "wikipediaLangs": 0,
+    "score": 0.1
+  },
+  {
+    "id": "way/230721450",
+    "osm": {
+      "type": "way",
+      "id": 230721450
+    },
+    "wikidata": "Q120219848",
+    "name": "Trinquet Irintzina",
+    "lat": 43.3254605,
+    "lon": -1.009874,
+    "category": "sport",
+    "subcategory": "Sports collectifs & raquette",
+    "wikipediaLangs": 0,
+    "score": 0.1
+  },
+  {
+    "id": "way/983142910",
+    "osm": {
+      "type": "way",
+      "id": 983142910
+    },
+    "wikidata": "Q118523249",
+    "name": "Piscine Lauga",
+    "lat": 43.4834997,
+    "lon": -1.4760977,
+    "category": "sport",
+    "subcategory": "Sports nautiques",
+    "wikipediaLangs": 0,
+    "score": 0.1,
+    "tags": {
+      "wheelchair": "yes"
+    }
+  },
+  {
+    "id": "way/1193290188",
+    "osm": {
+      "type": "way",
+      "id": 1193290188
+    },
+    "wikidata": "Q120163356",
+    "name": "Stade Errobi",
+    "lat": 43.3924744,
+    "lon": -1.4478471,
+    "category": "sport",
+    "subcategory": "Centres sportifs & stades",
     "wikipediaLangs": 0,
     "score": 0.1
   },
@@ -4427,6 +4920,25 @@
     "tags": {
       "openingHours": "Tu,Th 14:00-19:00",
       "website": "http://peyolemaraicher.blogspot.com"
+    }
+  },
+  {
+    "id": "node/13519065591",
+    "osm": {
+      "type": "node",
+      "id": 13519065591
+    },
+    "name": "Accueil de loisirs du Pays d’Orthe",
+    "city": "Peyrehorade",
+    "lat": 43.5494397,
+    "lon": -1.1164198,
+    "category": "vie-nocturne",
+    "subcategory": "Centres culturels & arts",
+    "wikipediaLangs": 0,
+    "score": 0.06571428571428571,
+    "tags": {
+      "openingHours": "We 07:30-18:30",
+      "website": "https://www.pays-orthe-arrigans.fr/grandir-bien-vieillir/enfance-jeunesse/accueils-de-loisirs/accueil-de-loisirs-du-pays-dorthe.html?L=0"
     }
   },
   {
@@ -4730,6 +5242,63 @@
     }
   },
   {
+    "id": "node/7698817948",
+    "osm": {
+      "type": "node",
+      "id": 7698817948
+    },
+    "name": "Espace jeunes",
+    "lat": 43.4828484,
+    "lon": -1.5131872,
+    "category": "vie-nocturne",
+    "subcategory": "Centres culturels & arts",
+    "wikipediaLangs": 0,
+    "score": 0.058571428571428566,
+    "tags": {
+      "wheelchair": "yes",
+      "openingHours": "Mo-Sa 09:00-12:00,14:00-18:00"
+    }
+  },
+  {
+    "id": "node/11365102657",
+    "osm": {
+      "type": "node",
+      "id": 11365102657
+    },
+    "name": "Centre d'Education au Patrimoine Ospitalea",
+    "city": "Irissarry",
+    "lat": 43.2570318,
+    "lon": -1.2328693,
+    "category": "vie-nocturne",
+    "subcategory": "Centres culturels & arts",
+    "wikipediaLangs": 0,
+    "score": 0.058571428571428566,
+    "tags": {
+      "openingHours": "Mo-Fr 10:00-12:30, 13:30-17:30",
+      "website": "https://ospitalea.fr/"
+    }
+  },
+  {
+    "id": "node/11384457454",
+    "osm": {
+      "type": "node",
+      "id": 11384457454
+    },
+    "name": "Espace Jeunes",
+    "city": "Saint-Jean-de-Luz",
+    "lat": 43.3880708,
+    "lon": -1.6596644,
+    "category": "vie-nocturne",
+    "subcategory": "Centres culturels & arts",
+    "wikipediaLangs": 0,
+    "score": 0.058571428571428566,
+    "tags": {
+      "wheelchair": "yes",
+      "openingHours": "Mo-Fr 08:30-17:30",
+      "website": "https://www.saintjeandeluz.fr/fr/vie-quotidienne/famille-et-scolarite/jeunesse/lespace-jeunes/"
+    }
+  },
+  {
     "id": "node/7016796322",
     "osm": {
       "type": "node",
@@ -4808,6 +5377,63 @@
       "wheelchair": "yes",
       "openingHours": "Mo-We 09:00-18:00; Fr,Sa 09:00-19:00; Su 09:00-13:00",
       "website": "https://olhaberri.fr/"
+    }
+  },
+  {
+    "id": "node/7128717468",
+    "osm": {
+      "type": "node",
+      "id": 7128717468
+    },
+    "name": "Le Local - Training & Squash",
+    "city": "Bidart",
+    "lat": 43.430843,
+    "lon": -1.5739012,
+    "category": "sport",
+    "subcategory": "Centres sportifs & stades",
+    "wikipediaLangs": 0,
+    "score": 0.058571428571428566,
+    "tags": {
+      "openingHours": "Mo-Th 08:00-21:00; Fr 08:00-19:00; Sa 08:30-12:30; Su 09:30-12:30",
+      "website": "https://lelocal-trainingsquash.fr/"
+    }
+  },
+  {
+    "id": "node/7809352207",
+    "osm": {
+      "type": "node",
+      "id": 7809352207
+    },
+    "name": "Proxiforme",
+    "city": "Bidart",
+    "lat": 43.4482479,
+    "lon": -1.5749356,
+    "category": "sport",
+    "subcategory": "Centres sportifs & stades",
+    "wikipediaLangs": 0,
+    "score": 0.058571428571428566,
+    "tags": {
+      "wheelchair": "yes",
+      "openingHours": "Mo-Su 06:00-23:00",
+      "website": "https://www.bidart.proxiforme.fr"
+    }
+  },
+  {
+    "id": "way/155267153",
+    "osm": {
+      "type": "way",
+      "id": 155267153
+    },
+    "name": "Parcours de l'Impératrice",
+    "lat": 43.5074185,
+    "lon": -1.5260271,
+    "category": "sport",
+    "subcategory": "Sports collectifs & raquette",
+    "wikipediaLangs": 0,
+    "score": 0.058571428571428566,
+    "tags": {
+      "openingHours": "Mo-Su 08:00-18:45; We off",
+      "website": "https://www.golfchiberta.com/"
     }
   },
   {
@@ -5079,25 +5705,6 @@
     }
   },
   {
-    "id": "node/12001148586",
-    "osm": {
-      "type": "node",
-      "id": 12001148586
-    },
-    "name": "EVA",
-    "city": "Bayonne",
-    "lat": 43.4907392,
-    "lon": -1.4531274,
-    "category": "loisirs",
-    "subcategory": "Mini-golf & jeux",
-    "wikipediaLangs": 0,
-    "score": 0.05142857142857142,
-    "tags": {
-      "openingHours": "Tu-Su 10:00-00:00",
-      "website": "https://www.eva.gg/fr-FR"
-    }
-  },
-  {
     "id": "way/647336045",
     "osm": {
       "type": "way",
@@ -5112,6 +5719,43 @@
     "score": 0.05142857142857142,
     "tags": {
       "openingHours": "24/7"
+    }
+  },
+  {
+    "id": "node/9334652476",
+    "osm": {
+      "type": "node",
+      "id": 9334652476
+    },
+    "name": "Local jeunes",
+    "city": "Bidart",
+    "lat": 43.4379936,
+    "lon": -1.5888627,
+    "category": "vie-nocturne",
+    "subcategory": "Centres culturels & arts",
+    "wikipediaLangs": 0,
+    "score": 0.05142857142857142,
+    "tags": {
+      "openingHours": "We,Sa 14:00-18:30; SH Mo-Fr 09:30-18:30; SH Sa off"
+    }
+  },
+  {
+    "id": "node/12001148586",
+    "osm": {
+      "type": "node",
+      "id": 12001148586
+    },
+    "name": "EVA",
+    "city": "Bayonne",
+    "lat": 43.4907392,
+    "lon": -1.4531274,
+    "category": "vie-nocturne",
+    "subcategory": "Casinos & jeux",
+    "wikipediaLangs": 0,
+    "score": 0.05142857142857142,
+    "tags": {
+      "openingHours": "Tu-Su 10:00-00:00",
+      "website": "https://www.eva.gg/fr-FR"
     }
   },
   {
@@ -5387,6 +6031,26 @@
     }
   },
   {
+    "id": "node/4741244723",
+    "osm": {
+      "type": "node",
+      "id": 4741244723
+    },
+    "name": "Yogang",
+    "city": "Saint-Jean-de-Luz",
+    "lat": 43.386673,
+    "lon": -1.6613535,
+    "category": "sport",
+    "subcategory": "Centres sportifs & stades",
+    "wikipediaLangs": 0,
+    "score": 0.05142857142857142,
+    "tags": {
+      "wheelchair": "yes",
+      "openingHours": "Mo-Su 09:00-21:00",
+      "website": "https://yogang.fr/yogang-saint-jean-de-luz/"
+    }
+  },
+  {
     "id": "node/5103498379",
     "osm": {
       "type": "node",
@@ -5447,23 +6111,177 @@
     }
   },
   {
-    "id": "node/4741244723",
+    "id": "node/9166924462",
     "osm": {
       "type": "node",
-      "id": 4741244723
+      "id": 9166924462
     },
-    "name": "Yogang",
-    "city": "Saint-Jean-de-Luz",
-    "lat": 43.386673,
-    "lon": -1.6613535,
-    "category": "bien-etre",
-    "subcategory": "Yoga & retraites",
+    "name": "Hatsa Sport",
+    "city": "Ossès",
+    "lat": 43.2331756,
+    "lon": -1.2988667,
+    "category": "sport",
+    "subcategory": "Centres sportifs & stades",
+    "wikipediaLangs": 0,
+    "score": 0.05142857142857142,
+    "tags": {
+      "openingHours": "Mo-Fr 09:00-12:30,17:00-20:00; We off",
+      "website": "https://hatsa-sport.com"
+    }
+  },
+  {
+    "id": "node/10560182009",
+    "osm": {
+      "type": "node",
+      "id": 10560182009
+    },
+    "name": "L'Orange Bleue",
+    "city": "Saint-Martin-de-Seignanx",
+    "lat": 43.524917,
+    "lon": -1.4117476,
+    "category": "sport",
+    "subcategory": "Centres sportifs & stades",
+    "wikipediaLangs": 0,
+    "score": 0.05142857142857142,
+    "tags": {
+      "openingHours": "06:00-23:00",
+      "website": "https://www.lorangebleue.fr/clubs/tarnos-saint-martin-de-seignanx/"
+    }
+  },
+  {
+    "id": "node/11380846084",
+    "osm": {
+      "type": "node",
+      "id": 11380846084
+    },
+    "name": "Fitness Park",
+    "city": "Saint-Pierre-d'Irube",
+    "lat": 43.4801044,
+    "lon": -1.4439362,
+    "category": "sport",
+    "subcategory": "Centres sportifs & stades",
     "wikipediaLangs": 0,
     "score": 0.05142857142857142,
     "tags": {
       "wheelchair": "yes",
-      "openingHours": "Mo-Su 09:00-21:00",
-      "website": "https://yogang.fr/yogang-saint-jean-de-luz/"
+      "openingHours": "Mo-Su 06:00-22:00",
+      "website": "https://www.fitnesspark.fr/club/bayonne-ametzondo/?utm_medium=Local_Inventory&utm_source=GMB&utm_campaign=Saint-Pierre-d%27Irube-Ametzondo&utm_content=Yext"
+    }
+  },
+  {
+    "id": "node/11440000006",
+    "osm": {
+      "type": "node",
+      "id": 11440000006
+    },
+    "name": "L'Orange Bleue",
+    "city": "Urrugne",
+    "lat": 43.3746575,
+    "lon": -1.6794375,
+    "category": "sport",
+    "subcategory": "Centres sportifs & stades",
+    "wikipediaLangs": 0,
+    "score": 0.05142857142857142,
+    "tags": {
+      "wheelchair": "yes",
+      "openingHours": "Mo-Sa 09:30-20:30",
+      "website": "https://www.lorangebleue.fr/clubs/saint-jean-de-luz-urrugne/"
+    }
+  },
+  {
+    "id": "node/11983068611",
+    "osm": {
+      "type": "node",
+      "id": 11983068611
+    },
+    "name": "L'Orange Bleue",
+    "city": "Saint-Pée-sur-Nivelle",
+    "lat": 43.3594758,
+    "lon": -1.5785486,
+    "category": "sport",
+    "subcategory": "Centres sportifs & stades",
+    "wikipediaLangs": 0,
+    "score": 0.05142857142857142,
+    "tags": {
+      "wheelchair": "yes",
+      "openingHours": "Mo-Su 06:00-23:00",
+      "website": "https://www.lorangebleue.fr/clubs/saint-pee-sur-nivelle/"
+    }
+  },
+  {
+    "id": "node/11983068615",
+    "osm": {
+      "type": "node",
+      "id": 11983068615
+    },
+    "name": "Kinka Sport",
+    "city": "Saint-Pée-sur-Nivelle",
+    "lat": 43.361147,
+    "lon": -1.5807696,
+    "category": "sport",
+    "subcategory": "Centres sportifs & stades",
+    "wikipediaLangs": 0,
+    "score": 0.05142857142857142,
+    "tags": {
+      "wheelchair": "yes",
+      "openingHours": "Mo-Su 08:30-22:00",
+      "website": "https://www.kinka.eus/fr"
+    }
+  },
+  {
+    "id": "way/284743315",
+    "osm": {
+      "type": "way",
+      "id": 284743315
+    },
+    "name": "Hondartza kiroldegia",
+    "lat": 43.3738863,
+    "lon": -1.7955133,
+    "category": "sport",
+    "subcategory": "Centres sportifs & stades",
+    "wikipediaLangs": 0,
+    "score": 0.05142857142857142,
+    "tags": {
+      "openingHours": "Mo-Fr 07:30-22:00; Sa 08:00-21:00; Su 09:00-20:00",
+      "website": "https://www.hondartzakiroldegia.com/"
+    }
+  },
+  {
+    "id": "way/672307195",
+    "osm": {
+      "type": "way",
+      "id": 672307195
+    },
+    "name": "Tonnerre Sports",
+    "city": "Tarnos",
+    "lat": 43.5337868,
+    "lon": -1.4932655,
+    "category": "sport",
+    "subcategory": "Centres sportifs & stades",
+    "wikipediaLangs": 0,
+    "score": 0.05142857142857142,
+    "tags": {
+      "openingHours": "07:00-22:00",
+      "website": "https://www.tonnerre-sport.fr/"
+    }
+  },
+  {
+    "id": "way/1340479022",
+    "osm": {
+      "type": "way",
+      "id": 1340479022
+    },
+    "name": "Ur Ederra rafting",
+    "city": "Bidarray",
+    "lat": 43.268416,
+    "lon": -1.3448084,
+    "category": "sport",
+    "subcategory": "Sports nautiques",
+    "wikipediaLangs": 0,
+    "score": 0.05142857142857142,
+    "tags": {
+      "openingHours": "09:00-19:00; Sep-Mar off",
+      "website": "https://www.rafting-pays-basque.com"
     }
   },
   {
@@ -6041,6 +6859,41 @@
     }
   },
   {
+    "id": "node/5214942701",
+    "osm": {
+      "type": "node",
+      "id": 5214942701
+    },
+    "name": "Epaiska",
+    "lat": 43.4897411,
+    "lon": -1.4739228,
+    "category": "vie-nocturne",
+    "subcategory": "Centres culturels & arts",
+    "wikipediaLangs": 0,
+    "score": 0.04428571428571429,
+    "tags": {
+      "openingHours": "Fr 19:00-00:00; Sa 11:00-14:00"
+    }
+  },
+  {
+    "id": "node/13286745503",
+    "osm": {
+      "type": "node",
+      "id": 13286745503
+    },
+    "name": "Embrujo Andaluz",
+    "city": "Irun",
+    "lat": 43.3328528,
+    "lon": -1.7974837,
+    "category": "vie-nocturne",
+    "subcategory": "Centres culturels & arts",
+    "wikipediaLangs": 0,
+    "score": 0.04428571428571429,
+    "tags": {
+      "openingHours": "Mo-Fr 09:00-15:00"
+    }
+  },
+  {
     "id": "node/5478506700",
     "osm": {
       "type": "node",
@@ -6094,6 +6947,98 @@
       "wheelchair": "yes",
       "openingHours": "Tu-Su 10:00-19:00",
       "website": "https://www.bleu-lagalerie.fr/"
+    }
+  },
+  {
+    "id": "node/6856847341",
+    "osm": {
+      "type": "node",
+      "id": 6856847341
+    },
+    "name": "Basic-Fit",
+    "lat": 43.4981392,
+    "lon": -1.4474276,
+    "category": "sport",
+    "subcategory": "Centres sportifs & stades",
+    "wikipediaLangs": 0,
+    "score": 0.04428571428571429,
+    "tags": {
+      "openingHours": "Mo-Su 00:00-24:00",
+      "website": "https://www.basic-fit.com/fr-fr/clubs/basic-fit-bayonne-chemin-de-trouillet-24-7-bcf9344d883b42cd922365541b3b4583.html"
+    }
+  },
+  {
+    "id": "node/8860096328",
+    "osm": {
+      "type": "node",
+      "id": 8860096328
+    },
+    "name": "Bodyhit",
+    "lat": 43.493512,
+    "lon": -1.4931344,
+    "category": "sport",
+    "subcategory": "Centres sportifs & stades",
+    "wikipediaLangs": 0,
+    "score": 0.04428571428571429,
+    "tags": {
+      "openingHours": "Mo-Fr 08:00-14:00, 16:00-20:30; Sa 09:00-14:00",
+      "website": "https://bodyhit.fr/"
+    }
+  },
+  {
+    "id": "node/13688321874",
+    "osm": {
+      "type": "node",
+      "id": 13688321874
+    },
+    "name": "Clark Powell",
+    "lat": 43.492545,
+    "lon": -1.494577,
+    "category": "sport",
+    "subcategory": "Centres sportifs & stades",
+    "wikipediaLangs": 0,
+    "score": 0.04428571428571429,
+    "tags": {
+      "openingHours": "Mo-Su 06:00-23:00",
+      "website": "https://clarkpowell.fr/club/bayonne/"
+    }
+  },
+  {
+    "id": "way/752950679",
+    "osm": {
+      "type": "way",
+      "id": 752950679
+    },
+    "name": "Salle omnisport Mendeala",
+    "city": "Hasparren",
+    "lat": 43.3828987,
+    "lon": -1.3121939,
+    "category": "sport",
+    "subcategory": "Centres sportifs & stades",
+    "wikipediaLangs": 0,
+    "score": 0.04428571428571429,
+    "tags": {
+      "openingHours": "\"Varie en fonction des évènements et activités proposés dans la salle\""
+    }
+  },
+  {
+    "id": "way/1202722487",
+    "osm": {
+      "type": "way",
+      "id": 1202722487
+    },
+    "name": "Piscine Jean-Lacarrère",
+    "city": "Salies-de-Béarn",
+    "lat": 43.4763091,
+    "lon": -0.937324,
+    "category": "sport",
+    "subcategory": "Sports nautiques",
+    "wikipediaLangs": 0,
+    "score": 0.04428571428571429,
+    "tags": {
+      "cost": "paid",
+      "openingHours": "Jun 01-Sep 13 Mo-Fr 17:00-19:00; Jun 01-Sep 13 We,Sa,Su 15:00-19:00; Jul 06-Sep 01 11:00-13:00,15:00-19:00",
+      "website": "https://www.ccbearndesgaves.fr/une-communaut%C3%A9-de-services/%C3%A9quipements-sportifs"
     }
   },
   {
@@ -7345,6 +8290,40 @@
     }
   },
   {
+    "id": "node/1788683612",
+    "osm": {
+      "type": "node",
+      "id": 1788683612
+    },
+    "name": "KeepCool",
+    "lat": 43.4838826,
+    "lon": -1.5070097,
+    "category": "sport",
+    "subcategory": "Centres sportifs & stades",
+    "wikipediaLangs": 0,
+    "score": 0.037142857142857144,
+    "tags": {
+      "openingHours": "PH,Mo-Su 06:00-23:00"
+    }
+  },
+  {
+    "id": "node/9890222087",
+    "osm": {
+      "type": "node",
+      "id": 9890222087
+    },
+    "name": "Studio Nirvana",
+    "lat": 43.3907509,
+    "lon": -1.6857107,
+    "category": "sport",
+    "subcategory": "Centres sportifs & stades",
+    "wikipediaLangs": 0,
+    "score": 0.037142857142857144,
+    "tags": {
+      "openingHours": "Mo-Sa 08:00-20:00"
+    }
+  },
+  {
     "id": "node/9951918830",
     "osm": {
       "type": "node",
@@ -7974,6 +8953,347 @@
     }
   },
   {
+    "id": "node/6401407042",
+    "osm": {
+      "type": "node",
+      "id": 6401407042
+    },
+    "name": "Danontzat",
+    "lat": 43.3629516,
+    "lon": -1.7917456,
+    "category": "vie-nocturne",
+    "subcategory": "Bars & pubs",
+    "wikipediaLangs": 0,
+    "score": 0.031,
+    "tags": {
+      "cuisine": [
+        "local"
+      ],
+      "openingHours": "Th-Mo 12:00-16:30, 19:30-00:00",
+      "website": "https://gastrotekadanontzat.com/"
+    }
+  },
+  {
+    "id": "node/6583590650",
+    "osm": {
+      "type": "node",
+      "id": 6583590650
+    },
+    "name": "Soinua",
+    "city": "Bayonne",
+    "lat": 43.4898095,
+    "lon": -1.4719839,
+    "category": "vie-nocturne",
+    "subcategory": "Bars & pubs",
+    "wikipediaLangs": 0,
+    "score": 0.031,
+    "tags": {
+      "openingHours": "Tu-Sa 18:00-02:00+"
+    }
+  },
+  {
+    "id": "node/7631893915",
+    "osm": {
+      "type": "node",
+      "id": 7631893915
+    },
+    "name": "Côté Bistro - Urdazuri",
+    "city": "Saint-Jean-de-Luz",
+    "lat": 43.3823676,
+    "lon": -1.6563292,
+    "category": "vie-nocturne",
+    "subcategory": "Bars & pubs",
+    "wikipediaLangs": 0,
+    "score": 0.031,
+    "tags": {
+      "openingHours": "Mo-Sa 07:00-12:30,15:00-19:00"
+    }
+  },
+  {
+    "id": "node/7649520007",
+    "osm": {
+      "type": "node",
+      "id": 7649520007
+    },
+    "name": "Pub du Corsaire",
+    "lat": 43.3883815,
+    "lon": -1.6641522,
+    "category": "vie-nocturne",
+    "subcategory": "Bars & pubs",
+    "wikipediaLangs": 0,
+    "score": 0.031,
+    "tags": {
+      "wheelchair": "no",
+      "openingHours": "17:00-02:00"
+    }
+  },
+  {
+    "id": "node/7673179861",
+    "osm": {
+      "type": "node",
+      "id": 7673179861
+    },
+    "name": "Le bar Battela",
+    "city": "Saint-Jean-de-Luz",
+    "lat": 43.3881444,
+    "lon": -1.6613752,
+    "category": "vie-nocturne",
+    "subcategory": "Bars & pubs",
+    "wikipediaLangs": 0,
+    "score": 0.031,
+    "tags": {
+      "wheelchair": "yes",
+      "openingHours": "Mo-Th 09:00-21:00; Fr-Su 09:00-23:00"
+    }
+  },
+  {
+    "id": "node/9196167095",
+    "osm": {
+      "type": "node",
+      "id": 9196167095
+    },
+    "name": "Jo's Bar",
+    "city": "Bayonne",
+    "lat": 43.4897266,
+    "lon": -1.4728924,
+    "category": "vie-nocturne",
+    "subcategory": "Bars & pubs",
+    "wikipediaLangs": 0,
+    "score": 0.031,
+    "tags": {
+      "openingHours": "We-Sa 19:00-02:00; Su 19:00-24:00",
+      "website": "https://josbar64.com/"
+    }
+  },
+  {
+    "id": "node/9493675607",
+    "osm": {
+      "type": "node",
+      "id": 9493675607
+    },
+    "name": "Zythos Bar",
+    "city": "Tarnos",
+    "lat": 43.5394721,
+    "lon": -1.4607583,
+    "category": "vie-nocturne",
+    "subcategory": "Bars & pubs",
+    "wikipediaLangs": 0,
+    "score": 0.031,
+    "tags": {
+      "wheelchair": "yes",
+      "openingHours": "Tu-Sa 15:00-21:00"
+    }
+  },
+  {
+    "id": "node/11417332169",
+    "osm": {
+      "type": "node",
+      "id": 11417332169
+    },
+    "name": "Vinoteka Ardoka",
+    "lat": 43.3693569,
+    "lon": -1.7945,
+    "category": "vie-nocturne",
+    "subcategory": "Bars & pubs",
+    "wikipediaLangs": 0,
+    "score": 0.031,
+    "tags": {
+      "openingHours": "Su-Mo, We-Fr 12:00-16:00, 19:00-23:00; Sa 12:00-23:00"
+    }
+  },
+  {
+    "id": "node/12946393036",
+    "osm": {
+      "type": "node",
+      "id": 12946393036
+    },
+    "name": "Le Patio",
+    "city": "Peyrehorade",
+    "lat": 43.5444491,
+    "lon": -1.1033598,
+    "category": "vie-nocturne",
+    "subcategory": "Bars & pubs",
+    "wikipediaLangs": 0,
+    "score": 0.031,
+    "tags": {
+      "openingHours": "Mo-Fr 00:00-24:00"
+    }
+  },
+  {
+    "id": "node/597620678",
+    "osm": {
+      "type": "node",
+      "id": 597620678
+    },
+    "name": "Katie Daly's",
+    "lat": 43.4923307,
+    "lon": -1.4746654,
+    "category": "vie-nocturne",
+    "subcategory": "Bars & pubs",
+    "wikipediaLangs": 0,
+    "score": 0.026000000000000002,
+    "tags": {
+      "openingHours": "Tu-Th 17:00-02:00, Fr,Sa 12:30-02:00; Su,Mo off"
+    }
+  },
+  {
+    "id": "node/1363029013",
+    "osm": {
+      "type": "node",
+      "id": 1363029013
+    },
+    "name": "Le Bayard",
+    "lat": 43.4807616,
+    "lon": -1.5454596,
+    "category": "vie-nocturne",
+    "subcategory": "Bars & pubs",
+    "wikipediaLangs": 0,
+    "score": 0.026000000000000002,
+    "tags": {
+      "openingHours": "Mo-Fr 07:00-20:00; Sa 09:00-20:00"
+    }
+  },
+  {
+    "id": "node/1791458314",
+    "osm": {
+      "type": "node",
+      "id": 1791458314
+    },
+    "name": "Café de la Plage",
+    "lat": 43.3725421,
+    "lon": -1.7734789,
+    "category": "vie-nocturne",
+    "subcategory": "Bars & pubs",
+    "wikipediaLangs": 0,
+    "score": 0.026000000000000002,
+    "tags": {
+      "openingHours": "Tu 07:00-15:00, We,Th 07:00-22:00, Fr,Sa 07:00-02:00, Su 07:00-15:00; Mo off"
+    }
+  },
+  {
+    "id": "node/1798580725",
+    "osm": {
+      "type": "node",
+      "id": 1798580725
+    },
+    "name": "Le 10",
+    "city": "Tarnos",
+    "lat": 43.5392155,
+    "lon": -1.4611801,
+    "category": "vie-nocturne",
+    "subcategory": "Bars & pubs",
+    "wikipediaLangs": 0,
+    "score": 0.026000000000000002,
+    "tags": {
+      "openingHours": "Mo-Su 06:00-20:00"
+    }
+  },
+  {
+    "id": "node/2629099823",
+    "osm": {
+      "type": "node",
+      "id": 2629099823
+    },
+    "name": "Hazia",
+    "lat": 43.3377746,
+    "lon": -1.7873575,
+    "category": "vie-nocturne",
+    "subcategory": "Bars & pubs",
+    "wikipediaLangs": 0,
+    "score": 0.026000000000000002,
+    "tags": {
+      "openingHours": "Sa 11:00-03:00; Mo-Th 17:30-23:00; Fr 17:30-02:00"
+    }
+  },
+  {
+    "id": "node/4387368462",
+    "osm": {
+      "type": "node",
+      "id": 4387368462
+    },
+    "name": "Bittor",
+    "lat": 43.3840709,
+    "lon": -1.668061,
+    "category": "vie-nocturne",
+    "subcategory": "Bars & pubs",
+    "wikipediaLangs": 0,
+    "score": 0.026000000000000002,
+    "tags": {
+      "openingHours": "Sep-Jun Th-Su 18:00-23:00+; Jul-Aug Mo-Su 18:00-23:00+"
+    }
+  },
+  {
+    "id": "node/5929357255",
+    "osm": {
+      "type": "node",
+      "id": 5929357255
+    },
+    "name": "Charlie's Bar",
+    "city": "Biarritz",
+    "lat": 43.4858039,
+    "lon": -1.5514064,
+    "category": "vie-nocturne",
+    "subcategory": "Bars & pubs",
+    "wikipediaLangs": 0,
+    "score": 0.026000000000000002,
+    "tags": {
+      "openingHours": "Mo-Su 18:00-01:00"
+    }
+  },
+  {
+    "id": "node/7013350154",
+    "osm": {
+      "type": "node",
+      "id": 7013350154
+    },
+    "name": "Le C.D.S.",
+    "lat": 43.4910977,
+    "lon": -1.4726698,
+    "category": "vie-nocturne",
+    "subcategory": "Bars & pubs",
+    "wikipediaLangs": 0,
+    "score": 0.026000000000000002,
+    "tags": {
+      "openingHours": "Th-Sa 17:00-02:00"
+    }
+  },
+  {
+    "id": "node/7639950991",
+    "osm": {
+      "type": "node",
+      "id": 7639950991
+    },
+    "name": "Bar de la Voie",
+    "city": "Bayonne",
+    "lat": 43.4937985,
+    "lon": -1.462111,
+    "category": "vie-nocturne",
+    "subcategory": "Bars & pubs",
+    "wikipediaLangs": 0,
+    "score": 0.026000000000000002,
+    "tags": {
+      "openingHours": "Mo-Sa 08:00-20:00"
+    }
+  },
+  {
+    "id": "node/7698662066",
+    "osm": {
+      "type": "node",
+      "id": 7698662066
+    },
+    "name": "Bar Marinela",
+    "city": "Ciboure",
+    "lat": 43.380543,
+    "lon": -1.6644376,
+    "category": "vie-nocturne",
+    "subcategory": "Bars & pubs",
+    "wikipediaLangs": 0,
+    "score": 0.026000000000000002,
+    "tags": {
+      "openingHours": "Tu-Sa 07:00-12:30; Su 07:30-12:00"
+    }
+  },
+  {
     "id": "node/861393457",
     "osm": {
       "type": "node",
@@ -8064,6 +9384,24 @@
     }
   },
   {
+    "id": "node/5406061640",
+    "osm": {
+      "type": "node",
+      "id": 5406061640
+    },
+    "name": "Club de l'Adour",
+    "city": "Tarnos",
+    "lat": 43.5376605,
+    "lon": -1.4976811,
+    "category": "sport",
+    "subcategory": "Centres sportifs & stades",
+    "wikipediaLangs": 0,
+    "score": 0.02142857142857143,
+    "tags": {
+      "website": "http://www.clubdeladour.com/"
+    }
+  },
+  {
     "id": "node/6882376971",
     "osm": {
       "type": "node",
@@ -8097,6 +9435,42 @@
     "score": 0.02142857142857143,
     "tags": {
       "website": "https://www.ecole-de-surf-bidart.com/"
+    }
+  },
+  {
+    "id": "node/7562989253",
+    "osm": {
+      "type": "node",
+      "id": 7562989253
+    },
+    "name": "Golf Clubmakers",
+    "city": "Bidart",
+    "lat": 43.450651,
+    "lon": -1.5659935,
+    "category": "sport",
+    "subcategory": "Sports collectifs & raquette",
+    "wikipediaLangs": 0,
+    "score": 0.02142857142857143,
+    "tags": {
+      "website": "https://www.gcmk.fr/"
+    }
+  },
+  {
+    "id": "node/7591937347",
+    "osm": {
+      "type": "node",
+      "id": 7591937347
+    },
+    "name": "Tennis Club de Bidart",
+    "city": "Bidart",
+    "lat": 43.4308754,
+    "lon": -1.5914669,
+    "category": "sport",
+    "subcategory": "Sports collectifs & raquette",
+    "wikipediaLangs": 0,
+    "score": 0.02142857142857143,
+    "tags": {
+      "cost": "paid"
     }
   },
   {
@@ -8171,6 +9545,41 @@
     }
   },
   {
+    "id": "way/72485569",
+    "osm": {
+      "type": "way",
+      "id": 72485569
+    },
+    "name": "Jaï Alaï de Saint-Jean-de-Luz",
+    "city": "Saint-Jean-de-Luz",
+    "lat": 43.3926998,
+    "lon": -1.6515457,
+    "category": "sport",
+    "subcategory": "Sports collectifs & raquette",
+    "wikipediaLangs": 0,
+    "score": 0.02142857142857143,
+    "tags": {
+      "website": "https://www.cestapunta.com/"
+    }
+  },
+  {
+    "id": "way/157255864",
+    "osm": {
+      "type": "way",
+      "id": 157255864
+    },
+    "name": "Gymnase Haïtz Pean",
+    "lat": 43.4759532,
+    "lon": -1.5200452,
+    "category": "sport",
+    "subcategory": "Centres sportifs & stades",
+    "wikipediaLangs": 0,
+    "score": 0.02142857142857143,
+    "tags": {
+      "website": "https://www.anglet.fr/fiches-pratiques/detail-fiche/actualites/centre-culturel-et-sportif-haitz-pean/"
+    }
+  },
+  {
     "id": "way/408370460",
     "osm": {
       "type": "way",
@@ -8202,6 +9611,157 @@
     "score": 0.02142857142857143,
     "tags": {
       "website": "https://www.port-adhoc.com/les-ports/port-a-sec-bayonne/"
+    }
+  },
+  {
+    "id": "way/581383732",
+    "osm": {
+      "type": "way",
+      "id": 581383732
+    },
+    "name": "Centre Sportif Jean-Moulin",
+    "lat": 43.497905,
+    "lon": -1.5300182,
+    "category": "sport",
+    "subcategory": "Centres sportifs & stades",
+    "wikipediaLangs": 0,
+    "score": 0.02142857142857143,
+    "tags": {
+      "website": "https://www.anglet.fr/outils/rechercher-un-lieu/detail/fiche/stade-jean-moulin/"
+    }
+  },
+  {
+    "id": "way/652863137",
+    "osm": {
+      "type": "way",
+      "id": 652863137
+    },
+    "name": "Stade Municipal Lucien Goni",
+    "city": "Saint-Martin-de-Seignanx",
+    "lat": 43.5417386,
+    "lon": -1.3702199,
+    "category": "sport",
+    "subcategory": "Centres sportifs & stades",
+    "wikipediaLangs": 0,
+    "score": 0.02142857142857143
+  },
+  {
+    "id": "way/806432897",
+    "osm": {
+      "type": "way",
+      "id": 806432897
+    },
+    "name": "Stade de l'Uhabia",
+    "lat": 43.4317875,
+    "lon": -1.592628,
+    "category": "sport",
+    "subcategory": "Centres sportifs & stades",
+    "wikipediaLangs": 0,
+    "score": 0.02142857142857143,
+    "tags": {
+      "wheelchair": "yes"
+    }
+  },
+  {
+    "id": "way/816857209",
+    "osm": {
+      "type": "way",
+      "id": 816857209
+    },
+    "name": "Centre Sportif Choisy",
+    "lat": 43.4883018,
+    "lon": -1.5138562,
+    "category": "sport",
+    "subcategory": "Centres sportifs & stades",
+    "wikipediaLangs": 0,
+    "score": 0.02142857142857143,
+    "tags": {
+      "website": "https://www.anglet.fr/outils/rechercher-un-lieu/detail/fiche/stade-de-choisy/"
+    }
+  },
+  {
+    "id": "way/816857210",
+    "osm": {
+      "type": "way",
+      "id": 816857210
+    },
+    "name": "Centre Sportif Justin-Larrebat",
+    "lat": 43.4893421,
+    "lon": -1.5049339,
+    "category": "sport",
+    "subcategory": "Centres sportifs & stades",
+    "wikipediaLangs": 0,
+    "score": 0.02142857142857143,
+    "tags": {
+      "website": "https://www.anglet.fr/outils/rechercher-un-lieu/detail/fiche/stade-justin-larrebat/"
+    }
+  },
+  {
+    "id": "way/816857211",
+    "osm": {
+      "type": "way",
+      "id": 816857211
+    },
+    "name": "Centre Sportif Girouette",
+    "lat": 43.4723136,
+    "lon": -1.5043079,
+    "category": "sport",
+    "subcategory": "Centres sportifs & stades",
+    "wikipediaLangs": 0,
+    "score": 0.02142857142857143,
+    "tags": {
+      "website": "https://www.anglet.fr/outils/rechercher-un-lieu/detail/fiche/stade-de-girouette/"
+    }
+  },
+  {
+    "id": "way/816857212",
+    "osm": {
+      "type": "way",
+      "id": 816857212
+    },
+    "name": "Centre Sportif Saint-Jean",
+    "lat": 43.4787176,
+    "lon": -1.5152528,
+    "category": "sport",
+    "subcategory": "Centres sportifs & stades",
+    "wikipediaLangs": 0,
+    "score": 0.02142857142857143,
+    "tags": {
+      "website": "https://www.anglet.fr/outils/rechercher-un-lieu/detail/fiche/salle-saint-jean-stade-municipal/"
+    }
+  },
+  {
+    "id": "way/816857213",
+    "osm": {
+      "type": "way",
+      "id": 816857213
+    },
+    "name": "Centre Sportif Haïtz Péan",
+    "lat": 43.4762896,
+    "lon": -1.5198571,
+    "category": "sport",
+    "subcategory": "Centres sportifs & stades",
+    "wikipediaLangs": 0,
+    "score": 0.02142857142857143,
+    "tags": {
+      "website": "https://www.anglet.fr/outils/rechercher-un-lieu/detail/fiche/centre-culturel-et-sportif-haitz-pean/"
+    }
+  },
+  {
+    "id": "way/816857214",
+    "osm": {
+      "type": "way",
+      "id": 816857214
+    },
+    "name": "Centre Sportif El Hogar",
+    "lat": 43.4892294,
+    "lon": -1.5107135,
+    "category": "sport",
+    "subcategory": "Centres sportifs & stades",
+    "wikipediaLangs": 0,
+    "score": 0.02142857142857143,
+    "tags": {
+      "website": "https://www.anglet.fr/outils/rechercher-un-lieu/detail/fiche/centre-culturel-et-sportif-el-hogar/"
     }
   },
   {
@@ -8241,6 +9801,24 @@
     }
   },
   {
+    "id": "node/7773208847",
+    "osm": {
+      "type": "node",
+      "id": 7773208847
+    },
+    "name": "Citadelle Vauban",
+    "city": "Saint-Jean-Pied-de-Port",
+    "lat": 43.1612211,
+    "lon": -1.232061,
+    "category": "loisirs",
+    "subcategory": "Attractions",
+    "wikipediaLangs": 0,
+    "score": 0.014285714285714284,
+    "tags": {
+      "cost": "paid"
+    }
+  },
+  {
     "id": "node/5407635547",
     "osm": {
       "type": "node",
@@ -8272,6 +9850,58 @@
     "score": 0.014285714285714284,
     "tags": {
       "website": "https://www.clubhippiquecotebasque.com/"
+    }
+  },
+  {
+    "id": "node/6411073132",
+    "osm": {
+      "type": "node",
+      "id": 6411073132
+    },
+    "name": "Crossfit Essor",
+    "lat": 43.4895847,
+    "lon": -1.4532007,
+    "category": "sport",
+    "subcategory": "Centres sportifs & stades",
+    "wikipediaLangs": 0,
+    "score": 0.014285714285714284,
+    "tags": {
+      "website": "https://cfessor.com/"
+    }
+  },
+  {
+    "id": "node/7442069294",
+    "osm": {
+      "type": "node",
+      "id": 7442069294
+    },
+    "name": "Club Adbo",
+    "lat": 43.4941152,
+    "lon": -1.4611575,
+    "category": "sport",
+    "subcategory": "Centres sportifs & stades",
+    "wikipediaLangs": 0,
+    "score": 0.014285714285714284,
+    "tags": {
+      "website": "https://www.club-abdo.com/"
+    }
+  },
+  {
+    "id": "node/7562370145",
+    "osm": {
+      "type": "node",
+      "id": 7562370145
+    },
+    "name": "Golf One 64 Outlet",
+    "city": "Bidart",
+    "lat": 43.4486912,
+    "lon": -1.570834,
+    "category": "sport",
+    "subcategory": "Sports collectifs & raquette",
+    "wikipediaLangs": 0,
+    "score": 0.014285714285714284,
+    "tags": {
+      "website": "https://golfone64.fr/"
     }
   },
   {
@@ -8361,6 +9991,40 @@
     }
   },
   {
+    "id": "node/7765751699",
+    "osm": {
+      "type": "node",
+      "id": 7765751699
+    },
+    "name": "Trinquet de Verre Haïtz Pean",
+    "lat": 43.4757102,
+    "lon": -1.5201769,
+    "category": "sport",
+    "subcategory": "Sports collectifs & raquette",
+    "wikipediaLangs": 0,
+    "score": 0.014285714285714284,
+    "tags": {
+      "cost": "paid"
+    }
+  },
+  {
+    "id": "node/7765751700",
+    "osm": {
+      "type": "node",
+      "id": 7765751700
+    },
+    "name": "Trinquet d'Entrainement Haïtz Pean",
+    "lat": 43.4759094,
+    "lon": -1.5201544,
+    "category": "sport",
+    "subcategory": "Sports collectifs & raquette",
+    "wikipediaLangs": 0,
+    "score": 0.014285714285714284,
+    "tags": {
+      "cost": "paid"
+    }
+  },
+  {
     "id": "node/7770195481",
     "osm": {
       "type": "node",
@@ -8395,6 +10059,41 @@
     }
   },
   {
+    "id": "node/8251932451",
+    "osm": {
+      "type": "node",
+      "id": 8251932451
+    },
+    "name": "Arteka",
+    "city": "Bidarray",
+    "lat": 43.2669224,
+    "lon": -1.3398649,
+    "category": "sport",
+    "subcategory": "Centres sportifs & stades",
+    "wikipediaLangs": 0,
+    "score": 0.014285714285714284,
+    "tags": {
+      "website": "https://arteka-eh.com/"
+    }
+  },
+  {
+    "id": "node/8559816542",
+    "osm": {
+      "type": "node",
+      "id": 8559816542
+    },
+    "name": "Rekiem Skateboard",
+    "lat": 43.5244124,
+    "lon": -1.5031517,
+    "category": "sport",
+    "subcategory": "Surf & sports de glisse",
+    "wikipediaLangs": 0,
+    "score": 0.014285714285714284,
+    "tags": {
+      "website": "https://www.rekiem-skateboards.com/"
+    }
+  },
+  {
     "id": "node/8701512192",
     "osm": {
       "type": "node",
@@ -8410,6 +10109,39 @@
     "score": 0.014285714285714284,
     "tags": {
       "website": "https://urkodea.ffe.com/"
+    }
+  },
+  {
+    "id": "node/8731019261",
+    "osm": {
+      "type": "node",
+      "id": 8731019261
+    },
+    "name": "Cours Yoga Eva Durisova",
+    "city": "Urrugne",
+    "lat": 43.3857339,
+    "lon": -1.6956771,
+    "category": "sport",
+    "subcategory": "Centres sportifs & stades",
+    "wikipediaLangs": 0,
+    "score": 0.014285714285714284
+  },
+  {
+    "id": "node/8764091341",
+    "osm": {
+      "type": "node",
+      "id": 8764091341
+    },
+    "name": "162 Skate School",
+    "city": "Saint-Jean-de-Luz",
+    "lat": 43.4121843,
+    "lon": -1.6137119,
+    "category": "sport",
+    "subcategory": "Surf & sports de glisse",
+    "wikipediaLangs": 0,
+    "score": 0.014285714285714284,
+    "tags": {
+      "website": "https://162skate.org/"
     }
   },
   {
@@ -8431,6 +10163,80 @@
     }
   },
   {
+    "id": "node/8904014452",
+    "osm": {
+      "type": "node",
+      "id": 8904014452
+    },
+    "name": "Base de loisirs du lac",
+    "city": "Saint-Pée-sur-Nivelle",
+    "lat": 43.3470671,
+    "lon": -1.52236,
+    "category": "sport",
+    "subcategory": "Sports nautiques",
+    "wikipediaLangs": 0,
+    "score": 0.014285714285714284,
+    "tags": {
+      "website": "https://saintpeesurnivelle.fr/le-lac/"
+    }
+  },
+  {
+    "id": "node/9171448378",
+    "osm": {
+      "type": "node",
+      "id": 9171448378
+    },
+    "name": "Cocktail Aventure",
+    "city": "Bidarray",
+    "lat": 43.269193,
+    "lon": -1.345924,
+    "category": "sport",
+    "subcategory": "Centres sportifs & stades",
+    "wikipediaLangs": 0,
+    "score": 0.014285714285714284,
+    "tags": {
+      "cost": "paid",
+      "website": "https://www.cocktail-aventure.com/"
+    }
+  },
+  {
+    "id": "node/9658464388",
+    "osm": {
+      "type": "node",
+      "id": 9658464388
+    },
+    "name": "Lā kāśa",
+    "city": "Bidart",
+    "lat": 43.4467151,
+    "lon": -1.5807811,
+    "category": "sport",
+    "subcategory": "Centres sportifs & stades",
+    "wikipediaLangs": 0,
+    "score": 0.014285714285714284,
+    "tags": {
+      "website": "https://la-kasa.fr/"
+    }
+  },
+  {
+    "id": "node/10099420861",
+    "osm": {
+      "type": "node",
+      "id": 10099420861
+    },
+    "name": "Centre culturel et sportif Bilbalka",
+    "city": "Saint-Palais",
+    "lat": 43.3211156,
+    "lon": -1.0459825,
+    "category": "sport",
+    "subcategory": "Centres sportifs & stades",
+    "wikipediaLangs": 0,
+    "score": 0.014285714285714284,
+    "tags": {
+      "cost": "paid",
+      "website": "https://bilbalka.eus/"
+    }
+  },
+  {
     "id": "node/10973923405",
     "osm": {
       "type": "node",
@@ -8448,17 +10254,31 @@
     }
   },
   {
-    "id": "node/8731019261",
+    "id": "node/12395413255",
     "osm": {
       "type": "node",
-      "id": 8731019261
+      "id": 12395413255
     },
-    "name": "Cours Yoga Eva Durisova",
-    "city": "Urrugne",
-    "lat": 43.3857339,
-    "lon": -1.6956771,
-    "category": "bien-etre",
-    "subcategory": "Yoga & retraites",
+    "name": "Actiphy't",
+    "city": "Saint-Martin-de-Seignanx",
+    "lat": 43.5325567,
+    "lon": -1.3880559,
+    "category": "sport",
+    "subcategory": "Centres sportifs & stades",
+    "wikipediaLangs": 0,
+    "score": 0.014285714285714284
+  },
+  {
+    "id": "way/72778522",
+    "osm": {
+      "type": "way",
+      "id": 72778522
+    },
+    "name": "Salle Kirolak",
+    "lat": 43.4307093,
+    "lon": -1.5911515,
+    "category": "sport",
+    "subcategory": "Sports collectifs & raquette",
     "wikipediaLangs": 0,
     "score": 0.014285714285714284
   },
@@ -8495,24 +10315,6 @@
     "score": 0.014285714285714284,
     "tags": {
       "website": "https://www.escale64.com/"
-    }
-  },
-  {
-    "id": "node/9658464388",
-    "osm": {
-      "type": "node",
-      "id": 9658464388
-    },
-    "name": "Lā kāśa",
-    "city": "Bidart",
-    "lat": 43.4467151,
-    "lon": -1.5807811,
-    "category": "bien-etre",
-    "subcategory": "Yoga & retraites",
-    "wikipediaLangs": 0,
-    "score": 0.014285714285714284,
-    "tags": {
-      "website": "https://la-kasa.fr/"
     }
   },
   {
@@ -8567,215 +10369,6 @@
     }
   },
   {
-    "id": "node/1503447920",
-    "osm": {
-      "type": "node",
-      "id": 1503447920
-    },
-    "name": "Ecurie Fantagaro",
-    "city": "Ahetze",
-    "lat": 43.4071016,
-    "lon": -1.5861399,
-    "category": "sport",
-    "subcategory": "Sports équestres",
-    "wikipediaLangs": 0,
-    "score": 0.007142857142857142,
-    "tags": {
-      "website": "https://ecurie-fantagaro.fr/"
-    }
-  },
-  {
-    "id": "node/6161729477",
-    "osm": {
-      "type": "node",
-      "id": 6161729477
-    },
-    "name": "Centre Équestre Sainte-Hélène",
-    "lat": 43.3625517,
-    "lon": -1.6356325,
-    "category": "sport",
-    "subcategory": "Sports équestres",
-    "wikipediaLangs": 0,
-    "score": 0.007142857142857142,
-    "tags": {
-      "website": "http://equitationpourtous.wix.com/ce-st-helene#http://www.centre-equestre-sainte-helene-ascain.com"
-    }
-  },
-  {
-    "id": "node/6262328376",
-    "osm": {
-      "type": "node",
-      "id": 6262328376
-    },
-    "name": "Le Cheval de 3",
-    "lat": 43.34116,
-    "lon": -1.4649152,
-    "category": "sport",
-    "subcategory": "Sports équestres",
-    "wikipediaLangs": 0,
-    "score": 0.007142857142857142,
-    "tags": {
-      "website": "https://chevalde3.fr/"
-    }
-  },
-  {
-    "id": "node/6577392285",
-    "osm": {
-      "type": "node",
-      "id": 6577392285
-    },
-    "name": "Jo Moraiz Surf School",
-    "lat": 43.4773685,
-    "lon": -1.5668638,
-    "category": "sport",
-    "subcategory": "Surf & sports de glisse",
-    "wikipediaLangs": 0,
-    "score": 0.007142857142857142,
-    "tags": {
-      "website": "https://jomoraiz.com/"
-    }
-  },
-  {
-    "id": "node/7780858283",
-    "osm": {
-      "type": "node",
-      "id": 7780858283
-    },
-    "name": "Uhina Rafting",
-    "lat": 43.2661623,
-    "lon": -1.332837,
-    "category": "sport",
-    "subcategory": "Sports nautiques",
-    "wikipediaLangs": 0,
-    "score": 0.007142857142857142
-  },
-  {
-    "id": "node/8682375774",
-    "osm": {
-      "type": "node",
-      "id": 8682375774
-    },
-    "name": "Balades à poney Ttikientzat",
-    "city": "SAINT-MARTIN-D'ARBEROUE",
-    "lat": 43.3444859,
-    "lon": -1.1905882,
-    "category": "sport",
-    "subcategory": "Sports équestres",
-    "wikipediaLangs": 0,
-    "score": 0.007142857142857142
-  },
-  {
-    "id": "node/8684482850",
-    "osm": {
-      "type": "node",
-      "id": 8684482850
-    },
-    "name": "Jungle Canoë",
-    "city": "La Bastide-Clairence",
-    "lat": 43.4325622,
-    "lon": -1.256316,
-    "category": "sport",
-    "subcategory": "Sports nautiques",
-    "wikipediaLangs": 0,
-    "score": 0.007142857142857142
-  },
-  {
-    "id": "node/8930535836",
-    "osm": {
-      "type": "node",
-      "id": 8930535836
-    },
-    "name": "Les Écuries des gaves",
-    "lat": 43.4282321,
-    "lon": -0.9039903,
-    "category": "sport",
-    "subcategory": "Sports équestres",
-    "wikipediaLangs": 0,
-    "score": 0.007142857142857142,
-    "tags": {
-      "website": "http://www.ecuriedesgaves.com"
-    }
-  },
-  {
-    "id": "node/10860546529",
-    "osm": {
-      "type": "node",
-      "id": 10860546529
-    },
-    "name": "Les Écuries de Lortenia",
-    "lat": 43.4539002,
-    "lon": -1.5247124,
-    "category": "sport",
-    "subcategory": "Sports équestres",
-    "wikipediaLangs": 0,
-    "score": 0.007142857142857142,
-    "tags": {
-      "website": "https://www.lortenia.com/"
-    }
-  },
-  {
-    "id": "way/478950990",
-    "osm": {
-      "type": "way",
-      "id": 478950990
-    },
-    "name": "Ciboure - Larraldenia",
-    "lat": 43.3854683,
-    "lon": -1.6667734,
-    "category": "sport",
-    "subcategory": "Sports nautiques",
-    "wikipediaLangs": 0,
-    "score": 0.007142857142857142,
-    "tags": {
-      "cost": "paid"
-    }
-  },
-  {
-    "id": "way/808790803",
-    "osm": {
-      "type": "way",
-      "id": 808790803
-    },
-    "name": "La Nivelle - Port",
-    "lat": 43.3826972,
-    "lon": -1.6573514,
-    "category": "sport",
-    "subcategory": "Sports nautiques",
-    "wikipediaLangs": 0,
-    "score": 0.007142857142857142
-  },
-  {
-    "id": "way/967839148",
-    "osm": {
-      "type": "way",
-      "id": 967839148
-    },
-    "name": "Belharra-Perdun",
-    "lat": 43.4111795,
-    "lon": -1.7188364,
-    "category": "sport",
-    "subcategory": "Sports nautiques",
-    "wikipediaLangs": 0,
-    "score": 0.007142857142857142
-  },
-  {
-    "id": "node/10873162752",
-    "osm": {
-      "type": "node",
-      "id": 10873162752
-    },
-    "name": "Yogang",
-    "lat": 43.4813198,
-    "lon": -1.5471384,
-    "category": "bien-etre",
-    "subcategory": "Yoga & retraites",
-    "wikipediaLangs": 0,
-    "score": 0.007142857142857142,
-    "tags": {
-      "website": "https://yogang-biarritz.fr/"
-    }
-  },
-  {
     "id": "node/12671213867",
     "osm": {
       "type": "node",
@@ -8789,188 +10382,6 @@
     "subcategory": "Spas & instituts",
     "wikipediaLangs": 0,
     "score": 0.007142857142857142
-  },
-  {
-    "id": "node/13643552556",
-    "osm": {
-      "type": "node",
-      "id": 13643552556
-    },
-    "name": "Yoga Baiona Studio",
-    "lat": 43.4901909,
-    "lon": -1.4763878,
-    "category": "bien-etre",
-    "subcategory": "Yoga & retraites",
-    "wikipediaLangs": 0,
-    "score": 0.007142857142857142
-  },
-  {
-    "id": "node/777000911",
-    "osm": {
-      "type": "node",
-      "id": 777000911
-    },
-    "name": "Ur Bizia Rafting",
-    "lat": 43.2663446,
-    "lon": -1.3381886,
-    "category": "sport",
-    "subcategory": "Sports nautiques",
-    "wikipediaLangs": 0,
-    "score": 0
-  },
-  {
-    "id": "node/913120839",
-    "osm": {
-      "type": "node",
-      "id": 913120839
-    },
-    "name": "Onaka",
-    "lat": 43.3723576,
-    "lon": -1.7743576,
-    "category": "sport",
-    "subcategory": "Surf & sports de glisse",
-    "wikipediaLangs": 0,
-    "score": 0
-  },
-  {
-    "id": "node/2312157376",
-    "osm": {
-      "type": "node",
-      "id": 2312157376
-    },
-    "name": "Ohiana",
-    "lat": 43.3576994,
-    "lon": -1.7433626,
-    "category": "sport",
-    "subcategory": "Escalade & via ferrata",
-    "wikipediaLangs": 0,
-    "score": 0
-  },
-  {
-    "id": "node/2937587818",
-    "osm": {
-      "type": "node",
-      "id": 2937587818
-    },
-    "name": "Site de plongée de Guéthary",
-    "lat": 43.43373,
-    "lon": -1.6168,
-    "category": "sport",
-    "subcategory": "Sports nautiques",
-    "wikipediaLangs": 0,
-    "score": 0
-  },
-  {
-    "id": "node/2937587819",
-    "osm": {
-      "type": "node",
-      "id": 2937587819
-    },
-    "name": "Sites de plongée de Chicharvel",
-    "lat": 43.3937,
-    "lon": -1.76956,
-    "category": "sport",
-    "subcategory": "Sports nautiques",
-    "wikipediaLangs": 0,
-    "score": 0
-  },
-  {
-    "id": "node/2937587820",
-    "osm": {
-      "type": "node",
-      "id": 2937587820
-    },
-    "name": "Sites de plongée de la Basse des Esclaves",
-    "lat": 43.48337,
-    "lon": -1.61416,
-    "category": "sport",
-    "subcategory": "Sports nautiques",
-    "wikipediaLangs": 0,
-    "score": 0
-  },
-  {
-    "id": "node/2937587821",
-    "osm": {
-      "type": "node",
-      "id": 2937587821
-    },
-    "name": "Sites de plongée des Briquets",
-    "lat": 43.3953,
-    "lon": -1.74876,
-    "category": "sport",
-    "subcategory": "Sports nautiques",
-    "wikipediaLangs": 0,
-    "score": 0
-  },
-  {
-    "id": "node/3819048659",
-    "osm": {
-      "type": "node",
-      "id": 3819048659
-    },
-    "name": "Port de Caneta",
-    "lat": 43.3589109,
-    "lon": -1.7789996,
-    "category": "sport",
-    "subcategory": "Sports nautiques",
-    "wikipediaLangs": 0,
-    "score": 0
-  },
-  {
-    "id": "node/3820463185",
-    "osm": {
-      "type": "node",
-      "id": 3820463185
-    },
-    "name": "Hondarribia - Aeropuerto",
-    "lat": 43.3594738,
-    "lon": -1.78959,
-    "category": "sport",
-    "subcategory": "Sports nautiques",
-    "wikipediaLangs": 0,
-    "score": 0
-  },
-  {
-    "id": "node/3830362059",
-    "osm": {
-      "type": "node",
-      "id": 3830362059
-    },
-    "name": "Socoa",
-    "lat": 43.3949351,
-    "lon": -1.6838447,
-    "category": "sport",
-    "subcategory": "Sports nautiques",
-    "wikipediaLangs": 0,
-    "score": 0
-  },
-  {
-    "id": "node/5464348580",
-    "osm": {
-      "type": "node",
-      "id": 5464348580
-    },
-    "name": "Port de la Cale",
-    "lat": 43.5225374,
-    "lon": -1.4904678,
-    "category": "sport",
-    "subcategory": "Sports nautiques",
-    "wikipediaLangs": 0,
-    "score": 0
-  },
-  {
-    "id": "node/5981430541",
-    "osm": {
-      "type": "node",
-      "id": 5981430541
-    },
-    "name": "Equi Belardia",
-    "lat": 43.4533189,
-    "lon": -1.1578499,
-    "category": "sport",
-    "subcategory": "Sports équestres",
-    "wikipediaLangs": 0,
-    "score": 0
   },
   {
     "id": "node/2626987567",
@@ -9001,20 +10412,6 @@
     "score": 0
   },
   {
-    "id": "node/3113154170",
-    "osm": {
-      "type": "node",
-      "id": 3113154170
-    },
-    "name": "Padma Shala",
-    "lat": 43.3393216,
-    "lon": -1.791225,
-    "category": "bien-etre",
-    "subcategory": "Yoga & retraites",
-    "wikipediaLangs": 0,
-    "score": 0
-  },
-  {
     "id": "node/3308252195",
     "osm": {
       "type": "node",
@@ -9038,6 +10435,91 @@
     "city": "Irun",
     "lat": 43.3389785,
     "lon": -1.795788,
+    "category": "bien-etre",
+    "subcategory": "Spas & instituts",
+    "wikipediaLangs": 0,
+    "score": 0
+  },
+  {
+    "id": "node/8000136091",
+    "osm": {
+      "type": "node",
+      "id": 8000136091
+    },
+    "name": "Sukanya",
+    "lat": 43.4851041,
+    "lon": -1.5529189,
+    "category": "bien-etre",
+    "subcategory": "Spas & instituts",
+    "wikipediaLangs": 0,
+    "score": 0
+  },
+  {
+    "id": "node/8118979322",
+    "osm": {
+      "type": "node",
+      "id": 8118979322
+    },
+    "name": "Massages AmmaLise",
+    "lat": 43.4934935,
+    "lon": -1.4670832,
+    "category": "bien-etre",
+    "subcategory": "Spas & instituts",
+    "wikipediaLangs": 0,
+    "score": 0
+  },
+  {
+    "id": "node/8315170632",
+    "osm": {
+      "type": "node",
+      "id": 8315170632
+    },
+    "name": "Source chaude de Camou \"Lamina ziloa\"",
+    "lat": 43.1130286,
+    "lon": -0.9091925,
+    "category": "bien-etre",
+    "subcategory": "Thermalisme & sources chaudes",
+    "wikipediaLangs": 0,
+    "score": 0
+  },
+  {
+    "id": "node/10926335477",
+    "osm": {
+      "type": "node",
+      "id": 10926335477
+    },
+    "name": "LUMA Bien-être",
+    "city": "Bidart",
+    "lat": 43.4464579,
+    "lon": -1.5446073,
+    "category": "bien-etre",
+    "subcategory": "Spas & instituts",
+    "wikipediaLangs": 0,
+    "score": 0
+  },
+  {
+    "id": "node/11127297293",
+    "osm": {
+      "type": "node",
+      "id": 11127297293
+    },
+    "name": "Écrin d'Océan",
+    "lat": 43.4817439,
+    "lon": -1.5567749,
+    "category": "bien-etre",
+    "subcategory": "Spas & instituts",
+    "wikipediaLangs": 0,
+    "score": 0
+  },
+  {
+    "id": "node/11127297297",
+    "osm": {
+      "type": "node",
+      "id": 11127297297
+    },
+    "name": "Ici & Maintenant",
+    "lat": 43.4817473,
+    "lon": -1.5569848,
     "category": "bien-etre",
     "subcategory": "Spas & instituts",
     "wikipediaLangs": 0,

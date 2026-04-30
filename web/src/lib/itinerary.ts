@@ -53,6 +53,9 @@ const VISIT_MIN_BY_SUBCAT: Record<string, number> = {
   "Escalade & via ferrata": 180,
   "Sports équestres": 120,
   "Vélo & VTT": 180,
+  "Randonnée & trek": 180,
+  "Sports collectifs & raquette": 90,
+  "Centres sportifs & stades": 90,
   "Restaurants": 75,
   "Cafés & salons de thé": 30,
   "Caves & dégustation de vins": 60,
@@ -76,6 +79,8 @@ const VISIT_MIN_BY_SUBCAT: Record<string, number> = {
   Théâtres: 120,
   Cinémas: 120,
   "Opéras & spectacles classiques": 150,
+  "Casinos & jeux": 120,
+  "Centres culturels & arts": 90,
 };
 
 export type Pace = "express" | "standard" | "tranquille";
