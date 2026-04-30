@@ -132,6 +132,36 @@ export function Itinerary({ pois }: { pois: Poi[] }) {
     setCustomDurations((prev) => ({ ...prev, [poiId]: minutes }));
   }
 
+  function handleSwap(idA: string, idB: string) {
+    if (idA === idB) return;
+    withSnapshot((days) => {
+      let dayA = -1, idxA = -1;
+      let dayB = -1, idxB = -1;
+      for (const [k, ids] of Object.entries(days)) {
+        const d = Number(k);
+        const ia = ids.indexOf(idA);
+        if (ia >= 0) { dayA = d; idxA = ia; }
+        const ib = ids.indexOf(idB);
+        if (ib >= 0) { dayB = d; idxB = ib; }
+      }
+      if (dayA === -1 || dayB === -1) return days;
+
+      const next = { ...days };
+      if (dayA === dayB) {
+        const arr = [...next[dayA]];
+        [arr[idxA], arr[idxB]] = [arr[idxB], arr[idxA]];
+        next[dayA] = arr;
+      } else {
+        const arrA = [...next[dayA]];
+        const arrB = [...next[dayB]];
+        [arrA[idxA], arrB[idxB]] = [arrB[idxB], arrA[idxA]];
+        next[dayA] = arrA;
+        next[dayB] = arrB;
+      }
+      return next;
+    });
+  }
+
   function handleRemove(poiId: string) {
     const next = new Set(likedIds);
     next.delete(poiId);
@@ -212,7 +242,7 @@ export function Itinerary({ pois }: { pois: Poi[] }) {
         </main>
       ) : (
         <div className="relative flex-1">
-          <ItineraryMap itinerary={itinerary} />
+          <ItineraryMap itinerary={itinerary} onSwap={handleSwap} />
         </div>
       )}
     </div>

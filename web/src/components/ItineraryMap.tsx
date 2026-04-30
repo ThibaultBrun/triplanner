@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import maplibregl, { Map as MlMap } from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 
@@ -31,10 +31,57 @@ const MAP_STYLE: maplibregl.StyleSpecification = {
   layers: [{ id: "osm", type: "raster", source: "osm" }],
 };
 
-export function ItineraryMap({ itinerary }: { itinerary: Itinerary }) {
+type Props = {
+  itinerary: Itinerary;
+  onSwap?: (idA: string, idB: string) => void;
+};
+
+export function ItineraryMap({ itinerary, onSwap }: Props) {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const mapRef = useRef<MlMap | null>(null);
 
+  // Map of POI id -> marker DOM element (so we can update visual state without re-rendering MapLibre).
+  const markerElsRef = useRef<Map<string, HTMLDivElement>>(new Map());
+  // Currently selected POI id (first click of a swap).
+  const selectedIdRef = useRef<string | null>(null);
+  const [selectedId, setSelectedId] = useState<string | null>(null);
+
+  // Latest onSwap, accessed from event listeners (avoids stale closures).
+  const onSwapRef = useRef(onSwap);
+  useEffect(() => {
+    onSwapRef.current = onSwap;
+  }, [onSwap]);
+
+  function handleMarkerClick(id: string) {
+    const current = selectedIdRef.current;
+    if (current === null) {
+      selectedIdRef.current = id;
+      setSelectedId(id);
+    } else if (current === id) {
+      selectedIdRef.current = null;
+      setSelectedId(null);
+    } else {
+      selectedIdRef.current = null;
+      setSelectedId(null);
+      onSwapRef.current?.(current, id);
+    }
+  }
+
+  // Sync visual selection state on every selectedId change.
+  useEffect(() => {
+    for (const [id, el] of markerElsRef.current) {
+      const isSel = id === selectedId;
+      el.style.outline = isSel ? "3px solid #fff" : "";
+      el.style.outlineOffset = isSel ? "3px" : "";
+      el.style.boxShadow = isSel
+        ? "0 0 0 6px rgba(56,189,248,0.6), 0 4px 10px rgba(0,0,0,0.4)"
+        : "0 2px 6px rgba(0,0,0,0.3)";
+      el.style.transform = isSel ? "scale(1.18)" : "";
+      el.style.zIndex = isSel ? "10" : "";
+    }
+  }, [selectedId]);
+
+  // Init map once.
   useEffect(() => {
     if (!containerRef.current || mapRef.current) return;
 
@@ -55,35 +102,60 @@ export function ItineraryMap({ itinerary }: { itinerary: Itinerary }) {
     requestAnimationFrame(() => map.resize());
 
     map.on("load", () => {
-      drawItinerary(map, itinerary);
+      drawItinerary(map, itinerary, markerElsRef.current, handleMarkerClick);
     });
 
     return () => {
       resizeObserver.disconnect();
       map.remove();
       mapRef.current = null;
+      markerElsRef.current.clear();
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  // Re-draw when itinerary changes (after first mount).
+  // Re-draw when itinerary changes.
   useEffect(() => {
     const map = mapRef.current;
     if (!map) return;
+    // Reset selection when content changes.
+    selectedIdRef.current = null;
+    setSelectedId(null);
     if (!map.isStyleLoaded()) {
-      map.once("load", () => drawItinerary(map, itinerary));
+      map.once("load", () => drawItinerary(map, itinerary, markerElsRef.current, handleMarkerClick));
     } else {
-      drawItinerary(map, itinerary);
+      drawItinerary(map, itinerary, markerElsRef.current, handleMarkerClick);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [itinerary]);
 
-  return <div ref={containerRef} className="absolute inset-0 h-full w-full" />;
+  return (
+    <>
+      <div ref={containerRef} className="absolute inset-0 h-full w-full" />
+
+      {onSwap && (
+        <div className="pointer-events-none absolute inset-x-0 top-4 z-10 flex justify-center">
+          <div className="pointer-events-auto rounded-full bg-white/95 px-4 py-2 text-xs font-medium text-slate-700 shadow-md backdrop-blur-sm dark:bg-slate-800/95 dark:text-slate-200">
+            {selectedId
+              ? "Cliquez sur un autre marqueur pour échanger leurs ordres"
+              : "Cliquez sur deux marqueurs pour échanger leur ordre"}
+          </div>
+        </div>
+      )}
+    </>
+  );
 }
 
-function drawItinerary(map: MlMap, itinerary: Itinerary) {
-  // Remove previous markers and line layer/source if any.
-  const existingMarkers = (map as unknown as { __itinMarkers?: maplibregl.Marker[] }).__itinMarkers ?? [];
-  for (const m of existingMarkers) m.remove();
+function drawItinerary(
+  map: MlMap,
+  itinerary: Itinerary,
+  markerEls: Map<string, HTMLDivElement>,
+  onMarkerClick: (id: string) => void,
+) {
+  // Remove previous markers and line layer/source.
+  const previous = (map as unknown as { __itinMarkers?: maplibregl.Marker[] }).__itinMarkers ?? [];
+  for (const m of previous) m.remove();
+  markerEls.clear();
 
   if (map.getLayer("itin-lines")) map.removeLayer("itin-lines");
   if (map.getSource("itin-lines")) map.removeSource("itin-lines");
@@ -103,15 +175,30 @@ function drawItinerary(map: MlMap, itinerary: Itinerary) {
       allCoords.push([lng, lat]);
 
       const el = buildMarkerElement(stopIndex + 1, color);
+      el.addEventListener("click", (ev) => {
+        ev.stopPropagation();
+        onMarkerClick(item.poi.id);
+      });
+      markerEls.set(item.poi.id, el);
+
       const popupHtml = `
-        <div style="font-family:system-ui;max-width:220px">
+        <div style="font-family:system-ui;max-width:240px">
+          ${
+            item.poi.image
+              ? `<img src="${item.poi.image}" alt="" style="width:100%;height:120px;object-fit:cover;border-radius:6px;margin-bottom:8px" />`
+              : ""
+          }
           <div style="font-size:11px;font-weight:600;color:${color};text-transform:uppercase;letter-spacing:0.05em">
             Jour ${dayIndex + 1} · arrêt ${stopIndex + 1}
           </div>
           <div style="font-size:14px;font-weight:600;line-height:1.3;margin-top:2px">
             ${escapeHtml(item.poi.name)}
           </div>
-          ${item.poi.city ? `<div style="font-size:12px;color:#475569;margin-top:2px">📍 ${escapeHtml(item.poi.city)}</div>` : ""}
+          ${
+            item.poi.city
+              ? `<div style="font-size:12px;color:#475569;margin-top:2px">📍 ${escapeHtml(item.poi.city)}</div>`
+              : ""
+          }
           <div style="font-size:12px;color:#334155;margin-top:6px;font-variant-numeric:tabular-nums">
             ${formatTime(item.startMinutes)} – ${formatTime(item.endMinutes)}
           </div>
@@ -119,7 +206,7 @@ function drawItinerary(map: MlMap, itinerary: Itinerary) {
       `;
       const marker = new maplibregl.Marker({ element: el })
         .setLngLat([lng, lat])
-        .setPopup(new maplibregl.Popup({ offset: 18 }).setHTML(popupHtml))
+        .setPopup(new maplibregl.Popup({ offset: 18, maxWidth: "260px" }).setHTML(popupHtml))
         .addTo(map);
       newMarkers.push(marker);
     });
@@ -186,6 +273,7 @@ function buildMarkerElement(label: number, color: string): HTMLDivElement {
     box-shadow: 0 2px 6px rgba(0,0,0,0.3);
     cursor: pointer;
     user-select: none;
+    transition: transform 120ms ease, box-shadow 120ms ease;
   `;
   el.textContent = String(label);
   return el;
