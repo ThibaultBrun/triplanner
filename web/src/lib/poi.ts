@@ -24,6 +24,7 @@ export type Poi = {
   osm: { type: "node" | "way" | "relation"; id: number };
   wikidata?: string;
   name: string;
+  city?: string;
   lat: number;
   lon: number;
   category: Category;

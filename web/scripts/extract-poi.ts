@@ -84,11 +84,19 @@ async function main() {
     const cat = c.category!;
     const score = computeScore(c.tags, cat.subcategory, wd);
 
+    const city =
+      c.tags["addr:city"] ??
+      c.tags["is_in:town"] ??
+      c.tags["is_in:village"] ??
+      c.tags["is_in:city"] ??
+      undefined;
+
     const poi: Poi = {
       id: `${c.el.type}/${c.el.id}`,
       osm: { type: c.el.type, id: c.el.id },
       wikidata: c.tags.wikidata,
       name: c.name,
+      city,
       lat: c.coords.lat,
       lon: c.coords.lon,
       category: cat.category,

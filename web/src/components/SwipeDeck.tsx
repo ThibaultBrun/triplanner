@@ -9,13 +9,17 @@ import { SwipeCard } from "./SwipeCard";
 const LIKES_KEY = "triplanner.likes";
 const PASSES_KEY = "triplanner.passes";
 
-function shuffle<T>(arr: T[]): T[] {
-  const a = [...arr];
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
+// Weighted shuffle (Efraimidis-Spirakis): items with higher score tend to come
+// first, but the order is still randomized — popular spots appear early without
+// being deterministic.
+function weightedShuffle(pois: Poi[]): Poi[] {
+  return pois
+    .map((poi) => ({
+      poi,
+      key: -Math.log(Math.random()) / Math.max(poi.score, 0.05),
+    }))
+    .sort((a, b) => a.key - b.key)
+    .map((x) => x.poi);
 }
 
 function readSet(key: string): Set<string> {
@@ -49,7 +53,7 @@ export function SwipeDeck({ pois }: { pois: Poi[] }) {
 
     const seen = new Set([...savedLikes, ...savedPasses]);
     const remaining = pois.filter((p) => !seen.has(p.id));
-    setDeck(shuffle(remaining));
+    setDeck(weightedShuffle(remaining));
     setIndex(0);
     setHydrated(true);
   }, [pois]);
@@ -78,7 +82,7 @@ export function SwipeDeck({ pois }: { pois: Poi[] }) {
     localStorage.removeItem(PASSES_KEY);
     setLikes(new Set());
     setPasses(new Set());
-    setDeck(shuffle(pois));
+    setDeck(weightedShuffle(pois));
     setIndex(0);
   }
 

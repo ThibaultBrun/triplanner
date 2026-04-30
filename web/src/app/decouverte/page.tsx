@@ -7,7 +7,7 @@ const allPois = poisData as Poi[];
 const photoPois = allPois.filter((p) => Boolean(p.image));
 
 export const metadata = {
-  title: "Découverte — Triplanner",
+  title: "Découverte — Tri'planner",
 };
 
 export default function DecouvertePage() {

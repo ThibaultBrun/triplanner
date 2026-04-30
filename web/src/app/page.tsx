@@ -9,7 +9,7 @@ export default function Home() {
         </span>
 
         <h1 className="mt-6 text-5xl font-semibold tracking-tight text-slate-900 sm:text-6xl dark:text-slate-50">
-          Triplanner
+          Tri'planner
         </h1>
 
         <p className="mt-4 text-lg leading-relaxed text-slate-600 dark:text-slate-400">

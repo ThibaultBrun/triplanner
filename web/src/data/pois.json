@@ -173,6 +173,7 @@
     },
     "wikidata": "Q3558455",
     "name": "Villa Arnaga",
+    "city": "Cambo-les-Bains",
     "lat": 43.3676626,
     "lon": -1.4226553,
     "category": "musees",
@@ -230,6 +231,7 @@
     },
     "wikidata": "Q1049154",
     "name": "Château Charles V",
+    "city": "Hondarribia",
     "lat": 43.3635606,
     "lon": -1.7910367,
     "category": "patrimoine",
@@ -250,6 +252,7 @@
     },
     "wikidata": "Q2969856",
     "name": "Château de Maÿtie",
+    "city": "Mauléon-Licharre",
     "lat": 43.219636,
     "lon": -0.8904783,
     "category": "patrimoine",
@@ -524,6 +527,7 @@
     },
     "wikidata": "Q2957492",
     "name": "Chapelle Impériale",
+    "city": "Biarritz",
     "lat": 43.4849661,
     "lon": -1.5548714,
     "category": "patrimoine",
@@ -545,6 +549,7 @@
     },
     "wikidata": "Q3584657",
     "name": "Église Saint-Vincent",
+    "city": "Ciboure",
     "lat": 43.385502,
     "lon": -1.6683306,
     "category": "patrimoine",
@@ -599,6 +604,7 @@
     },
     "wikidata": "Q12258150",
     "name": "Château de Camou",
+    "city": "Aicirits-Camou-Suhast",
     "lat": 43.3649008,
     "lon": -1.0191862,
     "category": "patrimoine",
@@ -639,6 +645,7 @@
     },
     "wikidata": "Q3584648",
     "name": "Église Saint-Vincent",
+    "city": "Urrugne",
     "lat": 43.3625473,
     "lon": -1.6993519,
     "category": "patrimoine",
@@ -676,6 +683,7 @@
     },
     "wikidata": "Q12260548",
     "name": "Église Saint-Étienne",
+    "city": "Espelette",
     "lat": 43.3421471,
     "lon": -1.4452632,
     "category": "patrimoine",
@@ -764,6 +772,7 @@
     },
     "wikidata": "Q12258757",
     "name": "Guadalupeko ermita",
+    "city": "Hondarribia",
     "lat": 43.3669594,
     "lon": -1.820964,
     "category": "patrimoine",
@@ -798,6 +807,7 @@
     },
     "wikidata": "Q22997634",
     "name": "Église Saint-Nicolas",
+    "city": "Guéthary",
     "lat": 43.4183873,
     "lon": -1.6052712,
     "category": "patrimoine",
@@ -971,6 +981,7 @@
     },
     "wikidata": "Q3508031",
     "name": "Synagogue",
+    "city": "Biarritz",
     "lat": 43.4858447,
     "lon": -1.553978,
     "category": "patrimoine",
@@ -1005,6 +1016,7 @@
     },
     "wikidata": "Q19672446",
     "name": "Église Notre-Dame-des-Pommiers",
+    "city": "Hondarribia",
     "lat": 43.3629685,
     "lon": -1.7909732,
     "category": "patrimoine",
@@ -1297,6 +1309,7 @@
     },
     "wikidata": "Q40738442",
     "name": "Ermitage Sainte Hélène",
+    "city": "Irun",
     "lat": 43.3354469,
     "lon": -1.7852647,
     "category": "patrimoine",
@@ -1453,6 +1466,7 @@
     },
     "wikidata": "Q12260440",
     "name": "Maison de l'Infante",
+    "city": "Saint-Jean-de-Luz",
     "lat": 43.3877537,
     "lon": -1.6654584,
     "category": "patrimoine",
@@ -1470,6 +1484,7 @@
     },
     "wikidata": "Q3397274",
     "name": "Pont de la Légende",
+    "city": "Sauveterre-de-Béarn",
     "lat": 43.3968541,
     "lon": -0.9407925,
     "category": "patrimoine",
@@ -1521,6 +1536,7 @@
     },
     "wikidata": "Q107901922",
     "name": "Église de l'Assomption de la Vierge",
+    "city": "Saint-Jean-Pied-de-Port",
     "lat": 43.1623888,
     "lon": -1.2369793,
     "category": "patrimoine",
@@ -1742,6 +1758,7 @@
     },
     "wikidata": "Q12268627",
     "name": "Urdanibia jauregia",
+    "city": "Irun",
     "lat": 43.3394965,
     "lon": -1.8201433,
     "category": "patrimoine",
@@ -1793,6 +1810,7 @@
     },
     "wikidata": "Q12269481",
     "name": "Palacio Zuloaga",
+    "city": "Hondarribia",
     "lat": 43.3628053,
     "lon": -1.7914505,
     "category": "patrimoine",
@@ -1861,6 +1879,7 @@
     },
     "wikidata": "Q22920890",
     "name": "Villa Leihorra",
+    "city": "Ciboure",
     "lat": 43.3875361,
     "lon": -1.6731975,
     "category": "patrimoine",
@@ -1979,6 +1998,7 @@
     },
     "wikidata": "Q38621935",
     "name": "Église Saint-Jacques-le-Majeur",
+    "city": "Bergouey-Viellenave",
     "lat": 43.4148963,
     "lon": -1.0613188,
     "category": "patrimoine",
@@ -2090,6 +2110,7 @@
     },
     "wikidata": "Q22920548",
     "name": "Église de l'Assomption-de-la-Bienheureuse-Vierge-Marie",
+    "city": "Arancou",
     "lat": 43.4417847,
     "lon": -1.0506494,
     "category": "patrimoine",
@@ -2192,6 +2213,7 @@
     },
     "wikidata": "Q22997592",
     "name": "Chapelle du Sacré-Cœur",
+    "city": "Hasparren",
     "lat": 43.3814126,
     "lon": -1.3049292,
     "category": "patrimoine",
@@ -2280,6 +2302,7 @@
     },
     "wikidata": "Q22920838",
     "name": "Prison des Evêques",
+    "city": "Saint-Jean-Pied-de-Port",
     "lat": 43.1637048,
     "lon": -1.2356348,
     "category": "musees",
@@ -2324,6 +2347,7 @@
     },
     "wikidata": "Q22975788",
     "name": "Villa Saraléguinéa",
+    "city": "Guéthary",
     "lat": 43.4210819,
     "lon": -1.6090083,
     "category": "musees",
@@ -2469,6 +2493,7 @@
     },
     "wikidata": "Q3068815",
     "name": "Jardin botanique littoral Paul Jovet",
+    "city": "Saint-Jean-de-Luz",
     "lat": 43.4038334,
     "lon": -1.6511921,
     "category": "loisirs",
@@ -2525,6 +2550,7 @@
     },
     "wikidata": "Q921718",
     "name": "Jules Labat d'après Léon Bonnat",
+    "city": "Bayonne",
     "lat": 43.4918735,
     "lon": -1.4731113,
     "category": "musees",
@@ -2545,6 +2571,7 @@
     },
     "wikidata": "Q921718",
     "name": "Léon Bonnat d'après Léon Bonnat",
+    "city": "Bayonne",
     "lat": 43.4918635,
     "lon": -1.472578,
     "category": "musees",
@@ -2565,6 +2592,7 @@
     },
     "wikidata": "Q921718",
     "name": "Mme Albert Cahen d’Anvers d'après Léon Bonnat",
+    "city": "Bayonne",
     "lat": 43.4911557,
     "lon": -1.4729017,
     "category": "musees",
@@ -2585,6 +2613,7 @@
     },
     "wikidata": "Q921718",
     "name": "Cardinal Lavigerie d'après Léon Bonnat",
+    "city": "Bayonne",
     "lat": 43.4920299,
     "lon": -1.4725327,
     "category": "musees",
@@ -2625,6 +2654,7 @@
     },
     "wikidata": "Q921718",
     "name": "Marguerite Franchetti d'après Léon Bonnat",
+    "city": "Bayonne",
     "lat": 43.4923287,
     "lon": -1.4724697,
     "category": "musees",
@@ -2935,6 +2965,7 @@
     },
     "wikidata": "Q5122415",
     "name": "La Cité de l'Océan",
+    "city": "Biarritz",
     "lat": 43.4621033,
     "lon": -1.5723167,
     "category": "musees",
@@ -2974,6 +3005,7 @@
     },
     "wikidata": "Q25476528",
     "name": "Station thermale d'Elgorriaga",
+    "city": "Elgorriaga",
     "lat": 43.1346475,
     "lon": -1.689906,
     "category": "nature",
@@ -3369,6 +3401,7 @@
     },
     "wikidata": "Q102257148",
     "name": "Amaiur arkeologia-zentroa",
+    "city": "Amaiur-Maya",
     "lat": 43.20211,
     "lon": -1.478573,
     "category": "musees",
@@ -3440,6 +3473,7 @@
     },
     "wikidata": "Q12267060",
     "name": "Parc-Musée Santxotena",
+    "city": "Arizkun",
     "lat": 43.1816032,
     "lon": -1.4724731,
     "category": "musees",
@@ -3623,6 +3657,7 @@
     },
     "wikidata": "Q20492832",
     "name": "Mairie d'Irun",
+    "city": "Irun",
     "lat": 43.3377113,
     "lon": -1.7888066,
     "category": "loisirs",
@@ -3673,6 +3708,7 @@
       "id": 773937244
     },
     "name": "Grottes d'Isturitz et d'Oxocelhaya",
+    "city": "Saint-Martin-d'Arberoue",
     "lat": 43.3531318,
     "lon": -1.2060313,
     "category": "nature",
@@ -4254,6 +4290,7 @@
     },
     "wikidata": "Q120219736",
     "name": "Centre équestre - poney club",
+    "city": "Saint-Palais",
     "lat": 43.3302979,
     "lon": -1.0281447,
     "category": "sport",
@@ -4272,6 +4309,7 @@
     },
     "wikidata": "Q120220726",
     "name": "Les Écuries de Soule",
+    "city": "Idaux-Mendy",
     "lat": 43.1730366,
     "lon": -0.9150375,
     "category": "sport",
@@ -4322,6 +4360,7 @@
     },
     "wikidata": "Q97932909",
     "name": "Getari Enea",
+    "city": "Guéthary",
     "lat": 43.4201295,
     "lon": -1.6060401,
     "category": "vie-nocturne",
@@ -4359,6 +4398,7 @@
       "id": 5691621649
     },
     "name": "Darthayette",
+    "city": "Tarnos",
     "lat": 43.5217249,
     "lon": -1.4311773,
     "category": "gastronomie",
@@ -4377,6 +4417,7 @@
       "id": 7354564251
     },
     "name": "Ferme de Moun",
+    "city": "Tarnos",
     "lat": 43.5209122,
     "lon": -1.4321721,
     "category": "gastronomie",
@@ -4415,6 +4456,7 @@
       "id": 8738489004
     },
     "name": "Saveurs des saisons",
+    "city": "Peyrehorade",
     "lat": 43.5449915,
     "lon": -1.1035546,
     "category": "gastronomie",
@@ -4429,6 +4471,7 @@
       "id": 4933380150
     },
     "name": "Hemengo",
+    "city": "Ustaritz",
     "lat": 43.3991971,
     "lon": -1.4558978,
     "category": "gastronomie",
@@ -4465,6 +4508,7 @@
       "id": 6473169816
     },
     "name": "Gaec Laporte \"Passion fruits rouges\"",
+    "city": "Bayonne",
     "lat": 43.5154641,
     "lon": -1.4595742,
     "category": "gastronomie",
@@ -4483,6 +4527,7 @@
       "id": 7393458164
     },
     "name": "Marché de Saint-Martin-de-Seignanx",
+    "city": "Saint-Martin-de-Seignanx",
     "lat": 43.541491,
     "lon": -1.3868864,
     "category": "gastronomie",
@@ -4501,6 +4546,7 @@
       "id": 7393458165
     },
     "name": "Marché de Tarnos",
+    "city": "Tarnos",
     "lat": 43.5408795,
     "lon": -1.4611174,
     "category": "gastronomie",
@@ -4519,6 +4565,7 @@
       "id": 7562317170
     },
     "name": "La cave le sang des vignes",
+    "city": "Bidart",
     "lat": 43.4485791,
     "lon": -1.5710474,
     "category": "gastronomie",
@@ -4537,6 +4584,7 @@
       "id": 8006989578
     },
     "name": "L'Atelier du piment",
+    "city": "espelette",
     "lat": 43.345852,
     "lon": -1.440689,
     "category": "gastronomie",
@@ -4592,6 +4640,7 @@
       "id": 9166935185
     },
     "name": "Distillerie Brana Showroom",
+    "city": "Ossès",
     "lat": 43.2326017,
     "lon": -1.2982269,
     "category": "gastronomie",
@@ -4610,6 +4659,7 @@
       "id": 10233066578
     },
     "name": "Ferme solidaire Lacoste",
+    "city": "Tarnos",
     "lat": 43.5322641,
     "lon": -1.4574179,
     "category": "gastronomie",
@@ -4628,6 +4678,7 @@
       "id": 11044055268
     },
     "name": "Ferme des Laminak",
+    "city": "Biaudos",
     "lat": 43.5454586,
     "lon": -1.3347627,
     "category": "gastronomie",
@@ -4646,6 +4697,7 @@
       "id": 11233615758
     },
     "name": "La Prairie d'Artemis",
+    "city": "Saint-Martin-de-Seignanx",
     "lat": 43.5185414,
     "lon": -1.4072564,
     "category": "gastronomie",
@@ -4663,6 +4715,7 @@
       "id": 7780458125
     },
     "name": "Espace sur la mythologie basque Herauskorritxe",
+    "city": "Tardets-Sorholus",
     "lat": 43.1165868,
     "lon": -0.862623,
     "category": "loisirs",
@@ -4703,6 +4756,7 @@
       "id": 8775779590
     },
     "name": "Centre d'interprétation de l'AOP Ossau Iraty",
+    "city": "Espelette",
     "lat": 43.3407246,
     "lon": -1.4487448,
     "category": "musees",
@@ -4722,6 +4776,7 @@
       "id": 79561880
     },
     "name": "Centre d'évoquation du village Ateka",
+    "city": "Itxassou",
     "lat": 43.3325108,
     "lon": -1.4118804,
     "category": "musees",
@@ -4741,6 +4796,7 @@
       "id": 674713605
     },
     "name": "Olhaberri Centre D'interprétation du Patrimoine Minier et Métallurgique",
+    "city": "Banca",
     "lat": 43.126244,
     "lon": -1.3744811,
     "category": "musees",
@@ -4797,6 +4853,7 @@
       "id": 8127139183
     },
     "name": "Marché de Peyrehorade",
+    "city": "Peyrehorade",
     "lat": 43.5452672,
     "lon": -1.102971,
     "category": "gastronomie",
@@ -4814,6 +4871,7 @@
       "id": 8411323597
     },
     "name": "Cave le Vin au Vert",
+    "city": "Peyrehorade",
     "lat": 43.5438548,
     "lon": -1.1040403,
     "category": "gastronomie",
@@ -4831,6 +4889,7 @@
       "id": 8693171024
     },
     "name": "Les délices de la fermière",
+    "city": "Espelette",
     "lat": 43.340826,
     "lon": -1.4492189,
     "category": "gastronomie",
@@ -4849,6 +4908,7 @@
       "id": 10965559526
     },
     "name": "Ferme Baudonne",
+    "city": "Tarnos",
     "lat": 43.5205185,
     "lon": -1.4188256,
     "category": "gastronomie",
@@ -4867,6 +4927,7 @@
       "id": 11410599409
     },
     "name": "Arnabar",
+    "city": "Saint-Jean-de-Luz",
     "lat": 43.387285,
     "lon": -1.6613777,
     "category": "gastronomie",
@@ -4886,6 +4947,7 @@
       "id": 11491938147
     },
     "name": "Coeur de Frais",
+    "city": "Saint-Jean-de-Luz",
     "lat": 43.4024209,
     "lon": -1.6267992,
     "category": "gastronomie",
@@ -4905,6 +4967,7 @@
       "id": 11491938153
     },
     "name": "Conserverie Jean de Luz - Batteleku",
+    "city": "Saint-Jean-de-Luz",
     "lat": 43.4035297,
     "lon": -1.6278528,
     "category": "gastronomie",
@@ -4924,6 +4987,7 @@
       "id": 11559897412
     },
     "name": "Jean de Luz",
+    "city": "Saint-Jean-de-Luz",
     "lat": 43.3887676,
     "lon": -1.6624323,
     "category": "gastronomie",
@@ -4942,6 +5006,7 @@
       "id": 11559897418
     },
     "name": "Ahona",
+    "city": "Saint-Jean-de-Luz",
     "lat": 43.3892214,
     "lon": -1.6627742,
     "category": "gastronomie",
@@ -4961,6 +5026,7 @@
       "id": 7649526185
     },
     "name": "Escape game & Café",
+    "city": "Saint-Jean-de-Luz",
     "lat": 43.3889109,
     "lon": -1.6611923,
     "category": "loisirs",
@@ -4979,6 +5045,7 @@
       "id": 11380846090
     },
     "name": "Schtroumpfland",
+    "city": "Saint-Pierre-d'Irube",
     "lat": 43.4806442,
     "lon": -1.4439446,
     "category": "loisirs",
@@ -4998,6 +5065,7 @@
       "id": 11380846129
     },
     "name": "AirFly64",
+    "city": "Saint-Pierre-d'Irube",
     "lat": 43.4830841,
     "lon": -1.4457777,
     "category": "loisirs",
@@ -5017,6 +5085,7 @@
       "id": 12001148586
     },
     "name": "EVA",
+    "city": "Bayonne",
     "lat": 43.4907392,
     "lon": -1.4531274,
     "category": "loisirs",
@@ -5052,6 +5121,7 @@
       "id": 72772045
     },
     "name": "Théâtre Beheria",
+    "city": "Bidart",
     "lat": 43.4374402,
     "lon": -1.5882785,
     "category": "vie-nocturne",
@@ -5070,6 +5140,7 @@
       "id": 5444812648
     },
     "name": "Arte Bideak",
+    "city": "Ciboure",
     "lat": 43.3853072,
     "lon": -1.6678096,
     "category": "musees",
@@ -5088,6 +5159,7 @@
       "id": 5825928972
     },
     "name": "Ecomusée de la Pelote et du Xistera Pilotari",
+    "city": "Saint-Pée-sur-Nivelle",
     "lat": 43.3550124,
     "lon": -1.5496194,
     "category": "musees",
@@ -5127,6 +5199,7 @@
       "id": 7646255846
     },
     "name": "Cadrimages",
+    "city": "Saint-Jean-de-Luz",
     "lat": 43.3885885,
     "lon": -1.6623253,
     "category": "musees",
@@ -5147,6 +5220,7 @@
       "id": 8344819972
     },
     "name": "Ttok",
+    "city": "uztaritze",
     "lat": 43.3932845,
     "lon": -1.4512141,
     "category": "musees",
@@ -5165,6 +5239,7 @@
       "id": 8764827529
     },
     "name": "Galerie Catherine et Frédéric Portal",
+    "city": "Saint-Jean-de-Luz",
     "lat": 43.3881352,
     "lon": -1.6634831,
     "category": "musees",
@@ -5202,6 +5277,7 @@
       "id": 11384457461
     },
     "name": "Galerie Misei",
+    "city": "Saint-Jean-de-Luz",
     "lat": 43.3886846,
     "lon": -1.6580185,
     "category": "musees",
@@ -5220,6 +5296,7 @@
       "id": 11425819546
     },
     "name": "Galerie Luz 26",
+    "city": "Saint-Jean-de-Luz",
     "lat": 43.3912337,
     "lon": -1.6591498,
     "category": "musees",
@@ -5238,6 +5315,7 @@
       "id": 11559897400
     },
     "name": "L'Ilot Galerie",
+    "city": "Saint-Jean-de-Luz",
     "lat": 43.3876929,
     "lon": -1.6626339,
     "category": "musees",
@@ -5256,6 +5334,7 @@
       "id": 11559897416
     },
     "name": "Galerie E. Chapelain",
+    "city": "Saint-Jean-de-Luz",
     "lat": 43.3891535,
     "lon": -1.6627534,
     "category": "musees",
@@ -5275,6 +5354,7 @@
       "id": 11559897420
     },
     "name": "Galerie E. Chapelain",
+    "city": "Saint-Jean-de-Luz",
     "lat": 43.3893953,
     "lon": -1.6627146,
     "category": "musees",
@@ -5293,6 +5373,7 @@
       "id": 13127673011
     },
     "name": "Atelier Galerie PHILAGUS",
+    "city": "Salies-de-Béarn",
     "lat": 43.4713185,
     "lon": -0.9265383,
     "category": "musees",
@@ -5312,6 +5393,7 @@
       "id": 5103498379
     },
     "name": "The roof",
+    "city": "Bayonne",
     "lat": 43.4915041,
     "lon": -1.4936413,
     "category": "sport",
@@ -5331,6 +5413,7 @@
       "id": 7649459746
     },
     "name": "Quiksilver",
+    "city": "Saint-Jean-de-Luz",
     "lat": 43.3893499,
     "lon": -1.6599997,
     "category": "sport",
@@ -5350,6 +5433,7 @@
       "id": 7655202041
     },
     "name": "Billabong",
+    "city": "Saint-Jean-de-Luz",
     "lat": 43.3879858,
     "lon": -1.6627045,
     "category": "sport",
@@ -5369,6 +5453,7 @@
       "id": 4741244723
     },
     "name": "Yogang",
+    "city": "Saint-Jean-de-Luz",
     "lat": 43.386673,
     "lon": -1.6613535,
     "category": "bien-etre",
@@ -5388,6 +5473,7 @@
       "id": 11440000008
     },
     "name": "Uhaina Spa",
+    "city": "Urrugne",
     "lat": 43.374489,
     "lon": -1.6795924,
     "category": "bien-etre",
@@ -5407,6 +5493,7 @@
       "id": 12022663510
     },
     "name": "L'Etre - Betty Saint Jours",
+    "city": "Ciboure",
     "lat": 43.3880793,
     "lon": -1.6847842,
     "category": "bien-etre",
@@ -5426,6 +5513,7 @@
       "id": 5768732278
     },
     "name": "Tonton Pizza",
+    "city": "BAYONNE",
     "lat": 43.483507,
     "lon": -1.500947,
     "category": "gastronomie",
@@ -5447,6 +5535,7 @@
       "id": 7998021387
     },
     "name": "Restaurant inter-entreprises Andrée Dupeyron",
+    "city": "Tarnos",
     "lat": 43.5466606,
     "lon": -1.4922019,
     "category": "gastronomie",
@@ -5465,6 +5554,7 @@
       "id": 8182505021
     },
     "name": "Les jardins du Refuge",
+    "city": "anglet",
     "lat": 43.5038186,
     "lon": -1.5234679,
     "category": "gastronomie",
@@ -5482,6 +5572,7 @@
       "id": 10011813428
     },
     "name": "Ferme Ttukulua",
+    "city": "Hasparren",
     "lat": 43.3731375,
     "lon": -1.2731226,
     "category": "gastronomie",
@@ -5499,6 +5590,7 @@
       "id": 10965358523
     },
     "name": "Bons vivants",
+    "city": "Tarnos",
     "lat": 43.5341279,
     "lon": -1.4605542,
     "category": "gastronomie",
@@ -5516,6 +5608,7 @@
       "id": 10965548793
     },
     "name": "Girault Fleurs",
+    "city": "Saint-Martin-de-Seignanx",
     "lat": 43.5481977,
     "lon": -1.429108,
     "category": "gastronomie",
@@ -5533,6 +5626,7 @@
       "id": 12179881644
     },
     "name": "Marché République",
+    "city": "Hendaye",
     "lat": 43.3585599,
     "lon": -1.7746649,
     "category": "gastronomie",
@@ -5551,6 +5645,7 @@
       "id": 12425224498
     },
     "name": "Xüxenka",
+    "city": "Mauléon-Licharre",
     "lat": 43.2198161,
     "lon": -0.8894456,
     "category": "gastronomie",
@@ -5585,6 +5680,7 @@
       "id": 72480747
     },
     "name": "Les Halles",
+    "city": "Saint-Jean-de-Luz",
     "lat": 43.3874567,
     "lon": -1.6608349,
     "category": "gastronomie",
@@ -5602,6 +5698,7 @@
       "id": 369891531
     },
     "name": "Marché Sokoburu",
+    "city": "Hendaye",
     "lat": 43.3708581,
     "lon": -1.7843616,
     "category": "gastronomie",
@@ -5620,6 +5717,7 @@
       "id": 12009336739
     },
     "name": "La maison de l’évasion",
+    "city": "Tarnos",
     "lat": 43.5394221,
     "lon": -1.4607064,
     "category": "loisirs",
@@ -5639,6 +5737,7 @@
       "id": 65446514
     },
     "name": "Jardin Cherbero",
+    "city": "Mauléon-Licharre",
     "lat": 43.2227896,
     "lon": -0.8869543,
     "category": "loisirs",
@@ -5724,6 +5823,7 @@
       "id": 503453306
     },
     "name": "Parc de la Nature",
+    "city": "Tarnos",
     "lat": 43.5503425,
     "lon": -1.4891855,
     "category": "loisirs",
@@ -5826,6 +5926,7 @@
       "id": 1168297878
     },
     "name": "Aire de biodiversité de Lamouly",
+    "city": "anglet",
     "lat": 43.4956433,
     "lon": -1.4994962,
     "category": "loisirs",
@@ -5860,6 +5961,7 @@
       "id": 1170879015
     },
     "name": "Jardin Henri Lasseougue",
+    "city": "Anglet",
     "lat": 43.4906784,
     "lon": -1.512939,
     "category": "loisirs",
@@ -5981,6 +6083,7 @@
       "id": 9428502770
     },
     "name": "BLEU, la galerie",
+    "city": "Saint-Jean-de-Luz",
     "lat": 43.387878,
     "lon": -1.6654804,
     "category": "musees",
@@ -6000,6 +6103,7 @@
       "id": 8854956635
     },
     "name": "Kobido",
+    "city": "Saint-Jean-de-Luz",
     "lat": 43.3884366,
     "lon": -1.6593434,
     "category": "bien-etre",
@@ -6018,6 +6122,7 @@
       "id": 1071028848
     },
     "name": "Pizza Bella Family",
+    "city": "Chéraute",
     "lat": 43.2292631,
     "lon": -0.8735172,
     "category": "gastronomie",
@@ -6039,6 +6144,7 @@
       "id": 1691951703
     },
     "name": "Café Snack Bista Eder",
+    "city": "Musculdy",
     "lat": 43.1998353,
     "lon": -1.0057885,
     "category": "gastronomie",
@@ -6061,6 +6167,7 @@
       "id": 3351832510
     },
     "name": "Café Ttipia",
+    "city": "Saint-Jean-Pied-de-Port",
     "lat": 43.1622966,
     "lon": -1.2386387,
     "category": "gastronomie",
@@ -6082,6 +6189,7 @@
       "id": 3520039779
     },
     "name": "Le komptoir des amis",
+    "city": "Saint-Jean-de-Luz",
     "lat": 43.38647,
     "lon": -1.6603584,
     "category": "gastronomie",
@@ -6105,6 +6213,7 @@
       "id": 3871575580
     },
     "name": "Fratelli Ristorante",
+    "city": "Tarnos",
     "lat": 43.5340707,
     "lon": -1.4604091,
     "category": "gastronomie",
@@ -6148,6 +6257,7 @@
       "id": 4132579297
     },
     "name": "McDonald's",
+    "city": "Tarnos",
     "lat": 43.5273843,
     "lon": -1.4633535,
     "category": "gastronomie",
@@ -6169,6 +6279,7 @@
       "id": 4423989489
     },
     "name": "Pizzas Pat",
+    "city": "Hasparren",
     "lat": 43.3836513,
     "lon": -1.3048363,
     "category": "gastronomie",
@@ -6190,6 +6301,7 @@
       "id": 4485488193
     },
     "name": "Tantina de la Playa",
+    "city": "Bidart",
     "lat": 43.4365228,
     "lon": -1.5963078,
     "category": "gastronomie",
@@ -6212,6 +6324,7 @@
       "id": 4499277681
     },
     "name": "Jarapea",
+    "city": "Irouléguy",
     "lat": 43.177055,
     "lon": -1.299682,
     "category": "gastronomie",
@@ -6233,6 +6346,7 @@
       "id": 4579749897
     },
     "name": "Xaya La cave à manger",
+    "city": "Saint-Jean-de-Luz",
     "lat": 43.3875369,
     "lon": -1.6627169,
     "category": "gastronomie",
@@ -6252,6 +6366,7 @@
       "id": 5378244283
     },
     "name": "L'écailler et sa plancha",
+    "city": "Saint-Martin-de-Seignanx",
     "lat": 43.5416329,
     "lon": -1.3868203,
     "category": "gastronomie",
@@ -6274,6 +6389,7 @@
       "id": 5660809036
     },
     "name": "Sushis & Bowls",
+    "city": "Tarnos",
     "lat": 43.5368622,
     "lon": -1.4606535,
     "category": "gastronomie",
@@ -6295,6 +6411,7 @@
       "id": 5660841137
     },
     "name": "Egun On",
+    "city": "Ciboure",
     "lat": 43.3789037,
     "lon": -1.6700027,
     "category": "gastronomie",
@@ -6316,6 +6433,7 @@
       "id": 5675620729
     },
     "name": "Espelletenia",
+    "city": "Larceveau-Arros-Cibits",
     "lat": 43.2328269,
     "lon": -1.0962707,
     "category": "gastronomie",
@@ -6338,6 +6456,7 @@
       "id": 6987171602
     },
     "name": "Le Kiosque à Pizza",
+    "city": "Tarnos",
     "lat": 43.5268943,
     "lon": -1.4632337,
     "category": "gastronomie",
@@ -6359,6 +6478,7 @@
       "id": 7035469710
     },
     "name": "Hasparren Kebab Burger Tacos",
+    "city": "Hasparren",
     "lat": 43.3831615,
     "lon": -1.3052139,
     "category": "gastronomie",
@@ -6381,6 +6501,7 @@
       "id": 7344540058
     },
     "name": "SB Artisans Burger",
+    "city": "Tarnos",
     "lat": 43.5437973,
     "lon": -1.4611173,
     "category": "gastronomie",
@@ -6402,6 +6523,7 @@
       "id": 7595302585
     },
     "name": "Le Byron",
+    "city": "Anglet",
     "lat": 43.4819185,
     "lon": -1.5052296,
     "category": "gastronomie",
@@ -6420,6 +6542,7 @@
       "id": 7698588577
     },
     "name": "Alaïa",
+    "city": "Ciboure",
     "lat": 43.3900109,
     "lon": -1.6841883,
     "category": "gastronomie",
@@ -6441,6 +6564,7 @@
       "id": 8032776057
     },
     "name": "Basa",
+    "city": "Bayonne",
     "lat": 43.4901652,
     "lon": -1.4763036,
     "category": "gastronomie",
@@ -6462,6 +6586,7 @@
       "id": 8252910595
     },
     "name": "Chez Dalida",
+    "city": "Tarnos",
     "lat": 43.533723,
     "lon": -1.4606452,
     "category": "gastronomie",
@@ -6483,6 +6608,7 @@
       "id": 8611335206
     },
     "name": "Mékong Express",
+    "city": "Tarnos",
     "lat": 43.5476021,
     "lon": -1.4876394,
     "category": "gastronomie",
@@ -6506,6 +6632,7 @@
       "id": 10657195357
     },
     "name": "Mimi Ostatua - pizza",
+    "city": "Hasparren",
     "lat": 43.3847925,
     "lon": -1.3040418,
     "category": "gastronomie",
@@ -6527,6 +6654,7 @@
       "id": 10922013233
     },
     "name": "Hordago",
+    "city": "Hasparren",
     "lat": 43.3864136,
     "lon": -1.3028322,
     "category": "gastronomie",
@@ -6548,6 +6676,7 @@
       "id": 11415500911
     },
     "name": "Alma",
+    "city": "Saint-Jean-de-Luz",
     "lat": 43.3875264,
     "lon": -1.66229,
     "category": "gastronomie",
@@ -6572,6 +6701,7 @@
       "id": 11425819551
     },
     "name": "Maison Ama",
+    "city": "Saint-Jean-de-Luz",
     "lat": 43.3917881,
     "lon": -1.6592458,
     "category": "gastronomie",
@@ -6595,6 +6725,7 @@
       "id": 11983068614
     },
     "name": "Kinka Restaurant Bar",
+    "city": "Saint-Pée-sur-Nivelle",
     "lat": 43.3608874,
     "lon": -1.5805285,
     "category": "gastronomie",
@@ -6617,6 +6748,7 @@
       "id": 12946377801
     },
     "name": "Bouli'pizz",
+    "city": "Peyrehorade",
     "lat": 43.5447487,
     "lon": -1.1065322,
     "category": "gastronomie",
@@ -6638,6 +6770,7 @@
       "id": 12949723986
     },
     "name": "La Méridienne",
+    "city": "Tarnos",
     "lat": 43.5425907,
     "lon": -1.4600126,
     "category": "gastronomie",
@@ -6660,6 +6793,7 @@
       "id": 13136477029
     },
     "name": "La Mutinerie",
+    "city": "Tarnos",
     "lat": 43.5423148,
     "lon": -1.4606645,
     "category": "gastronomie",
@@ -6701,6 +6835,7 @@
       "id": 13287277382
     },
     "name": "O'bistrot",
+    "city": "Peyrehorade",
     "lat": 43.5447112,
     "lon": -1.1030106,
     "category": "gastronomie",
@@ -6715,6 +6850,7 @@
       "id": 13287288775
     },
     "name": "Bar du marché",
+    "city": "Peyrehorade",
     "lat": 43.5451065,
     "lon": -1.1030166,
     "category": "vie-nocturne",
@@ -6763,6 +6899,7 @@
       "id": 5464348582
     },
     "name": "Marché producteurs locaux du Boucau",
+    "city": "Boucau",
     "lat": 43.5232506,
     "lon": -1.4896575,
     "category": "gastronomie",
@@ -6833,6 +6970,7 @@
       "id": 7740603132
     },
     "name": "Fruits d'Antan",
+    "city": "Habas",
     "lat": 43.5473932,
     "lon": -0.926091,
     "category": "gastronomie",
@@ -6850,6 +6988,7 @@
       "id": 9189943774
     },
     "name": "Caves \"Etxea\"",
+    "city": "Saint-Jean-Pied-de-Port",
     "lat": 43.1617701,
     "lon": -1.237457,
     "category": "gastronomie",
@@ -6970,6 +7109,7 @@
       "id": 11373342163
     },
     "name": "La cave à Nico",
+    "city": "Saint-Martin-de-Seignanx",
     "lat": 43.5289557,
     "lon": -1.3900866,
     "category": "gastronomie",
@@ -6987,6 +7127,7 @@
       "id": 11440000001
     },
     "name": "Bienvenue à la Ferme",
+    "city": "Urrugne",
     "lat": 43.3744887,
     "lon": -1.6794662,
     "category": "gastronomie",
@@ -7210,6 +7351,7 @@
       "id": 9951918830
     },
     "name": "École de surf H2O",
+    "city": "Bidart",
     "lat": 43.43077,
     "lon": -1.6000738,
     "category": "sport",
@@ -7244,6 +7386,7 @@
       "id": 597620979
     },
     "name": "La pizza de Nico",
+    "city": "Bayonne",
     "lat": 43.4898328,
     "lon": -1.473812,
     "category": "gastronomie",
@@ -7311,6 +7454,7 @@
       "id": 1675774648
     },
     "name": "Santxotena",
+    "city": "Elizondo",
     "lat": 43.1469657,
     "lon": -1.5177132,
     "category": "gastronomie",
@@ -7332,6 +7476,7 @@
       "id": 1837356897
     },
     "name": "La Diva",
+    "city": "Saint-Jean-de-Luz",
     "lat": 43.3882183,
     "lon": -1.6642909,
     "category": "gastronomie",
@@ -7370,6 +7515,7 @@
       "id": 1974848713
     },
     "name": "Cervecería Boulevard",
+    "city": "Irun",
     "lat": 43.3439065,
     "lon": -1.7977415,
     "category": "vie-nocturne",
@@ -7388,6 +7534,7 @@
       "id": 7015112230
     },
     "name": "L'Entourloupe",
+    "city": "Bidart",
     "lat": 43.4301079,
     "lon": -1.5983077,
     "category": "vie-nocturne",
@@ -7407,6 +7554,7 @@
       "id": 7701788644
     },
     "name": "Kechiloa",
+    "city": "Urrugne",
     "lat": 43.3782677,
     "lon": -1.6708606,
     "category": "vie-nocturne",
@@ -7443,6 +7591,7 @@
       "id": 9166883188
     },
     "name": "Asteburua",
+    "city": "Ossès",
     "lat": 43.2326454,
     "lon": -1.2997143,
     "category": "vie-nocturne",
@@ -7464,6 +7613,7 @@
       "id": 9669879061
     },
     "name": "Le Métro",
+    "city": "Tarnos",
     "lat": 43.5474344,
     "lon": -1.4890895,
     "category": "vie-nocturne",
@@ -7502,6 +7652,7 @@
       "id": 11425819540
     },
     "name": "Le Bar Basque",
+    "city": "Saint-Jean-de-Luz",
     "lat": 43.3910729,
     "lon": -1.6591049,
     "category": "vie-nocturne",
@@ -7543,6 +7694,7 @@
       "id": 12407263352
     },
     "name": "Bière Truck Landes",
+    "city": "Biaudos",
     "lat": 43.5499438,
     "lon": -1.3037127,
     "category": "vie-nocturne",
@@ -7561,6 +7713,7 @@
       "id": 706153437
     },
     "name": "Udako etxea",
+    "city": "Bera",
     "lat": 43.3082064,
     "lon": -1.6339264,
     "category": "vie-nocturne",
@@ -7579,6 +7732,7 @@
       "id": 706153466
     },
     "name": "Larrun gain",
+    "city": "Bera",
     "lat": 43.3088546,
     "lon": -1.6353674,
     "category": "vie-nocturne",
@@ -7680,6 +7834,7 @@
       "id": 4485480136
     },
     "name": "O'Chat Noir",
+    "city": "Urrugne",
     "lat": 43.3905175,
     "lon": -1.6861116,
     "category": "vie-nocturne",
@@ -7698,6 +7853,7 @@
       "id": 4579686697
     },
     "name": "La marine",
+    "city": "Saint-Jean-de-Luz",
     "lat": 43.3879221,
     "lon": -1.6644592,
     "category": "vie-nocturne",
@@ -7716,6 +7872,7 @@
       "id": 4579686698
     },
     "name": "Le Majestic",
+    "city": "Saint-Jean-de-Luz",
     "lat": 43.3880269,
     "lon": -1.6642053,
     "category": "vie-nocturne",
@@ -7734,6 +7891,7 @@
       "id": 4579749899
     },
     "name": "Le p'tit suisse",
+    "city": "Saint-Jean-de-Luz",
     "lat": 43.3875488,
     "lon": -1.6640188,
     "category": "vie-nocturne",
@@ -7786,6 +7944,7 @@
       "id": 5003912310
     },
     "name": "Bar Chez Camy",
+    "city": "Carresse-Cassaber",
     "lat": 43.4825887,
     "lon": -0.9984188,
     "category": "vie-nocturne",
@@ -7821,6 +7980,7 @@
       "id": 861393457
     },
     "name": "Archerie Tag",
+    "city": "Urrugne",
     "lat": 43.3560497,
     "lon": -1.7405739,
     "category": "loisirs",
@@ -7838,6 +7998,7 @@
       "id": 8702070094
     },
     "name": "EXO64 - téleski nautique",
+    "city": "SAMES",
     "lat": 43.529666,
     "lon": -1.1707002,
     "category": "loisirs",
@@ -7855,6 +8016,7 @@
       "id": 8739674544
     },
     "name": "Chasse au trésor",
+    "city": "Urrugne",
     "lat": 43.3621413,
     "lon": -1.6995423,
     "category": "loisirs",
@@ -7872,6 +8034,7 @@
       "id": 8741856185
     },
     "name": "Quizz familial",
+    "city": "Ascain",
     "lat": 43.306535,
     "lon": -1.4985113,
     "category": "loisirs",
@@ -7889,6 +8052,7 @@
       "id": 1428327144
     },
     "name": "Grottes de Sare",
+    "city": "Sare",
     "lat": 43.2685619,
     "lon": -1.5715124,
     "category": "loisirs",
@@ -7906,6 +8070,7 @@
       "id": 6882376971
     },
     "name": "Evasion 64",
+    "city": "ITXASSOU",
     "lat": 43.3290966,
     "lon": -1.3932582,
     "category": "sport",
@@ -7923,6 +8088,7 @@
       "id": 7112479119
     },
     "name": "École de surf Christophe Reinhardt",
+    "city": "Guéthary",
     "lat": 43.4251495,
     "lon": -1.6103145,
     "category": "sport",
@@ -7957,6 +8123,7 @@
       "id": 7653033351
     },
     "name": "Chica Beach",
+    "city": "Saint-Jean-de-Luz",
     "lat": 43.3878708,
     "lon": -1.663254,
     "category": "sport",
@@ -7974,6 +8141,7 @@
       "id": 7655159920
     },
     "name": "Profdesurf.com",
+    "city": "Saint-Jean-de-Luz",
     "lat": 43.3877695,
     "lon": -1.6633482,
     "category": "sport",
@@ -7991,6 +8159,7 @@
       "id": 7655463582
     },
     "name": "Tech Océan",
+    "city": "Ciboure",
     "lat": 43.3946085,
     "lon": -1.6846509,
     "category": "sport",
@@ -8042,6 +8211,7 @@
       "id": 5487949721
     },
     "name": "Adventure Côte-Basque-Paramoteur",
+    "city": "Saint-Pée-sur-Nivelle",
     "lat": 43.3397096,
     "lon": -1.5309949,
     "category": "loisirs",
@@ -8059,6 +8229,7 @@
       "id": 7655502159
     },
     "name": "Gurekin Plongée",
+    "city": "Saint-Jean-de-Luz",
     "lat": 43.3819778,
     "lon": -1.6550341,
     "category": "loisirs",
@@ -8110,6 +8281,7 @@
       "id": 7562930002
     },
     "name": "ProSurf Shop",
+    "city": "Bidart",
     "lat": 43.4270931,
     "lon": -1.6042681,
     "category": "sport",
@@ -8127,6 +8299,7 @@
       "id": 7562985175
     },
     "name": "PADD",
+    "city": "Bidart",
     "lat": 43.450673,
     "lon": -1.5662021,
     "category": "sport",
@@ -8158,6 +8331,7 @@
       "id": 7655236613
     },
     "name": "Boutique 21 - Bakun école de surf",
+    "city": "Saint-Jean-de-Luz",
     "lat": 43.3887332,
     "lon": -1.6645489,
     "category": "sport",
@@ -8175,6 +8349,7 @@
       "id": 7673212898
     },
     "name": "Atlantic Pirogue",
+    "city": "Ciboure",
     "lat": 43.3945647,
     "lon": -1.6846866,
     "category": "sport",
@@ -8226,6 +8401,7 @@
       "id": 8701512192
     },
     "name": "Ferme équestre Urkodea",
+    "city": "Hasparren",
     "lat": 43.3758122,
     "lon": -1.3106288,
     "category": "sport",
@@ -8243,6 +8419,7 @@
       "id": 8771868063
     },
     "name": "Centre de Tourisme Équestre Olhaldea Zalditokia",
+    "city": "Sare",
     "lat": 43.3161801,
     "lon": -1.5603256,
     "category": "sport",
@@ -8277,6 +8454,7 @@
       "id": 8731019261
     },
     "name": "Cours Yoga Eva Durisova",
+    "city": "Urrugne",
     "lat": 43.3857339,
     "lon": -1.6956771,
     "category": "bien-etre",
@@ -8308,6 +8486,7 @@
       "id": 8772416067
     },
     "name": "S Kale 64 : Escales Yoga & Soins de Soi",
+    "city": "Saint-Jean-de-Luz",
     "lat": 43.4108039,
     "lon": -1.6231169,
     "category": "bien-etre",
@@ -8325,6 +8504,7 @@
       "id": 9658464388
     },
     "name": "Lā kāśa",
+    "city": "Bidart",
     "lat": 43.4467151,
     "lon": -1.5807811,
     "category": "bien-etre",
@@ -8393,6 +8573,7 @@
       "id": 1503447920
     },
     "name": "Ecurie Fantagaro",
+    "city": "Ahetze",
     "lat": 43.4071016,
     "lon": -1.5861399,
     "category": "sport",
@@ -8475,6 +8656,7 @@
       "id": 8682375774
     },
     "name": "Balades à poney Ttikientzat",
+    "city": "SAINT-MARTIN-D'ARBEROUE",
     "lat": 43.3444859,
     "lon": -1.1905882,
     "category": "sport",
@@ -8489,6 +8671,7 @@
       "id": 8684482850
     },
     "name": "Jungle Canoë",
+    "city": "La Bastide-Clairence",
     "lat": 43.4325622,
     "lon": -1.256316,
     "category": "sport",
@@ -8599,6 +8782,7 @@
       "id": 12671213867
     },
     "name": "Thalassothérapie Thalazur Saint-Jean-de-Luz",
+    "city": "Saint-Jean-de-Luz",
     "lat": 43.3913284,
     "lon": -1.6612447,
     "category": "bien-etre",
@@ -8851,6 +9035,7 @@
       "id": 3394229302
     },
     "name": "Centro de Masaje",
+    "city": "Irun",
     "lat": 43.3389785,
     "lon": -1.795788,
     "category": "bien-etre",

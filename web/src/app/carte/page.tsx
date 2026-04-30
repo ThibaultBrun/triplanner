@@ -18,7 +18,7 @@ const CATEGORY_DOT_COLORS: Record<Category, string> = {
 };
 
 export const metadata = {
-  title: "Carte — Triplanner",
+  title: "Carte — Tri'planner",
 };
 
 export default function CartePage() {

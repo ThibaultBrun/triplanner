@@ -77,6 +77,7 @@ export function Map({ pois }: { pois: Poi[] }) {
         properties: {
           id: p.id,
           name: p.name,
+          city: p.city ?? "",
           category: p.category,
           subcategory: p.subcategory,
           description: p.description ?? "",
@@ -116,6 +117,7 @@ export function Map({ pois }: { pois: Poi[] }) {
         const [lon, lat] = f.geometry.coordinates as [number, number];
         const props = f.properties as {
           name: string;
+          city: string;
           subcategory: string;
           description: string;
           image: string;
@@ -125,7 +127,8 @@ export function Map({ pois }: { pois: Poi[] }) {
           <div style="max-width:240px;font-family:system-ui">
             ${props.image ? `<img src="${props.image}" alt="" style="width:100%;height:120px;object-fit:cover;border-radius:6px;margin-bottom:8px" />` : ""}
             <div style="font-weight:600;font-size:14px;line-height:1.3">${escapeHtml(props.name)}</div>
-            <div style="font-size:11px;color:#64748b;text-transform:uppercase;letter-spacing:0.05em;margin-top:2px">${escapeHtml(props.subcategory)}</div>
+            ${props.city ? `<div style="font-size:12px;color:#475569;margin-top:2px">📍 ${escapeHtml(props.city)}</div>` : ""}
+            <div style="font-size:11px;color:#64748b;text-transform:uppercase;letter-spacing:0.05em;margin-top:4px">${escapeHtml(props.subcategory)}</div>
             ${props.description ? `<div style="font-size:12px;color:#334155;margin-top:6px;line-height:1.4">${escapeHtml(props.description)}</div>` : ""}
           </div>
         `;

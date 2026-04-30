@@ -1,6 +1,8 @@
-# Trip Planner — Documentation projet
+# Tri'planner — Documentation projet
 
-Documentation de cadrage du projet Trip Planner. Issue de la phase de spécification initiale.
+🌐 **Maquette en ligne** : https://thibaultbrun.github.io/triplanner/
+
+Documentation de cadrage du projet Tri'planner (compagnon de voyage, "Waze du tourisme"). Issue de la phase de spécification initiale.
 
 ## Index
 
