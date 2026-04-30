@@ -13,12 +13,12 @@ export default function Home() {
         </h1>
 
         <p className="mt-4 text-lg leading-relaxed text-slate-600 dark:text-slate-400">
-          Le compagnon de voyage pour découvrir le Pays Basque à votre rythme.
+          Le compagnon de voyage pour découvrir le monde à votre rythme.
           Sélectionnez vos lieux, on s&apos;occupe de l&apos;itinéraire.
         </p>
 
         <div className="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-3">
-          <Card title="Découverte" status="à venir" />
+          <Card title="Découverte" status="swiper →" href="/decouverte" />
           <Card title="Itinéraire" status="à venir" />
           <Card title="Carte" status="explorer →" href="/carte" />
         </div>
