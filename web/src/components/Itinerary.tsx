@@ -15,11 +15,14 @@ import {
   type DayItem,
   type Pace,
 } from "@/lib/itinerary";
+import { ItineraryMap } from "./ItineraryMap";
 
 const LIKES_KEY = "triplanner.likes";
 const PACE_KEY = "triplanner.pace";
 
 const ALL_PACES: Pace[] = ["express", "standard", "tranquille"];
+
+type View = "list" | "map";
 
 const CATEGORY_DOT_COLORS: Record<Category, string> = {
   patrimoine: "bg-amber-700",
@@ -49,6 +52,7 @@ export function Itinerary({ pois }: { pois: Poi[] }) {
   const [likedIds, setLikedIds] = useState<Set<string>>(new Set());
   const [numDays, setNumDays] = useState(3);
   const [pace, setPace] = useState<Pace>("standard");
+  const [view, setView] = useState<View>("list");
   // Per-day user reorder. Keys = day index, values = ordered POI ids.
   const [dayOverrides, setDayOverrides] = useState<Record<number, string[]>>({});
 
@@ -75,6 +79,13 @@ export function Itinerary({ pois }: { pois: Poi[] }) {
     setDayOverrides((prev) => ({ ...prev, [dayIndex]: newIds }));
   }
 
+  function handleRemove(poiId: string) {
+    const next = new Set(likedIds);
+    next.delete(poiId);
+    setLikedIds(next);
+    localStorage.setItem(LIKES_KEY, JSON.stringify([...next]));
+  }
+
   const likedPois = useMemo(
     () => pois.filter((p) => likedIds.has(p.id)),
     [pois, likedIds],
@@ -94,8 +105,8 @@ export function Itinerary({ pois }: { pois: Poi[] }) {
   }
 
   return (
-    <div className="min-h-full w-full bg-gradient-to-br from-sky-50 via-white to-amber-50 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950">
-      <header className="sticky top-0 z-10 border-b border-slate-200 bg-white/95 px-4 py-3 backdrop-blur-sm dark:border-slate-800 dark:bg-slate-900/95">
+    <div className="flex flex-1 w-full flex-col bg-gradient-to-br from-sky-50 via-white to-amber-50 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950">
+      <header className="z-10 border-b border-slate-200 bg-white/95 px-4 py-3 backdrop-blur-sm dark:border-slate-800 dark:bg-slate-900/95">
         <div className="mx-auto flex max-w-3xl flex-wrap items-center justify-between gap-3">
           <Link
             href="/"
@@ -108,29 +119,60 @@ export function Itinerary({ pois }: { pois: Poi[] }) {
           </h1>
           <DayCountStepper value={numDays} onChange={setNumDays} />
         </div>
-        <div className="mx-auto mt-3 max-w-3xl">
+        <div className="mx-auto mt-3 flex max-w-3xl flex-wrap items-center gap-2">
           <PacePicker value={pace} onChange={handlePaceChange} />
+          <ViewToggle value={view} onChange={setView} />
         </div>
       </header>
 
-      <main className="mx-auto max-w-3xl px-4 pb-24 pt-6">
-        <div className="mb-6 text-sm text-slate-600 dark:text-slate-400">
-          {likedPois.length} lieu{likedPois.length > 1 ? "x" : ""} aimé
-          {likedPois.length > 1 ? "s" : ""}, répartis sur {numDays} jour
-          {numDays > 1 ? "s" : ""} · rythme {PACE_LABELS[pace].toLowerCase()}.
-        </div>
+      {view === "list" ? (
+        <main className="flex-1 overflow-y-auto">
+          <div className="mx-auto max-w-3xl px-4 pb-24 pt-6">
+            <div className="mb-6 text-sm text-slate-600 dark:text-slate-400">
+              {likedPois.length} lieu{likedPois.length > 1 ? "x" : ""} aimé
+              {likedPois.length > 1 ? "s" : ""}, répartis sur {numDays} jour
+              {numDays > 1 ? "s" : ""} · rythme {PACE_LABELS[pace].toLowerCase()}.
+            </div>
 
-        <div className="space-y-8">
-          {itinerary.days.map((day) => (
-            <DaySection
-              key={day.index}
-              index={day.index}
-              items={day.items}
-              onReorder={(ids) => handleReorderDay(day.index, ids)}
-            />
-          ))}
+            <div className="space-y-8">
+              {itinerary.days.map((day) => (
+                <DaySection
+                  key={day.index}
+                  index={day.index}
+                  items={day.items}
+                  onReorder={(ids) => handleReorderDay(day.index, ids)}
+                  onRemove={handleRemove}
+                />
+              ))}
+            </div>
+          </div>
+        </main>
+      ) : (
+        <div className="relative flex-1">
+          <ItineraryMap itinerary={itinerary} />
         </div>
-      </main>
+      )}
+    </div>
+  );
+}
+
+function ViewToggle({ value, onChange }: { value: View; onChange: (v: View) => void }) {
+  return (
+    <div className="ml-auto flex gap-1 rounded-full bg-slate-100 p-1 text-sm dark:bg-slate-800">
+      {(["list", "map"] as View[]).map((v) => (
+        <button
+          key={v}
+          type="button"
+          onClick={() => onChange(v)}
+          className={`rounded-full px-3 py-1.5 font-medium transition ${
+            value === v
+              ? "bg-white text-slate-900 shadow dark:bg-slate-700 dark:text-slate-50"
+              : "text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-200"
+          }`}
+        >
+          {v === "list" ? "📋 Liste" : "🗺 Carte"}
+        </button>
+      ))}
     </div>
   );
 }
@@ -200,10 +242,12 @@ function DaySection({
   index,
   items,
   onReorder,
+  onRemove,
 }: {
   index: number;
   items: DayItem[];
   onReorder: (newIds: string[]) => void;
+  onRemove: (poiId: string) => void;
 }) {
   if (items.length === 0) {
     return (
@@ -238,14 +282,20 @@ function DaySection({
         className="mt-4 space-y-2"
       >
         {items.map((item) => (
-          <DraggableItem key={item.poi.id} item={item} />
+          <DraggableItem key={item.poi.id} item={item} onRemove={onRemove} />
         ))}
       </Reorder.Group>
     </section>
   );
 }
 
-function DraggableItem({ item }: { item: DayItem }) {
+function DraggableItem({
+  item,
+  onRemove,
+}: {
+  item: DayItem;
+  onRemove: (poiId: string) => void;
+}) {
   const dragControls = useDragControls();
   return (
     <Reorder.Item
@@ -258,6 +308,7 @@ function DraggableItem({ item }: { item: DayItem }) {
       <ItineraryItem
         item={item}
         onPointerDownDragHandle={(e) => dragControls.start(e)}
+        onRemove={() => onRemove(item.poi.id)}
       />
       {item.travelToNextMinutes > 0 && (
         <TravelHint km={item.travelToNextKm} minutes={item.travelToNextMinutes} />
@@ -280,9 +331,11 @@ function DayHeader({ index, count }: { index: number; count: number }) {
 function ItineraryItem({
   item,
   onPointerDownDragHandle,
+  onRemove,
 }: {
   item: DayItem;
   onPointerDownDragHandle?: (e: React.PointerEvent) => void;
+  onRemove?: () => void;
 }) {
   const { poi } = item;
   const overflow = isOverDayEnd(item);
@@ -346,6 +399,18 @@ function ItineraryItem({
           <div className="text-amber-600">⚠ après 18h</div>
         )}
       </div>
+
+      {onRemove && (
+        <button
+          type="button"
+          onClick={onRemove}
+          aria-label="Retirer de l'itinéraire"
+          title="Retirer de l'itinéraire"
+          className="ml-1 flex h-7 w-7 flex-shrink-0 items-center justify-center self-start rounded-full text-slate-400 transition hover:bg-red-50 hover:text-red-600 dark:text-slate-500 dark:hover:bg-red-950 dark:hover:text-red-400"
+        >
+          <span className="text-base leading-none">✕</span>
+        </button>
+      )}
     </div>
   );
 }
