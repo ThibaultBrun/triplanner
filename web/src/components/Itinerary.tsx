@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
+import { Reorder, useDragControls } from "motion/react";
 
 import { CATEGORY_LABELS, type Category, type Poi } from "@/lib/poi";
 import {
@@ -48,6 +49,8 @@ export function Itinerary({ pois }: { pois: Poi[] }) {
   const [likedIds, setLikedIds] = useState<Set<string>>(new Set());
   const [numDays, setNumDays] = useState(3);
   const [pace, setPace] = useState<Pace>("standard");
+  // Per-day user reorder. Keys = day index, values = ordered POI ids.
+  const [dayOverrides, setDayOverrides] = useState<Record<number, string[]>>({});
 
   useEffect(() => {
     setLikedIds(readLikedIds());
@@ -63,14 +66,23 @@ export function Itinerary({ pois }: { pois: Poi[] }) {
     localStorage.setItem(PACE_KEY, p);
   }
 
+  // Reset overrides when the structural inputs change.
+  useEffect(() => {
+    setDayOverrides({});
+  }, [likedIds, numDays, pace]);
+
+  function handleReorderDay(dayIndex: number, newIds: string[]) {
+    setDayOverrides((prev) => ({ ...prev, [dayIndex]: newIds }));
+  }
+
   const likedPois = useMemo(
     () => pois.filter((p) => likedIds.has(p.id)),
     [pois, likedIds],
   );
 
   const itinerary = useMemo(
-    () => buildItinerary(likedPois, numDays, pace),
-    [likedPois, numDays, pace],
+    () => buildItinerary(likedPois, numDays, pace, dayOverrides),
+    [likedPois, numDays, pace, dayOverrides],
   );
 
   if (!hydrated) {
@@ -110,7 +122,12 @@ export function Itinerary({ pois }: { pois: Poi[] }) {
 
         <div className="space-y-8">
           {itinerary.days.map((day) => (
-            <DaySection key={day.index} index={day.index} items={day.items} />
+            <DaySection
+              key={day.index}
+              index={day.index}
+              items={day.items}
+              onReorder={(ids) => handleReorderDay(day.index, ids)}
+            />
           ))}
         </div>
       </main>
@@ -179,7 +196,15 @@ function DayCountStepper({
   );
 }
 
-function DaySection({ index, items }: { index: number; items: DayItem[] }) {
+function DaySection({
+  index,
+  items,
+  onReorder,
+}: {
+  index: number;
+  items: DayItem[];
+  onReorder: (newIds: string[]) => void;
+}) {
   if (items.length === 0) {
     return (
       <section>
@@ -196,6 +221,7 @@ function DaySection({ index, items }: { index: number; items: DayItem[] }) {
     0,
   );
   const totalTravelMin = items.reduce((s, it) => s + it.travelToNextMinutes, 0);
+  const ids = items.map((it) => it.poi.id);
 
   return (
     <section>
@@ -204,17 +230,39 @@ function DaySection({ index, items }: { index: number; items: DayItem[] }) {
         {formatDuration(totalVisitMin)} de visites · {formatDuration(totalTravelMin)} de trajet
       </div>
 
-      <ol className="mt-4 space-y-2">
-        {items.map((item, i) => (
-          <li key={`${item.poi.id}-${i}`}>
-            <ItineraryItem item={item} />
-            {item.travelToNextMinutes > 0 && (
-              <TravelHint km={item.travelToNextKm} minutes={item.travelToNextMinutes} />
-            )}
-          </li>
+      <Reorder.Group
+        as="ol"
+        axis="y"
+        values={ids}
+        onReorder={onReorder}
+        className="mt-4 space-y-2"
+      >
+        {items.map((item) => (
+          <DraggableItem key={item.poi.id} item={item} />
         ))}
-      </ol>
+      </Reorder.Group>
     </section>
+  );
+}
+
+function DraggableItem({ item }: { item: DayItem }) {
+  const dragControls = useDragControls();
+  return (
+    <Reorder.Item
+      value={item.poi.id}
+      dragListener={false}
+      dragControls={dragControls}
+      whileDrag={{ scale: 1.02, boxShadow: "0 12px 24px rgba(0,0,0,0.18)" }}
+      className="list-none"
+    >
+      <ItineraryItem
+        item={item}
+        onPointerDownDragHandle={(e) => dragControls.start(e)}
+      />
+      {item.travelToNextMinutes > 0 && (
+        <TravelHint km={item.travelToNextKm} minutes={item.travelToNextMinutes} />
+      )}
+    </Reorder.Item>
   );
 }
 
@@ -229,22 +277,40 @@ function DayHeader({ index, count }: { index: number; count: number }) {
   );
 }
 
-function ItineraryItem({ item }: { item: DayItem }) {
+function ItineraryItem({
+  item,
+  onPointerDownDragHandle,
+}: {
+  item: DayItem;
+  onPointerDownDragHandle?: (e: React.PointerEvent) => void;
+}) {
   const { poi } = item;
   const overflow = isOverDayEnd(item);
 
   return (
     <div
-      className={`flex gap-3 rounded-xl bg-white p-3 shadow-sm dark:bg-slate-800 ${
+      className={`flex items-stretch gap-3 rounded-xl bg-white p-3 shadow-sm dark:bg-slate-800 ${
         overflow ? "ring-2 ring-amber-400" : ""
       }`}
     >
+      {onPointerDownDragHandle && (
+        <button
+          type="button"
+          onPointerDown={onPointerDownDragHandle}
+          aria-label="Réorganiser"
+          className="flex w-5 flex-shrink-0 cursor-grab touch-none items-center justify-center text-slate-400 hover:text-slate-700 active:cursor-grabbing dark:text-slate-600 dark:hover:text-slate-200"
+        >
+          <span className="text-lg leading-none select-none">⋮⋮</span>
+        </button>
+      )}
+
       {poi.image ? (
         // eslint-disable-next-line @next/next/no-img-element
         <img
           src={poi.image}
           alt=""
           className="h-20 w-20 flex-shrink-0 rounded-lg object-cover"
+          draggable={false}
         />
       ) : (
         <div className="flex h-20 w-20 flex-shrink-0 items-center justify-center rounded-lg bg-slate-100 text-2xl text-slate-300 dark:bg-slate-700">

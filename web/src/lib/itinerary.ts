@@ -190,10 +190,27 @@ function buildDayPlan(dayPois: Poi[], dayIndex: number, pace: Pace): DayPlan {
   return { index: dayIndex, items };
 }
 
-export function buildItinerary(pois: Poi[], numDays: number, pace: Pace = "standard"): Itinerary {
+export function buildItinerary(
+  pois: Poi[],
+  numDays: number,
+  pace: Pace = "standard",
+  dayOverrides: Record<number, string[]> = {},
+): Itinerary {
   const ordered = orderByProximity(pois);
   const splits = splitIntoDays(ordered, numDays, pace);
-  const days = splits.map((d, i) => buildDayPlan(d, i, pace));
+  const days = splits.map((dayPois, i) => {
+    const override = dayOverrides[i];
+    if (override && override.length > 0) {
+      const idx = new Map(override.map((id, k) => [id, k]));
+      const reordered = [...dayPois].sort((a, b) => {
+        const ia = idx.get(a.id) ?? Infinity;
+        const ib = idx.get(b.id) ?? Infinity;
+        return ia - ib;
+      });
+      return buildDayPlan(reordered, i, pace);
+    }
+    return buildDayPlan(dayPois, i, pace);
+  });
   return { days, totalPois: pois.length };
 }
 
