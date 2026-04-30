@@ -302,6 +302,7 @@ function EmptyState({
   onReset: () => void;
   onChangePreferences: () => void;
 }) {
+  const hasLikes = likeCount > 0;
   return (
     <div className="max-w-md rounded-2xl bg-white p-8 text-center shadow-xl dark:bg-slate-800">
       <div className="text-5xl">🎉</div>
@@ -312,10 +313,22 @@ function EmptyState({
         {likeCount} lieu{likeCount > 1 ? "x" : ""} aimé{likeCount > 1 ? "s" : ""} sur {totalCount}.
       </p>
       <div className="mt-6 flex flex-col gap-2">
+        {hasLikes && (
+          <Link
+            href="/itineraire"
+            className="rounded-full bg-sky-600 px-6 py-2.5 text-sm font-semibold text-white shadow-md transition hover:bg-sky-700"
+          >
+            Planifier mon itinéraire →
+          </Link>
+        )}
         <button
           type="button"
           onClick={onReset}
-          className="rounded-full bg-sky-600 px-6 py-2 text-sm font-medium text-white hover:bg-sky-700"
+          className={`rounded-full px-6 py-2 text-sm font-medium ${
+            hasLikes
+              ? "bg-slate-100 text-slate-700 hover:bg-slate-200 dark:bg-slate-700 dark:text-slate-200 dark:hover:bg-slate-600"
+              : "bg-sky-600 text-white hover:bg-sky-700"
+          }`}
         >
           Recommencer
         </button>
