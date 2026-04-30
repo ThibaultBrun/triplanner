@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <div className="flex flex-1 items-center justify-center bg-gradient-to-br from-sky-50 via-white to-amber-50 px-6 py-16 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950">
@@ -18,7 +20,7 @@ export default function Home() {
         <div className="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-3">
           <Card title="Découverte" status="à venir" />
           <Card title="Itinéraire" status="à venir" />
-          <Card title="Carte" status="à venir" />
+          <Card title="Carte" status="explorer →" href="/carte" />
         </div>
 
         <p className="mt-12 text-xs text-slate-400 dark:text-slate-600">
@@ -29,15 +31,31 @@ export default function Home() {
   );
 }
 
-function Card({ title, status }: { title: string; status: string }) {
-  return (
-    <div className="rounded-xl border border-slate-200 bg-white/60 px-4 py-6 backdrop-blur-sm dark:border-slate-800 dark:bg-slate-900/60">
+function Card({ title, status, href }: { title: string; status: string; href?: string }) {
+  const inner = (
+    <>
       <div className="text-base font-medium text-slate-900 dark:text-slate-100">
         {title}
       </div>
       <div className="mt-1 text-xs uppercase tracking-wider text-slate-400 dark:text-slate-600">
         {status}
       </div>
-    </div>
+    </>
   );
+
+  const className =
+    "rounded-xl border border-slate-200 bg-white/60 px-4 py-6 backdrop-blur-sm dark:border-slate-800 dark:bg-slate-900/60";
+
+  if (href) {
+    return (
+      <Link
+        href={href}
+        className={`${className} transition hover:border-sky-300 hover:bg-white dark:hover:border-sky-700`}
+      >
+        {inner}
+      </Link>
+    );
+  }
+
+  return <div className={className}>{inner}</div>;
 }
