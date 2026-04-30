@@ -26,13 +26,20 @@ const QUERY = `
   relation["historic"](${BBOX});
   node["amenity"~"^(restaurant|cafe|bar|pub|theatre|cinema|nightclub|biergarten|opera_house|music_venue|concert_hall|marketplace|public_bath|place_of_worship|fast_food|food_court|ice_cream|yoga_centre|casino|arts_centre|events_venue|community_centre|stripclub)$"](${BBOX});
   way["amenity"~"^(theatre|cinema|nightclub|opera_house|music_venue|concert_hall|marketplace|public_bath|place_of_worship|casino|arts_centre|events_venue)$"](${BBOX});
-  node["leisure"~"^(park|garden|botanical_garden|beach_resort|water_park|theme_park|spa|nature_reserve|miniature_golf|amusement_arcade|escape_game|adventure_park|surf_school|marina|horse_riding|sports_centre|fitness_centre|swimming_pool|golf_course|stadium|track|sports_hall|dance|ice_rink|bowling_alley|trampoline_park|climbing)$"](${BBOX});
-  way["leisure"~"^(park|garden|botanical_garden|beach_resort|water_park|theme_park|spa|nature_reserve|adventure_park|marina|sports_centre|fitness_centre|swimming_pool|golf_course|stadium|sports_hall)$"](${BBOX});
+  node["leisure"~"^(park|garden|botanical_garden|beach_resort|water_park|theme_park|spa|nature_reserve|miniature_golf|amusement_arcade|escape_game|adventure_park|surf_school|marina|horse_riding|sports_centre|fitness_centre|swimming_pool|golf_course|stadium|track|sports_hall|dance|ice_rink|bowling_alley|trampoline_park|climbing|sauna|skatepark)$"](${BBOX});
+  way["leisure"~"^(park|garden|botanical_garden|beach_resort|water_park|theme_park|spa|nature_reserve|adventure_park|marina|sports_centre|fitness_centre|swimming_pool|golf_course|stadium|sports_hall|skatepark)$"](${BBOX});
+  // playgrounds: only "named" ones (avoids residential micro-aires)
+  node["leisure"="playground"]["name"](${BBOX});
+  way["leisure"="playground"]["name"](${BBOX});
+  node["attraction"](${BBOX});
+  node["tourism"="hotel"]["spa"](${BBOX});
   node["natural"~"^(beach|peak|waterfall|cave_entrance|dune|hot_spring|spring|arch|cliff|rock|sand)$"](${BBOX});
   way["natural"~"^(beach|peak|waterfall|cave_entrance|dune|hot_spring|spring|arch|cliff|rock|sand)$"](${BBOX});
   node["shop"~"^(wine|farm|chocolate|tea|massage|marketplace)$"](${BBOX});
   node["craft"~"^(winery|distillery|chocolate|cheesemaker|confectionery)$"](${BBOX});
-  node["sport"~"^(surfing|kitesurfing|canoe|sailing|scuba_diving|paragliding|parachuting|climbing|via_ferrata|equestrian|cycling|yoga|tennis|golf|swimming|skating|hiking|bouldering|skateboard|skiing|fishing|windsurfing|water_ski|kayak|rafting|hang_gliding|football|rugby|basketball|volleyball|martial_arts|trail_running|table_tennis|pelota)$"](${BBOX});
+  node["sport"~"^(surfing|kitesurfing|canoe|sailing|scuba_diving|paragliding|parachuting|climbing|via_ferrata|equestrian|cycling|yoga|tennis|golf|swimming|skating|hiking|bouldering|skateboard|skiing|fishing|windsurfing|water_ski|kayak|rafting|hang_gliding|football|rugby|basketball|volleyball|martial_arts|trail_running|table_tennis|pelota|mtb|bmx)$"](${BBOX});
+  // VTT trails (relation routes)
+  relation["route"~"^(mtb|bicycle)$"]["name"](${BBOX});
   node["man_made"~"^(lighthouse|bridge)$"](${BBOX});
   way["man_made"~"^(lighthouse|bridge)$"](${BBOX});
 );

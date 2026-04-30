@@ -35,6 +35,8 @@ export type Poi = {
   score: number;
   tags?: {
     cost?: "free" | "paid";
+    /** Raw OSM `charge` value, e.g. "5 EUR" — when available. */
+    chargeText?: string;
     wheelchair?: "yes" | "limited" | "no";
     cuisine?: string[];
     openingHours?: string;

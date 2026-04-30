@@ -18,9 +18,9 @@ const QUOTAS: Record<Category, number> = {
   musees: 50,
   nature: 80,
   sport: 100,
-  gastronomie: 100,
-  loisirs: 50,
-  "bien-etre": 20,
+  gastronomie: 150,
+  loisirs: 80,
+  "bien-etre": 40,
   "vie-nocturne": 60,
 };
 
@@ -112,6 +112,7 @@ async function main() {
     if (cost) tags.cost = cost;
     const wc = tagWheelchair(c.tags);
     if (wc) tags.wheelchair = wc;
+    if (c.tags.charge) tags.chargeText = c.tags.charge;
     if (c.tags.cuisine) tags.cuisine = c.tags.cuisine.split(";").map((s) => s.trim());
     if (c.tags.opening_hours) tags.openingHours = c.tags.opening_hours;
     if (c.tags.website) tags.website = c.tags.website;

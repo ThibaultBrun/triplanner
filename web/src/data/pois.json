@@ -139,6 +139,7 @@
     "score": 0.5828571428571427,
     "tags": {
       "cost": "paid",
+      "chargeText": "3€, 2€",
       "openingHours": "Apr 15-Oct 15: 10:00-13:00,15:00-19:00",
       "website": "http://www.soule-paysbasque.com/A-voir-a-faire/Patrimoine-et-artisanat/Patrimoine-culturel/chateau-fort-mauleon/860"
     }
@@ -162,6 +163,7 @@
     "tags": {
       "cost": "paid",
       "wheelchair": "limited",
+      "chargeText": "5€ - 2.50€",
       "website": "http://www.tourisme-pays-de-bidache.com/chateaux-et-autres-monuments-historiques/"
     }
   },
@@ -185,6 +187,7 @@
     "tags": {
       "cost": "paid",
       "wheelchair": "no",
+      "chargeText": "8.50€ - 4 €",
       "openingHours": "11:00-18:00",
       "website": "http://www.arnaga.com"
     }
@@ -263,6 +266,7 @@
     "score": 0.5382857142857143,
     "tags": {
       "cost": "paid",
+      "chargeText": "6€, 3€",
       "website": "https://www.chateaudandurain.com/"
     }
   },
@@ -2099,7 +2103,8 @@
     "wikipediaLangs": 2,
     "score": 0.37428571428571433,
     "tags": {
-      "cost": "paid"
+      "cost": "paid",
+      "chargeText": "6€, 3€"
     }
   },
   {
@@ -2373,6 +2378,7 @@
     "tags": {
       "cost": "paid",
       "wheelchair": "yes",
+      "chargeText": "8 € standard rate; 5 € reduced rate; free on Thursdays from 6pm to 8pm, the 1st Sunday of the month, and always free for under 26s and visitors with disabilities",
       "openingHours": "Th 13:00-20:00; Tu,We,Fr-Su 10:00-18:00"
     }
   },
@@ -2395,6 +2401,7 @@
     "score": 0.35142857142857137,
     "tags": {
       "cost": "paid",
+      "chargeText": "2 EUR",
       "website": "https://www.musee-de-guethary.fr"
     }
   },
@@ -2563,6 +2570,7 @@
     "score": 0.3285714285714286,
     "tags": {
       "cost": "paid",
+      "chargeText": "4 EUR",
       "openingHours": "We-Su 11:00-18:00; Th,Fr off",
       "website": "https://www.saintjeandeluz.fr/fr/a-voir-a-faire/jardin-botanique/"
     }
@@ -2744,6 +2752,7 @@
     "score": 0.30714285714285716,
     "tags": {
       "cost": "paid",
+      "chargeText": "4.50 EUR (adult);2.50 EUR (child)",
       "website": "http://www.turismozugarramurdi.com/seccion/turismo_las_cuevas/"
     }
   },
@@ -3073,6 +3082,7 @@
     "tags": {
       "cost": "paid",
       "wheelchair": "yes",
+      "chargeText": "13 € - 11 € - 9€",
       "openingHours": "10:00-19:00",
       "website": "https://www.citedelocean.com"
     }
@@ -3546,6 +3556,7 @@
     "score": 0.20142857142857143,
     "tags": {
       "cost": "paid",
+      "chargeText": "3,5 EUR",
       "openingHours": "Tu-Su 11:00-14:00,16:30-19:30",
       "website": "https://www.amaiur.eus/informazio-osagarria/"
     }
@@ -3867,6 +3878,7 @@
     "score": 0.17142857142857143,
     "tags": {
       "cost": "paid",
+      "chargeText": "11,50€ - 4,80€",
       "website": "https://www.grottes-isturitz.com/"
     }
   },
@@ -5314,6 +5326,7 @@
     "tags": {
       "cost": "paid",
       "wheelchair": "yes",
+      "chargeText": "2 € - 3 €",
       "openingHours": "Mo-Fr 09:00-11:30,14:00-16:30",
       "website": "https://www.terreetcotebasques.com/fr/votre-sejour/patrimoine-et-culture/maison-du-patrimoine-ainhoa/"
     }
@@ -5685,6 +5698,26 @@
     }
   },
   {
+    "id": "node/11380846119",
+    "osm": {
+      "type": "node",
+      "id": 11380846119
+    },
+    "name": "Jump Academy - Trampoline Park",
+    "city": "Saint-Pierre-d'Irube",
+    "lat": 43.4809337,
+    "lon": -1.4451651,
+    "category": "loisirs",
+    "subcategory": "Activités enfants",
+    "wikipediaLangs": 0,
+    "score": 0.05142857142857142,
+    "tags": {
+      "wheelchair": "yes",
+      "openingHours": "Mo-Su 14:00-19:30",
+      "website": "https://jumpacademy.fr/"
+    }
+  },
+  {
     "id": "node/11380846129",
     "osm": {
       "type": "node",
@@ -5705,6 +5738,24 @@
     }
   },
   {
+    "id": "way/316700130",
+    "osm": {
+      "type": "way",
+      "id": 316700130
+    },
+    "name": "Plazako Lilitegia",
+    "lat": 43.4389798,
+    "lon": -1.58914,
+    "category": "loisirs",
+    "subcategory": "Activités enfants",
+    "wikipediaLangs": 0,
+    "score": 0.05142857142857142,
+    "tags": {
+      "wheelchair": "limited",
+      "openingHours": "24/7"
+    }
+  },
+  {
     "id": "way/647336045",
     "osm": {
       "type": "way",
@@ -5718,6 +5769,24 @@
     "wikipediaLangs": 0,
     "score": 0.05142857142857142,
     "tags": {
+      "openingHours": "24/7"
+    }
+  },
+  {
+    "id": "way/749889603",
+    "osm": {
+      "type": "way",
+      "id": 749889603
+    },
+    "name": "Aire de jeux du Kirolak",
+    "lat": 43.4317266,
+    "lon": -1.5910994,
+    "category": "loisirs",
+    "subcategory": "Activités enfants",
+    "wikipediaLangs": 0,
+    "score": 0.05142857142857142,
+    "tags": {
+      "wheelchair": "yes",
       "openingHours": "24/7"
     }
   },
@@ -5813,6 +5882,7 @@
     "tags": {
       "cost": "paid",
       "wheelchair": "yes",
+      "chargeText": "2,50 € - 5 €",
       "openingHours": "Mo-Sa 09:30-12:30,14:00-18:00; PH,Su 09:30-12:30",
       "website": "https://www.en-pays-basque.fr/visite/ecomusee-de-la-pelote-et-du-xistera-pilotari/"
     }
@@ -8469,6 +8539,1045 @@
     }
   },
   {
+    "id": "node/2296077078",
+    "osm": {
+      "type": "node",
+      "id": 2296077078
+    },
+    "name": "Gran Sol",
+    "city": "Hondarribia",
+    "lat": 43.3686399,
+    "lon": -1.7942,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "cuisine": [
+        "regional"
+      ],
+      "openingHours": "Tu-Sa 11:30-22:00; Su 11:30-15:30",
+      "website": "https://www.bargransol.com"
+    }
+  },
+  {
+    "id": "node/2432919097",
+    "osm": {
+      "type": "node",
+      "id": 2432919097
+    },
+    "name": "La Goulue",
+    "lat": 43.4805829,
+    "lon": -1.5583178,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "openingHours": "Mo-Su 19:30-23:00; Su,We,Th,Fr 12:00-14:00",
+      "website": "http://www.lagouluebiarritz.com/"
+    }
+  },
+  {
+    "id": "node/2702756266",
+    "osm": {
+      "type": "node",
+      "id": 2702756266
+    },
+    "name": "Le Bistrot gourmet",
+    "city": "Biarritz",
+    "lat": 43.4860631,
+    "lon": -1.5509466,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "cuisine": [
+        "french"
+      ],
+      "openingHours": "Th-Mo 12:00-14:30,19:00-21:30",
+      "website": "https://le-bistrot-gourmet.com/"
+    }
+  },
+  {
+    "id": "node/3228598323",
+    "osm": {
+      "type": "node",
+      "id": 3228598323
+    },
+    "name": "Mahaina",
+    "city": "Bidart",
+    "lat": 43.439484,
+    "lon": -1.590674,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "wheelchair": "yes",
+      "cuisine": [
+        "french"
+      ],
+      "openingHours": "Sep-Jun PH,Th-Mo 12:00-14:00,19:30-22:00; Jul-Aug PH,Mo-Su 12:00-14:00,19:00-22:30",
+      "website": "https://www.restaurantmahaina-bidart.fr"
+    }
+  },
+  {
+    "id": "node/3520002692",
+    "osm": {
+      "type": "node",
+      "id": 3520002692
+    },
+    "name": "Erroa",
+    "city": "Saint-Jean-de-Luz",
+    "lat": 43.3916892,
+    "lon": -1.6592781,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "wheelchair": "yes",
+      "openingHours": "Th-Mo 12:15-22:15",
+      "website": "https://www.restaurant-erroa.fr/"
+    }
+  },
+  {
+    "id": "node/3731890887",
+    "osm": {
+      "type": "node",
+      "id": 3731890887
+    },
+    "name": "Pizzeria Le Capri",
+    "lat": 43.4826119,
+    "lon": -1.5636938,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "cuisine": [
+        "pizza"
+      ],
+      "openingHours": "12:00-14:30,19:00-22:00",
+      "website": "https://www.lecapribiarritz.fr/"
+    }
+  },
+  {
+    "id": "node/3764460963",
+    "osm": {
+      "type": "node",
+      "id": 3764460963
+    },
+    "name": "La Terrasse",
+    "lat": 43.4721599,
+    "lon": -0.9253576,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "cuisine": [
+        "french"
+      ],
+      "openingHours": "Jul-Sep Tu-Su 12:00-14:00,19:00-22:00",
+      "website": "http://laterrasse.e-monsite.com/"
+    }
+  },
+  {
+    "id": "node/3783762695",
+    "osm": {
+      "type": "node",
+      "id": 3783762695
+    },
+    "name": "ArtoteKafé",
+    "city": "Bayonne",
+    "lat": 43.5022385,
+    "lon": -1.4525025,
+    "category": "gastronomie",
+    "subcategory": "Cafés & salons de thé",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "cuisine": [
+        "international"
+      ],
+      "openingHours": "Mo 09:00-14:00; Tu 09:00-19:00; We 09:00-11:30; Th-Fr 09:00-19:00",
+      "website": "https://www.facebook.com/Artotekafe.fr/"
+    }
+  },
+  {
+    "id": "node/4075650883",
+    "osm": {
+      "type": "node",
+      "id": 4075650883
+    },
+    "name": "Croq Pizza",
+    "city": "Hendaye",
+    "lat": 43.3566487,
+    "lon": -1.7765468,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "cuisine": [
+        "pizza"
+      ],
+      "openingHours": "Mo-Su 18:00-22:00; Th-Sa 11:30-14:00",
+      "website": "https://www.croq-pizza-hendaye.com/"
+    }
+  },
+  {
+    "id": "node/4156281490",
+    "osm": {
+      "type": "node",
+      "id": 4156281490
+    },
+    "name": "Abarka Jatetxea",
+    "lat": 43.3689239,
+    "lon": -1.7995227,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "cuisine": [
+        "regional"
+      ],
+      "openingHours": "Tu-Sa 13:00-15:00, 20:30-23:00; Su 13:00-15:00",
+      "website": "http://www.restabarka.com/"
+    }
+  },
+  {
+    "id": "node/4358109001",
+    "osm": {
+      "type": "node",
+      "id": 4358109001
+    },
+    "name": "Memphis Coffee",
+    "city": "Bayonne",
+    "lat": 43.4914653,
+    "lon": -1.4514676,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "cuisine": [
+        "burger"
+      ],
+      "openingHours": "Mo-Su 12:00-00:00",
+      "website": "http://www.memphis-coffee.com"
+    }
+  },
+  {
+    "id": "node/4387368460",
+    "osm": {
+      "type": "node",
+      "id": 4387368460
+    },
+    "name": "Maitenia",
+    "city": "Ciboure",
+    "lat": 43.3840143,
+    "lon": -1.668108,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "openingHours": "Tu-Sa 10:00-15:00,17:00-26:00, Su 10:00-17:00",
+      "website": "http://www.lephemere-ciboure.fr/"
+    }
+  },
+  {
+    "id": "node/4579707095",
+    "osm": {
+      "type": "node",
+      "id": 4579707095
+    },
+    "name": "Cosmopolitain",
+    "city": "Saint-Jean-de-Luz",
+    "lat": 43.3874825,
+    "lon": -1.6627025,
+    "category": "gastronomie",
+    "subcategory": "Cafés & salons de thé",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "wheelchair": "yes",
+      "openingHours": "Mo-Su 12:00-22:00",
+      "website": "https://le-cosmopolitain-restaurant-st-jean-de-luz.metro.rest/?lang=fr"
+    }
+  },
+  {
+    "id": "node/4579749900",
+    "osm": {
+      "type": "node",
+      "id": 4579749900
+    },
+    "name": "Kaïku",
+    "city": "Saint-Jean-de-Luz",
+    "lat": 43.3885808,
+    "lon": -1.6644333,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "wheelchair": "yes",
+      "openingHours": "12:30-14:00,19:30-22:00; Tu,We off",
+      "website": "https://www.kaiku.fr/"
+    }
+  },
+  {
+    "id": "node/4579763090",
+    "osm": {
+      "type": "node",
+      "id": 4579763090
+    },
+    "name": "Le Boka",
+    "city": "Saint-Jean-de-Luz",
+    "lat": 43.3875762,
+    "lon": -1.6635528,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "wheelchair": "yes",
+      "openingHours": "Mo-Su 12:00-02:00",
+      "website": "https://www.leboka.fr/"
+    }
+  },
+  {
+    "id": "node/4697018980",
+    "osm": {
+      "type": "node",
+      "id": 4697018980
+    },
+    "name": "Bar Restaurant Eskularia",
+    "city": "Villefranque",
+    "lat": 43.4359164,
+    "lon": -1.4554361,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "cuisine": [
+        "regional"
+      ],
+      "openingHours": "Su-Th 10:30-15:00; Fr-Sa 10:30-15:00, 19:00-21:30",
+      "website": "https://eskularia-restaurant-villefranque.eatbu.com/?lang=fr"
+    }
+  },
+  {
+    "id": "node/4697705059",
+    "osm": {
+      "type": "node",
+      "id": 4697705059
+    },
+    "name": "Tolare jatetxea",
+    "lat": 43.2877865,
+    "lon": -1.8368662,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "cuisine": [
+        "regional"
+      ],
+      "openingHours": "Mo-Tu, Th 09:00-17:00; Fr-Sa 09:00-00:00; Su 10:00-17:00",
+      "website": "https://www.tolarejatetxea.com/"
+    }
+  },
+  {
+    "id": "node/4741244011",
+    "osm": {
+      "type": "node",
+      "id": 4741244011
+    },
+    "name": "Le Peita",
+    "city": "Saint-Jean-de-Luz",
+    "lat": 43.3882833,
+    "lon": -1.663498,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "wheelchair": "yes",
+      "openingHours": "Th-Mo 09:00-21:30",
+      "website": "https://www.restaurant-lepeita.com/"
+    }
+  },
+  {
+    "id": "node/4741244727",
+    "osm": {
+      "type": "node",
+      "id": 4741244727
+    },
+    "name": "Bocata",
+    "city": "Saint-Jean-de-Luz",
+    "lat": 43.3863639,
+    "lon": -1.6618298,
+    "category": "gastronomie",
+    "subcategory": "Cafés & salons de thé",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "openingHours": "Mo-Fr 09:30-15:00",
+      "website": "http://menu.donnie-ocean.com/Menu-DonnieOcean.pdf"
+    }
+  },
+  {
+    "id": "node/4741244729",
+    "osm": {
+      "type": "node",
+      "id": 4741244729
+    },
+    "name": "Le Martxuka",
+    "city": "Saint-Jean-de-Luz",
+    "lat": 43.3862836,
+    "lon": -1.6609053,
+    "category": "gastronomie",
+    "subcategory": "Cafés & salons de thé",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "wheelchair": "yes",
+      "openingHours": "Mo-Fr 07:45-19:00; Su 09:00-18:30",
+      "website": "https://www.martxuka.com/"
+    }
+  },
+  {
+    "id": "node/4791583026",
+    "osm": {
+      "type": "node",
+      "id": 4791583026
+    },
+    "name": "Dodo Run 64",
+    "lat": 43.4905213,
+    "lon": -1.4731987,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "openingHours": "Mo-Su 11:30-14:30,19:15-23:00"
+    }
+  },
+  {
+    "id": "node/4791804136",
+    "osm": {
+      "type": "node",
+      "id": 4791804136
+    },
+    "name": "Fufu Ramen",
+    "lat": 43.4899747,
+    "lon": -1.476728,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "cuisine": [
+        "japanese"
+      ],
+      "openingHours": "Sa-Th 12:00-15:00,18:00-22:00; Fr 12:00-15:00",
+      "website": "https://restaurantfufu.com/"
+    }
+  },
+  {
+    "id": "node/4826926275",
+    "osm": {
+      "type": "node",
+      "id": 4826926275
+    },
+    "name": "Etxe Tipia",
+    "city": "Cambo-les-Bains",
+    "lat": 43.3616808,
+    "lon": -1.3995593,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "cuisine": [
+        "french",
+        "regional"
+      ],
+      "openingHours": "Mo-We 12:15-14:30,19:15-21:30; Th-Fr 19:15-21:30; Sa 12:15-14:30,19:15-21:30",
+      "website": "https://etxe-tipia-restaurant-cambo-les-bains.eatbu.com/"
+    }
+  },
+  {
+    "id": "node/4868225037",
+    "osm": {
+      "type": "node",
+      "id": 4868225037
+    },
+    "name": "Domino's",
+    "lat": 43.4947671,
+    "lon": -1.4683869,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "cuisine": [
+        "pizza"
+      ],
+      "openingHours": "Mo-Th 11:30-14:00,17:45-22:00; Fr 11:30-14:00,17:45-23:00; Sa 11:30-15:00,17:45-23:00; Su 11:30-15:00,17:45-22:00",
+      "website": "https://www.dominos.fr/magasin/bayonne_64100"
+    }
+  },
+  {
+    "id": "node/4947440908",
+    "osm": {
+      "type": "node",
+      "id": 4947440908
+    },
+    "name": "Le Kawa",
+    "city": "Saint-Jean-Pied-de-Port",
+    "lat": 43.1634218,
+    "lon": -1.2355595,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "openingHours": "Mo-Fr 14:00-18:00"
+    }
+  },
+  {
+    "id": "node/4947684325",
+    "osm": {
+      "type": "node",
+      "id": 4947684325
+    },
+    "name": "Ostalamer",
+    "lat": 43.4140569,
+    "lon": -1.625776,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "cuisine": [
+        "mediterranean"
+      ],
+      "openingHours": "Tu-Su 10:00-13:30, 18:00-21:30",
+      "website": "https://ostalamer.com/"
+    }
+  },
+  {
+    "id": "node/4947697322",
+    "osm": {
+      "type": "node",
+      "id": 4947697322
+    },
+    "name": "Chez Mattin",
+    "lat": 43.3826422,
+    "lon": -1.6692045,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "openingHours": "Tu-Su 12:30-13:30, 19:45-21:30",
+      "website": "http://chezmattin.fr"
+    }
+  },
+  {
+    "id": "node/5003137823",
+    "osm": {
+      "type": "node",
+      "id": 5003137823
+    },
+    "name": "Arrantzaleak",
+    "lat": 43.3831939,
+    "lon": -1.6636563,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "openingHours": "We-Su 19:15-22:00",
+      "website": "http://restaurantarrantzaleakciboure.plaza24deseptiembre.co/"
+    }
+  },
+  {
+    "id": "node/5038455221",
+    "osm": {
+      "type": "node",
+      "id": 5038455221
+    },
+    "name": "Mystic pizza",
+    "lat": 43.3832268,
+    "lon": -1.3067583,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "cuisine": [
+        "pizza",
+        "pasta",
+        "plats_du_jour"
+      ],
+      "openingHours": "We-Su 09:30-14:00 , 17:30-22:00"
+    }
+  },
+  {
+    "id": "node/5414799929",
+    "osm": {
+      "type": "node",
+      "id": 5414799929
+    },
+    "name": "Restaurant Poissonnerie Le Petit Jeune",
+    "city": "Tarnos",
+    "lat": 43.5470695,
+    "lon": -1.4881902,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "wheelchair": "limited",
+      "openingHours": "Mo-Su 09:00-13:30,16:00-21:00",
+      "website": "https://www.facebook.com/poissonnerielepetitjeune"
+    }
+  },
+  {
+    "id": "node/5415413022",
+    "osm": {
+      "type": "node",
+      "id": 5415413022
+    },
+    "name": "Etxe Nami",
+    "city": "Saint-Jean-de-Luz",
+    "lat": 43.3872459,
+    "lon": -1.6591481,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "cuisine": [
+        "japanese"
+      ],
+      "openingHours": "Tu,We 12:30-14:30; Th-Sa 12:30-14:30,19:30-22:00; week 27-34 Mo-Sa 12:30-14:30,19:30-21:30",
+      "website": "https://etxenami.com/"
+    }
+  },
+  {
+    "id": "node/5732091189",
+    "osm": {
+      "type": "node",
+      "id": 5732091189
+    },
+    "name": "Hannya sushi",
+    "city": "Ciboure",
+    "lat": 43.383009,
+    "lon": -1.6676873,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "wheelchair": "limited",
+      "cuisine": [
+        "sushi"
+      ],
+      "openingHours": "Tu-Sa 12:00-21:00",
+      "website": "https://www.hannya.fr/"
+    }
+  },
+  {
+    "id": "node/5837840199",
+    "osm": {
+      "type": "node",
+      "id": 5837840199
+    },
+    "name": "Sushi Shop",
+    "lat": 43.4926943,
+    "lon": -1.4750259,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "cuisine": [
+        "sushi"
+      ],
+      "openingHours": "Mo-Sa 11:00-14:00, Mo,Tu 18:00-22:00, We-Sa 18:00-22:30, Su 18:00-22:00",
+      "website": "https://www.sushishop.fr"
+    }
+  },
+  {
+    "id": "node/5856226443",
+    "osm": {
+      "type": "node",
+      "id": 5856226443
+    },
+    "name": "Jap 64",
+    "city": "Ustaritz",
+    "lat": 43.3925673,
+    "lon": -1.4558191,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "cuisine": [
+        "sushi"
+      ],
+      "openingHours": "Mo-Fr 11:00-14:00,18:00-22:00; Sa 18:00-22:00; May-Oct Su 18:00-22:00",
+      "website": "http://lejap64.com/"
+    }
+  },
+  {
+    "id": "node/6163192794",
+    "osm": {
+      "type": "node",
+      "id": 6163192794
+    },
+    "name": "Woods",
+    "lat": 43.4931902,
+    "lon": -1.4772757,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "openingHours": "Mo-Su 12:00-14:30, 19:00-21:30",
+      "website": "https://foodcollect.fr/store/Woods/restaurant#"
+    }
+  },
+  {
+    "id": "node/6213792554",
+    "osm": {
+      "type": "node",
+      "id": 6213792554
+    },
+    "name": "Eat Salad",
+    "lat": 43.4834353,
+    "lon": -1.5033647,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "cuisine": [
+        "sandwich",
+        "salad"
+      ],
+      "openingHours": "Mo-Su 11:30-15:00,18:30-22:30",
+      "website": "https://eatsalad.fr/"
+    }
+  },
+  {
+    "id": "node/6213956487",
+    "osm": {
+      "type": "node",
+      "id": 6213956487
+    },
+    "name": "Subway",
+    "lat": 43.4831599,
+    "lon": -1.5037362,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "cuisine": [
+        "sandwich"
+      ],
+      "openingHours": "Mo-Su 11:00-22:00",
+      "website": "https://restaurants.subway.com/france/anglet/69-avenue-de-bayonne"
+    }
+  },
+  {
+    "id": "node/6436943244",
+    "osm": {
+      "type": "node",
+      "id": 6436943244
+    },
+    "name": "Le Napoli",
+    "city": "Tarnos",
+    "lat": 43.5475161,
+    "lon": -1.4878773,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "wheelchair": "yes",
+      "cuisine": [
+        "pizza",
+        "italian"
+      ],
+      "openingHours": "Mo-Sa 12:00-13:30, We-Sa 19:00-21:30",
+      "website": "https://www.le-napoli-tarnos.fr/"
+    }
+  },
+  {
+    "id": "node/6457576525",
+    "osm": {
+      "type": "node",
+      "id": 6457576525
+    },
+    "name": "Salon Cyrano",
+    "lat": 43.3623439,
+    "lon": -1.4010872,
+    "category": "gastronomie",
+    "subcategory": "Cafés & salons de thé",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "cuisine": [
+        "regional",
+        "salad",
+        "dessert"
+      ],
+      "openingHours": "Tu-Su 10:30-19:00",
+      "website": "https://www.saloncyrano.com/"
+    }
+  },
+  {
+    "id": "node/6475224030",
+    "osm": {
+      "type": "node",
+      "id": 6475224030
+    },
+    "name": "Blondie",
+    "lat": 43.495126,
+    "lon": -1.4681185,
+    "category": "gastronomie",
+    "subcategory": "Cafés & salons de thé",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "openingHours": "Mo-Fr 09:00-17:30",
+      "website": "https://blondie-saintesprit.fr"
+    }
+  },
+  {
+    "id": "node/6611415331",
+    "osm": {
+      "type": "node",
+      "id": 6611415331
+    },
+    "name": "Woody's Diner",
+    "lat": 43.4813528,
+    "lon": -1.5089476,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "cuisine": [
+        "salad",
+        "american",
+        "burger"
+      ],
+      "openingHours": "Mo-Sa 12:00-14:00, 19:30-22:30",
+      "website": "https://woodys-diner.com/index.php"
+    }
+  },
+  {
+    "id": "node/6710195477",
+    "osm": {
+      "type": "node",
+      "id": 6710195477
+    },
+    "name": "Le Croque Bedaine",
+    "city": "Mouguerre",
+    "lat": 43.4842492,
+    "lon": -1.4436581,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "openingHours": "We,Th,Sa 11:00-14:00, 17:00-23:00; Fr 11:00-23:00; PH off",
+      "website": "https://www.lecroquebedaine.fr/mouguerre/"
+    }
+  },
+  {
+    "id": "node/7086332478",
+    "osm": {
+      "type": "node",
+      "id": 7086332478
+    },
+    "name": "Cidrerie du fronton",
+    "city": "Arbonne",
+    "lat": 43.4320074,
+    "lon": -1.5515518,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "wheelchair": "yes",
+      "cuisine": [
+        "regional"
+      ],
+      "openingHours": "12:00-14:00; Th,Fr 12:00-14:00,19:30-22:30; Sa 19:30-22:30",
+      "website": "https://cidreriedufronton.com"
+    }
+  },
+  {
+    "id": "node/7139988381",
+    "osm": {
+      "type": "node",
+      "id": 7139988381
+    },
+    "name": "O Bistro.T",
+    "city": "Tarnos",
+    "lat": 43.5407588,
+    "lon": -1.4613616,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "cuisine": [
+        "regional"
+      ],
+      "openingHours": "Tu-Sa 10:30-14:00,18:30-23:00",
+      "website": "https://obistrot-tarnos.eatbu.com"
+    }
+  },
+  {
+    "id": "node/7139988382",
+    "osm": {
+      "type": "node",
+      "id": 7139988382
+    },
+    "name": "Soleil d'Asie",
+    "city": "Tarnos",
+    "lat": 43.5407609,
+    "lon": -1.4614458,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "wheelchair": "yes",
+      "cuisine": [
+        "chinese"
+      ],
+      "openingHours": "Th-Tu 11:45-13:30, Mo,Tu,Th-Sa 19:45-21:45",
+      "website": "https://soleil-dasie-tarnos.eatbu.com"
+    }
+  },
+  {
+    "id": "node/7206524536",
+    "osm": {
+      "type": "node",
+      "id": 7206524536
+    },
+    "name": "Pizza Giorgio",
+    "lat": 43.4039907,
+    "lon": -1.4609245,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "cuisine": [
+        "italian"
+      ],
+      "openingHours": "Tu-Sa 11:30-14:00,18:00-22:00; Su 18:00-22:00",
+      "website": "http://www.ustaritz-paysbasque.com/route_gourmande/pizza_giorgio.php"
+    }
+  },
+  {
+    "id": "node/7372993309",
+    "osm": {
+      "type": "node",
+      "id": 7372993309
+    },
+    "name": "Pizza Dotta;Nicolas",
+    "city": "Boucau",
+    "lat": 43.5240431,
+    "lon": -1.4648581,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "cuisine": [
+        "pizza"
+      ],
+      "openingHours": "Tu-Th,Su 18:00-21:30;Fr,Sa 18:00-21:45;Tu-Th 10:00-13:00,14:30-20:00;Fr,Sa 10:00-20:00"
+    }
+  },
+  {
+    "id": "node/7439323504",
+    "osm": {
+      "type": "node",
+      "id": 7439323504
+    },
+    "name": "FC Pizza",
+    "city": "Saint-Martin-de-Seignanx",
+    "lat": 43.5294223,
+    "lon": -1.3883909,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "cuisine": [
+        "pizza"
+      ],
+      "openingHours": "Mo-Sa 17:00-22:00"
+    }
+  },
+  {
+    "id": "node/7595666124",
+    "osm": {
+      "type": "node",
+      "id": 7595666124
+    },
+    "name": "Aho Fina",
+    "city": "Saint-Jean-de-Luz",
+    "lat": 43.3925817,
+    "lon": -1.6598663,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "openingHours": "Tu-Sa 19:30-21:30",
+      "website": "https://luzgrandhotel.fr/"
+    }
+  },
+  {
+    "id": "node/7595702647",
+    "osm": {
+      "type": "node",
+      "id": 7595702647
+    },
+    "name": "La Cidrerie Luzienne",
+    "city": "Saint-Jean-de-Luz",
+    "lat": 43.3929131,
+    "lon": -1.6518557,
+    "category": "gastronomie",
+    "subcategory": "Restaurants",
+    "wikipediaLangs": 0,
+    "score": 0.03599999999999999,
+    "tags": {
+      "openingHours": "We-Su 11:30-14:30, 19:00-22:30",
+      "website": "https://www.facebook.com/cidrerieLuzienne"
+    }
+  },
+  {
     "id": "node/1676304365",
     "osm": {
       "type": "node",
@@ -9815,8 +10924,276 @@
     "wikipediaLangs": 0,
     "score": 0.014285714285714284,
     "tags": {
-      "cost": "paid"
+      "cost": "paid",
+      "chargeText": "3 €"
     }
+  },
+  {
+    "id": "node/7780588110",
+    "osm": {
+      "type": "node",
+      "id": 7780588110
+    },
+    "name": "Abbaye de Lahonce",
+    "city": "Lahonce",
+    "lat": 43.4867185,
+    "lon": -1.3861824,
+    "category": "loisirs",
+    "subcategory": "Attractions",
+    "wikipediaLangs": 0,
+    "score": 0.014285714285714284,
+    "tags": {
+      "cost": "free"
+    }
+  },
+  {
+    "id": "node/7780880631",
+    "osm": {
+      "type": "node",
+      "id": 7780880631
+    },
+    "name": "Base de loisirs du Baigura",
+    "city": "Mendionde",
+    "lat": 43.3096467,
+    "lon": -1.2827071,
+    "category": "loisirs",
+    "subcategory": "Attractions",
+    "wikipediaLangs": 0,
+    "score": 0.014285714285714284,
+    "tags": {
+      "website": "https://www.baigura.com/"
+    }
+  },
+  {
+    "id": "node/8702070093",
+    "osm": {
+      "type": "node",
+      "id": 8702070093
+    },
+    "name": "Water park de Sames",
+    "city": "SAMES",
+    "lat": 43.5290012,
+    "lon": -1.1707002,
+    "category": "loisirs",
+    "subcategory": "Parcs aquatiques",
+    "wikipediaLangs": 0,
+    "score": 0.014285714285714284,
+    "tags": {
+      "website": "https://waterparkdesames.com/"
+    }
+  },
+  {
+    "id": "node/8741786695",
+    "osm": {
+      "type": "node",
+      "id": 8741786695
+    },
+    "name": "Quiz pour enfant - Ciboure",
+    "city": "Ciboure",
+    "lat": 43.3844291,
+    "lon": -1.6673282,
+    "category": "loisirs",
+    "subcategory": "Attractions",
+    "wikipediaLangs": 0,
+    "score": 0.014285714285714284
+  },
+  {
+    "id": "node/8741884805",
+    "osm": {
+      "type": "node",
+      "id": 8741884805
+    },
+    "name": "Tours et détours d'une rue toute droite",
+    "city": "Ainhoa",
+    "lat": 43.3065055,
+    "lon": -1.4985254,
+    "category": "loisirs",
+    "subcategory": "Attractions",
+    "wikipediaLangs": 0,
+    "score": 0.014285714285714284
+  },
+  {
+    "id": "node/8767416422",
+    "osm": {
+      "type": "node",
+      "id": 8767416422
+    },
+    "name": "Let's Jump",
+    "city": "Saint-Jean-de-Luz",
+    "lat": 43.4056302,
+    "lon": -1.6235007,
+    "category": "loisirs",
+    "subcategory": "Activités enfants",
+    "wikipediaLangs": 0,
+    "score": 0.014285714285714284,
+    "tags": {
+      "website": "https://www.trampolinepark.fr/"
+    }
+  },
+  {
+    "id": "node/8882239947",
+    "osm": {
+      "type": "node",
+      "id": 8882239947
+    },
+    "name": "Evi Nautika",
+    "city": "Ciboure",
+    "lat": 43.3926036,
+    "lon": -1.6847983,
+    "category": "loisirs",
+    "subcategory": "Attractions",
+    "wikipediaLangs": 0,
+    "score": 0.014285714285714284,
+    "tags": {
+      "website": "http://www.evi-nautika.com"
+    }
+  },
+  {
+    "id": "node/8901301810",
+    "osm": {
+      "type": "node",
+      "id": 8901301810
+    },
+    "name": "Tyrolienne géante et tyrolienne Park Evolution 2",
+    "city": "Saint-Pée-sur-Nivelle",
+    "lat": 43.3440912,
+    "lon": -1.5260674,
+    "category": "loisirs",
+    "subcategory": "Attractions",
+    "wikipediaLangs": 0,
+    "score": 0.014285714285714284,
+    "tags": {
+      "website": "https://www.evolution2paysbasque.com"
+    }
+  },
+  {
+    "id": "node/8904001526",
+    "osm": {
+      "type": "node",
+      "id": 8904001526
+    },
+    "name": "Promenade en Mer Bateau Nivelle V",
+    "lat": 43.3865096,
+    "lon": -1.6637487,
+    "category": "loisirs",
+    "subcategory": "Attractions",
+    "wikipediaLangs": 0,
+    "score": 0.014285714285714284,
+    "tags": {
+      "website": "https://www.croisiere-saintjeandeluz.com"
+    }
+  },
+  {
+    "id": "node/13369593921",
+    "osm": {
+      "type": "node",
+      "id": 13369593921
+    },
+    "name": "Parc public",
+    "city": "Urrugne",
+    "lat": 43.3688737,
+    "lon": -1.7079446,
+    "category": "loisirs",
+    "subcategory": "Attractions",
+    "wikipediaLangs": 0,
+    "score": 0.014285714285714284,
+    "tags": {
+      "website": "http://urrugne-tourisme.com"
+    }
+  },
+  {
+    "id": "way/373658595",
+    "osm": {
+      "type": "way",
+      "id": 373658595
+    },
+    "name": "Aire de Jeux de La Négresse",
+    "lat": 43.4605112,
+    "lon": -1.5492676,
+    "category": "loisirs",
+    "subcategory": "Activités enfants",
+    "wikipediaLangs": 0,
+    "score": 0.014285714285714284,
+    "tags": {
+      "website": "https://www.biarritz.fr/annuaires/annuaire-des-lieux-publics/lieu-public/aire-de-jeux-negresse-2662"
+    }
+  },
+  {
+    "id": "way/620587922",
+    "osm": {
+      "type": "way",
+      "id": 620587922
+    },
+    "name": "Aire de Jeux Espace Mandela",
+    "lat": 43.5263176,
+    "lon": -1.4544996,
+    "category": "loisirs",
+    "subcategory": "Activités enfants",
+    "wikipediaLangs": 0,
+    "score": 0.014285714285714284
+  },
+  {
+    "id": "way/693702182",
+    "osm": {
+      "type": "way",
+      "id": 693702182
+    },
+    "name": "Aire de Saint-Barthélémy",
+    "lat": 43.5154179,
+    "lon": -1.3304296,
+    "category": "loisirs",
+    "subcategory": "Activités enfants",
+    "wikipediaLangs": 0,
+    "score": 0.014285714285714284
+  },
+  {
+    "id": "way/746709731",
+    "osm": {
+      "type": "way",
+      "id": 746709731
+    },
+    "name": "Bid'a Parc",
+    "lat": 43.4327439,
+    "lon": -1.594531,
+    "category": "loisirs",
+    "subcategory": "Parcs d'attractions",
+    "wikipediaLangs": 0,
+    "score": 0.014285714285714284,
+    "tags": {
+      "cost": "paid",
+      "website": "https://www.bidaparc.com/"
+    }
+  },
+  {
+    "id": "way/769695049",
+    "osm": {
+      "type": "way",
+      "id": 769695049
+    },
+    "name": "Planète Parcs",
+    "lat": 43.5498379,
+    "lon": -1.4841762,
+    "category": "loisirs",
+    "subcategory": "Parcs d'attractions",
+    "wikipediaLangs": 0,
+    "score": 0.014285714285714284,
+    "tags": {
+      "website": "https://planeteparcs.fr/"
+    }
+  },
+  {
+    "id": "way/1229749874",
+    "osm": {
+      "type": "way",
+      "id": 1229749874
+    },
+    "name": "Aire de Jeux Jules Ferry",
+    "lat": 43.5303764,
+    "lon": -1.3897902,
+    "category": "loisirs",
+    "subcategory": "Activités enfants",
+    "wikipediaLangs": 0,
+    "score": 0.014285714285714284
   },
   {
     "id": "node/5407635547",
@@ -10369,6 +11746,183 @@
     }
   },
   {
+    "id": "node/897766489",
+    "osm": {
+      "type": "node",
+      "id": 897766489
+    },
+    "name": "Wow Park",
+    "city": "Urrugne",
+    "lat": 43.3562291,
+    "lon": -1.7407447,
+    "category": "loisirs",
+    "subcategory": "Attractions",
+    "wikipediaLangs": 0,
+    "score": 0.007142857142857142,
+    "tags": {
+      "website": "https://www.wowpark.fr/"
+    }
+  },
+  {
+    "id": "node/4463057591",
+    "osm": {
+      "type": "node",
+      "id": 4463057591
+    },
+    "name": "Parc d'aventures et Paintball",
+    "lat": 43.3567797,
+    "lon": -1.7429278,
+    "category": "loisirs",
+    "subcategory": "Attractions",
+    "wikipediaLangs": 0,
+    "score": 0.007142857142857142
+  },
+  {
+    "id": "node/4741305233",
+    "osm": {
+      "type": "node",
+      "id": 4741305233
+    },
+    "name": "Chemin de fer de la Rhune",
+    "lat": 43.3249996,
+    "lon": -1.600713,
+    "category": "loisirs",
+    "subcategory": "Attractions",
+    "wikipediaLangs": 0,
+    "score": 0.007142857142857142,
+    "tags": {
+      "website": "https://www.rhune.com/fr/"
+    }
+  },
+  {
+    "id": "node/5443395591",
+    "osm": {
+      "type": "node",
+      "id": 5443395591
+    },
+    "name": "Rue de la République",
+    "lat": 43.3834213,
+    "lon": -1.6705361,
+    "category": "loisirs",
+    "subcategory": "Activités enfants",
+    "wikipediaLangs": 0,
+    "score": 0.007142857142857142,
+    "tags": {
+      "wheelchair": "yes"
+    }
+  },
+  {
+    "id": "node/5633445019",
+    "osm": {
+      "type": "node",
+      "id": 5633445019
+    },
+    "name": "Domaine du Lac d'Harrieta",
+    "lat": 43.1521931,
+    "lon": -1.2015184,
+    "category": "loisirs",
+    "subcategory": "Attractions",
+    "wikipediaLangs": 0,
+    "score": 0.007142857142857142,
+    "tags": {
+      "website": "https://www.lac-harrieta.fr/fr/accueil"
+    }
+  },
+  {
+    "id": "node/6251720003",
+    "osm": {
+      "type": "node",
+      "id": 6251720003
+    },
+    "name": "Too Late Escape Game",
+    "lat": 43.490659,
+    "lon": -1.4513508,
+    "category": "loisirs",
+    "subcategory": "Activités enfants",
+    "wikipediaLangs": 0,
+    "score": 0.007142857142857142,
+    "tags": {
+      "website": "http://toolate.fr/escape-game-bayonne/"
+    }
+  },
+  {
+    "id": "node/7574923004",
+    "osm": {
+      "type": "node",
+      "id": 7574923004
+    },
+    "name": "Baztan Escape Room",
+    "city": "Elizondo",
+    "lat": 43.1414854,
+    "lon": -1.5238539,
+    "category": "loisirs",
+    "subcategory": "Activités enfants",
+    "wikipediaLangs": 0,
+    "score": 0.007142857142857142,
+    "tags": {
+      "website": "https://baztanescaperoom.com/"
+    }
+  },
+  {
+    "id": "node/8701700761",
+    "osm": {
+      "type": "node",
+      "id": 8701700761
+    },
+    "name": "Le site de Miremont",
+    "lat": 43.4814561,
+    "lon": -1.2109424,
+    "category": "loisirs",
+    "subcategory": "Attractions",
+    "wikipediaLangs": 0,
+    "score": 0.007142857142857142
+  },
+  {
+    "id": "node/8772547099",
+    "osm": {
+      "type": "node",
+      "id": 8772547099
+    },
+    "name": "Escape You",
+    "lat": 43.5208464,
+    "lon": -1.5013399,
+    "category": "loisirs",
+    "subcategory": "Activités enfants",
+    "wikipediaLangs": 0,
+    "score": 0.007142857142857142,
+    "tags": {
+      "website": "https://www.escapeyou.fr/"
+    }
+  },
+  {
+    "id": "node/9887170086",
+    "osm": {
+      "type": "node",
+      "id": 9887170086
+    },
+    "name": "Cabestan",
+    "lat": 43.501125,
+    "lon": -1.3030808,
+    "category": "loisirs",
+    "subcategory": "Attractions",
+    "wikipediaLangs": 0,
+    "score": 0.007142857142857142
+  },
+  {
+    "id": "node/11955448503",
+    "osm": {
+      "type": "node",
+      "id": 11955448503
+    },
+    "name": "Aire de jeux",
+    "lat": 43.386139,
+    "lon": -0.8994316,
+    "category": "loisirs",
+    "subcategory": "Activités enfants",
+    "wikipediaLangs": 0,
+    "score": 0.007142857142857142
+  },
+  {
     "id": "node/12671213867",
     "osm": {
       "type": "node",
@@ -10520,6 +12074,34 @@
     "name": "Ici & Maintenant",
     "lat": 43.4817473,
     "lon": -1.5569848,
+    "category": "bien-etre",
+    "subcategory": "Spas & instituts",
+    "wikipediaLangs": 0,
+    "score": 0
+  },
+  {
+    "id": "node/12120340917",
+    "osm": {
+      "type": "node",
+      "id": 12120340917
+    },
+    "name": "Paumes enchantées",
+    "lat": 43.4897813,
+    "lon": -1.4786083,
+    "category": "bien-etre",
+    "subcategory": "Spas & instituts",
+    "wikipediaLangs": 0,
+    "score": 0
+  },
+  {
+    "id": "node/13598742910",
+    "osm": {
+      "type": "node",
+      "id": 13598742910
+    },
+    "name": "L'absolu",
+    "lat": 43.4887707,
+    "lon": -1.4660281,
     "category": "bien-etre",
     "subcategory": "Spas & instituts",
     "wikipediaLangs": 0,

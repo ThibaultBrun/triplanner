@@ -117,8 +117,20 @@ function CardSurface({ poi, children }: { poi: Poi; children?: React.ReactNode }
           {poi.name}
         </h2>
 
-        <div className="mt-2 inline-block rounded-full bg-white/20 px-3 py-1 text-xs font-medium uppercase tracking-wider backdrop-blur-sm">
-          {poi.subcategory}
+        <div className="mt-2 flex flex-wrap items-center gap-2">
+          <span className="inline-block rounded-full bg-white/20 px-3 py-1 text-xs font-medium uppercase tracking-wider backdrop-blur-sm">
+            {poi.subcategory}
+          </span>
+          {poi.tags?.cost === "free" && (
+            <span className="inline-block rounded-full bg-emerald-500/90 px-3 py-1 text-xs font-semibold text-white">
+              Gratuit
+            </span>
+          )}
+          {poi.tags?.cost === "paid" && (
+            <span className="inline-block rounded-full bg-amber-500/90 px-3 py-1 text-xs font-semibold text-white">
+              {poi.tags.chargeText ?? "Payant"}
+            </span>
+          )}
         </div>
 
         {poi.description && (

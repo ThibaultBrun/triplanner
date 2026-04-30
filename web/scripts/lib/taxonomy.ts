@@ -63,7 +63,7 @@ const rules: Rule[] = [
 
   // 4. Sport & Aventure
   { category: "sport", subcategory: "Surf & sports de glisse",
-    match: (t) => has(t, "sport", ["surfing", "kitesurfing", "windsurfing", "water_ski", "skating", "skateboard", "skiing"]) || t.leisure === "surf_school" || t.leisure === "ice_rink" },
+    match: (t) => has(t, "sport", ["surfing", "kitesurfing", "windsurfing", "water_ski", "skating", "skateboard", "skiing"]) || t.leisure === "surf_school" || t.leisure === "ice_rink" || t.leisure === "skatepark" },
   { category: "sport", subcategory: "Sports nautiques",
     match: (t) => has(t, "sport", ["canoe", "sailing", "scuba_diving", "kayak", "rafting", "swimming", "fishing"]) || t.leisure === "marina" || t.leisure === "swimming_pool" },
   { category: "sport", subcategory: "Sports aériens",
@@ -75,7 +75,7 @@ const rules: Rule[] = [
   { category: "sport", subcategory: "Randonnée & trek",
     match: (t) => has(t, "sport", ["hiking", "trail_running"]) },
   { category: "sport", subcategory: "Vélo & VTT",
-    match: (t) => t.sport === "cycling" },
+    match: (t) => has(t, "sport", ["cycling", "mtb", "bmx"]) || has(t, "route", ["mtb", "bicycle"]) },
   { category: "sport", subcategory: "Sports collectifs & raquette",
     match: (t) => has(t, "sport", ["tennis", "golf", "football", "rugby", "basketball", "volleyball", "table_tennis", "martial_arts", "pelota"]) || t.leisure === "golf_course" },
   { category: "sport", subcategory: "Centres sportifs & stades",
@@ -83,7 +83,7 @@ const rules: Rule[] = [
 
   // 7. Bien-être (avant gastronomie pour capter spa, yoga avant amenity)
   { category: "bien-etre", subcategory: "Spas & instituts",
-    match: (t) => t.leisure === "spa" || t.shop === "massage" },
+    match: (t) => t.leisure === "spa" || t.leisure === "sauna" || t.shop === "massage" || (t.tourism === "hotel" && t.spa === "yes") },
   { category: "bien-etre", subcategory: "Thermalisme & sources chaudes",
     match: (t) => t.amenity === "public_bath" || t.natural === "hot_spring" },
   { category: "bien-etre", subcategory: "Yoga & retraites",
@@ -133,7 +133,7 @@ const rules: Rule[] = [
   { category: "loisirs", subcategory: "Mini-golf & jeux",
     match: (t) => has(t, "leisure", ["miniature_golf", "amusement_arcade"]) },
   { category: "loisirs", subcategory: "Activités enfants",
-    match: (t) => has(t, "leisure", ["escape_game", "adventure_park"]) },
+    match: (t) => has(t, "leisure", ["escape_game", "adventure_park", "playground", "trampoline_park", "bowling_alley"]) },
   { category: "loisirs", subcategory: "Parcs & jardins",
     match: (t) => has(t, "leisure", ["park", "garden", "botanical_garden"]) },
 
