@@ -48,6 +48,8 @@ export type ItineraryOptions = {
   customDurations?: Record<string, number>;
   dayStartMinutes?: number;
   meals?: MealConfig;
+  /** Per-day overrides on top of `meals`. */
+  mealsByDay?: Record<number, Partial<MealConfig>>;
 };
 
 export const DEFAULT_DAY_START_MIN = 9 * 60; // 9:00
@@ -281,6 +283,7 @@ export function buildItinerary(
     customDurations = {},
     dayStartMinutes = DEFAULT_DAY_START_MIN,
     meals = DEFAULT_MEAL_CONFIG,
+    mealsByDay = {},
   } = options;
 
   let dayPoisLists: Poi[][];
@@ -305,9 +308,10 @@ export function buildItinerary(
     dayPoisLists = splitIntoDays(ordered, numDays, pace);
   }
 
-  const days = dayPoisLists.map((dayPois, i) =>
-    buildDayPlan(dayPois, i, pace, dayStartMinutes, customDurations, meals),
-  );
+  const days = dayPoisLists.map((dayPois, i) => {
+    const dayMeals: MealConfig = { ...meals, ...(mealsByDay[i] ?? {}) };
+    return buildDayPlan(dayPois, i, pace, dayStartMinutes, customDurations, dayMeals);
+  });
   return { days, totalPois: pois.length };
 }
 

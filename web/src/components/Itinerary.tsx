@@ -70,6 +70,8 @@ export function Itinerary({ pois }: { pois: Poi[] }) {
   const [view, setView] = useState<View>("list");
   const [startMinutes, setStartMinutes] = useState(DEFAULT_DAY_START_MIN);
   const [mealConfig, setMealConfig] = useState<MealConfig>(DEFAULT_MEAL_CONFIG);
+  // Per-day meal overrides (e.g. lunch 30min on Monday, 90min on Tuesday).
+  const [mealsByDay, setMealsByDay] = useState<Record<number, Partial<MealConfig>>>({});
   // null = use auto-assignment; otherwise use this exact per-day mapping.
   const [customDays, setCustomDays] = useState<Record<number, string[]> | null>(null);
   // poi id → custom visit duration (in minutes), overrides pace-based.
@@ -87,6 +89,7 @@ export function Itinerary({ pois }: { pois: Poi[] }) {
   // Structural changes (numDays / pace) reset all manual overrides.
   useEffect(() => {
     setCustomDays(null);
+    setMealsByDay({});
   }, [numDays, pace]);
 
   function handlePaceChange(p: Pace) {
@@ -106,8 +109,9 @@ export function Itinerary({ pois }: { pois: Poi[] }) {
         customDurations,
         dayStartMinutes: startMinutes,
         meals: mealConfig,
+        mealsByDay,
       }),
-    [likedPois, numDays, pace, customDays, customDurations, startMinutes, mealConfig],
+    [likedPois, numDays, pace, customDays, customDurations, startMinutes, mealConfig, mealsByDay],
   );
 
   // Helper that snapshots the current itinerary if customDays isn't already set,
@@ -135,6 +139,14 @@ export function Itinerary({ pois }: { pois: Poi[] }) {
 
   function handleChangeDuration(poiId: string, minutes: number) {
     setCustomDurations((prev) => ({ ...prev, [poiId]: minutes }));
+  }
+
+  function handleChangeMealDurationForDay(kind: "lunch" | "dinner", minutes: number, dayIndex: number) {
+    const key = kind === "lunch" ? "lunchDurationMinutes" : "dinnerDurationMinutes";
+    setMealsByDay((prev) => {
+      const current = prev[dayIndex] ?? {};
+      return { ...prev, [dayIndex]: { ...current, [key]: minutes } };
+    });
   }
 
   function handleSwap(idA: string, idB: string) {
@@ -241,6 +253,7 @@ export function Itinerary({ pois }: { pois: Poi[] }) {
                   onReorder={(ids) => handleReorderDay(day.index, ids)}
                   onMoveToDay={(poiId, toDay) => handleMoveToDay(poiId, day.index, toDay)}
                   onChangeDuration={handleChangeDuration}
+                  onChangeMealDuration={(kind, min) => handleChangeMealDurationForDay(kind, min, day.index)}
                   onRemove={handleRemove}
                 />
               ))}
@@ -454,6 +467,7 @@ function DaySection({
   onReorder,
   onMoveToDay,
   onChangeDuration,
+  onChangeMealDuration,
   onRemove,
 }: {
   index: number;
@@ -464,6 +478,7 @@ function DaySection({
   onReorder: (newIds: string[]) => void;
   onMoveToDay: (poiId: string, toDay: number) => void;
   onChangeDuration: (poiId: string, minutes: number) => void;
+  onChangeMealDuration: (kind: "lunch" | "dinner", minutes: number) => void;
   onRemove: (poiId: string) => void;
 }) {
   if (items.length === 0) {
@@ -501,7 +516,12 @@ function DaySection({
 
       {/* Meals before the first POI (rare, but possible if dayStart > meal start) */}
       {(mealsByPos.get(0) ?? []).map((m, k) => (
-        <MealSlot key={`pre-${k}`} meal={m} />
+        <MealSlot
+          key={`pre-${k}`}
+          meal={m}
+          durationMinutes={m.endMinutes - m.startMinutes}
+          onChangeDuration={(min) => onChangeMealDuration(m.kind, min)}
+        />
       ))}
 
       <Reorder.Group
@@ -521,6 +541,7 @@ function DaySection({
             mealsAfter={mealsByPos.get(i + 1) ?? []}
             onMoveToDay={onMoveToDay}
             onChangeDuration={onChangeDuration}
+            onChangeMealDuration={onChangeMealDuration}
             onRemove={onRemove}
           />
         ))}
@@ -529,20 +550,42 @@ function DaySection({
   );
 }
 
-function MealSlot({ meal }: { meal: MealEntry }) {
+function MealSlot({
+  meal,
+  durationMinutes,
+  onChangeDuration,
+}: {
+  meal: MealEntry;
+  durationMinutes: number;
+  onChangeDuration: (minutes: number) => void;
+}) {
   const isLunch = meal.kind === "lunch";
   return (
     <div
-      className={`my-2 flex items-center gap-3 rounded-xl border-2 border-dashed px-4 py-2.5 text-sm ${
+      className={`my-2 flex flex-wrap items-center gap-2 rounded-xl border-2 border-dashed px-4 py-2.5 text-sm ${
         isLunch
           ? "border-amber-300 bg-amber-50/70 text-amber-900 dark:border-amber-700 dark:bg-amber-950/40 dark:text-amber-200"
           : "border-purple-300 bg-purple-50/70 text-purple-900 dark:border-purple-700 dark:bg-purple-950/40 dark:text-purple-200"
       }`}
     >
       <span className="text-lg">{isLunch ? "🍽" : "🍷"}</span>
-      <span className="font-semibold">
-        {isLunch ? "Déjeuner" : "Dîner"}
-      </span>
+      <span className="font-semibold">{isLunch ? "Déjeuner" : "Dîner"}</span>
+      <select
+        value={durationMinutes}
+        onChange={(e) => onChangeDuration(Number(e.target.value))}
+        className={`rounded-md border bg-white/60 px-2 py-0.5 text-xs font-medium focus:outline-none focus:ring-1 ${
+          isLunch
+            ? "border-amber-300 text-amber-900 focus:ring-amber-500 dark:border-amber-700 dark:bg-amber-950/40 dark:text-amber-100"
+            : "border-purple-300 text-purple-900 focus:ring-purple-500 dark:border-purple-700 dark:bg-purple-950/40 dark:text-purple-100"
+        }`}
+        aria-label={isLunch ? "Durée du déjeuner" : "Durée du dîner"}
+      >
+        {MEAL_DURATION_OPTIONS.map((d) => (
+          <option key={d} value={d}>
+            {formatDuration(d)}
+          </option>
+        ))}
+      </select>
       <span className="ml-auto font-mono text-xs">
         {formatTime(meal.startMinutes)} – {formatTime(meal.endMinutes)}
       </span>
@@ -558,6 +601,7 @@ function DraggableItem({
   mealsAfter,
   onMoveToDay,
   onChangeDuration,
+  onChangeMealDuration,
   onRemove,
 }: {
   item: DayItem;
@@ -567,6 +611,7 @@ function DraggableItem({
   mealsAfter: MealEntry[];
   onMoveToDay: (poiId: string, toDay: number) => void;
   onChangeDuration: (poiId: string, minutes: number) => void;
+  onChangeMealDuration: (kind: "lunch" | "dinner", minutes: number) => void;
   onRemove: (poiId: string) => void;
 }) {
   const dragControls = useDragControls();
@@ -592,7 +637,12 @@ function DraggableItem({
         <TravelHint km={item.travelToNextKm} minutes={item.travelToNextMinutes} />
       )}
       {mealsAfter.map((m, k) => (
-        <MealSlot key={`m-${item.poi.id}-${k}`} meal={m} />
+        <MealSlot
+          key={`m-${item.poi.id}-${k}`}
+          meal={m}
+          durationMinutes={m.endMinutes - m.startMinutes}
+          onChangeDuration={(min) => onChangeMealDuration(m.kind, min)}
+        />
       ))}
     </Reorder.Item>
   );
