@@ -2,7 +2,29 @@
 
 import { motion, useMotionValue, useTransform, type PanInfo } from "motion/react";
 
-import { type Poi } from "@/lib/poi";
+import { type Category, type Poi } from "@/lib/poi";
+
+const CATEGORY_EMOJI: Record<Category, string> = {
+  patrimoine: "🏰",
+  musees: "🎨",
+  nature: "🌲",
+  sport: "🏃",
+  gastronomie: "🍽️",
+  loisirs: "🎢",
+  "bien-etre": "🧘",
+  "vie-nocturne": "🍷",
+};
+
+const CATEGORY_GRADIENT: Record<Category, string> = {
+  patrimoine: "from-amber-700 to-orange-500",
+  musees: "from-violet-600 to-purple-500",
+  nature: "from-emerald-600 to-teal-500",
+  sport: "from-orange-600 to-red-500",
+  gastronomie: "from-red-600 to-rose-500",
+  loisirs: "from-sky-500 to-blue-500",
+  "bien-etre": "from-pink-400 to-rose-400",
+  "vie-nocturne": "from-indigo-700 to-violet-700",
+};
 
 const SWIPE_THRESHOLD = 80;
 const VELOCITY_THRESHOLD = 500;
@@ -83,7 +105,7 @@ export function SwipeCard({ poi, isTop, onSwipe }: Props) {
 function CardSurface({ poi, children }: { poi: Poi; children?: React.ReactNode }) {
   return (
     <div className="relative h-full w-full overflow-hidden rounded-3xl bg-slate-200 shadow-2xl">
-      {poi.image && (
+      {poi.image ? (
         // eslint-disable-next-line @next/next/no-img-element
         <img
           src={poi.image}
@@ -91,6 +113,12 @@ function CardSurface({ poi, children }: { poi: Poi; children?: React.ReactNode }
           className="h-full w-full object-cover"
           draggable={false}
         />
+      ) : (
+        <div
+          className={`flex h-full w-full items-center justify-center bg-gradient-to-br ${CATEGORY_GRADIENT[poi.category]}`}
+        >
+          <span className="text-9xl drop-shadow-lg">{CATEGORY_EMOJI[poi.category]}</span>
+        </div>
       )}
 
       {/* Bottom gradient + content */}
