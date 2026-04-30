@@ -1,0 +1,127 @@
+import { writeFile, mkdir } from "node:fs/promises";
+import { dirname, resolve } from "node:path";
+import { fileURLToPath } from "node:url";
+
+import type { Poi } from "../src/lib/poi";
+import { categorize, isCandidateTag } from "./lib/taxonomy";
+import { fetchOverpass, getCoords, type OverpassElement } from "./lib/overpass";
+import { fetchWikidata } from "./lib/wikidata";
+import { computeScore } from "./lib/score";
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
+const OUTPUT_PATH = resolve(__dirname, "../src/data/pois.json");
+const TOP_N = 150;
+
+function pickName(tags: Record<string, string>): string | null {
+  return tags["name:fr"] ?? tags.name ?? tags["name:en"] ?? null;
+}
+
+function tagCost(tags: Record<string, string>): "free" | "paid" | undefined {
+  if (tags.fee === "no") return "free";
+  if (tags.fee === "yes" || tags.charge !== undefined) return "paid";
+  return undefined;
+}
+
+function tagWheelchair(tags: Record<string, string>): "yes" | "limited" | "no" | undefined {
+  const v = tags.wheelchair;
+  if (v === "yes" || v === "limited" || v === "no") return v;
+  return undefined;
+}
+
+async function main() {
+  console.log(`[1/4] Fetching POI candidates from Overpass...`);
+  const elements = await fetchOverpass();
+  console.log(`     → ${elements.length} elements returned`);
+
+  // Filter: must have name + coords + match a taxonomy rule.
+  type Candidate = {
+    el: OverpassElement;
+    tags: Record<string, string>;
+    coords: { lat: number; lon: number };
+    name: string;
+    category: ReturnType<typeof categorize>;
+  };
+
+  const candidates: Candidate[] = [];
+  for (const el of elements) {
+    const tags = el.tags ?? {};
+    if (!isCandidateTag(tags)) continue;
+    const name = pickName(tags);
+    if (!name) continue;
+    const coords = getCoords(el);
+    if (!coords) continue;
+    const cat = categorize(tags);
+    if (!cat) continue;
+    candidates.push({ el, tags, coords, name, category: cat });
+  }
+  console.log(`[2/4] ${candidates.length} candidates after taxonomy filter`);
+
+  // Collect unique QIDs for Wikidata enrichment
+  const qids = candidates
+    .map((c) => c.tags.wikidata)
+    .filter((q): q is string => typeof q === "string" && /^Q\d+$/.test(q));
+  console.log(`     → ${new Set(qids).size} unique Wikidata QIDs to fetch`);
+
+  console.log(`[3/4] Enriching from Wikidata...`);
+  const wdMap = await fetchWikidata(qids);
+  console.log(`     → ${wdMap.size} entities enriched`);
+
+  // Build final POIs with scores
+  const pois: Poi[] = candidates.map((c) => {
+    const wd = c.tags.wikidata ? wdMap.get(c.tags.wikidata) : undefined;
+    const cat = c.category!;
+    const score = computeScore(c.tags, cat.subcategory, wd);
+
+    const poi: Poi = {
+      id: `${c.el.type}/${c.el.id}`,
+      osm: { type: c.el.type, id: c.el.id },
+      wikidata: c.tags.wikidata,
+      name: c.name,
+      lat: c.coords.lat,
+      lon: c.coords.lon,
+      category: cat.category,
+      subcategory: cat.subcategory,
+      description: wd?.description,
+      image: wd?.image,
+      wikipediaLangs: wd?.wikipediaLangs ?? 0,
+      score,
+    };
+
+    const tags: NonNullable<Poi["tags"]> = {};
+    const cost = tagCost(c.tags);
+    if (cost) tags.cost = cost;
+    const wc = tagWheelchair(c.tags);
+    if (wc) tags.wheelchair = wc;
+    if (c.tags.cuisine) tags.cuisine = c.tags.cuisine.split(";").map((s) => s.trim());
+    if (c.tags.opening_hours) tags.openingHours = c.tags.opening_hours;
+    if (c.tags.website) tags.website = c.tags.website;
+    if (Object.keys(tags).length > 0) poi.tags = tags;
+
+    return poi;
+  });
+
+  // Top N by score
+  pois.sort((a, b) => b.score - a.score);
+  const top = pois.slice(0, TOP_N);
+
+  console.log(`[4/4] Writing ${top.length} POIs (top ${TOP_N} by score) to ${OUTPUT_PATH}`);
+  await mkdir(dirname(OUTPUT_PATH), { recursive: true });
+  await writeFile(OUTPUT_PATH, JSON.stringify(top, null, 2) + "\n");
+
+  // Summary
+  const byCat: Record<string, number> = {};
+  for (const p of top) byCat[p.category] = (byCat[p.category] ?? 0) + 1;
+  console.log(`\nBreakdown by category:`);
+  for (const [cat, n] of Object.entries(byCat).sort((a, b) => b[1] - a[1])) {
+    console.log(`  ${cat.padEnd(15)} ${n}`);
+  }
+  const withWd = top.filter((p) => p.wikidata).length;
+  const withImg = top.filter((p) => p.image).length;
+  console.log(`\n  with Wikidata: ${withWd}/${top.length}`);
+  console.log(`  with image:    ${withImg}/${top.length}`);
+}
+
+main().catch((err) => {
+  console.error(err);
+  process.exit(1);
+});
