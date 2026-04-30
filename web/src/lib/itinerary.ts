@@ -78,8 +78,23 @@ const VISIT_MIN_BY_SUBCAT: Record<string, number> = {
   "Opéras & spectacles classiques": 150,
 };
 
-export function visitMinutes(poi: Poi): number {
-  return VISIT_MIN_BY_SUBCAT[poi.subcategory] ?? DEFAULT_VISIT_MIN;
+export type Pace = "express" | "standard" | "tranquille";
+
+export const PACE_MULTIPLIER: Record<Pace, number> = {
+  express: 0.6,
+  standard: 1,
+  tranquille: 1.5,
+};
+
+export const PACE_LABELS: Record<Pace, string> = {
+  express: "🏃 Express",
+  standard: "🚶 Standard",
+  tranquille: "🌴 Tranquille",
+};
+
+export function visitMinutes(poi: Poi, pace: Pace = "standard"): number {
+  const base = VISIT_MIN_BY_SUBCAT[poi.subcategory] ?? DEFAULT_VISIT_MIN;
+  return Math.max(15, Math.round(base * PACE_MULTIPLIER[pace]));
 }
 
 // Haversine distance in km
@@ -124,11 +139,11 @@ function orderByProximity(pois: Poi[]): Poi[] {
 }
 
 // Split ordered POIs into N days, balancing total visit-time per day.
-function splitIntoDays(ordered: Poi[], numDays: number): Poi[][] {
+function splitIntoDays(ordered: Poi[], numDays: number, pace: Pace): Poi[][] {
   if (numDays <= 0) return [];
   if (ordered.length === 0) return Array.from({ length: numDays }, () => []);
 
-  const totalDuration = ordered.reduce((s, p) => s + visitMinutes(p), 0);
+  const totalDuration = ordered.reduce((s, p) => s + visitMinutes(p, pace), 0);
   const targetPerDay = totalDuration / numDays;
 
   const days: Poi[][] = Array.from({ length: numDays }, () => []);
@@ -136,7 +151,7 @@ function splitIntoDays(ordered: Poi[], numDays: number): Poi[][] {
   let dayDuration = 0;
 
   for (const poi of ordered) {
-    const dur = visitMinutes(poi);
+    const dur = visitMinutes(poi, pace);
     // Move to next day if current is full AND we have remaining days.
     if (dayDuration > 0 && dayDuration + dur / 2 > targetPerDay && dayIdx < numDays - 1) {
       dayIdx++;
@@ -149,7 +164,7 @@ function splitIntoDays(ordered: Poi[], numDays: number): Poi[][] {
   return days;
 }
 
-function buildDayPlan(dayPois: Poi[], dayIndex: number): DayPlan {
+function buildDayPlan(dayPois: Poi[], dayIndex: number, pace: Pace): DayPlan {
   if (dayPois.length === 0) return { index: dayIndex, items: [] };
 
   const items: DayItem[] = [];
@@ -157,7 +172,7 @@ function buildDayPlan(dayPois: Poi[], dayIndex: number): DayPlan {
 
   for (let i = 0; i < dayPois.length; i++) {
     const poi = dayPois[i];
-    const visit = visitMinutes(poi);
+    const visit = visitMinutes(poi, pace);
     const startMinutes = cursor;
     const endMinutes = cursor + visit;
 
@@ -175,10 +190,10 @@ function buildDayPlan(dayPois: Poi[], dayIndex: number): DayPlan {
   return { index: dayIndex, items };
 }
 
-export function buildItinerary(pois: Poi[], numDays: number): Itinerary {
+export function buildItinerary(pois: Poi[], numDays: number, pace: Pace = "standard"): Itinerary {
   const ordered = orderByProximity(pois);
-  const splits = splitIntoDays(ordered, numDays);
-  const days = splits.map((d, i) => buildDayPlan(d, i));
+  const splits = splitIntoDays(ordered, numDays, pace);
+  const days = splits.map((d, i) => buildDayPlan(d, i, pace));
   return { days, totalPois: pois.length };
 }
 

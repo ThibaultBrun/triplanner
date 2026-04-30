@@ -10,10 +10,15 @@ import {
   formatDuration,
   formatTime,
   isOverDayEnd,
+  PACE_LABELS,
   type DayItem,
+  type Pace,
 } from "@/lib/itinerary";
 
 const LIKES_KEY = "triplanner.likes";
+const PACE_KEY = "triplanner.pace";
+
+const ALL_PACES: Pace[] = ["express", "standard", "tranquille"];
 
 const CATEGORY_DOT_COLORS: Record<Category, string> = {
   patrimoine: "bg-amber-700",
@@ -42,11 +47,21 @@ export function Itinerary({ pois }: { pois: Poi[] }) {
   const [hydrated, setHydrated] = useState(false);
   const [likedIds, setLikedIds] = useState<Set<string>>(new Set());
   const [numDays, setNumDays] = useState(3);
+  const [pace, setPace] = useState<Pace>("standard");
 
   useEffect(() => {
     setLikedIds(readLikedIds());
+    const savedPace = localStorage.getItem(PACE_KEY);
+    if (savedPace === "express" || savedPace === "standard" || savedPace === "tranquille") {
+      setPace(savedPace);
+    }
     setHydrated(true);
   }, []);
+
+  function handlePaceChange(p: Pace) {
+    setPace(p);
+    localStorage.setItem(PACE_KEY, p);
+  }
 
   const likedPois = useMemo(
     () => pois.filter((p) => likedIds.has(p.id)),
@@ -54,8 +69,8 @@ export function Itinerary({ pois }: { pois: Poi[] }) {
   );
 
   const itinerary = useMemo(
-    () => buildItinerary(likedPois, numDays),
-    [likedPois, numDays],
+    () => buildItinerary(likedPois, numDays, pace),
+    [likedPois, numDays, pace],
   );
 
   if (!hydrated) {
@@ -69,7 +84,7 @@ export function Itinerary({ pois }: { pois: Poi[] }) {
   return (
     <div className="min-h-full w-full bg-gradient-to-br from-sky-50 via-white to-amber-50 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950">
       <header className="sticky top-0 z-10 border-b border-slate-200 bg-white/95 px-4 py-3 backdrop-blur-sm dark:border-slate-800 dark:bg-slate-900/95">
-        <div className="mx-auto flex max-w-3xl items-center justify-between gap-3">
+        <div className="mx-auto flex max-w-3xl flex-wrap items-center justify-between gap-3">
           <Link
             href="/"
             className="rounded-full bg-white px-4 py-2 text-sm font-medium text-slate-700 shadow hover:bg-slate-100 dark:bg-slate-800 dark:text-slate-200"
@@ -81,13 +96,16 @@ export function Itinerary({ pois }: { pois: Poi[] }) {
           </h1>
           <DayCountStepper value={numDays} onChange={setNumDays} />
         </div>
+        <div className="mx-auto mt-3 max-w-3xl">
+          <PacePicker value={pace} onChange={handlePaceChange} />
+        </div>
       </header>
 
       <main className="mx-auto max-w-3xl px-4 pb-24 pt-6">
         <div className="mb-6 text-sm text-slate-600 dark:text-slate-400">
           {likedPois.length} lieu{likedPois.length > 1 ? "x" : ""} aimé
           {likedPois.length > 1 ? "s" : ""}, répartis sur {numDays} jour
-          {numDays > 1 ? "s" : ""}.
+          {numDays > 1 ? "s" : ""} · rythme {PACE_LABELS[pace].toLowerCase()}.
         </div>
 
         <div className="space-y-8">
@@ -96,6 +114,33 @@ export function Itinerary({ pois }: { pois: Poi[] }) {
           ))}
         </div>
       </main>
+    </div>
+  );
+}
+
+function PacePicker({
+  value,
+  onChange,
+}: {
+  value: Pace;
+  onChange: (p: Pace) => void;
+}) {
+  return (
+    <div className="flex gap-1 rounded-full bg-slate-100 p-1 text-sm dark:bg-slate-800">
+      {ALL_PACES.map((p) => (
+        <button
+          key={p}
+          type="button"
+          onClick={() => onChange(p)}
+          className={`flex-1 rounded-full px-3 py-1.5 font-medium transition ${
+            value === p
+              ? "bg-white text-slate-900 shadow dark:bg-slate-700 dark:text-slate-50"
+              : "text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-200"
+          }`}
+        >
+          {PACE_LABELS[p]}
+        </button>
+      ))}
     </div>
   );
 }
