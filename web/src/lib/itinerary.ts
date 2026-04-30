@@ -18,7 +18,15 @@ export type Itinerary = {
   totalPois: number;
 };
 
-const DAY_START_MIN = 9 * 60; // 9:00
+export type ItineraryOptions = {
+  customDays?: Record<number, string[]>;
+  customDurations?: Record<string, number>;
+  dayStartMinutes?: number;
+};
+
+export const DEFAULT_DAY_START_MIN = 9 * 60; // 9:00
+export const DURATION_OPTIONS_MIN = [15, 30, 45, 60, 75, 90, 105, 120, 150, 180, 210, 240, 300, 360];
+
 const DAY_END_MIN = 18 * 60; // 18:00 — soft limit
 const TRAVEL_SPEED_KMH = 40; // mixed driving + walking
 const MIN_TRAVEL_MIN = 15;
@@ -177,15 +185,21 @@ function splitIntoDays(ordered: Poi[], numDays: number, pace: Pace): Poi[][] {
   return days;
 }
 
-function buildDayPlan(dayPois: Poi[], dayIndex: number, pace: Pace): DayPlan {
+function buildDayPlan(
+  dayPois: Poi[],
+  dayIndex: number,
+  pace: Pace,
+  dayStartMin: number,
+  customDurations: Record<string, number>,
+): DayPlan {
   if (dayPois.length === 0) return { index: dayIndex, items: [] };
 
   const items: DayItem[] = [];
-  let cursor = DAY_START_MIN;
+  let cursor = dayStartMin;
 
   for (let i = 0; i < dayPois.length; i++) {
     const poi = dayPois[i];
-    const visit = visitMinutes(poi, pace);
+    const visit = customDurations[poi.id] ?? visitMinutes(poi, pace);
     const startMinutes = cursor;
     const endMinutes = cursor + visit;
 
@@ -207,23 +221,39 @@ export function buildItinerary(
   pois: Poi[],
   numDays: number,
   pace: Pace = "standard",
-  dayOverrides: Record<number, string[]> = {},
+  options: ItineraryOptions = {},
 ): Itinerary {
-  const ordered = orderByProximity(pois);
-  const splits = splitIntoDays(ordered, numDays, pace);
-  const days = splits.map((dayPois, i) => {
-    const override = dayOverrides[i];
-    if (override && override.length > 0) {
-      const idx = new Map(override.map((id, k) => [id, k]));
-      const reordered = [...dayPois].sort((a, b) => {
-        const ia = idx.get(a.id) ?? Infinity;
-        const ib = idx.get(b.id) ?? Infinity;
-        return ia - ib;
-      });
-      return buildDayPlan(reordered, i, pace);
+  const {
+    customDays,
+    customDurations = {},
+    dayStartMinutes = DEFAULT_DAY_START_MIN,
+  } = options;
+
+  let dayPoisLists: Poi[][];
+
+  if (customDays) {
+    // Use the provided per-day assignment, then append any remaining POI
+    // (newly liked or otherwise unassigned) to the last day.
+    const poisById = new Map(pois.map((p) => [p.id, p]));
+    dayPoisLists = Array.from({ length: numDays }, (_, i) => {
+      const ids = customDays[i] ?? [];
+      return ids
+        .map((id) => poisById.get(id))
+        .filter((p): p is Poi => p !== undefined);
+    });
+    const assigned = new Set(Object.values(customDays).flat());
+    const orphans = pois.filter((p) => !assigned.has(p.id));
+    if (orphans.length > 0 && dayPoisLists.length > 0) {
+      dayPoisLists[dayPoisLists.length - 1].push(...orphans);
     }
-    return buildDayPlan(dayPois, i, pace);
-  });
+  } else {
+    const ordered = orderByProximity(pois);
+    dayPoisLists = splitIntoDays(ordered, numDays, pace);
+  }
+
+  const days = dayPoisLists.map((dayPois, i) =>
+    buildDayPlan(dayPois, i, pace, dayStartMinutes, customDurations),
+  );
   return { days, totalPois: pois.length };
 }
 

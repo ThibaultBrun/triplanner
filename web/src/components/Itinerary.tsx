@@ -8,11 +8,14 @@ import { CATEGORY_LABELS, type Category, type Poi } from "@/lib/poi";
 import {
   buildItinerary,
   dayLabel,
+  DEFAULT_DAY_START_MIN,
+  DURATION_OPTIONS_MIN,
   formatDuration,
   formatTime,
   isOverDayEnd,
   PACE_LABELS,
   type DayItem,
+  type Itinerary as ItineraryType,
   type Pace,
 } from "@/lib/itinerary";
 import { ItineraryMap } from "./ItineraryMap";
@@ -47,14 +50,26 @@ function readLikedIds(): Set<string> {
   }
 }
 
+// Snapshot the current itinerary as a per-day list of POI ids.
+function snapshot(itinerary: ItineraryType): Record<number, string[]> {
+  const out: Record<number, string[]> = {};
+  for (const day of itinerary.days) {
+    out[day.index] = day.items.map((it) => it.poi.id);
+  }
+  return out;
+}
+
 export function Itinerary({ pois }: { pois: Poi[] }) {
   const [hydrated, setHydrated] = useState(false);
   const [likedIds, setLikedIds] = useState<Set<string>>(new Set());
   const [numDays, setNumDays] = useState(3);
   const [pace, setPace] = useState<Pace>("standard");
   const [view, setView] = useState<View>("list");
-  // Per-day user reorder. Keys = day index, values = ordered POI ids.
-  const [dayOverrides, setDayOverrides] = useState<Record<number, string[]>>({});
+  const [startMinutes, setStartMinutes] = useState(DEFAULT_DAY_START_MIN);
+  // null = use auto-assignment; otherwise use this exact per-day mapping.
+  const [customDays, setCustomDays] = useState<Record<number, string[]> | null>(null);
+  // poi id → custom visit duration (in minutes), overrides pace-based.
+  const [customDurations, setCustomDurations] = useState<Record<string, number>>({});
 
   useEffect(() => {
     setLikedIds(readLikedIds());
@@ -65,25 +80,14 @@ export function Itinerary({ pois }: { pois: Poi[] }) {
     setHydrated(true);
   }, []);
 
+  // Structural changes (numDays / pace) reset all manual overrides.
+  useEffect(() => {
+    setCustomDays(null);
+  }, [numDays, pace]);
+
   function handlePaceChange(p: Pace) {
     setPace(p);
     localStorage.setItem(PACE_KEY, p);
-  }
-
-  // Reset overrides when the structural inputs change.
-  useEffect(() => {
-    setDayOverrides({});
-  }, [likedIds, numDays, pace]);
-
-  function handleReorderDay(dayIndex: number, newIds: string[]) {
-    setDayOverrides((prev) => ({ ...prev, [dayIndex]: newIds }));
-  }
-
-  function handleRemove(poiId: string) {
-    const next = new Set(likedIds);
-    next.delete(poiId);
-    setLikedIds(next);
-    localStorage.setItem(LIKES_KEY, JSON.stringify([...next]));
   }
 
   const likedPois = useMemo(
@@ -92,9 +96,63 @@ export function Itinerary({ pois }: { pois: Poi[] }) {
   );
 
   const itinerary = useMemo(
-    () => buildItinerary(likedPois, numDays, pace, dayOverrides),
-    [likedPois, numDays, pace, dayOverrides],
+    () =>
+      buildItinerary(likedPois, numDays, pace, {
+        customDays: customDays ?? undefined,
+        customDurations,
+        dayStartMinutes: startMinutes,
+      }),
+    [likedPois, numDays, pace, customDays, customDurations, startMinutes],
   );
+
+  // Helper that snapshots the current itinerary if customDays isn't already set,
+  // then applies a transformation. This way, the first manual edit "freezes"
+  // the auto-proposition and subsequent edits build on top of it.
+  function withSnapshot(
+    transform: (days: Record<number, string[]>) => Record<number, string[]>,
+  ) {
+    setCustomDays((prev) => transform(prev ?? snapshot(itinerary)));
+  }
+
+  function handleReorderDay(dayIndex: number, newIds: string[]) {
+    withSnapshot((days) => ({ ...days, [dayIndex]: newIds }));
+  }
+
+  function handleMoveToDay(poiId: string, fromDay: number, toDay: number) {
+    if (fromDay === toDay) return;
+    withSnapshot((days) => {
+      const out = { ...days };
+      out[fromDay] = (out[fromDay] ?? []).filter((id) => id !== poiId);
+      out[toDay] = [...(out[toDay] ?? []), poiId];
+      return out;
+    });
+  }
+
+  function handleChangeDuration(poiId: string, minutes: number) {
+    setCustomDurations((prev) => ({ ...prev, [poiId]: minutes }));
+  }
+
+  function handleRemove(poiId: string) {
+    const next = new Set(likedIds);
+    next.delete(poiId);
+    setLikedIds(next);
+    localStorage.setItem(LIKES_KEY, JSON.stringify([...next]));
+
+    setCustomDurations((prev) => {
+      if (!(poiId in prev)) return prev;
+      const out = { ...prev };
+      delete out[poiId];
+      return out;
+    });
+    setCustomDays((prev) => {
+      if (!prev) return prev;
+      const out: Record<number, string[]> = {};
+      for (const [k, ids] of Object.entries(prev)) {
+        out[Number(k)] = ids.filter((id) => id !== poiId);
+      }
+      return out;
+    });
+  }
 
   if (!hydrated) {
     return <Skeleton />;
@@ -121,6 +179,7 @@ export function Itinerary({ pois }: { pois: Poi[] }) {
         </div>
         <div className="mx-auto mt-3 flex max-w-3xl flex-wrap items-center gap-2">
           <PacePicker value={pace} onChange={handlePaceChange} />
+          <StartTimeInput value={startMinutes} onChange={setStartMinutes} />
           <ViewToggle value={view} onChange={setView} />
         </div>
       </header>
@@ -131,7 +190,7 @@ export function Itinerary({ pois }: { pois: Poi[] }) {
             <div className="mb-6 text-sm text-slate-600 dark:text-slate-400">
               {likedPois.length} lieu{likedPois.length > 1 ? "x" : ""} aimé
               {likedPois.length > 1 ? "s" : ""}, répartis sur {numDays} jour
-              {numDays > 1 ? "s" : ""} · rythme {PACE_LABELS[pace].toLowerCase()}.
+              {numDays > 1 ? "s" : ""} · rythme {PACE_LABELS[pace].toLowerCase()} · départ à {formatTime(startMinutes)}.
             </div>
 
             <div className="space-y-8">
@@ -139,8 +198,12 @@ export function Itinerary({ pois }: { pois: Poi[] }) {
                 <DaySection
                   key={day.index}
                   index={day.index}
+                  numDays={numDays}
                   items={day.items}
+                  customDurations={customDurations}
                   onReorder={(ids) => handleReorderDay(day.index, ids)}
+                  onMoveToDay={(poiId, toDay) => handleMoveToDay(poiId, day.index, toDay)}
+                  onChangeDuration={handleChangeDuration}
                   onRemove={handleRemove}
                 />
               ))}
@@ -191,7 +254,7 @@ function PacePicker({
           key={p}
           type="button"
           onClick={() => onChange(p)}
-          className={`flex-1 rounded-full px-3 py-1.5 font-medium transition ${
+          className={`rounded-full px-3 py-1.5 font-medium transition ${
             value === p
               ? "bg-white text-slate-900 shadow dark:bg-slate-700 dark:text-slate-50"
               : "text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-200"
@@ -201,6 +264,34 @@ function PacePicker({
         </button>
       ))}
     </div>
+  );
+}
+
+function StartTimeInput({
+  value,
+  onChange,
+}: {
+  value: number;
+  onChange: (minutes: number) => void;
+}) {
+  const hh = String(Math.floor(value / 60)).padStart(2, "0");
+  const mm = String(value % 60).padStart(2, "0");
+  return (
+    <label className="flex items-center gap-2 rounded-full bg-white px-3 py-1.5 text-sm shadow dark:bg-slate-800">
+      <span className="text-slate-500 dark:text-slate-400">Départ</span>
+      <input
+        type="time"
+        step={900}
+        value={`${hh}:${mm}`}
+        onChange={(e) => {
+          const [h, m] = e.target.value.split(":").map(Number);
+          if (Number.isFinite(h) && Number.isFinite(m)) {
+            onChange(h * 60 + m);
+          }
+        }}
+        className="bg-transparent font-mono font-medium text-slate-900 focus:outline-none dark:text-slate-100"
+      />
+    </label>
   );
 }
 
@@ -240,13 +331,21 @@ function DayCountStepper({
 
 function DaySection({
   index,
+  numDays,
   items,
+  customDurations,
   onReorder,
+  onMoveToDay,
+  onChangeDuration,
   onRemove,
 }: {
   index: number;
+  numDays: number;
   items: DayItem[];
+  customDurations: Record<string, number>;
   onReorder: (newIds: string[]) => void;
+  onMoveToDay: (poiId: string, toDay: number) => void;
+  onChangeDuration: (poiId: string, minutes: number) => void;
   onRemove: (poiId: string) => void;
 }) {
   if (items.length === 0) {
@@ -282,7 +381,16 @@ function DaySection({
         className="mt-4 space-y-2"
       >
         {items.map((item) => (
-          <DraggableItem key={item.poi.id} item={item} onRemove={onRemove} />
+          <DraggableItem
+            key={item.poi.id}
+            item={item}
+            currentDayIndex={index}
+            numDays={numDays}
+            isCustomDuration={item.poi.id in customDurations}
+            onMoveToDay={onMoveToDay}
+            onChangeDuration={onChangeDuration}
+            onRemove={onRemove}
+          />
         ))}
       </Reorder.Group>
     </section>
@@ -291,9 +399,19 @@ function DaySection({
 
 function DraggableItem({
   item,
+  currentDayIndex,
+  numDays,
+  isCustomDuration,
+  onMoveToDay,
+  onChangeDuration,
   onRemove,
 }: {
   item: DayItem;
+  currentDayIndex: number;
+  numDays: number;
+  isCustomDuration: boolean;
+  onMoveToDay: (poiId: string, toDay: number) => void;
+  onChangeDuration: (poiId: string, minutes: number) => void;
   onRemove: (poiId: string) => void;
 }) {
   const dragControls = useDragControls();
@@ -307,7 +425,12 @@ function DraggableItem({
     >
       <ItineraryItem
         item={item}
+        currentDayIndex={currentDayIndex}
+        numDays={numDays}
+        isCustomDuration={isCustomDuration}
         onPointerDownDragHandle={(e) => dragControls.start(e)}
+        onMoveToDay={(toDay) => onMoveToDay(item.poi.id, toDay)}
+        onChangeDuration={(min) => onChangeDuration(item.poi.id, min)}
         onRemove={() => onRemove(item.poi.id)}
       />
       {item.travelToNextMinutes > 0 && (
@@ -330,15 +453,30 @@ function DayHeader({ index, count }: { index: number; count: number }) {
 
 function ItineraryItem({
   item,
+  currentDayIndex,
+  numDays,
+  isCustomDuration,
   onPointerDownDragHandle,
+  onMoveToDay,
+  onChangeDuration,
   onRemove,
 }: {
   item: DayItem;
+  currentDayIndex: number;
+  numDays: number;
+  isCustomDuration: boolean;
   onPointerDownDragHandle?: (e: React.PointerEvent) => void;
+  onMoveToDay?: (toDay: number) => void;
+  onChangeDuration?: (minutes: number) => void;
   onRemove?: () => void;
 }) {
   const { poi } = item;
   const overflow = isOverDayEnd(item);
+  const visitDuration = item.endMinutes - item.startMinutes;
+
+  const otherDays = Array.from({ length: numDays }, (_, i) => i).filter(
+    (i) => i !== currentDayIndex,
+  );
 
   return (
     <div
@@ -386,18 +524,64 @@ function ItineraryItem({
             📍 {poi.city}
           </div>
         )}
+
+        {/* Move-to-day select */}
+        {onMoveToDay && otherDays.length > 0 && (
+          <div className="mt-1.5">
+            <select
+              className="rounded-md border border-slate-200 bg-white px-2 py-0.5 text-xs text-slate-600 hover:border-slate-400 focus:outline-none focus:ring-1 focus:ring-sky-500 dark:border-slate-700 dark:bg-slate-700 dark:text-slate-300"
+              value=""
+              onChange={(e) => {
+                const v = e.target.value;
+                if (v !== "") {
+                  onMoveToDay(Number(v));
+                }
+                e.target.value = "";
+              }}
+              aria-label="Déplacer vers un autre jour"
+            >
+              <option value="">Déplacer vers…</option>
+              {otherDays.map((d) => (
+                <option key={d} value={d}>
+                  Jour {d + 1}
+                </option>
+              ))}
+            </select>
+          </div>
+        )}
       </div>
 
-      <div className="flex flex-col items-end justify-between text-right text-xs">
+      <div className="flex flex-col items-end justify-between gap-1 text-right text-xs">
         <div className="font-mono font-semibold text-slate-700 dark:text-slate-300">
           {formatTime(item.startMinutes)}
         </div>
-        <div className="text-slate-400">
-          {formatDuration(item.endMinutes - item.startMinutes)}
-        </div>
-        {overflow && (
-          <div className="text-amber-600">⚠ après 18h</div>
+
+        {onChangeDuration ? (
+          <select
+            className={`rounded-md border bg-transparent px-1.5 py-0.5 text-xs focus:outline-none focus:ring-1 focus:ring-sky-500 ${
+              isCustomDuration
+                ? "border-sky-400 text-sky-600 dark:border-sky-500 dark:text-sky-400"
+                : "border-slate-200 text-slate-500 dark:border-slate-700 dark:text-slate-400"
+            }`}
+            value={visitDuration}
+            onChange={(e) => onChangeDuration(Number(e.target.value))}
+            aria-label="Durée de la visite"
+          >
+            {/* Make sure the current value is in the list. */}
+            {!DURATION_OPTIONS_MIN.includes(visitDuration) && (
+              <option value={visitDuration}>{formatDuration(visitDuration)}</option>
+            )}
+            {DURATION_OPTIONS_MIN.map((d) => (
+              <option key={d} value={d}>
+                {formatDuration(d)}
+              </option>
+            ))}
+          </select>
+        ) : (
+          <div className="text-slate-400">{formatDuration(visitDuration)}</div>
         )}
+
+        {overflow && <div className="text-amber-600">⚠ après 18h</div>}
       </div>
 
       {onRemove && (
