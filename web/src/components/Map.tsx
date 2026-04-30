@@ -6,6 +6,25 @@ import "maplibre-gl/dist/maplibre-gl.css";
 
 import type { Poi, Category } from "@/lib/poi";
 
+const MAP_STYLE: maplibregl.StyleSpecification = {
+  version: 8,
+  sources: {
+    osm: {
+      type: "raster",
+      tiles: ["https://tile.openstreetmap.org/{z}/{x}/{y}.png"],
+      tileSize: 256,
+      attribution: "&copy; OpenStreetMap contributors",
+    },
+  },
+  layers: [
+    {
+      id: "osm",
+      type: "raster",
+      source: "osm",
+    },
+  ],
+};
+
 const CATEGORY_COLORS: Record<Category, string> = {
   patrimoine: "#92400e",
   musees: "#7c3aed",
@@ -30,17 +49,26 @@ export function Map({ pois }: { pois: Poi[] }) {
 
     const map = new maplibregl.Map({
       container: containerRef.current,
-      // OpenFreeMap: vector style, free, no API key.
-      // Other options: "positron" (clean light), "bright", "dark"
-      style: "https://tiles.openfreemap.org/styles/liberty",
+      style: MAP_STYLE,
       center: INITIAL_CENTER,
       zoom: INITIAL_ZOOM,
+    });
+
+    map.on("error", (e) => {
+      console.error("[Map] maplibre error", e);
     });
 
     map.addControl(new maplibregl.NavigationControl(), "top-right");
     map.addControl(new maplibregl.ScaleControl({ unit: "metric" }), "bottom-left");
 
     mapRef.current = map;
+
+    const resizeObserver = new ResizeObserver(() => map.resize());
+    resizeObserver.observe(containerRef.current);
+
+    requestAnimationFrame(() => {
+      map.resize();
+    });
 
     map.on("load", () => {
       const features = pois.map((p) => ({
@@ -117,12 +145,13 @@ export function Map({ pois }: { pois: Poi[] }) {
     });
 
     return () => {
+      resizeObserver.disconnect();
       map.remove();
       mapRef.current = null;
     };
   }, [pois]);
 
-  return <div ref={containerRef} className="absolute inset-0" />;
+  return <div ref={containerRef} className="absolute inset-0 h-full w-full" />;
 }
 
 function escapeHtml(s: string): string {

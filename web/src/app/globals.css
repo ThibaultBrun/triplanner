@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
+/* Force MapLibre to fill its container.
+   Tailwind v4 preflight can interfere with the default maplibre-gl.css sizing. */
+.maplibregl-map,
+.maplibregl-canvas-container,
+.maplibregl-canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
