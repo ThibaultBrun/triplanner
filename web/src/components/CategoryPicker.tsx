@@ -45,6 +45,7 @@ type Props = {
   subcatsByCat: Record<Category, string[]>;
   countBySubcat: Record<string, number>;
   onConfirm: (selectedSubcats: Set<string>) => void;
+  onLucky?: (selectedSubcats: Set<string>) => void;
   showBackToHome?: boolean;
 };
 
@@ -63,6 +64,7 @@ export function CategoryPicker({
   subcatsByCat,
   countBySubcat,
   onConfirm,
+  onLucky,
   showBackToHome = true,
 }: Props) {
   const [selected, setSelected] = useState<Set<string>>(new Set(initial));
@@ -241,16 +243,30 @@ export function CategoryPicker({
       </div>
 
       <footer className="sticky bottom-0 border-t border-slate-200 bg-white/95 px-6 py-4 backdrop-blur-sm dark:border-slate-800 dark:bg-slate-900/95">
-        <button
-          type="button"
-          disabled={selected.size === 0}
-          onClick={() => onConfirm(selected)}
-          className="flex w-full items-center justify-center gap-2 rounded-full bg-sky-600 px-6 py-3 text-sm font-semibold text-white shadow-lg transition hover:bg-sky-700 disabled:cursor-not-allowed disabled:bg-slate-300 disabled:text-slate-500 dark:disabled:bg-slate-700"
-        >
-          {selected.size === 0
-            ? "Sélectionnez au moins une option"
-            : `Commencer · ${totalSelectedCount} lieu${totalSelectedCount > 1 ? "x" : ""}`}
-        </button>
+        <div className="flex flex-col gap-2 sm:flex-row">
+          <button
+            type="button"
+            disabled={selected.size === 0}
+            onClick={() => onConfirm(selected)}
+            className="flex flex-1 items-center justify-center gap-2 rounded-full bg-sky-600 px-6 py-3 text-sm font-semibold text-white shadow-lg transition hover:bg-sky-700 disabled:cursor-not-allowed disabled:bg-slate-300 disabled:text-slate-500 dark:disabled:bg-slate-700"
+          >
+            {selected.size === 0
+              ? "Sélectionnez au moins une option"
+              : `Swiper · ${totalSelectedCount} lieu${totalSelectedCount > 1 ? "x" : ""}`}
+          </button>
+          {onLucky && (
+            <button
+              type="button"
+              disabled={selected.size === 0}
+              onClick={() => onLucky(selected)}
+              className="group flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-amber-500 via-orange-500 to-red-500 px-6 py-3 text-sm font-semibold text-white shadow-lg transition hover:scale-[1.02] hover:shadow-xl disabled:cursor-not-allowed disabled:bg-slate-300 disabled:from-slate-300 disabled:via-slate-300 disabled:to-slate-300 disabled:text-slate-500 disabled:shadow-none"
+              title="Génère un itinéraire surprise dans les catégories cochées"
+            >
+              <span className="text-lg transition-transform group-hover:rotate-12">🎲</span>
+              J&apos;ai de la chance
+            </button>
+          )}
+        </div>
       </footer>
     </div>
   );

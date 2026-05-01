@@ -2,10 +2,13 @@
 
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 import { type Category, type Poi } from "@/lib/poi";
 import { CategoryPicker } from "./CategoryPicker";
 import { SwipeCard } from "./SwipeCard";
+
+const LUCKY_PICKS_PER_CATEGORY = 2;
 
 const LIKES_KEY = "triplanner.likes";
 const PASSES_KEY = "triplanner.passes";
@@ -45,6 +48,7 @@ function writeSet(key: string, set: Set<string>) {
 type LastSwipe = { poiId: string; direction: "like" | "pass" } | null;
 
 export function SwipeDeck({ pois }: { pois: Poi[] }) {
+  const router = useRouter();
   const [hydrated, setHydrated] = useState(false);
   const [picking, setPicking] = useState(false);
   const [selectedSubcats, setSelectedSubcats] = useState<Set<string>>(new Set());
@@ -128,6 +132,35 @@ export function SwipeDeck({ pois }: { pois: Poi[] }) {
     setIndex(0);
   }
 
+  function handleLuckySubcats(selected: Set<string>) {
+    // 1. Save subcats so user can keep them (for swipe later, etc.)
+    writeSet(SUBCATS_KEY, selected);
+
+    // 2. Filter eligible POIs and pick 1-2 per main category by weighted shuffle.
+    const eligible = pois.filter((p) => selected.has(p.subcategory));
+    const byCat = new Map<Category, Poi[]>();
+    for (const p of eligible) {
+      const list = byCat.get(p.category) ?? [];
+      list.push(p);
+      byCat.set(p.category, list);
+    }
+
+    const picks: Poi[] = [];
+    for (const list of byCat.values()) {
+      picks.push(...weightedShuffle(list).slice(0, LUCKY_PICKS_PER_CATEGORY));
+    }
+
+    // 3. Save as likes, clear passes.
+    const likeIds = new Set(picks.map((p) => p.id));
+    writeSet(LIKES_KEY, likeIds);
+    setLikes(likeIds);
+    localStorage.removeItem(PASSES_KEY);
+    setPasses(new Set());
+
+    // 4. Go straight to the itinerary.
+    router.push("/itineraire");
+  }
+
   function handleSwipe(direction: "like" | "pass") {
     const current = deck[index];
     if (!current) return;
@@ -190,6 +223,7 @@ export function SwipeDeck({ pois }: { pois: Poi[] }) {
         subcatsByCat={subcatsByCat}
         countBySubcat={countBySubcat}
         onConfirm={handleConfirmSubcats}
+        onLucky={handleLuckySubcats}
       />
     );
   }
